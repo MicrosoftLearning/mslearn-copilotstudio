@@ -60,10 +60,12 @@ exercise.
 
     ![Screenshot of a new copilot in Copilot Studio](media/create-copilot/new-copilot.png)
 
-6.  In the **Test copilot** pane, enter the message `Hello`, and view the
+6.  In the navigation pane on the left, select **Test your copilot**.
+
+7.  In the **Test copilot** pane, enter the message `Hello`, and view the
     response, which should be an appropriate welcome greeting.
 
-7.  Now enter the message `How do I use Copilot Studio?`, and view the resulting
+8.  Now enter the message `How do I use Copilot Studio?`, and view the resulting
     response. This time, the response is not quite so helpful. You’ll address
     this in the next procedure.
 
