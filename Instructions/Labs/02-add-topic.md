@@ -91,7 +91,8 @@ Studio, and determine how responses are triggered during chat sessions.
     entered doesn’t match any of the phrases in the trigger exactly - it should
     be close enough semantically to trigger the topic).
 
-    **Note**: It’s worth pausing for a second here to think about what you’ve
+   > **Note**
+   > It’s worth pausing for a second here to think about what you’ve
     just done. You’ve created a copilot in Copilot Studio, in which you used a
     copilot to automatically add a topic that enables a user to ask about
     Copilot Studio! Mind-blowing stuff!
