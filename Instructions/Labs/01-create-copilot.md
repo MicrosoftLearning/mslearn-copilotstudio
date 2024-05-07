@@ -11,14 +11,6 @@ generate answers based on information in a web site.
 
 This exercise will take approximately 45 minutes to complete.
 
-   > **Note**
-   > To complete this exercise, you’ll need a work or school account with
-[access to Copilot
-Studio](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions).
-If you don’t already have access to Copilot Studio, depending on the
-configuration of your Microsoft 365 organization, you may be able to [create a
-trial account](https://aka.ms/trypva).
-
 ## Create a copilot
 
 Let’s start by using Copilot Studio to create a new copilot. The copilot will
