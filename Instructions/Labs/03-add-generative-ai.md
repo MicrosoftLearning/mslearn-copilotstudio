@@ -19,7 +19,7 @@ such as a web site.
 1.  In the navigation pane on the left, select the **Overview** page. Once
     again, you can close the **Test copilot** pane to see the page more easily:
 
-    ![Screenshot of the Overview page in Copilot Studio](media/636521fcb34318c97b616c0389e1663b.png)
+    ![Screenshot of the Overview page in Copilot Studio](media/add-generative-ai/overview-page.png)
 
 2.  In the **Set up your generative AI** section, under **Add a website**, enter
     https://www.microsoft.com/en-us/power-platform and add it to the copilot.
@@ -31,10 +31,8 @@ such as a web site.
     behave. These instructions are used in the prompt for a generative model to
     influence the responses that are returned. Enter the following instructions:
 
-    CodeCopy
-
-    Answer the user's question politely, finishing with the phrase "This
-    response was generated using AI.".
+    `Answer the user's question politely, finishing with the phrase "This
+    response was generated using AI.".`
 
 4.  Use the **Save** button (at the top left) to save the changes you have made.
     The copilot is configured to boost conversational capability with generative
