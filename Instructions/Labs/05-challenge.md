@@ -12,12 +12,12 @@ answers questions about Microsoft training and credentials.
 -   The copilot can use any language you prefer.
 
 -   Questions about training should be answered with a message instructing the
-    user to visit https://learn.microsoft.com/training/
+    user to visit `https://learn.microsoft.com/training/`
 
 -   Questions about credentials or certification should result in AI-generated
     answers based on the contents of the
-    https://learn.microsoft.com/en-us/credentials/ website (or the version of
+    `https://learn.microsoft.com/en-us/credentials/` website (or the version of
     that website in your preferred language at
-    https://learn.microsoft.com/\<locale-code\>/credentials/).
+    `https://learn.microsoft.com/\<locale-code\>/credentials/`).
 
 -   The copilot should be published so that users can test it in a demo website.
