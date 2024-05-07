@@ -69,3 +69,4 @@ exercise.
     response. This time, the response is not quite so helpful. You’ll address
     this in the next procedure.
 
+9. Close the Test copilot pane.
