@@ -5,74 +5,63 @@ lab:
 
 # Create a copilot
 
-## Lab scenario
+In this exercise, you’ll use Copilot Studio to create a simple copilot that can
+answer questions based on topics that you define, and use generative AI to
+generate answers based on information in a web site.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, erat vel egestas faucibus, dui magna semper velit, id congue sapien lectus id turpis. Nam egestas tempus enim. Ut venenatis vehicula ex, id rutrum odio lacinia at. Donec congue, tortor sed fermentum imperdiet, mauris mi auctor dui, ac cursus ex augue a odio. Aliquam erat volutpat. Vivamus faucibus fringilla augue in dignissim. Quisque sit amet nulla id risus gravida auctor. Ut in est varius, cursus odio rhoncus, placerat erat. Suspendisse nec metus est.
+This exercise will take approximately 45 minutes to complete.
 
-## Objectives
+**Note**: To complete this exercise, you’ll need a work or school account with
+[access to Copilot
+Studio](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions).
+If you don’t already have access to Copilot Studio, depending on the
+configuration of your Microsoft 365 organization, you may be able to [create a
+trial account](https://aka.ms/trypva).
 
-After you complete this lab, you will be able to:
+Create a copilot
 
-- Cras tincidunt massa et nunc vulputate, eget vestibulum massa tincidunt. 
+Let’s start by using Copilot Studio to create a new copilot. The copilot will
+initially have very limited capabilities, which you’ll extend later in the
+exercise.
 
-- Maecenas suscipit at nisl vitae malesuada. 
+1.  In a web browser, navigate to [Copilot
+    Studio](https://copilotstudio.microsoft.com/) at
+    https://copilotstudio.microsoft.com/, signing in with your work or school
+    account if prompted.
 
-- Suspendisse eu arcu id velit consequat venenatis.
+2.  In the navigation pane on the left, view the **Copilots** page, like this:
 
-## Lab Setup
+    ![Screenshot of the Copilots page in Copilot Studio](media/33257bc755ed47f507b2a1e3f6ad49e3.png)
 
-  - **Estimated Time**: 00 minutes
+3.  Select the option to create a **New copilot**, and then setup a new copilot
+    with the following settings:
 
-## Instructions
+    -   **Copilot name**: Power Pilot
 
-### Before you start
+    -   **Language**: English (United States) (en-US)
 
-#### Setup Task
+    -   **Website**: *Leave this blank (for now)*
 
-1. Integer dolor purus, gravida eu sem id, efficitur aliquet neque. 
+    -   **Advanced options**:
 
-1. Suspendisse viverra mauris in metus laoreet consectetur. 
+        -   **Copilot icon**: *Choose any icon*
 
-1. Sed diam risus, convallis quis condimentum at, egestas malesuada libero. 
+        -   **Lesson topics**: Unselected *(not including lesson topics will
+            provide a simple starting point for your copilot)*
 
-### Exercise 0: 
+        -   **Solution**: Common Data Services Default Solution
 
-#### Task 0: 
+        -   **Schema name**: powerPilot
 
-1. Quisque dictum convallis metus, vitae vestibulum turpis dapibus non.
+4.  Create the copilot and wait for it to be ready. When it has been
+    provisioned, it will look similar to this:
 
-    1. Suspendisse commodo tempor convallis. 
+    ![Screenshot of a new copilot in Copilot Studio](media/791efbcba48d2cf012862639857e2d26.png)
 
-    1. Nunc eget quam facilisis, imperdiet felis ut, blandit nibh. 
+5.  In the **Test copilot** pane, enter the message Hello, and view the
+    response, which should be an appropriate welcome greeting.
 
-    1. Phasellus pulvinar ornare sem, ut imperdiet justo volutpat et.
+6.  Now enter the message How do I use Copilot Studio?, and view the resulting
+    response. This time, the response is not quite so helpful. You’ll address
+    this in the next procedure.
 
-1. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-
-1. Vestibulum hendrerit orci urna, non aliquet eros eleifend vitae. 
-
-1. Curabitur nibh dui, vestibulum cursus neque commodo, aliquet accumsan risus. 
-
-    ```
-    Sed at malesuada orci, eu volutpat ex
-    ```
-
-1. In ac odio vulputate, faucibus lorem at, sagittis felis.
-
-1. Fusce tincidunt sapien nec dolor congue facilisis lacinia quis urna.
-
-    > **Note**: Ut feugiat est id ultrices gravida.
-
-1. Phasellus urna lacus, luctus at suscipit vitae, maximus ac nisl. 
-
-    - Morbi in tortor finibus, tempus dolor a, cursus lorem. 
-
-    - Maecenas id risus pharetra, viverra elit quis, lacinia odio. 
-
-    - Etiam rutrum pretium enim. 
-
-1. Curabitur in pretium urna, nec ullamcorper diam. 
-
-#### Review
-
-Maecenas fringilla ac purus non tincidunt. Aenean pellentesque velit id suscipit tempus. Cras at ullamcorper odio.
