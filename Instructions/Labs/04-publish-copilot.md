@@ -38,9 +38,7 @@ page.
     -   **Conversation starters**:
       ```
         "Hello"
-
         "How can I get started with Copilot Studio?"
-
         "Tell me about Power Platform"
       ```
       
