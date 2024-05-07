@@ -25,9 +25,8 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will
 initially have very limited capabilities, which you’ll extend later in the
 exercise.
 
-1.  In a web browser, navigate to [Copilot
-    Studio](https://copilotstudio.microsoft.com/) at
-    https://copilotstudio.microsoft.com/, signing in with your work or school
+1.  In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at
+    `https://copilotstudio.microsoft.com/`, signing in with your work or school
     account if prompted.
 
 2.  In the navigation pane on the left, view the **Copilots** page, like this:
