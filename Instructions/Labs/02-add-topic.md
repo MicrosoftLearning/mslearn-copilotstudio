@@ -13,7 +13,7 @@ Studio, and determine how responses are triggered during chat sessions.
     topics defined in your copilot. You can close the **Test copilot** pane to
     make it easier to see them, like this:
 
-    ![Screenshot of the Topics page in Copilot Studio](media/b94eadabd9a5ef0f169ba7ba3386c705.png)
+    ![Screenshot of the Topics page in Copilot Studio](media/add-topic/topics-page.png)
 
     The copilot has a few standard conversational topics on the **Topics** tab,
     and some additional system topics on the **System** tab. These topics are
@@ -24,7 +24,7 @@ Studio, and determine how responses are triggered during chat sessions.
     *authoring canvas*, which is a visual designer for creating and editing
     topics and looks similar to this:
 
-    ![Screenshot of the authoring canvas for the Greeting topic in Copilot Studio](media/08e6b6d9dd503c3c5e623c2d0fb8a18c.png)
+    ![Screenshot of the authoring canvas for the Greeting topic in Copilot Studio](media/add-topic/greeting-topic.png)
 
     The *Greeting* topic is triggered by an input in which one of the following
     phrases is present:
@@ -48,7 +48,7 @@ Studio, and determine how responses are triggered during chat sessions.
     **Fallback** topic to view it on the authoring canvas; where it looks like
     this:
 
-    ![Screenshot of the authoring canvas for the Fallback topic in Copilot Studio](media/80f6b71345565d7484c69d9fa7aa119a.png)
+    ![Screenshot of the authoring canvas for the Fallback topic in Copilot Studio](media/add-topic/fallback-topic.png)
 
     The *Fallback* topic is triggered when the user enters a phrase for which
     the intent is unknown (there’s no topic with a trigger that understands what
@@ -69,16 +69,14 @@ Studio, and determine how responses are triggered during chat sessions.
     Ask About Copilot Studio and enter the following text to tell copilot what
     the topic should do:
 
-    CodeCopy
-
-    Let the user ask how to use Copilot Studio, and tell them to visit
-    https://learn.microsoft.com/microsoft-copilot-studio.
+    `Let the user ask how to use Copilot Studio, and tell them to visit
+    https://learn.microsoft.com/microsoft-copilot-studio.`
 
 6.  After a short wait, a new topic named *Ask About Copilot Studio* should be
     created and opened in the authoring canvas, where it should look similar to
     this:
 
-    ![Screenshot of the copilot-generated Ask About Copilot Studio topic](media/82ddbabe122ade341ab16294443b5949.png)
+    ![Screenshot of the copilot-generated Ask About Copilot Studio topic](media/add-topic/copilot-studio-topic.png)
 
     The new topic should be triggered by phrases that ask about Copilot Studio,
     and respond with a message telling the user to visit the Copilot Studio
