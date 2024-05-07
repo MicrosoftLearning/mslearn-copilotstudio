@@ -3,7 +3,7 @@ lab:
     title: 'Lab: Create a copilot'
 ---
 
-# Create a copilot
+# Exercise - Create a copilot with Copilot Studio
 
 In this exercise, you’ll use Copilot Studio to create a simple copilot that can
 answer questions based on topics that you define, and use generative AI to
@@ -19,7 +19,7 @@ If you don’t already have access to Copilot Studio, depending on the
 configuration of your Microsoft 365 organization, you may be able to [create a
 trial account](https://aka.ms/trypva).
 
-Create a copilot
+# Create a copilot
 
 Let’s start by using Copilot Studio to create a new copilot. The copilot will
 initially have very limited capabilities, which you’ll extend later in the
