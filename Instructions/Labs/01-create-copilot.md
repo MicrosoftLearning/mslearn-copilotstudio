@@ -31,14 +31,14 @@ exercise.
 
 2.  Select **Start free trial** if prompted.
 
-3.  In the navigation pane on the left, view the **Copilots** page, like this:
+3.  In the navigation pane on the left, select **Copilots** to view the Copilots page, like this:
 
     ![Screenshot of the Copilots page in Copilot Studio](media/create-copilot/copilots-page.png)
 
 4.  Select the option to create a **New copilot**, and then setup a new copilot
     with the following settings:
 
-    -   **Copilot name**: Power Pilot
+    -   **Copilot name**: `Power Pilot`
 
     -   **Language**: English (United States) (en-US)
 
@@ -60,10 +60,10 @@ exercise.
 
     ![Screenshot of a new copilot in Copilot Studio](media/create-copilot/new-copilot.png)
 
-6.  In the **Test copilot** pane, enter the message Hello, and view the
+6.  In the **Test copilot** pane, enter the message `Hello`, and view the
     response, which should be an appropriate welcome greeting.
 
-7.  Now enter the message How do I use Copilot Studio?, and view the resulting
+7.  Now enter the message `How do I use Copilot Studio?`, and view the resulting
     response. This time, the response is not quite so helpful. You’ll address
     this in the next procedure.
 
