@@ -10,9 +10,8 @@ understands. Topics are the basic building blocks of a copilot in Copilot
 Studio, and determine how responses are triggered during chat sessions.
 
 1.  In the navigation pane on the left, select the **Topics** page to see the
-    topics defined in your copilot. You can close the **Test copilot** pane to
-    make it easier to see them, like this:
-
+    topics defined in your copilot.
+    
     ![Screenshot of the Topics page in Copilot Studio](media/add-topic/topics-page.png)
 
     The copilot has a few standard conversational topics on the **Topics** tab,
@@ -20,7 +19,7 @@ Studio, and determine how responses are triggered during chat sessions.
     triggered by common phrases entered by the user or by specific events, such
     as errors or the intent of a user-entered phrase being unknown.
 
-2.  On the **Topics** tab, select the **Greeting** topic to view it on the
+3.  On the **Topics** tab, select the **Greeting** topic to view it on the
     *authoring canvas*, which is a visual designer for creating and editing
     topics and looks similar to this:
 
@@ -44,7 +43,7 @@ Studio, and determine how responses are triggered during chat sessions.
         copilot in the copilot explains the response you saw previously when
         testing it.
 
-3.  Return to the **Topics** page, and on the **System** tab, select the
+4.  Return to the **Topics** page, and on the **System** tab, select the
     **Fallback** topic to view it on the authoring canvas; where it looks like
     this:
 
@@ -62,17 +61,19 @@ Studio, and determine how responses are triggered during chat sessions.
     to the *Escalate* topic, which can be used to enable the user to speak to a
     human operator.
 
-4.  Return to the **Topics** page. Then in the **+ Create** menu, select
+5.  Return to the **Topics** page. Then in the **+ Create** menu, select
     **Topic** \> **Create from description with copilot**.
 
-5.  In the **Create a description with copilot** dialog box, name the new topic
-    Ask About Copilot Studio and enter the following text to tell copilot what
+6.  In the **Create a description with copilot** dialog box, name the new topic
+    `Ask About Copilot Studio` and enter the following text to tell copilot what
     the topic should do:
 
     `Let the user ask how to use Copilot Studio, and tell them to visit
     https://learn.microsoft.com/microsoft-copilot-studio.`
 
-6.  After a short wait, a new topic named *Ask About Copilot Studio* should be
+7. Select **Create**.
+
+8.  After a short wait, a new topic named *Ask About Copilot Studio* should be
     created and opened in the authoring canvas, where it should look similar to
     this:
 
@@ -82,11 +83,11 @@ Studio, and determine how responses are triggered during chat sessions.
     and respond with a message telling the user to visit the Copilot Studio
     documentation web page.
 
-7.  Use the **Save** button (at the top right) to save the new topic in your
+9.  Use the **Save** button (at the top right) to save the new topic in your
     copilot.
 
-8.  Use the **Test copilot** button to re-open the **Test copilot** pane, and
-    enter the text How do I use Copilot Studio?. Then view the response, which
+10.  Use the **Test copilot** button to re-open the **Test copilot** pane, and
+    enter the text `How do I use Copilot Studio?`. Then view the response, which
     should be based on the topic you just added (even though the text you
     entered doesn’t match any of the phrases in the trigger exactly - it should
     be close enough semantically to trigger the topic).
