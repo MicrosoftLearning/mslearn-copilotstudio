@@ -1,11 +1,9 @@
 ---
 lab:
-    title: 'Lab: Deploying Azure Resource Manager templates'
-    module: 'Module 1: Exploring Azure Resource Manager'
+    title: 'Lab: Create a copilot'
 ---
 
-# Lab: Deploying Azure Resource Manager templates
-# Student lab manual
+# Create a copilot
 
 ## Lab scenario
 
