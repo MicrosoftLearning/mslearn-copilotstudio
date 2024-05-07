@@ -29,11 +29,13 @@ exercise.
     `https://copilotstudio.microsoft.com/`, signing in with your work or school
     account if prompted.
 
-2.  In the navigation pane on the left, view the **Copilots** page, like this:
+2.  Select **Start a free trial** if prompted.
+
+3.  In the navigation pane on the left, view the **Copilots** page, like this:
 
     ![Screenshot of the Copilots page in Copilot Studio](media/create-copilot/copilots-page.png)
 
-3.  Select the option to create a **New copilot**, and then setup a new copilot
+4.  Select the option to create a **New copilot**, and then setup a new copilot
     with the following settings:
 
     -   **Copilot name**: Power Pilot
@@ -53,15 +55,15 @@ exercise.
 
         -   **Schema name**: powerPilot
 
-4.  Create the copilot and wait for it to be ready. When it has been
+5.  Create the copilot and wait for it to be ready. When it has been
     provisioned, it will look similar to this:
 
     ![Screenshot of a new copilot in Copilot Studio](media/create-copilot/new-copilot.png)
 
-5.  In the **Test copilot** pane, enter the message Hello, and view the
+6.  In the **Test copilot** pane, enter the message Hello, and view the
     response, which should be an appropriate welcome greeting.
 
-6.  Now enter the message How do I use Copilot Studio?, and view the resulting
+7.  Now enter the message How do I use Copilot Studio?, and view the resulting
     response. This time, the response is not quite so helpful. You’ll address
     this in the next procedure.
 
