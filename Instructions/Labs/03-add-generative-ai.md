@@ -22,7 +22,7 @@ such as a web site.
     ![Screenshot of the Overview page in Copilot Studio](media/add-generative-ai/overview-page.png)
 
 2.  In the **Set up your generative AI** section, under **Add a website**, enter
-    https://www.microsoft.com/en-us/power-platform and add it to the copilot.
+    `https://www.microsoft.com/en-us/power-platform` and add it to the copilot.
     After a short time, the **Generative AI** page will be displayed with the
     URL you entered added to the websites for this copilot.
 
@@ -38,8 +38,8 @@ such as a web site.
     The copilot is configured to boost conversational capability with generative
     AI (which may take a few seconds).
 
-5.  Open the **Test copilot** pane and enter the question What are components of
-    Power Platform?.
+5.  Open the **Test copilot** pane and enter the question `What are components of
+    Power Platform?.`
 
 6.  View the response, which should be based on information from the website you
     entered (with references) and end with the phrase *This response was
