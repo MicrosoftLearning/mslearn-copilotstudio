@@ -35,9 +35,7 @@ page.
 
     -   **Welcome message**: `Ask me about Copilot Studio and Power Platform.`
 
-    -   **Conversation starters**:
-
-      `"Hello" "How can I get started with Copilot Studio?" "Tell me about Power Platform"`
+    -   **Conversation starters**: `"Hello" "How can I get started with Copilot Studio?" "Tell me about Power Platform"`
       
 8.  Select **Save** to save the settings, and then copy the link to your copilot
     demo website to the clipboard.
