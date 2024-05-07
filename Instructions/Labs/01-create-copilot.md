@@ -29,7 +29,7 @@ exercise.
     `https://copilotstudio.microsoft.com/`, signing in with your work or school
     account if prompted.
 
-2.  Select **Start a free trial** if prompted.
+2.  Select **Start free trial** if prompted.
 
 3.  In the navigation pane on the left, view the **Copilots** page, like this:
 
