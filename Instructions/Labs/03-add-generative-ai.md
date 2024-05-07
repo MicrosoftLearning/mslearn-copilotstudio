@@ -23,10 +23,11 @@ such as a web site.
 
 2.  In the **Set up your generative AI** section, under **Add a website**, enter
     `https://www.microsoft.com/en-us/power-platform` and add it to the copilot.
+
     After a short time, the **Generative AI** page will be displayed with the
     URL you entered added to the websites for this copilot.
 
-3.  Scroll to the bottom of the **Generative AI** page until you see a box in
+4.  Scroll to the bottom of the **Generative AI** page until you see a box in
     which you can enter **Instructions** to describe how the copilot should
     behave. These instructions are used in the prompt for a generative model to
     influence the responses that are returned. Enter the following instructions:
@@ -34,13 +35,13 @@ such as a web site.
     `Answer the user's question politely, finishing with the phrase "This
     response was generated using AI.".`
 
-4.  Use the **Save** button (at the top left) to save the changes you have made.
+5.  Use the **Save** button (at the top left) to save the changes you have made.
     The copilot is configured to boost conversational capability with generative
     AI (which may take a few seconds).
 
-5.  Open the **Test copilot** pane and enter the question `What are components of
+6.  Open the **Test copilot** pane and enter the question `What are components of
     Power Platform?.`
 
-6.  View the response, which should be based on information from the website you
+7.  View the response, which should be based on information from the website you
     entered (with references) and end with the phrase *This response was
     generated using AI.*.
