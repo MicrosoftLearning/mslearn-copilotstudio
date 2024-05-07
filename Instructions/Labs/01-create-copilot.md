@@ -31,7 +31,7 @@ exercise.
 
 2.  In the navigation pane on the left, view the **Copilots** page, like this:
 
-    ![Screenshot of the Copilots page in Copilot Studio](media/33257bc755ed47f507b2a1e3f6ad49e3.png)
+    ![Screenshot of the Copilots page in Copilot Studio](media/create-copilot/copilots-page.png)
 
 3.  Select the option to create a **New copilot**, and then setup a new copilot
     with the following settings:
@@ -56,7 +56,7 @@ exercise.
 4.  Create the copilot and wait for it to be ready. When it has been
     provisioned, it will look similar to this:
 
-    ![Screenshot of a new copilot in Copilot Studio](media/791efbcba48d2cf012862639857e2d26.png)
+    ![Screenshot of a new copilot in Copilot Studio](media/create-copilot/new-copilot.png)
 
 5.  In the **Test copilot** pane, enter the message Hello, and view the
     response, which should be an appropriate welcome greeting.
