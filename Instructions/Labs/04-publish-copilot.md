@@ -37,9 +37,7 @@ page.
 
     -   **Conversation starters**:
       ```
-      "Hello"
-      "How can I get started with Copilot Studio?"
-      "Tell me about Power Platform"
+      "Hello" "How can I get started with Copilot Studio?" "Tell me about Power Platform"
       ```
       
 8.  Select **Save** to save the settings, and then copy the link to your copilot
