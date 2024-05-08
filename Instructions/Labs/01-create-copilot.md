@@ -263,7 +263,7 @@ time to apply what you’ve learned on your own. Try creating a new copilot for 
 
 -   Questions about expense policies should result in AI-generated
     answers based on the contents of the corporate expenses policy document:
-    - Download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/Allfiles/) file from `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/Allfiles/` and save it locally.
+    - Download the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Expenses_Policy.docx` and save it locally.
     - Upload the file to Copliot Studio to be used for generative AI (after uploading the file, you will need to wait a few minutes while it is indexed)
     - Enable generative answers to boost conversational coverage based on the uploaded document.
 
