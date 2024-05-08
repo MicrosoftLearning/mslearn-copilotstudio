@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Create a copilot'
+    title: 'Create a copilot with Copilot Studio'
 ---
 
 # Create a copilot with Copilot Studio
@@ -186,7 +186,7 @@ such as a web site.
     behave. These instructions are used in the prompt for a generative model to
     influence the responses that are returned. Enter the following instructions:
 
-    `Answer the user's question politely, finishing with the phrase "This
+    `Answer the user's question politely, finishing with the text ". This
     response was generated using AI.".`
 
 5.  Use the **Save** button (at the top left) to save the changes you have made.
@@ -256,18 +256,17 @@ page.
 ## Challenge
 
 Now that you’ve seen how to use Copilot Studio to create a simple copilot, it’s
-time to apply what you’ve learned on your own. Try creating a new copilot that
-answers questions about Microsoft training and credentials.
+time to apply what you’ve learned on your own. Try creating a new copilot for employees who need help submitting an expense claim.
 
--   The copilot can use any language you prefer.
+-   Questions about who to contact for help with expense claims should be answered with a message instructing the
+    user to contact `finance@contoso.com`
 
--   Questions about training should be answered with a message instructing the
-    user to visit `https://learn.microsoft.com/training/`
-
--   Questions about credentials or certification should result in AI-generated
-    answers based on the contents of the
-    `https://learn.microsoft.com/en-us/credentials/` website (or the version of
-    that website in your preferred language at
-    `https://learn.microsoft.com/\<locale-code\>/credentials/`).
+-   Questions about expense policies should result in AI-generated
+    answers based on the contents of the corporate expenses policy document:
+    - Download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/Allfiles/) file from `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/Allfiles/` and save it locally.
+    - Upload the file to Copliot Studio to be used for generative AI (after uploading the file, you will need to wait a few minutes while it is indexed)
+    - Enable generative answers to boost conversational coverage based on the uploaded document.
 
 -   The copilot should be published so that users can test it in a demo website.
+
+Test your copilot with questions such as `Who should I contact wth questions about expense claims?` and `What's the limit for travel expenses?`.
