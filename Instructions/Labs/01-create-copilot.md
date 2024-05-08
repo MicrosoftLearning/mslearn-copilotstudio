@@ -183,6 +183,7 @@ such as a web site or uploaded file.
     URL you entered added to the websites for this copilot.
 
 4. Scroll to the bottom of the **Generative AI** page and ensure that the **Boost conversational coverage with generative answers** feature is enabled (if not, enable it).
+
 5. Find the box below the AI feature options in
     which you can enter **Instructions** to describe how the copilot should
     behave. These instructions are used in the prompt for a generative model to
@@ -243,7 +244,7 @@ page.
 10. In a new browser tab, navigate to the URL you copied to open the demo
     website, which should look similar to this:
 
-    ![Screenshot of the demo website for a copilot](media/publish-copilot/demo-website.png)
+![Screenshot of the demo website for a copilot.](media/publish-copilot/demo-website.png)
 
 11. Enter the message `What is Copilot Studio?` and view the response, which
     should be based on the topic you created.
