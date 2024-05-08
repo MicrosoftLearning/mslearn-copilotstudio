@@ -259,7 +259,9 @@ page.
 ## Challenge
 
 Now that you’ve seen how to use Copilot Studio to create a simple copilot, it’s
-time to apply what you’ve learned on your own. Try creating a new copilot for employees who need help submitting an expense claim.
+time to apply what you’ve learned on your own. Try creating a copilot for employees who need help submitting an expense claim.
+
+- Create a new copilot. Do not include lesson topics.
 
 - Questions about who to contact for help with expense claims should be answered with a message instructing the
     user to contact `finance@contoso.com`
