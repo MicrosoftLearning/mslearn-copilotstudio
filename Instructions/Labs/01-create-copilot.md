@@ -190,7 +190,7 @@ such as a web site or uploaded file.
     influence the responses that are returned. Enter the following instructions:
 
     `Answer the user's question politely, finishing with the text ". This
-    response was generated using AI.".`
+    response was generated using AI."`
 
 6. Use the **Save** button (at the top left) to save the changes you have made.
     The copilot is configured to boost conversational capability with generative
@@ -215,7 +215,7 @@ page.
     **Security**.
 
 2. On the **Security** page, select **Authentication**. Then select the option
-    for **No authentication** and save the changes to the configuration
+    for **No authentication** and **Save** the changes to the configuration
     (confirming that you want to enable access to the copilot for anyone).
 
 3. Close the **Authentication** pane. Then, in the navigation pane on the left,
