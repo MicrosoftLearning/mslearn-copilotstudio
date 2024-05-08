@@ -244,7 +244,7 @@ page.
 10. In a new browser tab, navigate to the URL you copied to open the demo
     website, which should look similar to this:
 
-![Screenshot of the demo website for a copilot.](media/publish-copilot/demo-website.png)
+    ![Screenshot of the demo website for a copilot.](media/publish-copilot/demo-website.png)
 
 11. Enter the message `What is Copilot Studio?` and view the response, which
     should be based on the topic you created.
