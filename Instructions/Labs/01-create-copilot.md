@@ -38,7 +38,7 @@ exercise.
 
         -   **Copilot icon**: *Choose any icon*
 
-        -   **Lesson topics**: Unselected *(not including lesson topics will
+        -   **Lesson topics**: <u>Un</u>selected *(not including lesson topics will
             provide a simple starting point for your copilot)*
 
         -   **Solution**: Common Data Services Default Solution
