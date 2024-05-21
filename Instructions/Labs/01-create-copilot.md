@@ -18,8 +18,8 @@ initially have very limited capabilities, which you’ll extend later in the
 exercise.
 
 1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at
-    `https://copilotstudio.microsoft.com/`, signing in with your work or school
-    account if prompted.
+`https://copilotstudio.microsoft.com/`, signing in with your work or school
+account if prompted.
 
     The Copilot Studio home page lists any copilots you have recently worked on, and also may include *Copilot for Microsoft 365*; which you can extend using Copilot Studio.
 
@@ -29,7 +29,7 @@ exercise.
 
     ![Screenshot of the Create page in Copilot Studio.](media/create-copilot.png)
 
-    You can ceate a copilot or a copilot action, or you can sart with a template. In this exercise, you'll creaete a new copilot.
+    You can create a copilot or a copilot action, or you can start with a template. In this exercise, you'll creaete a new copilot.
 
 1. Select the option to create a **New copilot**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the copilot you want to build - essentially, you can use a copilot to create a copilot!
 
