@@ -224,7 +224,7 @@ Now that you’ve seen how to use Copilot Studio to create a simple copilot, it�
 time to apply what you’ve learned on your own. Try creating a copilot that provides answers to questions about Microsoft Copilot!
 
 - Create a new copilot.
-- Use the `https://www.microsoft.com/en-us/microsoft-copilot/` website as a knowldge source.
+- Use the `https://www.microsoft.com/en-us/microsoft-copilot/` website as a knowledge source.
 - Do not include lesson topics.
 - Publish the copilot so that users can test it in a demo website.
 
