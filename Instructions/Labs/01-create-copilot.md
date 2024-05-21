@@ -21,187 +21,156 @@ exercise.
     `https://copilotstudio.microsoft.com/`, signing in with your work or school
     account if prompted.
 
-2. In the navigation pane on the left, select **Copilots** to view the Copilots page, like this:
+    The Copilot Studio home page lists any copilots you have recently worked on, and also may include *Copilot for Microsoft 365*; which you can extend using Copilot Studio.
 
-    ![Screenshot of the Copilots page in Copilot Studio](media/create-copilot/copilots-page.png)
+    ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
 
-3. Select the option to create a **New copilot**, and then setup a new copilot
-    with the following settings:
+1. In the navigation pane on the left, select **Create** to view a page on which you can create a new copilot, like this:
 
-    -   **Copilot name**: `Power Pilot`
+    ![Screenshot of the Create page in Copilot Studio.](media/create-copilot.png)
 
-    -   **Language**: English (United States) (en-US)
+    You can ceate a copilot or a copilot action, or you can sart with a template. In this exercise, you'll creaete a new copilot.
 
-    -   **Website**: *Leave this blank (for now)*
+1. Select the option to create a **New copilot**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the copilot you want to build - essentially, you can use a copilot to create a copilot!
 
-    -   **Advanced options**:
+    >**Tip**: You can use the **Skip tp Configure** option to skip the chat-based copilot creation experience. In this exercise, we'll use the chat interface.
 
-        -   **Copilot icon**: *Choose any icon*
+1. Enter the following prompt:
 
-        -   **Lesson topics**: <u>Un</u>selected *(not including lesson topics will
-            provide a simple starting point for your copilot)*
+    ```prompt
+    Create a copilot to help employees with expense claims.
+    ```
 
-        -   **Solution**: Common Data Services Default Solution
+1. Review the response from Copilot Studio. The chat pane should look similar to the following:
 
-        -   **Schema name**: powerPilot
+    ![Screenshot of the chat conversation to create a new copilot.](media/create-copilot-chat.png)
 
-4. Create the copilot and wait for it to be ready. When it has been
-    provisioned, it will look similar to this:
-
-    ![Screenshot of a new copilot in Copilot Studio](media/create-copilot/new-copilot.png)
-
-5. In the navigation pane on the left, select **Test your copilot**.
-
-6. In the **Test copilot** pane, enter the message `Hello`, and view the
-    response, which should be an appropriate welcome greeting.
-
-7. Now enter the message `How do I use Copilot Studio?`, and view the resulting
-    response. This time, the response is not quite so helpful. You’ll address
-    this in the next procedure.
-
-8. Close the Test copilot pane.
-
-## Add a topic to your copilot
-
-The conversational capabilities of your copilot are limited by the *topics* it
-understands. Topics are the basic building blocks of a copilot in Copilot
-Studio, and determine how responses are triggered during chat sessions.
-
-1. In the navigation pane on the left, select the **Topics** page to see the
-    topics defined in your copilot.
-
-    ![Screenshot of the Topics page in Copilot Studio](media/add-topic/topics-page.png)
+1. Continue the conversation to define your copilot, which should:
+    - Use a friendly, professional tone.
+    - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your copilot later).
+    - Not provide any tax advice.
     
-    The copilot has a few standard conversational topics on the **Topics** tab,
-    and some additional system topics on the **System** tab. These topics are
-    triggered by common phrases entered by the user or by specific events, such
-    as errors or the intent of a user-entered phrase being unknown.
+    When you're done, a preview of the chat interface for your copilot is displayed beside the conversation used to create it. An apprppriate name for th copilot has also been generated.
 
-3. On the **Topics** tab, select the **Greeting** topic to view it on the
-    *authoring canvas*, which is a visual designer for creating and editing
-    topics and looks similar to this:
+    ![Screenshot of a new copilot prebiew in Copilot Studio.](media/copilot-preview.png)
 
-    ![Screenshot of the authoring canvas for the Greeting topic in Copilot Studio](media/add-topic/greeting-topic.png)
+1. When you're ready, select **Create** at the top right to create your copilot. After a short while, it will be displayed like this (you can unpin the pane on the left to see it more clearly):
+
+    ![Screenshot of a new copilot in Copilot Studio.](media/new-copilot.png)
+
+1. In the **Test your copilot** pane, enter the following prompt:
+
+    ```prompt
+    Hello
+    ```
+
+    Review the response, which should be an appropriate message.
+
+1. Now try the following prompt:
+
+    ```prompt
+    Who should I contact about submitting an expense claim?
+    ```
+
+    This time the response may be approriate, but it's also likely to be fairly generic. In a real organization, you'd want the copilot to provide an email address of phone number for the user to contact.
+
+1. Let's try another prompt:
+
+    ```prompt
+    What's the expense limit for a hotel stay?
+    ```
+
+    Again, the response may be approriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company'e expense policies.
+
+1. Close the **Test your copilot** pane.
+
+## Manage *topics* in your copilot
+
+You can use *topics* to provide explicit responses to *triggers*, such as common questions or requests that you expect your users to enter.
+
+1. In the page for your copilot, select the **Topics** tab to see the topics defined in your copilot.
+
+    ![Screenshot of the Topics page in Copilot Studio.](media/default-topics.png)
+    
+    The copilot has a few ***Custom*** topics that are triggered by input from the user, and some additional ***System*** topics that are triggered by specific events, such as errors or unexpected input. You can filter the topics by category or use the **All** filter to see them all.
+
+1. Select the **Greeting** custom topic to view it on the *authoring canvas*, which is a visual designer for creating and editing topics and looks similar to this:
+
+    ![Screenshot of the authoring canvas for the Greeting topic in Copilot Studio](media/greeting-topic.png)
 
     The *Greeting* topic is triggered by an input in which one of the following
     phrases is present:
 
-    -   *Good afternoon*
+    - *Good afternoon*
+    - *Good morning*
+    - *Hello*
+    - *Hey*
+    - *Hi*
 
-    -   *Good morning*
+    The response to this trigger is to return a message to the user saying
+    *Hello. How can I help you today?*. The inclusion of this topic in the
+    copilot explains the response you saw previously when
+    testing it.
 
-    -   *Hello*
-
-    -   *Hey*
-
-    -   *Hi*
-
-        The response to this trigger is to return a message to the user saying
-        *Hello. How can I help you today?*. The inclusion of this topic in the
-        copilot in the copilot explains the response you saw previously when
-        testing it.
-
-4. Return to the **Topics** page, and on the **System** tab, select the
-    **Fallback** topic to view it on the authoring canvas; where it looks like
-    this:
-
-    ![Screenshot of the authoring canvas for the Fallback topic in Copilot Studio](media/add-topic/fallback-topic.png)
-
-    The *Fallback* topic is triggered when the user enters a phrase for which
-    the intent is unknown (there’s no topic with a trigger that understands what
-    the user is asking). This topic has a more complex flow than the *Greeting*
-    topic: It starts by checking a condition to see if the fallback count (the
-    number of times the user has attempted to ask the question) is less than 3,
-    and if so it reponds with the message *I’m sorry. I’m not sure how to help
-    with that. Can you try rephrasing?* (which you may remember as the reponse
-    when you asked how to use Copilot Studio). If the intent is still not
-    understood on the third attempt, the topic redirects the conversation flow
-    to the *Escalate* topic, which can be used to enable the user to speak to a
-    human operator.
-
-5. Return to the **Topics** page. Then in the **+ Create** menu, select
+1. Return to the **Topics** page. Then in the **+ Add a topic** menu, select
     **Topic** \> **Create from description with copilot**.
 
-6. In the **Create a description with copilot** dialog box, name the new topic
-    `Ask About Copilot Studio` and enter the following text to tell copilot what
-    the topic should do:
+1. In the **Create a description with copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell copilot what the topic should do:
 
-    `Let the user ask how to use Copilot Studio, and tell them to visit
-    https://learn.microsoft.com/microsoft-copilot-studio.`
+    ```prompt
+    When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.
+    ```
 
-7. Select **Create**.
+1. Select **Create**.
 
-8. After a short wait, a new topic named *Ask About Copilot Studio* should be
-    created and opened in the authoring canvas, where it should look similar to
-    this:
+1. After a short wait, a new topic named *Ask about expenses contact* should be created and opened in the authoring canvas, where it should look similar to this:
 
-    ![Screenshot of the copilot-generated Ask About Copilot Studio topic](media/add-topic/copilot-studio-topic.png)
+    ![Screenshot of the copilot-generated topic](media/copilot-studio-topic.png)
 
-    The new topic should be triggered by phrases that ask about Copilot Studio,
-    and respond with a message telling the user to visit the Copilot Studio
-    documentation web page.
+    The new topic should be triggered by phrases that ask about a contact for expenses,
+    and respond with a message telling the user to send an email to the appropriate address.
 
-9. Use the **Save** button (at the top right) to save the new topic in your
-    copilot.
+1. Use the **Save** button (at the top right) to save the new topic in your
+copilot.
 
-10. Use the **Test copilot** button to re-open the **Test copilot** pane, and
-    enter the text `How do I use Copilot Studio?`. Then view the response, which
-    should be based on the topic you just added (even though the text you
-    entered doesn’t match any of the phrases in the trigger exactly - it should
-    be close enough semantically to trigger the topic).
+1. Return to the **Topics** page, and note that there are three custom topics with names that begin ***Lesson ...***. These are sample topics designed to help you learn how to create topics of your own. We're not going to use them in this exercise, so one-by-one, use the **More options** (**...**) menu that appears to the right of each ***Lesson ...*** topic name to **Delete** them.
 
-    > **Note**
-    > It’s worth pausing for a second here to think about what you’ve
-    just done. You’ve created a copilot in Copilot Studio, in which you used a
-    copilot to automatically add a topic that enables a user to ask about
-    Copilot Studio! Mind-blowing stuff!
+1. Open the **Test** pane, and enter the following prompt:
 
-## Add Generative AI support
+    ```prompt
+    Who should I contact about submitting an expense claim?
+    ```
+
+    View the response, which should be based on the topic you just added (even though the text you entered doesn’t match any of the phrases in the trigger exactly - it should be close enough semantically to trigger the topic).
+
+## Add a knowledge source for Generative AI responses
 
 You can add topics for all of the inputs that you expect a user to enter; but
-you can’t realistically expect to know every question that will be asked. The
-*Fallback* topic at least ensures that the user is informed that their question
-wasn’t understood; but it would be better if the copilot had access to some
-knowledge that isn’t “hard-coded” in its topic definitions, and which could be
-used to generate appropriate responses to questions.
+you can’t realistically expect to anticipate every question that will be asked. Currently, your copilot uses a *Conversation boosting* topic to generate responses from a language model, but this results in generic responses. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
 
-To support this scenario, you can enable *Generative answers*; which uses a
-generative AI model to try to answer a user question based on a source of data,
-such as a web site or uploaded file.
+1. Open a new browser tab and download the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Expenses_Policy.docx`, saving it locally. This document contains details of the expenses policy for the fictional Contoso corporation.
 
-1. In the navigation pane on the left, select the **Overview** page. Once
-    again, you can close the **Test copilot** pane to see the page more easily:
+1. Return to the browser tab for Copilot Studio, and close the **Test your copilot** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your copilot (currently there should be none).
 
-    ![Screenshot of the Overview page in Copilot Studio](media/add-generative-ai/overview-page.png)
+    ![Screenshot of the Knowledge page in Copilot Studio.](media/knowledge-page.png)
 
-    Note that you can specify a website or upload a file to provide a data source for generative AI.
+1. Select **+ Add knowledge**, and note the multiple types of knowledge source that you can add to your copilot.
 
-2. In the **Set up your generative AI** section, under **Add a website**, enter
-    `https://www.microsoft.com/en-us/power-platform` and add it to the copilot.
+    ![Screenshot of available Knowledge sources in Copilot Studio.](media/knowledge-sources.png)
 
-    After a short time, the **Generative AI** page will be displayed with the
-    URL you entered added to the websites for this copilot.
+1. Select **Files**, and upload the expense policy document you downloaded previously.
 
-4. Scroll to the bottom of the **Generative AI** page and ensure that the **Boost conversational coverage with generative answers** feature is enabled (if not, enable it).
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 20 minutes (or longer). Now might be a good time to take a coffee break!
 
-5. Find the box below the AI feature options in
-    which you can enter **Instructions** to describe how the copilot should
-    behave. These instructions are used in the prompt for a generative model to
-    influence the responses that are returned. Enter the following instructions:
+1. When the file is ready, expand the **Test** pane and enter the following prompt:
 
-    `Answer the user's question politely, finishing with the text ". This
-    response was generated using AI."`
+    ```prompt
+    What's the expense limit for a hotel stay?
+    ```
 
-6. Use the **Save** button (at the top left) to save the changes you have made.
-    The copilot is configured to boost conversational capability with generative
-    AI (which may take a few seconds).
+    The reponse should be based on the information in the knowledge source you uploaded, and include a citation reference.
 
-7.  Open the **Test copilot** pane and enter the question `What are components of
-    Power Platform?.`
-
-8. View the response, which should be based on information from the website you
-    entered (with references) and end with the phrase *This response was
-    generated using AI.*.
+    ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
 
 ## Publish your copilot
 
@@ -211,70 +180,52 @@ of authentication you want to use to restrict access to it. In this case, you’
 enable access for anyone and then publish the copilot for use in a demo web
 page.
 
-1. In the navigation pane on the left, expand **Settings** and select
-    **Security**.
+1. Hide the **Test your copilot** pane and then select **Settings** at the top of the page.
 
-2. On the **Security** page, select **Authentication**. Then select the option
-    for **No authentication** and **Save** the changes to the configuration
-    (confirming that you want to enable access to the copilot for anyone).
+1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the copilot for anyone).
 
-3. Close the **Authentication** pane. Then, in the navigation pane on the left,
-    select **Publish**.
+1. Close the **Authentication** pane. Then, at the top of the page, select **Publish**.
 
-4. On the **Publish** page, select **Publish**, and publish your copilot.
-    Publishing will take a minute or so.
+1. On the **Publish** page, select **Publish**, and publish your copilot.
+Publishing will take a minute or so.
 
-5. After your copilot has been published, in the navigation pane on the left,
-    in the **Settings** section, select **Channels**.
+1. After your copilot has been published, select the **Channels** tab to see the list of channels where you can deploy your copilot.
 
-6. Review the list of channels through which you can deliver your copilot, and
-    then select **Demo website**. This is an appropriate channel for users to
-    test your copilot.
+    ![Screenshot of the Channels page in Copilot Studio.](media/channels-page.png)
 
-7. In the **Demo website** pane, enter the following settings:
+1. Select the **Demo website** channel. This is an appropriate channel for users to
+test your copilot.
 
-    - **Welcome message**: `Ask me about Copilot Studio and Power Platform.`
+1. In the **Demo website** pane, enter the following settings:
+    - **Welcome message**: `Ask me about Expense claims`
+    - **Conversation starters**:
+    
+        ```prompt
+        "Hello"
+        "Who should I contact with expense enquiries?"
+        "What are the expense limits for flights?"`
+        ```
 
-    - **Conversation starters**: `"Hello" "How can I get started with Copilot Studio?" "Tell me about Power Platform"`
+1. Select **Save** to save the settings. Then **Copy** the link to your copilot demo website to the clipboard.
 
-8. Select **Save** to save the settings
+1. In a new browser tab, navigate to the URL you copied to open the demo
+website, which should look similar to this:
 
-9. **Copy** the link to your copilot demo website to the clipboard.
+    ![Screenshot of the demo website for a copilot.](media/demo-website.png)
 
-10. In a new browser tab, navigate to the URL you copied to open the demo
-    website, which should look similar to this:
-
-    ![Screenshot of the demo website for a copilot.](media/publish-copilot/demo-website.png)
-
-11. Enter the message `What is Copilot Studio?` and view the response, which
-    should be based on the topic you created.
-
-12. Enter the message `What is Power Platform?` and view the response, which
-    should be generated by AI based on the Power Platform website.
-
-13. Try a few more questions and view the responses from your copilot. It will
-    have limited functionality, but should be able to provide relevant answers
-    to questions about using Copilot Studio or Power Platform.
+1. Enter the message `What are the expense limits for flights?` and view the response.
+1. Try a few more questions and view the responses from your copilot. It will
+have limited functionality, but should be able to provide relevant answers
+to questions about expense claims.
 
 ## Challenge
 
 Now that you’ve seen how to use Copilot Studio to create a simple copilot, it’s
-time to apply what you’ve learned on your own. Try creating a copilot for employees who need help submitting an expense claim.
+time to apply what you’ve learned on your own. Try creating a copilot that provides answers to questions about Microsoft Copilot!
 
-- Create a new copilot. Do not include lesson topics.
-
-- Questions about who to contact for help with expense claims should be answered with a message instructing the
-    user to contact `finance@contoso.com`
-
-- Questions about expense policies should result in AI-generated
-    answers based on the contents of the corporate expenses policy document:
-    - Download the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Expenses_Policy.docx` and save it locally.
-    - Upload the file to Copliot Studio to be used for generative AI (after uploading the file, you will need to wait while it is indexed; which may take some time).
-    - Enable generative answers to boost conversational coverage based on the uploaded document.
-    - Add instructions so that generative AI responses include text stating that the response was generated by AI.
-
+- Create a new copilot.
+- Use the `https://www.microsoft.com/en-us/microsoft-copilot/` website as a knowldge source.
+- Do not include lesson topics.
 - Publish the copilot so that users can test it in a demo website.
-
-Test your copilot with questions such as `Who should I contact wth questions about expense claims?` and `What's the limit for travel expenses?`.
 
 > **Tip**: If you need help, consult the [Copilot Studio documentation](https://learn.microsoft.com/microsoft-copilot-studio/) at `https://learn.microsoft.com/microsoft-copilot-studio/`.
