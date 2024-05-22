@@ -5,8 +5,7 @@ lab:
 
 # Create a copilot with Copilot Studio
 
-In this exercise, you’ll use Copilot Studio to create a simple copilot that can
-answer employee questions about expense policies in a fictional corporation.
+In this exercise, you’ll use Copilot Studio to create a simple copilot that can answer employee questions about expense policies in a fictional corporation.
 
 This exercise will take approximately 60 minutes to complete.
 
@@ -14,9 +13,7 @@ This exercise will take approximately 60 minutes to complete.
 
 ## Create a copilot
 
-Let’s start by using Copilot Studio to create a new copilot. The copilot will
-initially have very limited capabilities, which you’ll extend later in the
-exercise.
+Let’s start by using Copilot Studio to create a new copilot. The copilot will initially have very limited capabilities, which you’ll extend later in the exercise.
 
 1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at
 `https://copilotstudio.microsoft.com/`, signing in with your work or school
@@ -49,7 +46,7 @@ account if prompted.
 1. Continue the conversation to define your copilot, which should:
     - Use a friendly, professional tone.
     - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your copilot later).
-    - Not provide any tax advice.
+    - Avoid providing any tax advice.
     
     When you're done, a preview of the chat interface for your copilot is displayed beside the conversation used to create it. An appropriate name for the copilot has also been generated.
 
@@ -171,6 +168,8 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
 
+    > **Note**: The file you uploaded is used to provide knowledge to the copilot when the *Conversational boosting* topic is triggered. If no relevant answer is found in this knowledge source, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
+
 ## Publish your copilot
 
 Now that you have a working copilot, you can publish it for people to use. The available channels through which you can deliver your copilot depend on the type of authentication you want to use to restrict access to it. In this case, you’ll enable access for anyone and then publish the copilot for use in a demo web page.
@@ -188,8 +187,7 @@ Publishing will take a minute or so.
 
     ![Screenshot of the Channels page in Copilot Studio.](media/channels-page.png)
 
-1. Select the **Demo website** channel. This is an appropriate channel for users to
-test your copilot.
+1. Select the **Demo website** channel. This is an appropriate channel for users to test your copilot.
 
 1. In the **Demo website** pane, enter the following settings:
     - **Welcome message**: `Ask me about Expense claims`
@@ -203,15 +201,12 @@ test your copilot.
 
 1. Select **Save** to save the settings. Then **Copy** the link to your copilot demo website to the clipboard.
 
-1. In a new browser tab, navigate to the URL you copied to open the demo
-website, which should look similar to this:
+1. In a new browser tab, navigate to the URL you copied to open the demo website, which should look similar to this:
 
     ![Screenshot of the demo website for a copilot.](media/demo-website.png)
 
 1. Enter the message `What are the expense limits for flights?` and view the response.
-1. Try a few more questions and view the responses from your copilot. It will
-have limited functionality, but should be able to provide relevant answers
-to questions about expense claims.
+1. Try a few more questions and view the responses from your copilot. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims.
 
 ## Challenge
 
