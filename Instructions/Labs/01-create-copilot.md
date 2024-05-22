@@ -50,7 +50,7 @@ account if prompted.
     - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your copilot later).
     - Not provide any tax advice.
     
-    When you're done, a preview of the chat interface for your copilot is displayed beside the conversation used to create it. An apprppriate name for th copilot has also been generated.
+    When you're done, a preview of the chat interface for your copilot is displayed beside the conversation used to create it. An appropriate name for the copilot has also been generated.
 
     ![Screenshot of a new copilot prebiew in Copilot Studio.](media/copilot-preview.png)
 
@@ -107,12 +107,14 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     - *Hey*
     - *Hi*
 
-    The response to this trigger is to return a message to the user saying
-    *Hello. How can I help you today?*. The inclusion of this topic in the
-    copilot explains the response you saw previously when
-    testing it.
+    The response to this trigger is to return a message to the user saying *Hello. How can I help you today?*. The inclusion of this topic in the copilot explains the response you saw previously when testing it.
 
-1. Return to the **Topics** page. Then in the **+ Add a topic** menu, select
+1. Return to the **Topics** page, and view the **System** topics. Note that these include topics for common events in a conversation. In particular, note the following system topics:
+    - **Conversational boosting**: This topic is triggered when the user submits a message for which the copilot can't identify a corresponding topic (the user's *intent* is unknown). The topic then attempts to respond to the user's message by using generative AI.
+    - **Fallback**: This topic is a "fail-safe" topic that responds when the intent is unknown and an appropriate conversational AI response can't be generated. The fallback topic includes logic to enable the user to try again up to three times before gracefully ending the conversation, often by escalating to a human operator.
+1. Return to the **Topics** page, and note that there are three **Custom** topics with names that begin ***Lesson ...***. These are sample topics designed to help you learn how to create topics of your own. We're not going to use them in this exercise, so one-by-one, use the **More options** (**...**) menu that appears to the right of each ***Lesson ...*** topic name to **Delete** them.
+
+1. In the **Topics** page, in the **+ Add a topic** menu, select
     **Topic** \> **Create from description with copilot**.
 
 1. In the **Create a description with copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell copilot what the topic should do:
@@ -127,13 +129,10 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
 
     ![Screenshot of the copilot-generated topic](media/copilot-studio-topic.png)
 
-    The new topic should be triggered by phrases that ask about a contact for expenses,
-    and respond with a message telling the user to send an email to the appropriate address.
+    The new topic should be triggered by phrases that ask about a contact for expenses, and respond with a message telling the user to send an email to the appropriate address.
 
 1. Use the **Save** button (at the top right) to save the new topic in your
 copilot.
-
-1. Return to the **Topics** page, and note that there are three custom topics with names that begin ***Lesson ...***. These are sample topics designed to help you learn how to create topics of your own. We're not going to use them in this exercise, so one-by-one, use the **More options** (**...**) menu that appears to the right of each ***Lesson ...*** topic name to **Delete** them.
 
 1. Open the **Test** pane, and enter the following prompt:
 
@@ -147,9 +146,7 @@ copilot.
 
 You can add topics for all of the inputs that you expect a user to enter; but you can’t realistically expect to anticipate every question that will be asked. Currently, your copilot uses a *Conversation boosting* topic to generate responses from a language model, but this results in generic responses. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
 
-1. Open a new browser tab and download the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx`, saving it locally. This document contains details of the expenses policy for the fictional Contoso corporation.
-
-1. Return to the browser tab for Copilot Studio, and close the **Test your copilot** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your copilot (currently there should be none).
+1. In Copilot Studio, and close the **Test your copilot** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your copilot (currently there should be none).
 
     ![Screenshot of the Knowledge page in Copilot Studio.](media/knowledge-page.png)
 
@@ -157,11 +154,15 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of available Knowledge sources in Copilot Studio.](media/knowledge-sources.png)
 
-1. Select **Files**, and upload the expense policy document you downloaded previously.
+1. Select **Public websites**, and add a knowledge store based on the following website, which contains an expenses policy document:
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 20 minutes (or longer). Now might be a good time to take a coffee break!
+    ```
+    https://microsoftlearning.github.io/mslearn-copilotstudio/expenses
+    ```
 
-1. When the file is ready, expand the **Test** pane and enter the following prompt:
+    > **Note**: The expenses policy is a [Microsoft Word document](https://microsoftlearning.github.io/mslearn-copilotstudio/expenses/Expenses_Policy.docx). In a real scenario, it's unlikely a company's expenses policy would be stored in a public website, so you'd probably either upload the document using the **Files** knowledge source type or refeerence an internal SharePoint store or other data store. However, for the purposes of this exercise, using a public website is more expedient and avoids the need to wait for an uploaded file to be indexed.
+
+1. When the knowledge source is ready, expand the **Test** pane and enter the following prompt:
 
     ```prompt
     What's the expense limit for a hotel stay?
