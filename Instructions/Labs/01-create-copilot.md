@@ -6,8 +6,7 @@ lab:
 # Create a copilot with Copilot Studio
 
 In this exercise, you’ll use Copilot Studio to create a simple copilot that can
-answer questions based on topics that you define, and use generative AI to
-generate answers based on information in a web site.
+answer employee questions about expense policies in a fictional corporation.
 
 This exercise will take approximately 60 minutes to complete.
 
