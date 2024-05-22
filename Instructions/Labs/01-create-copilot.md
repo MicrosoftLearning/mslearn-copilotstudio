@@ -7,7 +7,7 @@ lab:
 
 In this exercise, you’ll use Copilot Studio to create a simple copilot that can answer employee questions about expense policies in a fictional corporation.
 
-This exercise will take approximately 60 minutes to complete.
+This exercise will take approximately *45** minutes to complete.
 
 > **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
