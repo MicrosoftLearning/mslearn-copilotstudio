@@ -158,7 +158,11 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.txt) at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.txt` in another browser tab!
 
-1. When the file is ready, expand the **Test** pane and enter the following prompt:
+1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
+
+    > **Note**: If no relevant answer is found in the custom knowledge sources you have added, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
+
+1. Expand the **Test** pane and enter the following prompt:
 
     ```prompt
     What's the expense limit for a hotel stay?
@@ -168,7 +172,10 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
 
-    > **Note**: The file you uploaded is used to provide knowledge to the copilot when the *Conversational boosting* topic is triggered. If no relevant answer is found in this knowledge source, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
+1. Try asking some follow-up questions, such as:
+    - `What about flights?`
+    - `What guidelines are there for entertainment expenses?`
+    - `How do I submit a claim?`
 
 ## Publish your copilot
 
@@ -205,7 +212,7 @@ Publishing will take a minute or so.
 
     ![Screenshot of the demo website for a copilot.](media/demo-website.png)
 
-1. Enter the message `What are the expense limits for flights?` and view the response.
+1. Enter the message `What are the expense limits for meals?` and view the response.
 1. Try a few more questions and view the responses from your copilot. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims.
 
 ## Challenge
