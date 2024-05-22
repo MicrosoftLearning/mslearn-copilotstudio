@@ -144,7 +144,7 @@ copilot.
 
 ## Add a knowledge source for Generative AI responses
 
-You can add topics for all of the inputs that you expect a user to enter; but you can’t realistically expect to anticipate every question that will be asked. Currently, your copilot uses a *Conversation boosting* topic to generate responses from a language model, but this results in generic responses. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
+You can add topics for all of the inputs that you expect a user to enter; but you can’t realistically expect to anticipate every question that will be asked. Currently, your copilot uses a *Conversation boosting* topic to generate AI responses from a language model, but this results in generic answers. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
 
 1. Open a new browser tab and download the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx`, saving it locally. This document contains details of the expenses policy for the fictional Contoso corporation.
 
@@ -172,11 +172,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 ## Publish your copilot
 
-Now that you have a working copilot, you can publish it for people to use. The
-available channels through which you can deliver your copilot depend on the type
-of authentication you want to use to restrict access to it. In this case, you’ll
-enable access for anyone and then publish the copilot for use in a demo web
-page.
+Now that you have a working copilot, you can publish it for people to use. The available channels through which you can deliver your copilot depend on the type of authentication you want to use to restrict access to it. In this case, you’ll enable access for anyone and then publish the copilot for use in a demo web page.
 
 1. Hide the **Test your copilot** pane and then select **Settings** at the top of the page.
 
