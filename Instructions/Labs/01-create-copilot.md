@@ -9,7 +9,7 @@ In this exercise, you’ll use Copilot Studio to create a simple copilot that ca
 answer questions based on topics that you define, and use generative AI to
 generate answers based on information in a web site.
 
-This exercise will take approximately 45 minutes to complete.
+This exercise will take approximately 60 minutes to complete.
 
 ## Create a copilot
 
