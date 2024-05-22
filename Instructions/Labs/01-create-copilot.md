@@ -146,7 +146,9 @@ copilot.
 
 You can add topics for all of the inputs that you expect a user to enter; but you can’t realistically expect to anticipate every question that will be asked. Currently, your copilot uses a *Conversation boosting* topic to generate responses from a language model, but this results in generic responses. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
 
-1. In Copilot Studio, and close the **Test your copilot** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your copilot (currently there should be none).
+1. Open a new browser tab and download the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx`, saving it locally. This document contains details of the expenses policy for the fictional Contoso corporation.
+
+1. Return to the browser tab for Copilot Studio, and close the **Test your copilot** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your copilot (currently there should be none).
 
     ![Screenshot of the Knowledge page in Copilot Studio.](media/knowledge-page.png)
 
@@ -154,15 +156,11 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of available Knowledge sources in Copilot Studio.](media/knowledge-sources.png)
 
-1. Select **Public websites**, and add a knowledge store based on the following website, which contains an expenses policy document:
+1. Select **Files**, and upload the expense policy document you downloaded previously.
 
-    ```
-    https://microsoftlearning.github.io/mslearn-copilotstudio/expenses
-    ```
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 20 minutes (or longer). Now might be a good time to take a coffee break!
 
-    > **Note**: The expenses policy is a [Microsoft Word document](https://microsoftlearning.github.io/mslearn-copilotstudio/expenses/Expenses_Policy.docx). In a real scenario, it's unlikely a company's expenses policy would be stored in a public website, so you'd probably either upload the document using the **Files** knowledge source type or refeerence an internal SharePoint store or other data store. However, for the purposes of this exercise, using a public website is more expedient and avoids the need to wait for an uploaded file to be indexed.
-
-1. When the knowledge source is ready, expand the **Test** pane and enter the following prompt:
+1. When the file is ready, expand the **Test** pane and enter the following prompt:
 
     ```prompt
     What's the expense limit for a hotel stay?
