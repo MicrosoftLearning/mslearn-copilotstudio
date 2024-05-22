@@ -10,6 +10,8 @@ answer employee questions about expense policies in a fictional corporation.
 
 This exercise will take approximately 60 minutes to complete.
 
+> **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
+
 ## Create a copilot
 
 Let’s start by using Copilot Studio to create a new copilot. The copilot will
