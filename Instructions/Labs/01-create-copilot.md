@@ -181,20 +181,16 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 Now that you have a working copilot, you can publish it for people to use. The available channels through which you can deliver your copilot depend on the type of authentication you want to use to restrict access to it. In this case, you’ll enable access for anyone and then publish the copilot for use in a demo web page.
 
-1. Hide the **Test your copilot** pane and then select **Settings** at the top of the page.
-
+1. Hide the **Test your copilot** pane. Then, at the top of the page, select the **Channels** tab and review the channels to which you can deploy your copilot. The available channels depend on the authentication settings for your copilot.
+1. Select **Settings** at the top of the page.
 1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the copilot for anyone).
-
-1. Close the **Authentication** pane. Then, at the top of the page, select the **Channels** tab.
-
-1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**, and publish your copilot. Publishing will take a minute or so.
-
-1. After your copilot has been published, view the **Channels** page to see the list of channels where you can deploy your copilot.
+1. Close the **Authentication** pane. Then, at the top of the page, select **Publish**.
+1. On the **Publish** page, select **Publish**, and publish your copilot. Publishing will take a minute or so.
+1. After your copilot has been published, verify the **Publish status** on the **Channels** page.
 
     ![Screenshot of the Channels page in Copilot Studio.](media/channels-page.png)
 
 1. Select the **Demo website** channel. This is an appropriate channel for users to test your copilot.
-
 1. In the **Demo website** pane, enter the following settings:
     - **Welcome message**: `Ask me about Expense claims`
     - **Conversation starters**:
@@ -206,7 +202,6 @@ Now that you have a working copilot, you can publish it for people to use. The a
         ```
 
 1. Select **Save** to save the settings. Then **Copy** the link to your copilot demo website to the clipboard.
-
 1. In a new browser tab, navigate to the URL you copied to open the demo website, which should look similar to this:
 
     ![Screenshot of the demo website for a copilot.](media/demo-website.png)
