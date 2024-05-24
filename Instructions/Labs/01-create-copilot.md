@@ -27,7 +27,7 @@ account if prompted.
 
     ![Screenshot of the Create page in Copilot Studio.](media/create-copilot.png)
 
-    You can create a copilot or a copilot action, or you can start with a template. In this exercise, you'll creaete a new copilot.
+    You can create a copilot or a copilot action, or you can start with a template. In this exercise, you'll create a new copilot.
 
 1. Select the option to create a **New copilot**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the copilot you want to build - essentially, you can use a copilot to create a copilot!
 
