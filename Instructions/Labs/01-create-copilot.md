@@ -15,19 +15,21 @@ This exercise will take approximately **45** minutes to complete.
 
 Let’s start by using Copilot Studio to create a new copilot. The copilot will initially have very limited capabilities, which you’ll extend later in the exercise.
 
-1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at
-`https://copilotstudio.microsoft.com/`, signing in with your work or school
-account if prompted.
+1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/`, signing in with your work or school account if prompted. Skip any welcome messages.
 
-    The Copilot Studio home page lists any copilots you have recently worked on, and also may include *Copilot for Microsoft 365*; which you can extend using Copilot Studio.
+    The first time you open Copilot Studio, it may display a chat interface to create your first copilot. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel copilot creation** to leave the chat interface and view the Copilot Studio home page, which should look similar to this:
 
     ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
+
+    On the home page, you can start creating a copilot and view copilots you have recently worked on. The Power Apps **environment** in which your copilots are defined is shown at the top of the page. You can also also navigate to the **Create** page for more copilot creation options and the **Copilots** page to view all of your existing copilots.
+
+    > **Note**: In addition to copilots you have created, you may see other copilots such as **Copilot for Microaoft 365**, which you can use Copilot Studio to extend.
 
 1. In the navigation pane on the left, select **Create** to view a page on which you can create a new copilot, like this:
 
     ![Screenshot of the Create page in Copilot Studio.](media/create-copilot.png)
 
-    You can create a copilot or a copilot action, or you can start with a template. In this exercise, you'll creaete a new copilot.
+    You can create a copilot or a copilot action, or you can start with a template. In this exercise, you'll create a new copilot.
 
 1. Select the option to create a **New copilot**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the copilot you want to build - essentially, you can use a copilot to create a copilot!
 
@@ -175,7 +177,6 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 1. Try asking some follow-up questions, such as:
     - `What about flights?`
     - `What guidelines are there for entertainment expenses?`
-    - `How do I submit a claim?`
 
 ## Publish your copilot
 
