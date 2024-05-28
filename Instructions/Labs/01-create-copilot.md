@@ -33,7 +33,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
 
 1. Select the option to create a **New copilot**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the copilot you want to build - essentially, you can use a copilot to create a copilot!
 
-    >**Tip**: You can use the **Skip tp Configure** option to skip the chat-based copilot creation experience. In this exercise, we'll use the chat interface.
+    >**Tip**: You can use the **Skip to Configure** option to skip the chat-based copilot creation experience. In this exercise, we'll use the chat interface.
 
 1. Enter the following prompt:
 
