@@ -17,7 +17,7 @@ Before you start the lab exercise, you must create a development environment for
         - **Currency**: USD ($)
         - **Deploy sample apps and data**: No
 1. Wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display)
-1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your work or school account if prompted).
+1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your credentials if prompted).
 1. When prompted, select the option to start a free trial.
 1. Skip any welcome messages.
 1. At the top of the age, select the **Environment**. Then in the **Select environment** pane, under **Supported environments**, select the environment you created previously.
