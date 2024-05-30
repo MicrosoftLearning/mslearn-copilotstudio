@@ -166,7 +166,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     > **Note**: If no relevant answer is found in the custom knowledge sources you have added, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
 
-1. Expand the **Test** pane and enter the following prompt:
+1. Expand the **Test** pane and restart the conversation. Then enter the following prompt:
 
     ```prompt
     What's the expense limit for a hotel stay?
