@@ -17,7 +17,9 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
 
 1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/`, signing in with your work or school account if prompted. Skip any welcome messages.
 
-    The first time you open Copilot Studio, it may display a chat interface to create your first copilot. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel copilot creation** to leave the chat interface and view the Copilot Studio home page, which should look similar to this:
+    > **Note**: The first time you open Copilot Studio, it may display a chat interface to create your first copilot. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel copilot creation** to leave the chat interface and view the Copilot Studio home page.
+
+1. View the Copilot Studio home page, which should look similar to this:
 
     ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
 
