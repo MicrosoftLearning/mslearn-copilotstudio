@@ -187,8 +187,8 @@ Now that you have a working copilot, you can publish it for people to use. The a
 1. Hide the **Test your copilot** pane. Then, at the top of the page, select the **Channels** tab and review the channels to which you can deploy your copilot. The available channels depend on the authentication settings for your copilot.
 1. Select **Settings** at the top of the page.
 1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the copilot for anyone).
-1. Close the **Settings** pane. Then, at the top of the page, select **Publish**.
-1. On the **Publish** page, select **Publish**, and publish your copilot. Publishing will take a minute or so.
+1. Close the **Settings** pane. Then, view the **Channels** page.
+1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**, and publish your copilot. Publishing will take a minute or so.
 1. After your copilot has been published, verify the **Publish status** on the **Channels** page.
 
     ![Screenshot of the Channels page in Copilot Studio.](media/channels-page.png)
