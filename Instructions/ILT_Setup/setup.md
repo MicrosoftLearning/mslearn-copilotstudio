@@ -6,7 +6,7 @@ Before you start the lab exercise, you must create a development environment for
 1. Select **+New** and create a new environment with the following settings:
     - **Name**: *Enter the unique environment name provided in your lab environment*
     - **Group**: None
-    - **Region**: *Choose any available region*
+    - **Region**: *Choose the **default** region*
     - **Get new features early**: <u>Un</u>selected
     - **Type**: Developer
     - **Purpose**: `Lab exercise`
