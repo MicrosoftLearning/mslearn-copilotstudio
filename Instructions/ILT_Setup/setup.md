@@ -20,6 +20,6 @@ Before you start the lab exercise, you must create a development environment for
 1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your credentials if prompted).
 1. When prompted, select the option to start a free trial.
 1. Skip any welcome messages.
-1. At the top of the age, select the **Environment**. Then in the **Select environment** pane, under **Supported environments**, select the environment you created previously.
+1. At the top of the age, select the **Environment**. Then in the **Select environment** pane, under **Supported environments**, select the environment you created previously (make sure you select your own environment - others may be listed)
 1. When Copilot Studio reopens, skip the welcome message.
 
