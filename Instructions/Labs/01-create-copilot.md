@@ -82,7 +82,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
     What's the expense limit for a hotel stay?
     ```
 
-    Again, the response may be appropriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company'e expense policies.
+    Again, the response may be appropriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company's expense policies.
 
 1. Close the **Test your copilot** pane.
 
