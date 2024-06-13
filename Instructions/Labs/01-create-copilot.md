@@ -23,7 +23,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
 
     ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
 
-    On the home page, you can start creating a copilot and view copilots you have recently worked on. The Power Apps **environment** in which your copilots are defined is shown at the top of the page. You can also also navigate to the **Create** page for more copilot creation options and the **Copilots** page to view all of your existing copilots.
+    On the home page, you can start creating a copilot and view copilots you have recently worked on. The Power Apps **environment** in which your copilots are defined is shown at the top of the page. You can also navigate to the **Create** page for more copilot creation options and the **Copilots** page to view all of your existing copilots.
 
     > **Note**: In addition to copilots you have created, you may see other copilots such as **Copilot for Microsoft 365**, which you can use Copilot Studio to extend.
 
