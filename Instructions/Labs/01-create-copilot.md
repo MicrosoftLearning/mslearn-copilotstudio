@@ -74,7 +74,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
     Who should I contact about submitting an expense claim?
     ```
 
-    This time the response may be approriate, but it's also likely to be fairly generic. In a real organization, you'd want the copilot to provide an email address of phone number for the user to contact.
+    This time the response may be appropriate, but it's also likely to be fairly generic. In a real organization, you'd want the copilot to provide an email address of phone number for the user to contact.
 
 1. Let's try another prompt:
 
@@ -82,7 +82,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
     What's the expense limit for a hotel stay?
     ```
 
-    Again, the response may be approriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company'e expense policies.
+    Again, the response may be appropriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company'e expense policies.
 
 1. Close the **Test your copilot** pane.
 
