@@ -172,7 +172,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
     What's the expense limit for a hotel stay?
     ```
 
-    The reponse should be based on the information in the knowledge source you uploaded, and include a citation reference.
+    The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
 
     ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
 
