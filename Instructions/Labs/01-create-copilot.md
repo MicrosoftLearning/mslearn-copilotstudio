@@ -23,7 +23,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
 
     ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
 
-    On the home page, you can start creating a copilot and view copilots you have recently worked on. The Power Apps **environment** in which your copilots are defined is shown at the top of the page. You can also also navigate to the **Create** page for more copilot creation options and the **Copilots** page to view all of your existing copilots.
+    On the home page, you can start creating a copilot and view copilots you have recently worked on. The Power Apps **environment** in which your copilots are defined is shown at the top of the page. You can also navigate to the **Create** page for more copilot creation options and the **Copilots** page to view all of your existing copilots.
 
     > **Note**: In addition to copilots you have created, you may see other copilots such as **Copilot for Microsoft 365**, which you can use Copilot Studio to extend.
 
@@ -74,7 +74,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
     Who should I contact about submitting an expense claim?
     ```
 
-    This time the response may be approriate, but it's also likely to be fairly generic. In a real organization, you'd want the copilot to provide an email address of phone number for the user to contact.
+    This time the response may be appropriate, but it's also likely to be fairly generic. In a real organization, you'd want the copilot to provide an email address of phone number for the user to contact.
 
 1. Let's try another prompt:
 
@@ -82,7 +82,7 @@ Let’s start by using Copilot Studio to create a new copilot. The copilot will 
     What's the expense limit for a hotel stay?
     ```
 
-    Again, the response may be approriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company'e expense policies.
+    Again, the response may be appropriate but generic. In a real organization, you'd want the copilot to provide a more specific response based on the company's expense policies.
 
 1. Close the **Test your copilot** pane.
 
@@ -172,7 +172,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
     What's the expense limit for a hotel stay?
     ```
 
-    The reponse should be based on the information in the knowledge source you uploaded, and include a citation reference.
+    The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
 
     ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
 
