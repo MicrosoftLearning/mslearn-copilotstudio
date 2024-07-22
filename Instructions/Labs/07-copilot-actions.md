@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 5: Copilot actions'
-    module: 'Module 4: Enhance Microsoft Copilot Studio copilots'
+    title: 'Copilot actions'
+    module: 'Enhance Microsoft Copilot Studio copilots'
 ---
 
-# Practice Lab 5 - Copilot actions
+# Copilot actions
 
 ## Scenario
 
@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 4: Entities**
+- Must have completed **Lab: Work with entities**
 
 ## Detailed steps
 
