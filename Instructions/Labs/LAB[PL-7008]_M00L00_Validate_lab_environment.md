@@ -22,7 +22,7 @@ In this exercise, you will import a Dataverse solution containing the tables use
 
 1. If prompted for contact information, leave the Country/region as the default value and enter `0123456789` for Phone number and select **Submit**.
 
-1. In the upper-right of the screen, verify that the **Environment** is set to **Dev One**. This is where you will be working for the entirety of this lab. If it is not, select the **Dev One** environment.
+1. In the upper-right of the screen, verify that the **Environment** is set to your environment. This is where you will be working for the entirety of this lab. If it is not, select the appropriate environment.
 
     ![Environment selector.](../media/select-dev-one-environment-maker.png)
 
