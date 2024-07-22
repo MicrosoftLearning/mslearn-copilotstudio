@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 3: Nodes'
-    module: 'Module 3: Work with entities and variables in Microsoft Copilot Studio'
+    title: 'Manage Nodes'
+    module: 'Work with entities and variables in Microsoft Copilot Studio'
 ---
 
-# Practice Lab 3 - Nodes
+# Manage Nodes
 
 ## Scenario
 
@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 2: Topics**
+- Must have completed **Lab: Manage Topics in Microsoft Copilot Studio**
 
 ## Detailed steps
 
