@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 0: Validate lab environment'
+    title: 'Lab 0: Import Dataverse solution'
     module: 'Module 0: Course Introduction'
 ---
 
