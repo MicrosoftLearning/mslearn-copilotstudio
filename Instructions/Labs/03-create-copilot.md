@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 1: Create a copilot'
-    module: 'Module 1: Build an initial copilot with Microsoft Copilot Studio'
+    title: 'Create a copilot'
+    module: 'Build an initial copilot with Microsoft Copilot Studio'
 ---
 
-# Practice Lab 1 - Build an initial copilot
+# Build an initial copilot
 
 ## Scenario
 
@@ -27,7 +27,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 0: Validate lab environment**
+- Must have completed **Lab: Import Dataverse solution**
 
 ## Exercise 1 - Create copilot
 
