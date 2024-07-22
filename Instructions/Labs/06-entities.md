@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 4: Entities'
-    module: 'Module 3: Work with entities and variables in Microsoft Copilot Studio'
+    title: 'Work with entities'
+    module: 'Work with entities and variables in Microsoft Copilot Studio'
 ---
 
-# Practice Lab 4 - Entities
+# Work with entities
 
 ## Scenario
 
