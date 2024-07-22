@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 2: Topics'
-    module: 'Module 2: Manage topics in Microsoft Copilot Studio'
+    title: 'Manage topics in Microsoft Copilot Studio'
+    module: 'Manage topics in Microsoft Copilot Studio'
 ---
 
-# Practice Lab 2 - Topics
+# Manage topics in Microsoft Copilot Studio
 
 ## Scenario
 
