@@ -6,15 +6,13 @@ lab:
 
 # Validate lab environment
 
-In this exercise, you’ll use Copilot Studio to create a simple copilot that can answer employee questions about expense policies in a fictional corporation.
-
-This exercise will take approximately **45** minutes to complete.
+In this exercise, you'll import a Dataverse solution to use for the following labs.
 
 > **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
 ## Exercise 1 – Import solution
 
-In this exercise, you will import a Dataverse solution containing the tables used in the labs into the **Dev One** environment.
+In this exercise, you will import a Dataverse solution containing the tables used in the labs into your environment.
 
 ### Task 1.1 – Sign in to Power Apps
 
