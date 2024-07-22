@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 7: Deploy copilot'
-    module: 'Module 5: - Create a copilot with Microsoft Copilot Studio and Dataverse for Teams'
+    title: 'Deploy copilot to Microsoft Teams'
+    module: 'Create a copilot with Microsoft Copilot Studio and Dataverse for Teams'
 ---
 
-# Practice Lab 7 - Deploy copilot
+# Deploy copilot to Microsoft Teams
 
 ## Scenario
 
@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 6: Generative AI**
+- Must have completed **Lab: Use Generative AI in Microsoft Copilot Studio**
 
 ## Detailed steps
 
