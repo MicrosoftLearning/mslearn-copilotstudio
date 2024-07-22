@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 6: Generative AI'
-    module: 'Module 4: Enhance Microsoft Copilot Studio copilots'
+    title: 'Use Generative AI in Microsoft Copilot Studio'
+    module: 'Enhance Microsoft Copilot Studio copilots'
 ---
 
-# Practice Lab 6 - Generative AI
+# Use Generative AI in Microsoft Copilot Studio
 
 ## Scenario
 
@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 5: Copilot actions**
+- Must have completed **Lab: Copilot actions**
 
 ## Detailed steps
 
