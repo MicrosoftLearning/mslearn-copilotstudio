@@ -24,8 +24,6 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In the upper-right of the screen, verify that the **Environment** is set to your environment. This is where you will be working for the entirety of the labs. If it is not, select the appropriate environment.
 
-    ![Environment selector.](../media/select-dev-one-environment-maker.png)
-
 ### Task 1.2 – Download solution
 
 1. Download [**Bookings_1_0_0_0.zip**](../../Allfiles/Bookings_1_0_0_0.zip) from GitHub.
