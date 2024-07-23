@@ -39,9 +39,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Switch environments by using the Environment Selector in the upper right corner of the screen.
 
-1. Select the **Dev One** environment from the list.
-
-    ![Select Development environment in the Copilot Studio portal.](../media/select-dev-one-environment.png)
+1. Select the appropriate environment from the list.
 
 ### Task 1.2 – Create a copilot
 
@@ -93,7 +91,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 – Enable Generative AI answers
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the **Dev One** environment.
+1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select **Copilots** from the left navigation pane.
 
