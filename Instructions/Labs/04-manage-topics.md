@@ -37,7 +37,7 @@ In this exercise, you will remove topics in a copilot.
 
 ### Task 1.1 – Delete sample topics
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the **Dev One** environment.
+1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
 
@@ -73,7 +73,7 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
 ### Task 2.1 – Add a topic using copilot
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the **Dev One** environment.
+1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select **Copilots** from the left navigation pane.
 
