@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Create a copilot'
+    title: 'Build an initial copilot'
     module: 'Build an initial copilot with Microsoft Copilot Studio'
 ---
 
