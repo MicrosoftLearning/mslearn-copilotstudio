@@ -57,7 +57,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the **Instructions** text box, enter **`Create a copilot for topics relating to creating bookings for real estate properties`**
 
-1. Select **English** for **Language**.
+1. **Primary language** should be set to **English**.
 
     ![New copilot details pane in CoPilot Studio portal.](../media/copilot-studio-create-details2.png)
 
@@ -77,25 +77,19 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
     ![Try copilot in CoPilot Studio portal.](../media/copilot-studio-try-it-out.png)
 
-1. In the **Type your message** text box, enter **`How do I make a booking?`**.
+1. In the **Type your message** text box, enter **`How do I make a booking?`**. View the response.
 
 1. In the upper-right of the screen, select **Create**.
 
     ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot.png)
+
+Leave this window open.
 
 ## Exercise 2 - Add Generative AI answers
 
 In this exercise, you will access the Microsoft Copilot Studio portal and add knowledge that the copilot will use to answer questions by using Generative AI.
 
 ### Task 2.1 – Enable Generative AI answers
-
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
-
-1. Select **Copilots** from the left navigation pane.
-
-    ![Copilots in CoPilot Studio portal.](../media/copilot-studio-copilots.png)
-
-1. Select the copilot you created in the previous exercise.
 
 1. In the **Knowledge** section of the Overview tab, ensure that **Allow the AI to use its own general knowledge** is **Enabled**.
 
