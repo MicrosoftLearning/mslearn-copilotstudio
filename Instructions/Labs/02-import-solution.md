@@ -72,12 +72,12 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Enter the following data:
 
-    - Property Name: `1100 High Villas`
-    - Asking Price: `250,000`
-    - Street: `Main Avenue`
-    - City: `Redmond`
-    - Bedrooms: `3`
-    - Bathrooms: `2`
+    - **Property Name:** `1100 High Villas`
+    - **Asking Price:** `250,000`
+    - **Street:** `Main Avenue`
+    - **City:** `Redmond`
+    - **Bedrooms:** `3`
+    - **Bathrooms:** `2`
 
     ![Overview.](../media/add-record.png)
 
@@ -87,12 +87,12 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Enter the following data:
 
-    - Property Name: `555 Oak Lane`
-    - Asking Price: `300,000`
-    - Street: `Oak Lane`
-    - City: `Denver`
-    - Bedrooms: `4`
-    - Bathrooms: `3`
+    - **Property Name:** `555 Oak Lane`
+    - **Asking Price:** `300,000`
+    - **Street:** `Oak Lane`
+    - **City:** `Denver`
+    - **Bedrooms:** `4`
+    - **Bathrooms:** `3`
 
     ![Overview.](../media/add-record.png)
 
