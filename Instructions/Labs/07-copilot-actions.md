@@ -33,7 +33,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 ### Task 1.1 - Create Power Automate flow to retrieve a property
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the **Dev One** environment.
+1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
 
@@ -318,7 +318,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Navigate to `https://make.powerapps.com`.
 
-1. Make sure you are in the **Dev One** environment.
+1. Make sure you are in the appropriate environment.
 
 1. Select **Play** on the **Real Estate Property Management** model-driven app.
 
