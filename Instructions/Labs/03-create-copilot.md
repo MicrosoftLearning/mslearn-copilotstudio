@@ -37,9 +37,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In a new tab, navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and sign in with your Microsoft 365 credentials if prompted again.
 
-1. Switch environments by using the Environment Selector in the upper right corner of the screen.
-
-1. Select the appropriate environment from the list.
+1. Make sure that you are in the appropriate environment.
 
 ### Task 1.2 – Create a copilot
 
