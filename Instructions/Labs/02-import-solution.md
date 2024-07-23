@@ -18,7 +18,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In a new browser tab, navigate to `https://make.powerapps.com`.
 
-1. If prompted for credentials, sign in with the `email address` and `password` provided by the Authorized Lab Host.
+1. If prompted for credentials, sign in with the email address and password provided by the Authorized Lab Host.
 
 1. If prompted for contact information, leave the Country/region as the default value and enter `0123456789` for Phone number and select **Submit**.
 
