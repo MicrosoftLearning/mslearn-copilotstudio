@@ -32,7 +32,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Navigate to `https://make.powerapps.com`.
 
-1. Make sure you are in the **Dev One** environment.
+1. Make sure you are in the appropriate environment.
 
 1. Select **Solutions**.
 
