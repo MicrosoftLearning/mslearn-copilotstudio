@@ -33,7 +33,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 ### Task 1.1 - View prebuilt entities
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the **Dev One** environment.
+1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
 
