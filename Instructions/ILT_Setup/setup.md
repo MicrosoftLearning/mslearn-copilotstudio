@@ -7,7 +7,7 @@ Before you start the lab exercise, you must create a development environment for
     - **Name**: *Enter the unique environment name provided in your lab environment*
     - **Group**: None
     - **Region**: *Choose the **default** region*
-    - **Get new features early**: <u>Un</u>selected
+    - **Get new features early**: No
     - **Type**: Developer
     - **Purpose**: `Lab exercise`
     - **Add a Dataverse store**: Yes
