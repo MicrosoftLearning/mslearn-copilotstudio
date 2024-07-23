@@ -12,7 +12,7 @@ In this exercise, you'll import a Dataverse solution to use for the following la
 
 ## Exercise 1 – Import solution
 
-In this exercise, you will import a Dataverse solution containing the tables used in the labs into your environment.
+In this exercise, you will import a Dataverse solution into your environment that contains the tables needed for the labs.
 
 ### Task 1.1 – Sign in to Power Apps
 
