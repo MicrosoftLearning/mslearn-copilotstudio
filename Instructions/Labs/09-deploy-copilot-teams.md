@@ -31,7 +31,7 @@ In this lab, you will:
 
 ### Task 1.1 - Publish the latest content
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the **Dev One** environment.
+1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select **Copilots** from the left navigation pane.
 
