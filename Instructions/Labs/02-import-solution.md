@@ -73,7 +73,6 @@ In this exercise, you will import a Dataverse solution into your environment tha
 1. Enter the following data:
 
     - **Property Name:** `1100 High Villas`
-    - **Owner:** select any owner
     - **Asking Price:** `250,000`
     - **Street:** `Main Avenue`
     - **City:** `Redmond`
@@ -89,7 +88,6 @@ In this exercise, you will import a Dataverse solution into your environment tha
 1. Enter the following data:
 
     - **Property Name:** `555 Oak Lane`
-    - **Owner:** select any owner
     - **Asking Price:** `300,000`
     - **Street:** `Oak Lane`
     - **City:** `Denver`
