@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Manage topics in Microsoft Copilot Studio'
+    title: 'Manage topics'
     module: 'Manage topics in Microsoft Copilot Studio'
 ---
 
