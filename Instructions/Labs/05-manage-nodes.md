@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Manage Nodes'
+    title: 'Manage nodes'
     module: 'Work with entities and variables in Microsoft Copilot Studio'
 ---
 
-# Manage Nodes
+# Manage nodes
 
 ## Scenario
 
