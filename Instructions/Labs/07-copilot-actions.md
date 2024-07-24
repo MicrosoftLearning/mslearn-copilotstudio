@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Copilot actions'
+    title: 'Create copilot actions'
     module: 'Enhance Microsoft Copilot Studio copilots'
 ---
 
-# Copilot actions
+# Create copilot actions
 
 ## Scenario
 
