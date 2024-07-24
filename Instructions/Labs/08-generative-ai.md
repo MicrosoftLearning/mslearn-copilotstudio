@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab: Copilot actions**
+- Must have completed **Lab: Create copilot actions**
 
 ## Detailed steps
 
