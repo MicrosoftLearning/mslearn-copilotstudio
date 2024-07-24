@@ -4,7 +4,7 @@ lab:
     module: 'Manage topics in Microsoft Copilot Studio'
 ---
 
-# Manage topics in Microsoft Copilot Studio
+# Manage topics
 
 ## Scenario
 
