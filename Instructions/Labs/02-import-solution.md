@@ -4,7 +4,7 @@ lab:
     module: 'Course Introduction'
 ---
 
-# Validate lab environment
+# Import Dataverse solution
 
 In this exercise, you'll import a Dataverse solution to use for the following labs.
 
