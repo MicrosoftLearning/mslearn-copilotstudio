@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Manage nodes'
-    module: 'Work with entities and variables in Microsoft Copilot Studio'
+    module: 'Manage topics in Microsoft Copilot Studio'
 ---
 
 # Manage nodes
