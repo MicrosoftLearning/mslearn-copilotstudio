@@ -27,7 +27,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 1: Build an initial copilot**
+- Must have completed **Lab: Build an initial copilot**
 
 ## Detailed steps
 

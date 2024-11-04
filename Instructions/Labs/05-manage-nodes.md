@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab: Manage Topics in Microsoft Copilot Studio**
+- Must have completed **Lab: Manage topics**
 
 ## Detailed steps
 
