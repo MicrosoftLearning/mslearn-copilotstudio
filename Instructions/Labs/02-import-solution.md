@@ -20,23 +20,25 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. If prompted for credentials, sign in with your email address and password if prompted.
 
-1. If prompted for contact information, leave the Country/region as the default value and enter `0123456789` for Phone number and select **Submit**.
+1. If prompted for contact information, set the Country/region and select **Get Started**.
 
 1. In the upper-right of the screen, verify that the **Environment** is set to your environment. This is where you will be working for the entirety of the labs. If it is not, select the appropriate environment.
 
 ### Task 1.2 – Download solution
 
-1. Download [**Bookings_1_0_0_0.zip**](../../Allfiles/Bookings_1_0_0_0.zip) from GitHub. The file is located at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
+1. Go to [**Bookings_1_0_0_0.zip**](../../Allfiles/Bookings_1_0_0_0.zip) in GitHub. The file is located at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
+
+1. Select the **ellipses (...)** near the top-right and select **Download**.
 
 ### Task 1.3 – Import solution
 
-1. Navigate to `https://make.powerapps.com`.
+1. Go to `https://make.powerapps.com`.
 
 1. Make sure you are in the appropriate environment.
 
-1. Select **Solutions**.
+1. In the left navigation, select **Solutions**.
 
-1. Select **Import solution**.
+1. In the top bar, select **Import solution**.
 
 1. Select **Browse** and locate the **Bookings_1_0_0_0.zip** file and select **Open**.
 
@@ -54,7 +56,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. When the solution has imported successfully, open the **Bookings** solution.
 
-1. In the solution, select the **Overview** page.
+1. In the left navigation, select the **Overview** page.
 
     ![Solution Overview tab.](../media/solution-overview.png)
 
@@ -62,9 +64,9 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 ### Task 1.4 – Test data
 
-1. In the solution, select the **Objects** page.
+1. In the left navigation of the Bookings solution, select the **Objects** page.
 
-1. Select the **ellipsis …** menu for the **Real Estate Property Management** model-driven app, and select **Play**.
+1. Select the **ellipsis …** menu for the **Real Estate Property Management** Model-Driven App, and select **Play**.
 
     ![Overview.](../media/play-app.png)
 

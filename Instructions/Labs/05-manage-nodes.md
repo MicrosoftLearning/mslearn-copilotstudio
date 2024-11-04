@@ -75,11 +75,15 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.2 - Add a Topic management node
 
-1. Select the the **+** icon under the send a message node and select **Add a condition**.
+<!-- 
+1. Select the the **+** icon under the **Message** node and select **Add a condition**.
 
 1. Select the **DetailsCorrect** variable.
 
-1. Select **Go to another topic** and select the **Customer Details** topic.
+1. Select **Go to another topic** and select the **Customer Details** topic. 
+-->
+
+1. Select the the **+** icon under the **Message** node, **Topic management**, then **Go to another topic**, then select **Customer Details**.
 
     ![Screenshot of adding a topic management node.](../media/topic-management-node.png)
 
@@ -87,15 +91,21 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.3 - Add condition node
 
-1. Select the the **+** icon under the topic management node and select **Add a condition**.
+<!-- 1. Select the the **+** icon under the topic management node and select **Add a condition**. -->
 
+1. Select the the **+** icon under the **Redirect** node and select **Add a condition**.
+
+1. In the **Condition** node, select the **DetailsCorrect** variable.
+
+<!-- 
 1. In the **Enter a message** field, enter the following text:
 
     `Which property do you want to see?`
 
-1. Select **DetailsCorrect** for variable.
+1. Select **DetailsCorrect** for variable. 
+-->
 
-1. Select **is equal to**
+1. Select **is equal to**.
 
 1. Select **Yes**.
 
@@ -105,7 +115,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.4 - Add question nodes
 
-1. Select the the **+** icon under the left-hand condition node and select **Ask a question**.
+1. Select the the **+** icon under the left **Condition** node and select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
@@ -113,19 +123,19 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select **User's entire response** for **Identify**.
 
-1. Select the variable in **Save user response as** and enter **`PropertyName`** for **Variable name**
+1. Select the variable in **Save user response as** and enter **`PropertyName`** for **Variable name**.
 
-    ![Screenshot of adding a question node.](../media/question-node.png)
+    ![Screenshot of adding a question node.](../media/question-node-2.png)
 
 1. Select **Save**.
 
-1. Select the the **+** icon under the question node and select **Ask a question**.
+1. Select the the **+** icon under the **Question** node and select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
     `What date and time do you want to see the property?`
 
-1. Select **Date and Time** for **Identify**.
+1. Select **Date and time** for **Identify**.
 
 1. Select the variable in **Save user response as** and enter **`DateTime`** for **Variable name**
 
@@ -133,7 +143,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.5 - Test the copilot
 
-1. Select the **Test** button in the upper-right of the screen to open the testing panel.
+1. If it's not open, select the **Test** button in the upper-right of the screen to open the testing panel.
 
 1. Select the **three dots** at the top of the testing panel in the upper-right of the screen.
 
@@ -158,9 +168,7 @@ The conversational flow in a topics can be created manually by adding nodes.
     Email address: <Your email address>
     ```
 
-1. After you supply the information, an Adaptive Card displays the information that you entered, a question asking if the information is correct, and options to select **Yes** or **No**.
-
-1. Select **Yes**.
+1. After you supply the information, an Adaptive Card displays the information that you entered and asks if the details are correct. Select **Yes**.
 
 1. Enter `555 Oak Lane, Denver, CO 80203` to the **Which property to you want to see?** prompt
 
@@ -172,7 +180,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 3.1 - Configure Authentication
 
-1. Select **Settings** in the upper-right of the screen.
+1. Select **Settings** in the upper-right of **Real Estate Booking Service**.
 
 1. Select the **Security** tab.
 
@@ -184,20 +192,18 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select **Save**.
 
-1. Select **Save**.
+1. Select **Save** in the confirmation window.
 
-1. Select **Close**.
-
-1. **Close** the security pane.
+1. Select the **X** in the upper-right to close out of the **Settings**.
 
 ### Task 3.2 - Publish the copilot
 
-1. Select **Publish** and select **Publish** again.
+1. Select **Publish** in the upper-right, then select **Publish** again.
 
 ### Task 3.3 - Demo Website
 
 1. Select the **three dots** next to the **Settings** button in the upper-right of the screen and select **Go to demo website**.
 
-1. In the **Type your message** text box, enter **`I want to view a property`**.
+1. In the **Type your message** text box, enter **`I want to book a property`**.
 
 1. Answer the prompts to test the copilot.

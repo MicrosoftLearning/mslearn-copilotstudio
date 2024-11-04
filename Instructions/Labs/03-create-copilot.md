@@ -37,6 +37,8 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In a new tab, navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and sign in with your Microsoft 365 credentials if prompted again.
 
+1. If prompted, select **Start free trial**.
+
 1. Make sure that you are in the appropriate environment.
 
 ### Task 1.2 – Create a copilot
@@ -57,9 +59,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the **Instructions** text box, enter **`Create a copilot for topics relating to creating bookings for real estate properties`**
 
-1. **Primary language** should be set to **English**.
-
-    ![New copilot details pane in CoPilot Studio portal.](../media/copilot-studio-create-details2.png)
+1. In the right pane, **Language** should be set to **English (en-US)**.
 
 1. Select the **three dots** next to the **Create** button in the upper-right of the screen and select **Edit advanced settings**.
 
@@ -73,15 +73,19 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Save**.
 
+<!--
 1. In the bottom-right of the screen, select **I'm done. Let's try it out**.
 
     ![Try copilot in CoPilot Studio portal.](../media/copilot-studio-try-it-out.png)
 
 1. In the **Type your message** text box, enter **`How do I make a booking?`**. View the response.
+-->
 
 1. In the upper-right of the screen, select **Create**.
 
     ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot.png)
+
+1. In the right **Test your copilot** pane, enter **`How do I make a booking?`**. View the response.
 
 Leave this window open.
 
@@ -119,13 +123,15 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot2.png)
 
-1. Select the **three dots** at the top of the testing panel in the upper-right of the screen.
-
-    ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
+1. Select the **three dots** at the top of the **Test your copilot** pane.
 
 1. Select **Track between topics**.
 
-1. Select the **Start a new conversation** icon at the top of the testing panel.
+    ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
+
+1. At the top of the **Test your copilot** pane, select the  **Start a new conversation** icon (refresh icon) next to the **X**.
+
+    ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
 1. In the **Type your message** text box, enter **`How do I boost real estate promotion?`**.
 
