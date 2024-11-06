@@ -39,7 +39,7 @@ In this exercise, you will remove topics in a copilot.
 ### Task 1.1 – Delete sample topics
 -->
 
-### Task 1 – Disable topics
+### Task 1.1 – Disable topics
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
