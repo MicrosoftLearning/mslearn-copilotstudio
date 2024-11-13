@@ -73,14 +73,6 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Save**.
 
-<!--
-1. In the bottom-right of the screen, select **I'm done. Let's try it out**.
-
-    ![Try copilot in CoPilot Studio portal.](../media/copilot-studio-try-it-out.png)
-
-1. In the **Type your message** text box, enter **`How do I make a booking?`**. View the response.
--->
-
 1. In the upper-right of the screen, select **Create**.
 
     ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot.png)
@@ -95,7 +87,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 – Enable Generative AI answers
 
-1. In the **Knowledge** section of the Overview tab, ensure that **Allow the AI to use its own general knowledge** is **Enabled**.
+1. In the **Knowledge** section of the **Overview** tab, ensure that **Allow the AI to use its own general knowledge** is set to **Enabled**.
 
     ![Knowledge enabled in CoPilot Studio portal.](../media/knowledge-enabled.png)
 
@@ -125,7 +117,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select the **three dots** at the top of the **Test your copilot** pane.
 
-1. Select **Track between topics**.
+1. Enable **Track between topics**.
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 

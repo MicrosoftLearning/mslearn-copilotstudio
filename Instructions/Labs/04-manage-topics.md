@@ -35,10 +35,6 @@ In this lab, you will:
 
 In this exercise, you will remove topics in a copilot.
 
-<!--
-### Task 1.1 – Delete sample topics
--->
-
 ### Task 1.1 – Disable topics
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
@@ -55,20 +51,6 @@ In this exercise, you will remove topics in a copilot.
 
     ![Topics tab in CoPilot Studio portal.](../media/topics-tab.png)
 
-<!--
-1. Select the **three dots** next to the **Lesson 1** topic and select **Delete**.
-
-    ![Delete topic in CoPilot Studio portal.](../media/topics-delete.png)
-
-1. Select **Delete**.
-
-1. Repeat the delete for **Lesson 2** and **Lesson 3**.
-
-### Task 1.2 – Disable topics
-
-1. Select the **Topics** tab.
--->
-
 1. Toggle **Enabled** to **Off** for the **Start Over** topic.
 
     ![Topics removed and disabled in CoPilot Studio portal.](../media/topics-removed.png)
@@ -79,19 +61,9 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
 ### Task 2.1 – Add a topic using copilot
 
-<!--
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
+1. Select **+ Add a topic** and select **Create from decription with Copilot**. A new window appears.
 
-1. Select **Copilots** from the left navigation pane.
-
-1. Select the copilot you created in the previous lab.
-
-1. Select the **Topics** tab.
--->
-
-1. Select **Add a topic** and select **Create from decription with Copilot**. A new window appears.
-
-    ![Create topic with copilot.](../media/topic-create-from-description.png)
+    ![Create topic with copilot.](../media/topic-create-from-description-2.png)
 
     ![Create topic with copilot.](../media/topic-create-with-copilot.png)
 
@@ -121,10 +93,9 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
     ![Screenshot of the Edit with Copilot panel with prompt.](../media/edit-with-copilot-panel.png)
 
-   > [!NOTE]
-   > The message should be updated to include the *Name* variable from the message node before it, and should look similar to the screenshot below.
-
     ![Screenshot of the message updated to include the Name variable.](../media/message-updated-name-variable.png)
+
+    > **Note**: The message should be updated to include the *Name* variable from the message node before it, and should look similar to the screenshot below.
 
 1. Select **Save**.
 

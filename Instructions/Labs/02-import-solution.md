@@ -56,7 +56,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. When the solution has imported successfully, open the **Bookings** solution.
 
-1. In the left navigation, select the **Overview** page.
+1. In the left navigation, select the **Overview** tab.
 
     ![Solution Overview tab.](../media/solution-overview.png)
 
@@ -64,7 +64,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 ### Task 1.4 – Test data
 
-1. In the left navigation of the Bookings solution, select the **Objects** page.
+1. In the left navigation of the Bookings solution, select the **Objects** tab.
 
 1. Select the **ellipsis …** menu for the **Real Estate Property Management** Model-Driven App, and select **Play**.
 
