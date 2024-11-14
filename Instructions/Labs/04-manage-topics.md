@@ -95,7 +95,7 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
     ![Screenshot of the message updated to include the Name variable.](../media/message-updated-name-variable.png)
 
-    > **Note**: The message should be updated to include the *Name* variable from the message node before it, and should look similar to the screenshot below.
+    > **Note**: The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above.
 
 1. Select **Save**.
 
@@ -190,7 +190,7 @@ Topics can be created manually by adding trigger phrases.
 
 1. Select the **Topics** tab in the top bar of **Real Estate Booking Service**.
 
-1. Select **Add a topic** and select **From blank**.
+1. Select **+ Add a topic** and select **From blank**.
 
 1. Select the **Details** icon to open the Topic details dialog.
 

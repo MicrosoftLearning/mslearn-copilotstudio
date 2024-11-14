@@ -45,11 +45,11 @@ Variables can be accessed by other topics.
 
 1. Select the **Customer Details** topic.
 
-1. Select the **Variables** icon to open the Variables pane.
-
-    ![Screenshot of the variables pane.](../media/variables-pane.png)
+1. Select **Variables** in the top bar to open the Variables pane.
 
 1. Select the right-hand check boxes for the three topic variables.
+
+    ![Screenshot of the variables pane.](../media/variables-pane.png)
 
 1. Select **Save**.
 
@@ -75,14 +75,6 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.2 - Add a Topic management node
 
-<!-- 
-1. Select the the **+** icon under the **Message** node and select **Add a condition**.
-
-1. Select the **DetailsCorrect** variable.
-
-1. Select **Go to another topic** and select the **Customer Details** topic. 
--->
-
 1. Select the the **+** icon under the **Message** node, **Topic management**, then **Go to another topic**, then select **Customer Details**.
 
     ![Screenshot of adding a topic management node.](../media/topic-management-node.png)
@@ -91,19 +83,9 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.3 - Add condition node
 
-<!-- 1. Select the the **+** icon under the topic management node and select **Add a condition**. -->
-
 1. Select the the **+** icon under the **Redirect** node and select **Add a condition**.
 
 1. In the **Condition** node, select the **DetailsCorrect** variable.
-
-<!-- 
-1. In the **Enter a message** field, enter the following text:
-
-    `Which property do you want to see?`
-
-1. Select **DetailsCorrect** for variable. 
--->
 
 1. Select **is equal to**.
 
@@ -129,7 +111,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select **Save**.
 
-1. Select the the **+** icon under the **Question** node and select **Ask a question**.
+1. Select the the **+** icon under the new **Question** node and select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
@@ -147,9 +129,9 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select the **three dots** at the top of the testing panel in the upper-right of the screen.
 
-    ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
+1. If it's not enabled, enable **Track between topics**.
 
-1. Select **Track between topics**.
+    ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 

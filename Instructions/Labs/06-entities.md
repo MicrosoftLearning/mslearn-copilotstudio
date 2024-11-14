@@ -95,7 +95,7 @@ Use entities in the conversational flow to improve the copilot.
 
 ### Task 2.1 - Use entities
 
-1. Select your copilot in the Copilot pane on the left-hand side of the screen to return to the **Overview** tab.
+1. Select the **X** icon in the top-right to close out of Settings and return to your Copilot.
 
 1. Select the **Topics** tab.
 
