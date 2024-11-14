@@ -49,7 +49,7 @@ In this lab, you will:
 
     ![Generative AI pane in CoPilot Studio Settings](../media/settings-generative-ai-2.png)
 
-1. Close the **Settings** pane by selecting the **X** in the upper-right of Copilot Studio.
+1. Close the **Settings** menu by selecting the **X** icon in the upper-right of Copilot Studio.
 
 ### Task 1.2 - Use generative answers in the Conversational boosting topic
 
@@ -85,7 +85,7 @@ In this lab, you will:
 
 1. Select **Save**.
 
-1. Close the **Settings** pane by selecting the **X** in the upper-right of Copilot Studio.
+1. Close the **Settings** menu by selecting the **X** in the upper-right of Copilot Studio.
 
 1. Select **Publish** and select **Publish** again.
 

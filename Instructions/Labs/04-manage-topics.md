@@ -81,13 +81,13 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
     ![Screenshot of the Edit with Copilot icon.](../media/edit-with-copilot.png)
 
-1. Select the second question node, **What is your email address?**
+1. Select the second **Question** node, **What is your email address?**
 
     ![Screenshot of the Edit with Copilot icon.](../media/copilot-email-address-node.png)
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
-    `Update the message in this question node to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
+    `Update the message in this Question node to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
 
 1. Select **Update**.
 
@@ -209,8 +209,6 @@ Topics can be created manually by adding trigger phrases.
     `Select the property and requested date and create a booking request`
 
 1. Select **Save**.
-
-1. Select the **Details** icon to close the Topic details dialog.
 
 ### Task 3.2 - Add trigger phrases
 

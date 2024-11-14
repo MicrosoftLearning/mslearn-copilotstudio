@@ -45,7 +45,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of step 1 of add an action.](../media/add-action-step-1.png)
 
-1. Select **Flow** button filter, then select **Create a new flow**.
+1. Select the **Flow** filter, then select **Create a new flow**.
 
 1. Sign in to Power Automate if prompted.
 
@@ -71,7 +71,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. If prompted for authentication, select **OAuth** and select **Sign in**.
 
-    > **Note:** If you see a '**Failed to create OAuth connection**' error, you'll need to allow popups in your browser.
+    > **Note:** If you see a '**Failed to create OAuth connection**' error, you may need to allow popups in your browser.
 
     ![Screenshot of OAuth error.](../media/failed-oauth-popup.png)
 
@@ -163,9 +163,9 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. In the **Enter a message** field, enter `Property ` (with a space following it).
 
-    ![Screenshot of step 4 of add a flow action.](../media/add-action-flow-step-4.png)
+1. In the same node, select the **{X} (Insert variable)** icon and select the **PropertyName** variable.
 
-1. Select the **Insert variable** icon and select the **PropertyName** variable.
+    ![Screenshot of step 4 of add a flow action.](../media/add-action-flow-step-4.png)
 
 1. Select **Save**.
 
@@ -275,7 +275,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. Enable **Track between topics**.
+1. If it's not enabled, enable **Track between topics**.
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
@@ -314,6 +314,6 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Play** on the **Real Estate Property Management** Model-Driven App.
 
-1. In the left navigation, select the **Booking Requests** table.
+1. In the left navigation, select **Booking Requests**.
 
     ![Screenshot of Maker portal showing booking request data.](../media/booking-request-row.png)
