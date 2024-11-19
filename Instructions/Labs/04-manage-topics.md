@@ -121,7 +121,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
    Your Adaptive Card formula should look similar to the one above. If it doesn't, then you can copy and paste in the formula below:
 
-   ```json
+    ```json
     {
     type: "AdaptiveCard", 
         body: 
@@ -152,7 +152,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
             }
         ]
     }
-   ```
+    ```
 
 1. Opening the Adaptive Card properties closes the **Edit with Copilot** panel; therefore, you need to select the **Copilot** icon to reopen it.
 
