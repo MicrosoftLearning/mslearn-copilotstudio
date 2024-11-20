@@ -43,29 +43,25 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 ### Task 1.2 – Create a copilot
 
-1. Select **Create** from the left navigation pane and select the **New copilot** tile.
+1. Select **Create** from the left navigation pane and select the **New agent** tile.
 
-    ![Create in CoPilot Studio portal.](../media/copilot-studio-create-tab.png)
-
-1. Select **Skip to configure**.
-
-    ![Create with prompt in CoPilot Studio portal.](../media/copilot-studio-create-with-prompt.png)
+    ![Create in CoPilot Studio portal.](../media/create-copilot-agent.png)
 
 1. In the **Name** text box, enter **`Real Estate Booking Service`**
-
-    ![Details pane in CoPilot Studio portal.](../media/copilot-studio-create-details.png)
 
 1. In the **Description** text box, enter **`Create bookings for real estate properties`**
 
 1. In the **Instructions** text box, enter **`Create a copilot for topics relating to creating bookings for real estate properties`**
 
-1. In the right pane, **Language** should be set to **English (en-US)**.
+1. At the top, **Language** should be set to **English (en-US)**.
 
-1. Select the **three dots** next to the **Create** button in the upper-right of the screen and select **Edit advanced settings**.
+    ![CoPilot agent language.](../media/copilot-agent-language.png)
 
-    ![More options in CoPilot Studio portal.](../media/copilot-studio-more-options.png)
+1. Select the **three dots** in the upper-right of the page and select **Edit advanced settings**.
 
-1. Select the **Bookings** solution.
+    ![More options in CoPilot Studio portal.](../media/copilot-studio-more-options-2.png)
+
+1. Select **Bookings** under **Solution**.
 
 1. Enter `labcopilot` for **Schema Name**.
 
@@ -75,9 +71,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the upper-right of the screen, select **Create**.
 
-    ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot.png)
-
-1. In the right **Test your copilot** pane, enter **`How do I make a booking?`**. View the response.
+1. In the right **Test your agent** pane, enter **`How do I make a booking?`**. View the response.
 
 Leave this window open.
 
@@ -87,7 +81,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 – Enable Generative AI answers
 
-1. In the **Knowledge** section of the **Overview** tab, ensure that **Allow the AI to use its own general knowledge** is set to **Enabled**.
+1. In the **Overview** tab, ensure that **Allow the AI to use its own general knowledge** is set to **Enabled** within the **Knowledge** section.
 
     ![Knowledge enabled in CoPilot Studio portal.](../media/knowledge-enabled.png)
 
@@ -115,13 +109,13 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot2.png)
 
-1. Select the **three dots** at the top of the **Test your copilot** pane.
+1. Select the **three dots** at the top of the **Test your agent** pane.
 
 1. Enable **Track between topics**.
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. At the top of the **Test your copilot** pane, select the  **Start a new conversation** icon (refresh icon) next to the **X**.
+1. At the top of the **Test your agent** pane, select the  **Start a new conversation** icon (refresh icon) next to the **X**.
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
