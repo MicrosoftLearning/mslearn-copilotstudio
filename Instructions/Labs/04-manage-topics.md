@@ -103,7 +103,7 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
 In addition to adding updating existing nodes, you can use Copilot to add new ones.
 
-1. Make sure that no node is selected by clicking in the empty space around the nodes.
+1. Make sure that no node is selected by selecting the empty space around the nodes.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
@@ -119,7 +119,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
     ![Screenshot of the Adaptive Card properties.](../media/adaptive-card-properties.png)
 
-   Your Adaptive Card formula should look similar to the one above. If it doesn't, then you can copy and paste in the formula below:
+   Your Adaptive Card formula should look similar to the one above. If it doesn't, then you can paste in the formula below:
 
     ```json
     {
@@ -156,7 +156,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Opening the Adaptive Card properties closes the **Edit with Copilot** panel; therefore, you need to select the **Copilot** icon to reopen it.
 
-1. Make sure that no node is selected by clicking in the empty space around the nodes.
+1. Make sure that no node is selected by selecting the empty space around the nodes.
 
 1. In the **What do you want to do?** field, enter the following text:
 
