@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab 3: Nodes**
+- Must have completed **Lab: Manage nodes**
 
 ## Detailed steps
 
@@ -35,11 +35,9 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
-
 1. Select **Copilots** from the left navigation pane.
 
-1. Select the copilot you created in the earlier lab.
+1. Select the **Real Estate Booking Service** you created in the earlier lab.
 
 1. Select **Settings** in the upper-right of the screen.
 
@@ -97,13 +95,13 @@ Use entities in the conversational flow to improve the copilot.
 
 ### Task 2.1 - Use entities
 
-1. Select your copilot in the Copilot pane on the left-hand side of the screen to return to the **Overview** tab.
+1. Select the **X** icon in the top-right to close out of Settings and return to your Copilot.
 
 1. Select the **Topics** tab.
 
 1. Select the **Book a Real Estate Showing** topic.
 
-1. Select the the **+** icon above the property question node and select **Ask a question**.
+1. Select the the **+** icon between the **Condition** and property **Question** nodes, then select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
@@ -111,13 +109,13 @@ Use entities in the conversational flow to improve the copilot.
 
 1. Select **Property Type** for **Identify**.
 
-1. Select **Select options for user** and check the **Display** option for all list values.
+1. Select **Select options for user** and check the **Display** option for all four values.
 
 1. Select the variable in **Save user response as** and enter **`PropertyType`** for **Variable name**
 
     ![Screenshot of the a new entity.](../media/question-node-entity.png)
 
-1. Select the the **+** icon below the new question node and select **Ask a question**.
+1. Select the the **+** icon below the new **Question** node and select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
