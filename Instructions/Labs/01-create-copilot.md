@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Create a copilot with Copilot Studio'
+    title: 'Create an agent with Copilot Studio'
 ---
 
-# Create a copilot with Copilot Studio
+# Create an agent with Copilot Studio
 
-In this exercise, you’ll use Copilot Studio to create a simple copilot that can answer employee questions about expense policies in a fictional corporation.
+In this exercise, you’ll use Copilot Studio to create a simple agent that can answer employee questions about expense policies in a fictional corporation.
 
 This exercise will take approximately **45** minutes to complete.
 
@@ -13,7 +13,7 @@ This exercise will take approximately **45** minutes to complete.
 
 ## Create a copilot
 
-Let’s start by using Copilot Studio to create a new copilot. The copilot will initially have very limited capabilities, which you’ll extend later in the exercise.
+Let’s start by using Copilot Studio to create a new agent. The agent will initially have very limited capabilities, which you’ll extend later in the exercise.
 
 1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/`, signing in with your work or school account if prompted. Skip any welcome messages.
 
