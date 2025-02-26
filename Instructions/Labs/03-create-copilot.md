@@ -43,7 +43,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 ### Task 1.2 – Create a copilot
 
-1. Select **Create** from the left navigation pane and select the **New agent** tile.
+1. Select **Create** from the left navigation pane and select the **New agent** tile and **Skip Configuration** in the top right.
 
     ![Create in CoPilot Studio portal.](../media/create-copilot-agent.png)
 
