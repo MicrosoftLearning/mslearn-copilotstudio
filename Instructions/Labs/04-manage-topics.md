@@ -41,7 +41,7 @@ In this exercise, you will remove topics in a copilot.
 
 1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
 
-1. Select **Copilots** from the left navigation pane.
+1. Select **Agents** from the left navigation pane.
 
     ![Copilots in CoPilot Studio portal.](../media/copilot-studio-copilots.png)
 
