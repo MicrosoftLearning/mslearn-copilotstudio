@@ -14,7 +14,7 @@ In this lab, you will:
 
 ## What you will learn
 
-- How to create and use entities to improve the copilot
+- How to create and use entities to improve the agent
 
 ## High-level lab steps
 
@@ -35,7 +35,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select **Copilots** from the left navigation pane.
+1. Select **Agents** from the left navigation pane.
 
 1. Select the **Real Estate Booking Service** you created in the earlier lab.
 
@@ -89,13 +89,13 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Close**.
 
-## Exercise 2 - Use entities to improve the copilot
+## Exercise 2 - Use entities to improve the agent
 
-Use entities in the conversational flow to improve the copilot.
+Use entities in the conversational flow to improve the agent.
 
 ### Task 2.1 - Use entities
 
-1. Select the **X** icon in the top-right to close out of Settings and return to your Copilot.
+1. Select the **X** icon in the top-right to close out of Settings and return to your agent.
 
 1. Select the **Topics** tab.
 
