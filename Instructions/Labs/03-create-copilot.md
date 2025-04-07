@@ -1,37 +1,37 @@
 ---
 lab:
-    title: 'Build an initial copilot'
-    module: 'Build an initial copilot with Microsoft Copilot Studio'
+    title: 'Build an initial agent'
+    module: 'Build an initial agent with Microsoft Copilot Studio'
 ---
 
-# Build an initial copilot
+# Build an initial agent
 
 ## Scenario
 
 In this lab, you will:
 
-- Create and name a copilot
-- Add description for what the copilot should do
+- Create and name a agent
+- Add description for what the agent should do
 - Configure Generative AI answers
 
 ## What you will learn
 
-- How to create a a copilot using natural language
-- How to configure Generative AI answers for a copilot
+- How to create an agent using natural language
+- How to configure Generative AI answers for an agent
 
 ## High-level lab steps
 
-- Create a new copilot
-- Tell your copilot what its primary purpose is and how it should act
+- Create a new agent
+- Tell your agent what its primary purpose is and how it should act
 - Add Generative AI instructions
   
 ## Prerequisites
 
 - Must have completed **Lab: Import Dataverse solution**
 
-## Exercise 1 - Create copilot
+## Exercise 1 - Create agent
 
-In this exercise, you will access the Microsoft Copilot Studio portal, the Developer environment and create a new copilot.
+In this exercise, you will access the Microsoft Copilot Studio portal, the Developer environment and create a new agent.
 
 ### Task 1.1 – Microsoft Copilot Studio portal
 
@@ -41,31 +41,31 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Make sure that you are in the appropriate environment.
 
-### Task 1.2 – Create a copilot
+### Task 1.2 – Create an agent
 
 1. Select **Create** from the left navigation pane and select the **New agent** tile and **Skip Configuration** in the top right.
 
-    ![Create in CoPilot Studio portal.](../media/create-copilot-agent.png)
+    ![Create in Copilot Studio portal.](../media/create-copilot-agent.png)
 
 1. In the **Name** text box, enter **`Real Estate Booking Service`**
 
 1. In the **Description** text box, enter **`Create bookings for real estate properties`**
 
-1. In the **Instructions** text box, enter **`Create a copilot for topics relating to creating bookings for real estate properties`**
+1. In the **Instructions** text box, enter **`Create an agent for topics relating to creating bookings for real estate properties`**
 
 1. At the top, **Language** should be set to **English (en-US)**.
 
-    ![CoPilot agent language.](../media/copilot-agent-language.png)
+    ![Copilot agent language.](../media/copilot-agent-language.png)
 
 1. Select the **three dots** in the upper-right of the page and select **Edit advanced settings**.
 
-    ![More options in CoPilot Studio portal.](../media/copilot-studio-more-options-2.png)
+    ![More options in Copilot Studio portal.](../media/copilot-studio-more-options-2.png)
 
 1. Select **Bookings** under **Solution**.
 
 1. Enter `labcopilot` for **Schema Name**.
 
-    ![Advanced settings in CoPilot Studio portal.](../media/copilot-studio-advanced-settings.png)
+    ![Advanced settings in Copilot Studio portal.](../media/copilot-studio-advanced-settings.png)
 
 1. Select **Save**.
 
@@ -77,29 +77,29 @@ Leave this window open.
 
 ## Exercise 2 - Add Generative AI answers
 
-In this exercise, you will access the Microsoft Copilot Studio portal and add knowledge that the copilot will use to answer questions by using Generative AI.
+In this exercise, you will access the Microsoft Copilot Studio portal and add knowledge that the agent will use to answer questions by using Generative AI.
 
 ### Task 2.1 – Enable Generative AI answers
 
 1. In the **Overview** tab, ensure that **Allow the AI to use its own general knowledge** is set to **Enabled** within the **Knowledge** section.
 
-    ![Knowledge enabled in CoPilot Studio portal.](../media/knowledge-enabled.png)
+    ![Knowledge enabled in Copilot Studio portal.](../media/knowledge-enabled.png)
 
 ### Task 2.2 – Add a knowledge source
 
 1. Select the **Knowledge** tab.
 
-    ![Knowledge tab in CoPilot Studio portal.](../media/knowledge-tab.png)
+    ![Knowledge tab in Copilot Studio portal.](../media/knowledge-tab.png)
 
 1. Select **+ Add knowledge**.
 
-    ![Knowledge sources in CoPilot Studio portal.](../media/knowledge-sources.png)
+    ![Knowledge sources in Copilot Studio portal.](../media/knowledge-sources.png)
 
 1. Select **Public websites**
 
 1. In the **Public website link** text box, enter **`https://create.microsoft.com/en-us/`**.
 
-    ![Add public website link in CoPilot Studio portal.](../media/add-website-knowledge-source.png)
+    ![Add public website link in Copilot Studio portal.](../media/add-website-knowledge-source.png)
 
 1. Select **Add**.
 
@@ -107,7 +107,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select the **Overview** tab.
 
-    ![Custom copilot in CoPilot Studio portal.](../media/copilot-studio-copilot2.png)
+    ![Custom copilot in Copilot Studio portal.](../media/copilot-studio-copilot2.png)
 
 1. Select the **three dots** at the top of the **Test your agent** pane.
 
