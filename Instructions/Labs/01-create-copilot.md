@@ -11,7 +11,7 @@ This exercise will take approximately **45** minutes to complete.
 
 > **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
-## Create a copilot
+## Create an agent
 
 Let’s start by using Copilot Studio to create a new agent. The agent will initially have very limited capabilities, which you’ll extend later in the exercise.
 
@@ -50,7 +50,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 1. Continue the conversation to define your agent, which should:
     - Have an appropriate name
     - Use a friendly, professional tone.
-    - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your copilot later).
+    - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your agent later).
     - Avoid providing any tax advice.
     
     When you're done, a preview of the chat interface for your agent is displayed beside the conversation used to create it.
@@ -131,7 +131,7 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     The new topic should be triggered by phrases that ask about a contact for expenses, and respond with a message telling the user to send an email to the appropriate address.
 
 1. Use the **Save** button (at the top right) to save the new topic in your
-copilot.
+agent.
 
 1. Open the **Test** pane, and enter the following prompt:
 
