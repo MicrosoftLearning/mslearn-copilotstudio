@@ -1,25 +1,25 @@
 ---
 lab:
-    title: 'Deploy copilot to Microsoft Teams'
-    module: 'Create a copilot with Microsoft Copilot Studio and Dataverse for Teams'
+    title: 'Deploy agent to Microsoft Teams'
+    module: 'Create an agent with Microsoft Copilot Studio and Dataverse for Teams'
 ---
 
-# Deploy copilot to Microsoft Teams
+# Deploy agent to Microsoft Teams
 
 ## Scenario
 
 In this lab, you will:
 
-- Create copilot actions
+- Create agent actions
 
 ## What you will learn
 
-- How to deploy a copilot to Microsoft Teams
+- How to deploy an agent to Microsoft Teams
 
 ## High-level lab steps
 
 - Publish
-- Deploy copilot to Microsoft Teams
+- Deploy agent to Microsoft Teams
   
 ## Prerequisites
 
@@ -27,15 +27,15 @@ In this lab, you will:
 
 ## Detailed steps
 
-## Exercise 1 - Publish the copilot
+## Exercise 1 - Publish the agent
 
 ### Task 1.1 - Publish the latest content
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select **Copilots** from the left navigation pane.
+1. Select **Agents** from the left navigation pane.
 
-1. Select the copilot you created in the earlier lab.
+1. Select the agent you created in the earlier lab.
 
 1. Select **Publish** and select **Publish** again.
 
@@ -46,11 +46,11 @@ In this lab, you will:
 
 ## Exercise 2 - Channels
 
-With your copilot published, you can make your copilot available to users in Teams. This way you, your teammates, and your broader organization can interact with it.
+With your agent published, you can make your agent available to users in Teams. This way you, your teammates, and your broader organization can interact with it.
 
 ### Task 2.1 - Microsoft Teams channel
 
-1. With your Copilot open in Microsoft Copilot Studio, select the **Channels** tab.
+1. With your agent open in Microsoft Copilot Studio, select the **Channels** tab.
 
     ![Screenshot of the channels tab.](../media/channels.png)
 
@@ -96,6 +96,6 @@ With your copilot published, you can make your copilot available to users in Tea
 
     ![Screenshot of dialog to add the app to Teams.](../media/teams-add-app.png)
 
-1. Test the Copilot.
+1. Test the agent.
 
-    ![Screenshot of the copilot in Teams.](../media/teams-copilot.png)
+    ![Screenshot of the agent in Teams.](../media/teams-copilot.png)
