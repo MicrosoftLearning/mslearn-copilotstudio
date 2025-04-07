@@ -10,11 +10,11 @@ lab:
 
 In this lab, you will:
 
-- Create copilot actions
+- Create agent actions
 
 ## What you will learn
 
-- How to use the Generative answers feature to improve your copilot's responses.
+- How to use the Generative answers feature to improve your agent's responses.
 
 ## High-level lab steps
 
@@ -23,7 +23,7 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab: Create copilot actions**
+- Must have completed **Lab: Create agent actions**
 
 ## Detailed steps
 
@@ -33,7 +33,7 @@ In this lab, you will:
 
 1. If it's not still open, go to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select **Copilots** from the left navigation.
+1. Select **Agents** from the left navigation.
 
 1. Select the **Real Estate Booking Service** you created in the earlier lab.
 
@@ -41,13 +41,13 @@ In this lab, you will:
 
 1. Select the **Generative AI** tab.
 
-1. Select **Generative** under **How should your copilot interact with people?**.
+1. Select **Generative** under **How should your agent interact with people?**.
 
 1. Select **Medium - More Balanced** for **How strict should the content moderation be?**.
 
 1. Select **Save**.
 
-    ![Generative AI pane in CoPilot Studio Settings](../media/settings-generative-ai-2.png)
+    ![Generative AI pane in Copilot Studio Settings](../media/settings-generative-ai-2.png)
 
 1. Close the **Settings** menu by selecting the **X** icon in the upper-right of Copilot Studio.
 
@@ -159,7 +159,7 @@ In this lab, you will:
 
 ## Exercise 4 - Test Generative AI
 
-### Task 4.1 Test the copilot's knowledge
+### Task 4.1 Test the agent's knowledge
 
 1. If it's not open, select the **Test** button in the upper-right of the screen to open the testing panel.
 
@@ -171,4 +171,4 @@ In this lab, you will:
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
-1. Explore the copilot and see how it uses the knowledge sources.
+1. Explore the agent and see how it uses the knowledge sources.
