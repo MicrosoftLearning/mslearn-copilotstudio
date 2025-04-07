@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Create copilot actions'
+    title: 'Create agent actions'
     module: 'Enhance Microsoft Copilot Studio copilots'
 ---
 
@@ -10,7 +10,7 @@ lab:
 
 In this lab, you will:
 
-- Create copilot actions
+- Create agent actions
 
 ## What you will learn
 
@@ -18,8 +18,8 @@ In this lab, you will:
 
 ## High-level lab steps
 
-- Create a Power Automate cloud flow to retrieve Dataverse data with a copilot action
-- Create a Power Automate cloud flow to create Dataverse data with a copilot action
+- Create a Power Automate cloud flow to retrieve Dataverse data with an agent action
+- Create a Power Automate cloud flow to create Dataverse data with an agent action
   
 ## Prerequisites
 
@@ -27,7 +27,7 @@ In this lab, you will:
 
 ## Detailed steps
 
-## Exercise 1 - Create Copilot action to retrieve data from Dataverse
+## Exercise 1 - Create agent action to retrieve data from Dataverse
 
 Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Automate cloud flows.
 
@@ -35,7 +35,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select **Copilots** from the left navigation pane.
+1. Select **Agents** from the left navigation pane.
 
 1. Select the **Real Estate Booking Service** you created in the earlier lab.
 
@@ -129,7 +129,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Wait for the save to complete, then close the Power Automate tab.
 
-### Task 1.2 - Add a Copilot action to retrieve a property
+### Task 1.2 - Add an agent action to retrieve a property
 
 1. Select **Refresh** from the Copilot Studio dialog box to see the new Flow.
 
@@ -143,7 +143,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select **Finish**.
 
-### Task 1.3 - Add the Get Property Copilot action to the topic
+### Task 1.3 - Add the Get Property agent action to the topic
 
 1. Select the **Topics** tab.
 
@@ -169,7 +169,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select **Save**.
 
-## Exercise 2 - Create Copilot action to create data in Dataverse
+## Exercise 2 - Create agent action to create data in Dataverse
 
 Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Automate cloud flows.
 
@@ -233,7 +233,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Wait for the save to complete, then close the Power Automate tab.
 
-### Task 2.2 - Add a Copilot action to create a booking request
+### Task 2.2 - Add an agent action to create a booking request
 
 1. Select **Refresh** from the Copilot Studio dialog box to see the new Flow.
 
@@ -245,7 +245,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Finish**.
 
-### Task 2.3 - Add the Create Booking Request Copilot action to the topic
+### Task 2.3 - Add the Create Booking Request agent action to the topic
 
 1. Select the **Topics** tab.
 
@@ -265,7 +265,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Publish** and select **Publish** again.
 
-## Exercise 3 - Test the copilot actions
+## Exercise 3 - Test the agent actions
 
 ### Task 3.1 - Make a booking request
 
@@ -279,7 +279,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
-1. When the **Conversation Start** message appears, your copilot will start a conversation. In response, enter a trigger phrase for the topic that you've created:
+1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
 
     `I want to book a real estate showing`
 
