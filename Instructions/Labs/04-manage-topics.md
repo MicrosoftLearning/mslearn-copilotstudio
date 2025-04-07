@@ -16,7 +16,7 @@ In this lab, you will:
 
 ## What you will learn
 
-- How to configure copilot topics
+- How to configure agent topics
 
 ## High-level lab steps
 
@@ -27,13 +27,13 @@ In this lab, you will:
   
 ## Prerequisites
 
-- Must have completed **Lab: Build an initial copilot**
+- Must have completed **Lab: Build an initial agent**
 
 ## Detailed steps
 
 ## Exercise 1 - Remove topics
 
-In this exercise, you will remove topics in a copilot.
+In this exercise, you will remove topics in an agent.
 
 ### Task 1.1 – Disable topics
 
@@ -43,21 +43,21 @@ In this exercise, you will remove topics in a copilot.
 
 1. Select **Agents** from the left navigation pane.
 
-    ![Copilots in CoPilot Studio portal.](../media/copilot-studio-copilots.png)
+    ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
 
-1. Select the copilot you created in the previous lab.
+1. Select the agent you created in the previous lab.
 
 1. Select the **Topics** tab.
 
-    ![Topics tab in CoPilot Studio portal.](../media/topics-tab.png)
+    ![Topics tab in Copilot Studio portal.](../media/topics-tab.png)
 
 1. Toggle **Enabled** to **Off** for the **Start Over** topic.
 
-    ![Topics removed and disabled in CoPilot Studio portal.](../media/topics-removed.png)
+    ![Topics removed and disabled in Copilot Studio portal.](../media/topics-removed.png)
 
 ## Exercise 2 - Create topics with natural language
 
-In this exercise, you will create topics in a copilot and add trigger phrases.
+In this exercise, you will create topics in an agent and add trigger phrases.
 
 ### Task 2.1 – Add a topic using copilot
 
@@ -77,7 +77,7 @@ In this exercise, you will create topics in a copilot and add trigger phrases.
 
 ### Task 2.2 – Update nodes with natural language
 
-1. If the **Edit with CoPilot** pane is not shown on the right side of the **Customer Details** pane, select the **Copilot** icon in the upper part of the authoring canvas.
+1. If the **Edit with Copilot** pane is not shown on the right side of the **Customer Details** pane, select the **Copilot** icon in the upper part of the authoring canvas.
 
     ![Screenshot of the Edit with Copilot icon.](../media/edit-with-copilot.png)
 
