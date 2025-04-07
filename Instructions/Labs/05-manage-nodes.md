@@ -33,13 +33,13 @@ Variables can be accessed by other topics.
 
 ### Task 1.1 - Configure the scope of the variables
 
-1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
+1. Navigate to the Microsoft  Studio portal `https://studio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
 
-1. Select **Copilots** from the left navigation pane.
+1. Select **Agents** from the left navigation pane.
 
-1. Select the copilot you created in the earlier lab.
+1. Select the agent you created in the earlier lab.
 
 1. Select the **Topics** tab.
 
@@ -123,7 +123,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select **Save**.
 
-### Task 2.5 - Test the copilot
+### Task 2.5 - Test the agent
 
 1. If it's not open, select the **Test** button in the upper-right of the screen to open the testing panel.
 
@@ -135,11 +135,11 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
-1. When the **Conversation Start** message appears, your copilot will start a conversation. In response, enter a trigger phrase for the topic that you've created:
+1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
 
     `I want to book a real estate showing`
 
-1. The copilot responds with the "What is your name?" question, as shown in the following image.
+1. The agent responds with the "What is your name?" question, as shown in the following image.
 
     ![Screenshot of the Conversation Start message and response.](../media/conversation-start-message.png)
 
@@ -158,7 +158,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
     ![Screenshot of the Adaptive Card with the information entered.](../media/adaptive-card-information.png)
 
-## Exercise 3 - Deploy copilot
+## Exercise 3 - Deploy agent
 
 ### Task 3.1 - Configure Authentication
 
@@ -178,7 +178,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. Select the **X** in the upper-right to close out of the **Settings**.
 
-### Task 3.2 - Publish the copilot
+### Task 3.2 - Publish the agent
 
 1. Select **Publish** in the upper-right, then select **Publish** again.
 
@@ -188,4 +188,4 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 1. In the **Type your message** text box, enter **`I want to book a property`**.
 
-1. Answer the prompts to test the copilot.
+1. Answer the prompts to test the agent.
