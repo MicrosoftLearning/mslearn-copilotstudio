@@ -18,7 +18,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In a new browser tab, navigate to `https://make.powerapps.com`.
 
-1. If prompted for credentials, sign in with your email address and password if prompted.
+1. If prompted for credentials, sign in with your email address and password.
 
 1. If prompted for contact information, set the Country/region and select **Get Started**.
 
@@ -96,6 +96,6 @@ In this exercise, you will import a Dataverse solution into your environment tha
     - **Bedrooms:** `4`
     - **Bathrooms:** `3`
 
-    ![Overview.](../media/add-record.png)
+    ![Overview.](../media/add-record2.png)
 
 1. Select **Save & Close**.

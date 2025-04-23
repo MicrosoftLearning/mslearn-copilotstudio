@@ -43,9 +43,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 ### Task 1.2 – Create an agent
 
-1. Select **Create** from the left navigation pane and select the **New agent** tile and **Skip Configuration** in the top right.
-
-    ![Create in Copilot Studio portal.](../media/create-copilot-agent.png)
+1. Select **Create** from the left navigation pane and select the **+ New agent** and **Skip Configuration** in the top right.
 
 1. In the **Name** text box, enter **`Real Estate Booking Service`**
 
@@ -93,8 +91,6 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **+ Add knowledge**.
 
-    ![Knowledge sources in Copilot Studio portal.](../media/knowledge-sources.png)
-
 1. Select **Public websites**
 
 1. In the **Public website link** text box, enter **`https://create.microsoft.com/en-us/`**.
@@ -115,10 +111,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. At the top of the **Test your agent** pane, select the  **Start a new conversation** icon (refresh icon) next to the **X**.
-
+1. At the top of the **Test your agent** pane, select the  **Start a new conversation** icon (refresh icon).
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
-1. In the **Type your message** text box, enter **`How do I boost real estate promotion?`**.
+1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`**.
 
     ![Screenshot of the Testing panel results.](../media/test-pane-results.png)

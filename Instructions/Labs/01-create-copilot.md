@@ -114,9 +114,9 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     - **Conversational boosting**: This topic is triggered when the user submits a message for which the agent can't identify a corresponding topic (the user's *intent* is unknown). The topic then attempts to respond to the user's message by using generative AI.
     - **Fallback**: This topic is a "fail-safe" topic that responds when the intent is unknown and an appropriate conversational AI response can't be generated. The fallback topic includes logic to enable the user to try again up to three times before gracefully ending the conversation, often by escalating to a human operator.
 1. Return to the **Topics** page, and in the **+ Add a topic** menu, select
-    **Topic** \> **Create from description with copilot**.
+    **Topic** \> **Create from description with Copilot**.
 
-1. In the **Create a description with copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell copilot what the topic should do:
+1. In the **Create from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell copilot what the topic should do:
 
     ```prompt
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.
@@ -183,9 +183,9 @@ Now that you have a working agent, you can publish it for people to use. The ava
 
 1. Hide the **Test your agent** pane. Then, at the top of the page, select the **Channels** tab and review the channels to which you can deploy your agent. The available channels depend on the authentication settings for your agent.
 1. Select **Settings** at the top of the page.
-1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the agent for anyone).
+1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the agent for everyone).
 1. Close the **Settings** pane. Then, view the **Channels** page.
-1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**, and publish your agent. Publishing will take a minute or so.
+1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. Publishing will take a minute or so.
 1. After your agent has been published, verify the **Publish status** on the **Channels** page.
 
     ![Screenshot of the Channels page in Copilot Studio.](media/channels-page.png)
