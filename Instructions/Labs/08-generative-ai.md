@@ -112,6 +112,7 @@ In this lab, you will:
 ### Task 2.2 - Add knowledge from files
 
 1. Download this [**Microsoft case study**](https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx) or [**SummitRealtyCaseStudy.docx**](../../Allfiles/SummitRealtyCaseStudy.docx) from GitHub.
+> ℹ️ **NOTE:** The link to the Microsoft case study is here: `https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx`
 
 1. Select **+ Add knowledge**.
 
