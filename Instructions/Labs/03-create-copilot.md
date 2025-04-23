@@ -102,9 +102,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 1. Select **Add**.
 
 1. Select the **Overview** tab.
-
-    ![Custom copilot in Copilot Studio portal.](../media/copilot-studio-copilot2.png)
-
+    
 1. Select the **three dots** at the top of the **Test your agent** pane.
 
 1. Enable **Track between topics**.

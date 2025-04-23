@@ -29,7 +29,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
 1. In the navigation pane on the left, select **Create** to view a page on which you can create a new agent, like this:
 
-    ![Screenshot of the Create page in Copilot Studio.](media/create-copilot.png)
+    ![Screenshot of the Create page in Copilot Studio.](media/create-copilot-agent.png)
 
     You can create a completely new agent or start with a template. In this exercise, you'll create a brand new agent.
 
@@ -123,6 +123,8 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     ```
 
 1. Select **Create**.
+
+1. If prompted, select **Allow** for **see text and images copied to the clipboard**.
 
 1. After a short wait, a new topic named *Ask about expenses contact* should be created and opened in the authoring canvas, where it should look similar to this:
 
