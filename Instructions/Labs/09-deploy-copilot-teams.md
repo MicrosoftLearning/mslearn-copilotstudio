@@ -38,9 +38,6 @@ In this lab, you will:
 1. Select the agent you created in the earlier lab.
 
 1. Select **Publish** and select **Publish** again.
-
-   ![Screenshot of the publish dialog.](../media/copilot-publish.png)
-
    > **Note:**
    > Publishing can take a few minutes.
 
