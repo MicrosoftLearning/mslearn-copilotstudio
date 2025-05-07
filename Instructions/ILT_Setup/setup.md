@@ -5,7 +5,6 @@ Before you start the lab exercise, you must create a development environment for
 1. Close any pop-up messages that are displayed.
 1. Select **+New** and create a new environment with the following settings:
     - **Name**: *Enter the unique environment name provided in your lab environment*
-    - **Group**: None
     - **Region**: *Choose the **default** region*
     - **Get new features early**: No
     - **Type**: Developer
@@ -18,8 +17,8 @@ Before you start the lab exercise, you must create a development environment for
         - **Deploy sample apps and data**: No
 1. Save and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display)
 1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your credentials if prompted).
-1. When prompted, select the option to start a free trial.
+1. If prompted, select the option to start a free trial.
 1. Skip any welcome messages.
-1. At the top of the page, select the **Environment**. Then in the **Select environment** pane, search for your environment name. Then under **Supported environments**, select the environment you created previously (make sure you select your own environment - others may be listed)
+1. At the top of the page, select the **Environment**. Then in the **Select environment** pane, select the environment you created previously.
 1. When Copilot Studio reopens, you may skip any welcome messages.
 
