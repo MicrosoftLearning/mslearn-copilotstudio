@@ -1,5 +1,5 @@
 
-Before you start the lab exercise, you must create a development environment for your copilot.
+Before you start the lab exercise, you must create a development environment for you to work in.
 
 1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/environments`, and sign in using your credentials for this exercise. If prompted, choose the option to stay signed in.
 1. Close any pop-up messages that are displayed.
