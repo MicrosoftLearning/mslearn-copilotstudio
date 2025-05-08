@@ -49,21 +49,15 @@ With your agent published, you can make your agent available to users in Teams. 
 
 1. With your agent open in Microsoft Copilot Studio, select the **Channels** tab.
 
-    ![Screenshot of the channels tab.](../media/channels.png)
+1. Select the **Teams and Microsoft 365 Copilot** tile.
 
-1. Select the **Microsoft Teams** tile.
-
-    ![Screenshot of the Teams dialog.](../media/teams-enable.png)
-
-1. Select **Turn on Teams**.
-
-    ![Screenshot of the Teams channel dialog.](../media/teams-channel.png)
+1. Select **Add channel**.
 
 1. Select **Availability options**.
 
     ![Screenshot of the Teams channel availability options.](../media/teams-availability-options.png)
 
-1. Selecy **Copy link**.
+1. Select **Copy link**.
 
 1. Select **Show to my teammates and shared users**.
 
@@ -71,19 +65,7 @@ With your agent published, you can make your agent available to users in Teams. 
 
 1. Select the back arrow in the top-left of the pane.
 
-1. Select **Share**.
-
-### Task 2.2 - Microsoft Teams
-
-1. Go to Microsoft Teams `https://teams.microsoft.com` in a new tab.
-
-1. Sign in to Teams if prompted.
-
-1. Select **Teams** in the left navigation.
-
-1. You will see a Team named **Contoso** with a **General** channel.
-
-1. Open a new tab and go to the URL link copied in the previous task.
+1. Select **See agent in Teams**
 
 1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams**.
 
