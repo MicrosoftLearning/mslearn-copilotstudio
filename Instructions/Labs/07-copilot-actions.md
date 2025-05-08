@@ -47,10 +47,6 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select the **Flow** filter, then select **Run a Flow with Power Automate for Desktop**.
 
-1. Sign in to Power Automate if prompted.
-
-    ![Screenshot of Power Automate flow with trigger and response steps.](../media/create-flow-step1.png)
-
 1. Select **Run a flow from Copilot** in the top-left of the screen and enter `Get Property` as the flow name.
 
 1. Select the trigger step **Run a flow from Copilot** and select **+ Add an input**.
