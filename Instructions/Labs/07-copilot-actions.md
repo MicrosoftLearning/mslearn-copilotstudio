@@ -45,7 +45,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of step 1 of add an action.](../media/add-action-step-1.png)
 
-1. Select **+ New Action** and then **New Power AutoMate Flow**.
+1. Select **+ New Action** and then **New Power Automate Flow**.
 
 1. Sign in to Power Automate if prompted.
 
