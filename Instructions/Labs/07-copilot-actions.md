@@ -45,7 +45,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of step 1 of add an action.](../media/add-action-step-1.png)
 
-1. Select **+ New Action** and then **New Power Automate Flow**.
+1. Select the **Flow** filter, then select **Run a Flow with Power Automate for Desktop**.
 
 1. Sign in to Power Automate if prompted.
 
@@ -127,7 +127,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select **Save** near the upper-right of the page.
 
-1. Wait for the save to complete, then close the Power Automate tab.
+1. Wait for the save to complete, Select **Publish** then close the Power Automate tab once Publishing is complete.
 
 ### Task 1.2 - Add an agent action to retrieve a property
 
@@ -149,7 +149,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select the **Book a Real Estate Showing** topic.
 
-1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Call an action**, then select the **Get Property** flow.
+1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Add an action**, then select the **Get Property** flow.
 
     ![Screenshot of step 2 of add a flow action.](../media/add-action-flow-step-2.png)
 
@@ -179,11 +179,11 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **+ Add an action**.
 
-1. Scroll down and select **Create a new flow**.
+1. Scroll down and select **+ New Action** and then **New Power Automate Flow** .
 
 1. Select **Run a flow from Copilot** in the top-left of the screen and enter `Create Booking Request` as the flow name.
 
-1. Select the trigger step **Run a flow from Copilot** and select **+ Add an input**.
+1. Select the trigger step **When an agent calls the flow** and select **+ Add an input**.
 
 1. Select **Text**.
 
@@ -215,7 +215,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Show all** under **Advanced parameters**.
 
-1. Enter `contoso_bookingrequests()` in the **Property (Real Estate Properties)** field, move the cursor within the parentheses, select the **lightning** icon, then select the **PropertyId** parameter.
+1. Enter `contoso_bookingrequests(PropertyId)` in the **Property (Real Estate Properties)** field, move the cursor within the parentheses, select the **lightning** icon, then select the **PropertyId** parameter.
 
 1. Select the **Viewer Email** field, select the **lightning** icon, then select the **ViewerEmail** parameter.
 
@@ -231,7 +231,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Save** in the upper-right of the window.
 
-1. Wait for the save to complete, then close the Power Automate tab.
+1. Wait for the save to complete, select **Publish** then close the Power Automate tab.
 
 ### Task 2.2 - Add an agent action to create a booking request
 
@@ -251,7 +251,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select the **Book a Real Estate Showing** topic.
 
-1. Select the the **+** icon below the **What date and time do you want to see the property?** node, select **Call an action**, then select the **Create Booking Request** flow.
+1. Select the the **+** icon below the **What date and time do you want to see the property?** node, select **Add an action**, then select the **Create Booking Request** flow.
 
 1. Select the **PropertyId** variable for the **PropertyId** input parameter.
 
@@ -287,6 +287,8 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
     ```
     Name: <Your name>
+    ```
+    ```
     Email address: <Your email address>
     ```
 
@@ -305,6 +307,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 1. Select any rating.
 
 1. Select **No** to the **Can I help with anything else?** prompt.
+    >[!Note] There may not be any responses generated.
 
 ### Task 3.2 - Verify the booking request
 
