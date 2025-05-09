@@ -218,7 +218,6 @@ time to apply what you’ve learned on your own. Try creating an agent that prov
 
 - Create a new agent.
 - Use the `https://www.microsoft.com/en-us/microsoft-copilot/` website as a knowledge source.
-- Do not include lesson topics.
 - Publish the agent so that users can test it in a demo website.
 
 > **Tip**: If you need help, consult the [Copilot Studio documentation](https://learn.microsoft.com/microsoft-copilot-studio/) at `https://learn.microsoft.com/microsoft-copilot-studio/`.
