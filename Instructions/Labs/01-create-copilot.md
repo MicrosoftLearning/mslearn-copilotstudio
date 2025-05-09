@@ -52,7 +52,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
     - Use a friendly, professional tone.
     - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your agent later).
     - Avoid providing any tax advice.
-    
+
     When you're done, a preview of the chat interface for your agent is displayed beside the conversation used to create it.
 
 1. When you're ready, select **Create** at the top right to create your agent. After a short while, it will be displayed like this (you can unpin the pane on the left to see it more clearly):
@@ -92,7 +92,7 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
 1. In the page for your agent, select the **Topics** tab to see its topics.
 
     ![Screenshot of the Topics page in Copilot Studio.](media/default-topics.png)
-    
+
     The agent has a few ***Custom*** topics that are triggered by input from the user, and some additional ***System*** topics that are triggered by specific events, such as errors or unexpected input. You can filter the topics by category or use the **All** filter to see them all.
 
 1. Select the **Greeting** custom topic to view it on the *authoring canvas*, which is a visual designer for creating and editing topics and looks similar to this:
@@ -196,7 +196,7 @@ Now that you have a working agent, you can publish it for people to use. The ava
 1. In the **Demo website** pane, enter the following settings:
     - **Welcome message**: `Ask me about Expense claims`
     - **Conversation starters**:
-    
+
         ```prompt
         "Hello"
         "Who should I contact with expense enquiries?"
