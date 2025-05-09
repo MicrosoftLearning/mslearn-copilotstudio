@@ -43,7 +43,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 ### Task 1.2 – Create an agent
 
-1. Select **Create** from the left navigation pane and select the **+ New agent** and **Skip Configuration** in the top right.
+1. Select **Create** from the left navigation pane and select the **+ New agent** and **Skip to configure** in the top right.
 
 1. In the **Name** text box, enter **`Real Estate Booking Service`**
 
@@ -102,7 +102,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 1. Select **Add**.
 
 1. Select the **Overview** tab.
-    
+
 1. Select the **three dots** at the top of the **Test your agent** pane.
 
 1. Enable **Track between topics**.
@@ -110,6 +110,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
 1. At the top of the **Test your agent** pane, select the  **Start a new conversation** icon (refresh icon).
+
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
 1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`**.
