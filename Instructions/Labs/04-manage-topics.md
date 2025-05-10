@@ -87,7 +87,7 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
-    `Update the message in this Question node to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
+    `Replace "What is your email address?" to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
 
 1. Select **Update**.
 

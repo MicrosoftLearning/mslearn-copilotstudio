@@ -103,20 +103,15 @@ In this lab, you will:
 
     ![Screenshot of adding website knowledge.](../media/add-dataverse-knowedge-step1.png)
 
-1. Select **Next**.
-
-1. Select **Next**.
-
 1. Select **Add**.
 
 ### Task 2.2 - Add knowledge from files
 
 1. Download this [**Microsoft case study**](https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx) or [**SummitRealtyCaseStudy.docx**](../../Allfiles/SummitRealtyCaseStudy.docx) from GitHub.
+
 > ℹ️ **NOTE:** The link to the Microsoft case study is here: `https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx`
 
 1. Select **+ Add knowledge**.
-
-1. Select **Files**.
 
 1. Under **Upload files**, browse and select the case study that you downloaded.
 
@@ -140,7 +135,7 @@ In this lab, you will:
 
 1. Select the the **+** icon under the **Condition** node, select **Advanced**, and select **Generative answers**.
 
-1. Select **Activity.Text** for the **Input** field.
+1. Select **System** tab and select **Activity.Text** for the **Input** field.
 
 1. Select **Edit** under **Data sources**.
 

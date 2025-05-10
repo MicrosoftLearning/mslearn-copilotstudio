@@ -1,7 +1,9 @@
 
+# Create an environment
+
 Before you start the lab exercise, you must create a development environment for you to work in.
 
-1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/environments`, and sign in using your credentials for this exercise. If prompted, choose the option to stay signed in.
+1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/manage/environments`, and sign in using your credentials for this exercise. If prompted, choose the option to stay signed in.
 1. Close any pop-up messages that are displayed.
 1. Select **+New** and create a new environment with the following settings:
     - **Name**: *Enter the unique environment name provided in your lab environment*
@@ -21,4 +23,3 @@ Before you start the lab exercise, you must create a development environment for
 1. Skip any welcome messages.
 1. At the top of the page, select the **Environment**. Then in the **Select environment** pane, select the environment you created previously.
 1. When Copilot Studio reopens, you may skip any welcome messages.
-
