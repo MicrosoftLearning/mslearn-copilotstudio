@@ -43,13 +43,15 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select **+ Add an action**.
 
+1. Select the **ellipses (...)** and select **Flow**.
+
     ![Screenshot of step 1 of add an action.](../media/add-action-step-1.png)
 
-1. Select the **Flow** filter, then select **Run a Flow with Power Automate for Desktop**.
+1. Select **New action** and select **New Power Automate flow**.
 
 1. Select **Run a flow from Copilot** in the top-left of the screen and enter `Get Property` as the flow name.
 
-1. Select the trigger step **Run a flow from Copilot** and select **+ Add an input**.
+1. Select the trigger step **When an agent calls the flow** and select **+ Add an input**.
 
 1. Select **Text**.
 
@@ -57,7 +59,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of trigger properties of the flow.](../media/create-flow-step2.png)
 
-1. Select the **+** icon between the two steps in the flow and select **Add an action**.
+1. Select the **+** icon between the two steps in the flow to add a new action.
 
 1. Enter `Dataverse` in the **Search** field and select **See more** for the **Microsoft Dataverse** connector.
 
@@ -121,23 +123,33 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of response action settings.](../media/create-flow-step6.png)
 
-1. Select **Save** near the upper-right of the page.
+1. Select **Save draft** near the upper-right of the page.
 
 1. Wait for the save to complete, Select **Publish** then close the Power Automate tab once Publishing is complete.
 
 ### Task 1.2 - Add an agent action to retrieve a property
 
-1. Select **Refresh** from the Copilot Studio dialog box to see the new Flow.
-
-1. Select the **Get Property** flow.
+1. Select **Refresh** from the Copilot Studio dialog box to see the new flow.
 
     ![Screenshot of step 1 of add a flow action.](../media/add-action-flow-step-1.png)
 
-1. Select **Next**.
+1. Select the **Get Property** flow.
 
-1. Select **Next**.
+1. Expand **Inputs and outputs**
 
-1. Select **Finish**.
+    ![Screenshot of adding outputs to a flow action.](../media/add-action-flow-step-1a.png)
+
+1. Select **+ Add** for **Outputs**.
+
+1. Select **PropertyId**.
+
+1. Select **+ Add** for **Outputs**.
+
+1. Select **PropertyName**.
+
+    ![Screenshot of ouputs added to a flow action.](../media/add-action-flow-step-1b.png)
+
+1. Select **Add action**.
 
 ### Task 1.3 - Add the Get Property agent action to the topic
 
@@ -153,7 +165,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of step 3 of add a flow action.](../media/add-action-flow-step-3.png)
 
-1. Select the **three dots** in the **Which property do you want to see?** node and select **Delete**.
+1. Select the **three dots** in the **Which property do you want to see?** question node and select **Delete**.
 
 1. Select the the **+** icon under the **Action** node and select **Send a message**.
 
@@ -175,7 +187,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **+ Add an action**.
 
-1. Scroll down and select **+ New Action** and then **New Power Automate Flow** .
+1. SSelect **+ New Action** and then **New Power Automate Flow** .
 
 1. Select **Run a flow from Copilot** in the top-left of the screen and enter `Create Booking Request` as the flow name.
 
@@ -199,7 +211,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
     ![Screenshot of configuring flow parameters action.](../media/create-flow2-step1.png)
 
-1. Select the **+** icon between the two steps in the flow and select **Add an action**.
+1. Select the **+** icon between the two steps in the flow to add a new action.
 
 1. Enter `Dataverse` in the **Search** field and select **See more** for the **Microsoft Dataverse** connector.
 
@@ -211,7 +223,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Show all** under **Advanced parameters**.
 
-1. Enter `contoso_bookingrequests(PropertyId)` in the **Property (Real Estate Properties)** field, move the cursor within the parentheses, select the **lightning** icon, then select the **PropertyId** parameter.
+1. Enter `contoso_bookingrequests()` in the **Property (Real Estate Properties)** field, move the cursor within the parentheses, select the **lightning** icon, then select the **PropertyId** parameter.
 
 1. Select the **Viewer Email** field, select the **lightning** icon, then select the **ViewerEmail** parameter.
 
@@ -225,7 +237,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Ensure that **Asynchronous Response** is set to **Off**.
 
-1. Select **Save** in the upper-right of the window.
+1. Select **Save draft** in the upper-right of the window.
 
 1. Wait for the save to complete, select **Publish** then close the Power Automate tab.
 
@@ -235,11 +247,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select the **Create Booking Request** flow.
 
-1. Select **Next**.
-
-1. Select **Next**.
-
-1. Select **Finish**.
+1. Select **Add action**.
 
 ### Task 2.3 - Add the Create Booking Request agent action to the topic
 
@@ -311,7 +319,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Make sure you are in the appropriate environment.
 
-1. Select **Play** on the **Real Estate Property Management** Model-Driven App.
+1. Select **Play** on the **Real Estate Property Management** model-driven app.
 
 1. In the left navigation, select **Booking Requests**.
 
