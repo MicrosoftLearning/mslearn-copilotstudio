@@ -21,5 +21,8 @@ Before you start the lab exercise, you must create a development environment for
 1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your credentials if prompted).
 1. If prompted, select the option to start a free trial.
 1. Skip any welcome messages.
+
+    > **Note**: The first time you open Copilot Studio, it may display a chat interface to create your first agent. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel agent creation** to leave the chat interface and view the Copilot Studio home page.
+
 1. At the top of the page, select the **Environment**. Then in the **Select environment** pane, select the environment you created previously.
 1. When Copilot Studio reopens, you may skip any welcome messages.
