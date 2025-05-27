@@ -85,6 +85,8 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
     ![Screenshot of configuring list rows action.](../media/create-flow-step4.png)
 
+    > **Important:** Ensure there is a space between eq and Bedrooms.
+
 1. In the main Power Automate pane, select the **Respond to Copilot** action and select **+ Add an output**.
 
 1. Select **Text**.
@@ -221,7 +223,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Booking Requests** for table name.
 
-1. Enter `Copilot booking` in the **Booking Name** field.
+1. Enter `Agent booking` in the **Booking Name** field.
 
 1. Select **Show all** under **Advanced parameters**.
 
