@@ -176,7 +176,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
 
-    ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
+    ![Screenshot of the test pane with a citation from a knowledge source.](media/test-knowledge.png)
 
 1. Try asking some follow-up questions, such as:
     - `What about flights?`
@@ -188,7 +188,7 @@ Now that you have a working agent, you can publish it for people to use. The ava
 
 1. Hide the **Test your agent** pane. Then, at the top of the page, select the **Channels** tab and review the channels to which you can deploy your agent. The available channels depend on the authentication settings for your agent.
 1. Select **Settings** at the top of the page.
-1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the agent for everyone).
+1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration and **Save** again (confirming that you want to enable access to the agent for everyone).
 1. Close the **Settings** pane. Then, view the **Channels** page.
 1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. Publishing will take a minute or so.
 1. After your agent has been published, verify the **Publish status** on the **Channels** page.
