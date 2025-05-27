@@ -22,7 +22,6 @@ This exercise will take approximately **30** minutes to complete.
 
 ## High-level lab steps
 
-- Delete the sample topics
 - Disable topics
 - Create new and edit topics with natural language
 - Create a new topic and add trigger phrases
@@ -89,7 +88,7 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
-    `Replace "What is your email address?" to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
+    `Change "What is your email address?" to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
 
 1. Select **Update**.
 
@@ -97,7 +96,7 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
     ![Screenshot of the message updated to include the Name variable.](../media/message-updated-name-variable.png)
 
-    > **Note**: The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above.
+    > **Note**: The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above. If Edit with copilot did not update the question node correctly, select Undo, and retry with a different prompt.
 
 1. Select **Save**.
 
