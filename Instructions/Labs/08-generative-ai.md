@@ -1,16 +1,18 @@
 ---
 lab:
     title: 'Use Generative AI in Microsoft Copilot Studio'
-    module: 'Enhance Microsoft Copilot Studio copilots'
+    module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
 # Use Generative AI in Microsoft Copilot Studio
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create agent actions
+- Use knowledge and Generative AI in your agent
+
+This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 

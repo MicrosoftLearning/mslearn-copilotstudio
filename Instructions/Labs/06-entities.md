@@ -8,9 +8,11 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
 - Create and use entities
+
+This exercise will take approximately **15** minutes to complete.
 
 ## What you will learn
 

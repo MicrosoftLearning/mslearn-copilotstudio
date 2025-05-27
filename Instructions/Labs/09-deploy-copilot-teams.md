@@ -8,9 +8,11 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create agent actions
+- Deploy an agent to the Microsoft Teams channel
+
+This exercise will take approximately **10** minutes to complete.
 
 ## What you will learn
 

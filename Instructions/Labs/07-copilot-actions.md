@@ -1,16 +1,18 @@
 ---
 lab:
     title: 'Create agent actions'
-    module: 'Enhance Microsoft Copilot Studio copilots'
+    module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
-# Create copilot actions
+# Create agent actions
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create agent actions
+- Create agent actions using Power Automate cloud flows
+
+This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 

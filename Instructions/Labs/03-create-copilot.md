@@ -8,11 +8,13 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create and name a agent
+- Create and name an agent
 - Add description for what the agent should do
 - Configure Generative AI answers
+
+This exercise will take approximately **15** minutes to complete.
 
 ## What you will learn
 

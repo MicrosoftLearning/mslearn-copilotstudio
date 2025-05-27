@@ -8,9 +8,12 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
 - Author the conversational flow
+- Manage variables
+
+This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 
@@ -20,6 +23,7 @@ In this lab, you will:
 
 - Configure variable scope
 - Create and edit nodes
+- Deploy and test the agent
   
 ## Prerequisites
 

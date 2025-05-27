@@ -1,13 +1,14 @@
 ---
 lab:
     title: 'Create an agent with Copilot Studio'
+    module: 'Build an initial agent with Microsoft Copilot Studio'
 ---
 
 # Create an agent with Copilot Studio
 
-In this exercise, you’ll use Copilot Studio to create a simple agent that can answer employee questions about expense policies in a fictional corporation.
+In this exercise, you’ll use Copilot Studio to create a simple agent that answers employee questions about expense policies in a fictional corporation.
 
-This exercise will take approximately **45** minutes to complete.
+This exercise will take approximately **30** minutes to complete.
 
 > **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
@@ -35,7 +36,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
 1. Select the option to create a **New agent**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the agent you want to build.
 
-    >**Tip**: You can use the **Skip to Configure** option to skip the chat-based agent creation experience. In this exercise, we'll use the chat interface.
+    > **Tip**: You can use the **Skip to Configure** option to skip the chat-based agent creation experience. In this exercise, we'll use the chat interface.
 
 1. Enter the following prompt:
 
@@ -116,7 +117,7 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
 1. Return to the **Topics** page, and in the **+ Add a topic** menu, select
     **Topic** \> **Create from description with Copilot**.
 
-1. In the **Create from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell copilot what the topic should do:
+1. In the **Create from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell Copilot Studio what the topic should do:
 
     ```prompt
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.

@@ -8,11 +8,13 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
 - Manage existing topics
 - Create and edit topics by using natural language
 - Create a topic manually by using trigger phrases
+
+This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 
