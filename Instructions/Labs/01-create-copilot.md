@@ -133,6 +133,8 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
 
     The new topic should be triggered by phrases that ask about a contact for expenses, and respond with a message telling the user to send an email to the appropriate address.
 
+    > **Important**: If the nodes in the topic are different from the above image, delete the topic, and create the topic again.
+
 1. Use the **Save** button (at the top right) to save the new topic in your
 agent.
 
