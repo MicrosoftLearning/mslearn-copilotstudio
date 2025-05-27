@@ -71,6 +71,8 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **+ Synonyms** for **House**, enter **`Single-family home`** and select the **+** icon and select **Done**.
 
+1. Enable **Smart matching**.
+
     ![Screenshot of the a new entity.](../media/add-list-entity.png)
 
 1. Select **Save**.
