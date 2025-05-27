@@ -165,7 +165,7 @@ This exercise will take approximately **30** minutes to complete.
 
     ![Screenshot of the Testing panel conversation map.](../media/test-pane-conversation-map.png)
 
-1. Select **On**..
+1. Select **On**.
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
