@@ -1,16 +1,18 @@
 ---
 lab:
     title: 'Create agent actions'
-    module: 'Enhance Microsoft Copilot Studio copilots'
+    module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
-# Create copilot actions
+# Create agent actions
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create agent actions
+- Create agent actions using Power Automate cloud flows
+
+This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 
@@ -82,6 +84,8 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 1. With the **Filter Rows** field still selected, select the **lightning** icon to its right, then select the **Bedrooms** parameter.
 
     ![Screenshot of configuring list rows action.](../media/create-flow-step4.png)
+
+    > **Important:** Ensure there is a space between eq and Bedrooms.
 
 1. In the main Power Automate pane, select the **Respond to Copilot** action and select **+ Add an output**.
 
@@ -219,7 +223,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select **Booking Requests** for table name.
 
-1. Enter `Copilot booking` in the **Booking Name** field.
+1. Enter `Agent booking` in the **Booking Name** field.
 
 1. Select **Show all** under **Advanced parameters**.
 
@@ -310,8 +314,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select any rating.
 
-1. Select **No** to the **Can I help with anything else?** prompt.
-    >[!Note] There may not be any responses generated.
+1. Enter **No** to the **Can I help with anything else?** prompt.
 
 ### Task 3.2 - Verify the booking request
 

@@ -8,11 +8,13 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create and name a agent
+- Create and name an agent
 - Add description for what the agent should do
 - Configure Generative AI answers
+
+This exercise will take approximately **15** minutes to complete.
 
 ## What you will learn
 
@@ -61,7 +63,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Bookings** under **Solution**.
 
-1. Enter `labcopilot` for **Schema Name**.
+1. Enter `labagent` for **Schema Name**.
 
     ![Advanced settings in Copilot Studio portal.](../media/copilot-studio-advanced-settings.png)
 
@@ -77,13 +79,19 @@ Leave this window open.
 
 In this exercise, you will access the Microsoft Copilot Studio portal and add knowledge that the agent will use to answer questions by using Generative AI.
 
-### Task 2.1 – Enable Generative AI answers
+### Task 2.1 - Disable generative orchestration
+
+1. In the **Overview** tab, ensure that **Use generative AI to determine how best to respond to users and events.** is set to **Disabled** within the **Details** section.
+
+    ![Generative orchestration disabled](../media/settings-generative-ai-1.png)
+
+### Task 2.2 – Enable Generative AI answers
 
 1. In the **Overview** tab, ensure that **Allow the AI to use its own general knowledge** is set to **Enabled** within the **Knowledge** section.
 
     ![Knowledge enabled in Copilot Studio portal.](../media/knowledge-enabled.png)
 
-### Task 2.2 – Add a knowledge source
+### Task 2.3 – Add a knowledge source
 
 1. Select the **Knowledge** tab.
 

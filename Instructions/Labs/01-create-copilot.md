@@ -1,13 +1,14 @@
 ---
 lab:
     title: 'Create an agent with Copilot Studio'
+    module: 'Build an initial agent with Microsoft Copilot Studio'
 ---
 
 # Create an agent with Copilot Studio
 
-In this exercise, you’ll use Copilot Studio to create a simple agent that can answer employee questions about expense policies in a fictional corporation.
+In this exercise, you’ll use Copilot Studio to create a simple agent that answers employee questions about expense policies in a fictional corporation.
 
-This exercise will take approximately **45** minutes to complete.
+This exercise will take approximately **30** minutes to complete.
 
 > **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
@@ -35,7 +36,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
 1. Select the option to create a **New agent**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the agent you want to build.
 
-    >**Tip**: You can use the **Skip to Configure** option to skip the chat-based agent creation experience. In this exercise, we'll use the chat interface.
+    > **Tip**: You can use the **Skip to Configure** option to skip the chat-based agent creation experience. In this exercise, we'll use the chat interface.
 
 1. Enter the following prompt:
 
@@ -116,7 +117,7 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
 1. Return to the **Topics** page, and in the **+ Add a topic** menu, select
     **Topic** \> **Create from description with Copilot**.
 
-1. In the **Create from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell copilot what the topic should do:
+1. In the **Create from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell Copilot Studio what the topic should do:
 
     ```prompt
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.
@@ -131,6 +132,8 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     ![Screenshot of the copilot-generated topic](media/copilot-studio-topic.png)
 
     The new topic should be triggered by phrases that ask about a contact for expenses, and respond with a message telling the user to send an email to the appropriate address.
+
+    > **Important**: If the nodes in the topic are different from the above image, delete the topic, and create the topic again.
 
 1. Use the **Save** button (at the top right) to save the new topic in your
 agent.
@@ -157,7 +160,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of available Knowledge sources in Copilot Studio.](media/knowledge-sources.png)
 
-1. In the **Upload files** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
+1. In the **Upload file** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
 
     > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` in another browser tab!
 
@@ -173,7 +176,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
 
-    ![Screenshot of the test pane with a citation from a knowldge source.](media/test-knowledge.png)
+    ![Screenshot of the test pane with a citation from a knowledge source.](media/test-knowledge.png)
 
 1. Try asking some follow-up questions, such as:
     - `What about flights?`
@@ -185,7 +188,7 @@ Now that you have a working agent, you can publish it for people to use. The ava
 
 1. Hide the **Test your agent** pane. Then, at the top of the page, select the **Channels** tab and review the channels to which you can deploy your agent. The available channels depend on the authentication settings for your agent.
 1. Select **Settings** at the top of the page.
-1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration (confirming that you want to enable access to the agent for everyone).
+1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration and **Save** again (confirming that you want to enable access to the agent for everyone).
 1. Close the **Settings** pane. Then, view the **Channels** page.
 1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. Publishing will take a minute or so.
 1. After your agent has been published, verify the **Publish status** on the **Channels** page.

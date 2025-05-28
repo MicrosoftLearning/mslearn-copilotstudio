@@ -8,9 +8,11 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create agent actions
+- Deploy an agent to the Microsoft Teams channel
+
+This exercise will take approximately **10** minutes to complete.
 
 ## What you will learn
 
@@ -59,10 +61,6 @@ With your agent published, you can make your agent available to users in Teams. 
 
 1. Select **Copy link**.
 
-1. Select **Show to my teammates and shared users**.
-
-1. Select your user.
-
 1. Select the back arrow in the top-left of the pane.
 
 1. Select **See agent in Teams**
@@ -74,6 +72,10 @@ With your agent published, you can make your agent available to users in Teams. 
 1. Select **Add**.
 
     ![Screenshot of dialog to add the app to Teams.](../media/teams-add-app.png)
+
+1. In the left-hand rail in Microsoft Teams, select the **ellipses (...)** to View more apps and search for **Real Estate**.
+
+1. Select the **Real Estate Booking Service**.
 
 1. Test the agent.
 

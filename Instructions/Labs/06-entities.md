@@ -8,9 +8,11 @@ lab:
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
 - Create and use entities
+
+This exercise will take approximately **15** minutes to complete.
 
 ## What you will learn
 
@@ -68,6 +70,8 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 1. Select **+ Synonyms** for **Condominium**, enter **`Townhouse`** and select the **+** icon and select **Done**.
 
 1. Select **+ Synonyms** for **House**, enter **`Single-family home`** and select the **+** icon and select **Done**.
+
+1. Enable **Smart matching**.
 
     ![Screenshot of the a new entity.](../media/add-list-entity.png)
 

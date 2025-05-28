@@ -1,16 +1,18 @@
 ---
 lab:
     title: 'Use Generative AI in Microsoft Copilot Studio'
-    module: 'Enhance Microsoft Copilot Studio copilots'
+    module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
 # Use Generative AI in Microsoft Copilot Studio
 
 ## Scenario
 
-In this lab, you will:
+In this exercise, you will:
 
-- Create agent actions
+- Use knowledge and Generative AI in your agent
+
+This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 
@@ -41,9 +43,9 @@ In this lab, you will:
 
 1. Select the **Generative AI** tab.
 
-1. Select **Generative** under **How should your agent interact with people?**.
+1. Select **Generative** under **How should your agent interact with people?**
 
-1. Select **Medium - More Balanced** for **How strict should the content moderation be?**.
+1. Select **Medium - More Balanced** for **How strict should the content moderation be?**
 
 1. Select **Save**.
 
@@ -113,7 +115,7 @@ In this lab, you will:
 
 1. Select **+ Add knowledge**.
 
-1. Under **Upload files**, browse and select the case study that you downloaded.
+1. Under **Upload file**, browse and select the case study that you downloaded.
 
     ![Screenshot of adding file knowledge.](../media/add-file-knowledge.png)
 
@@ -163,7 +165,7 @@ In this lab, you will:
 
     ![Screenshot of the Testing panel conversation map.](../media/test-pane-conversation-map.png)
 
-1. Select **On**..
+1. Select **On**.
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
