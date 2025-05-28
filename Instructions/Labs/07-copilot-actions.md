@@ -314,8 +314,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using Power Autom
 
 1. Select any rating.
 
-1. Select **No** to the **Can I help with anything else?** prompt.
-    >[!Note] There may not be any responses generated.
+1. Enter **No** to the **Can I help with anything else?** prompt.
 
 ### Task 3.2 - Verify the booking request
 
