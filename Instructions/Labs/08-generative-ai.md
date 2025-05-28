@@ -43,9 +43,9 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the **Generative AI** tab.
 
-1. Select **Generative** under **How should your agent interact with people?**.
+1. Select **Generative** under **How should your agent interact with people?**
 
-1. Select **Medium - More Balanced** for **How strict should the content moderation be?**.
+1. Select **Medium - More Balanced** for **How strict should the content moderation be?**
 
 1. Select **Save**.
 
@@ -115,7 +115,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select **+ Add knowledge**.
 
-1. Under **Upload files**, browse and select the case study that you downloaded.
+1. Under **Upload file**, browse and select the case study that you downloaded.
 
     ![Screenshot of adding file knowledge.](../media/add-file-knowledge.png)
 
