@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Build an initial agent'
-    module: 'Build an initial agent with Microsoft Copilot Studio'
+    module: 'Manage topics in Microsoft Copilot Studio'
 ---
 
 # Build an initial agent
