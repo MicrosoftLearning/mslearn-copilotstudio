@@ -71,7 +71,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the upper-right of the screen, select **Create**.
 
-1. In the right **Test your agent** pane, enter **`How do I make a booking?`**. View the response.
+1. In the right **Test your agent** pane, enter **`How do I make a booking?`** and view the response.
 
 Leave this window open.
 
@@ -81,7 +81,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 - Disable generative orchestration
 
-1. In the **Overview** tab, ensure that **Use generative AI to determine how best to respond to users and events.** is set to **Disabled** within the **Details** section.
+1. In the **Overview** tab, ensure that **Use generative AI to determine how best to respond to users and events.** is set to **Disabled** within the **Details** section. This turns Orchestration off for the purpose of this lab.
 
     ![Generative orchestration disabled](../media/settings-generative-ai-1.png)
 
