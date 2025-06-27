@@ -39,7 +39,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Agents** from the left navigation pane.
 
-1. Select the **Real Estate Booking Service** you created in the earlier lab.
+1. Select the **Real Estate Booking Service** agent you created in the earlier lab.
 
 1. Select **Settings** in the upper-right of the screen.
 
@@ -93,13 +93,13 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Close**.
 
+1. Select the **X** icon in the top-right to close out of Settings and return to your agent.
+
 ## Exercise 2 - Use entities to improve the agent
 
 Use entities in the conversational flow to improve the agent.
 
 ### Task 2.1 - Use entities
-
-1. Select the **X** icon in the top-right to close out of Settings and return to your agent.
 
 1. Select the **Topics** tab.
 
