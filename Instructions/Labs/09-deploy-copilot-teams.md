@@ -59,23 +59,17 @@ With your agent published, you can make your agent available to users in Teams. 
 
     ![Screenshot of the Teams channel availability options.](../media/teams-availability-options.png)
 
-1. Select **Copy link**.
-
-1. Select the back arrow in the top-left of the pane.
-
 1. Select **See agent in Teams**
 
 1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams**.
 
-1. Select **Use the web app instead**.
+1. In the pop-up, select **Cancel** and select **Use the web app instead**.
 
-1. Select **Add**.
+1. Select **Add** to add the agent to Teams.
 
     ![Screenshot of dialog to add the app to Teams.](../media/teams-add-app.png)
 
-1. In the left-hand rail in Microsoft Teams, select the **ellipses (...)** to View more apps and search for **Real Estate**.
-
-1. Select the **Real Estate Booking Service**.
+1. select **Open**.I wan tto 
 
 1. Test the agent.
 

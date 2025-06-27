@@ -40,8 +40,6 @@ In this exercise, you will remove topics in an agent.
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
-
 1. Select **Agents** from the left navigation pane.
 
     ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
@@ -49,8 +47,6 @@ In this exercise, you will remove topics in an agent.
 1. Select the agent you created in the previous lab.
 
 1. Select the **Topics** tab.
-
-    ![Topics tab in Copilot Studio portal.](../media/topics-tab.png)
 
 1. Toggle **Enabled** to **Off** for the **Start Over** topic.
 
@@ -82,7 +78,7 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
     ![Screenshot of the Edit with Copilot icon.](../media/edit-with-copilot.png)
 
-1. Select the second **Question** node, **What is your email address?**
+1. Select the second **Question** node **What is your email address?**
 
     ![Screenshot of the Edit with Copilot icon.](../media/copilot-email-address-node.png)
 
@@ -104,7 +100,7 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
 In addition to adding updating existing nodes, you can use Copilot to add new ones.
 
-1. Make sure that no node is selected by selecting the empty space around the nodes.
+1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
@@ -155,9 +151,9 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
     }
     ```
 
-1. Opening the Adaptive Card properties closes the **Edit with Copilot** panel; therefore, you need to select the **Copilot** icon to reopen it.
+1. Select the **Copilot** icon to reopen the **Edit with Copilot** pane.
 
-1. Make sure that no node is selected by selecting the empty space around the nodes.
+1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
 
 1. In the **What do you want to do?** field, enter the following text:
 
@@ -165,7 +161,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Update**.
 
-1. A new question node is added to the end of the topic with options for the user to select.
+A new question node is added to the end of the topic with options for the user to select.
 
     ![Screenshot of the new question node with yes and no options.](../media/new-question-node.png)
 
@@ -173,9 +169,9 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 ### Task 2.4 - Test the topic
 
-1. Select the **Test** button in the upper-right of the screen to open the testing panel, if it's closed.
+1. If the **Test your agent** panel is closed, select the **Test** button in the upper-right of the screen.
 
-1. Select the **Start a new conversation** icon at the top of the testing panel.
+1. Select the **Start a new conversation** (Refresh) icon at the top of the testing panel.
 
 1. In the **Ask a question or describe what you need** text box, enter **`Customer information`**.
 
@@ -213,18 +209,18 @@ Topics can be created manually by adding trigger phrases.
 
 ### Task 3.2 - Add trigger phrases
 
-1. Select **Edit** under **Phrases** in the **Trigger**.
+1. Select **Edit** under **User says a phrase** in the **Trigger**.
 
     ![Screenshot of the topic trigger phrases pane.](../media/topic-trigger-phrases.png)
 
-1. Enter `I want to book a real estate showing` under **Add Phrases** and select the **+** icon.
+1. Enter `I want to book a real estate showing` under **Add phrases** and select the **+** icon.
 
-1. Enter `Schedule a real estate showing` under **Add Phrases** and select the **+** icon.
+1. Enter `Schedule a real estate showing` under **Add phrases** and select the **+** icon.
 
-1. Enter `Arrange the viewing for a real estate property` under **Add Phrases** and select the **+** icon.
+1. Enter `Arrange the viewing for a real estate property` under **Add phrases** and select the **+** icon.
 
-1. Enter `Set up an appointment to view a house` under **Add Phrases** and select the **+** icon.
+1. Enter `Set up an appointment to view a house` under **Add phrases** and select the **+** icon.
 
-1. Enter `Plan a property viewing` under **Add Phrases** and select the **+** icon.
+1. Enter `Plan a property viewing` under **Add phrases** and select the **+** icon.
 
 1. Select **Save**.

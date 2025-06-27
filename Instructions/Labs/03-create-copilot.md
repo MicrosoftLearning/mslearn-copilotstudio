@@ -39,8 +39,6 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In a new tab, navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and sign in with your Microsoft 365 credentials if prompted again.
 
-1. If prompted, select **Start free trial**.
-
 1. Make sure that you are in the appropriate environment.
 
 ### Task 1.2 – Create an agent
@@ -71,7 +69,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the upper-right of the screen, select **Create**.
 
-1. In the right **Test your agent** pane, enter **`How do I make a booking?`**. View the response.
+1. In the right **Test your agent** pane, enter **`How do I make a booking?`** and view the response.
 
 Leave this window open.
 
@@ -81,17 +79,11 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 - Disable generative orchestration
 
-1. In the **Overview** tab, ensure that **Use generative AI to determine how best to respond to users and events.** is set to **Disabled** within the **Details** section.
+1. In the **Overview** tab, ensure that **Use generative AI to determine how best to respond to users and events.** is set to **Disabled** within the **Details** section. This turns Orchestration off for the purpose of this lab.
 
     ![Generative orchestration disabled](../media/settings-generative-ai-1.png)
 
-### Task 2.2 – Enable Generative AI answers
-
-1. In the **Overview** tab, ensure that **Allow the AI to use its own general knowledge** is set to **Enabled** within the **Knowledge** section.
-
-    ![Knowledge enabled in Copilot Studio portal.](../media/knowledge-enabled.png)
-
-### Task 2.3 – Add a knowledge source
+### Task 2.2 – Add a knowledge source
 
 1. Select the **Knowledge** tab.
 
@@ -121,6 +113,6 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
-1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`**.
+1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`**. View your response. 
 
     ![Screenshot of the Testing panel results.](../media/test-pane-results.png)

@@ -31,7 +31,7 @@ This exercise will take approximately **30** minutes to complete.
 
 ## Exercise 1 - Configure Generative AI
 
-### Task 1.1 - Enable Generative AI
+### Task 1.1 - Enable Orchestration
 
 1. If it's not still open, go to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
@@ -41,17 +41,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the **Settings** button in the upper-right of the screen.
 
-1. Select the **Generative AI** tab.
-
-1. Select **Generative** under **How should your agent interact with people?**
-
-1. Select **Medium - More Balanced** for **How strict should the content moderation be?**
-
-1. Select **Save**.
-
-    ![Generative AI pane in Copilot Studio Settings](../media/settings-generative-ai-2.png)
-
-1. Close the **Settings** menu by selecting the **X** icon in the upper-right of Copilot Studio.
+1. In the **Details** section, turn Orchestration to **Enabled**.
 
 ### Task 1.2 - Use generative answers in the Conversational boosting topic
 
@@ -63,19 +53,9 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Review the **Create generative answers** node.
 
-### Task 1.3 - Enable knowledge
+### Task 1.3 - Configure Authentication
 
-1. Select the **Overview** tab.
-
-1. Verify that general knowledge is **Enabled**.
-
-    ![Screenshot of the general knowledge enabled.](../media/general-knowledge-2.png)
-
-1. You should see the public website added as knowledge in a prior Lab.
-
-### Task 1.4 - Configure Authentication
-
-1. Select **Settings** in the upper-right of the screen.
+1. Select the ellipses (**...**) > **Settings** in the upper-right of the screen.
 
 1. Select the **Security** tab.
 
@@ -149,9 +129,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Deselect **Allow the AI to use its own general knowledge**.
 
-1. Select the **Customize** checkbox under **How strict should content moderation be?**, then select **Medium**.
-
-    ![Screenshot of the generative answers configuration.](../media/fallback-topic-answers-knowledge-2.png)
+1. Select the **Customize** checkbox under **Content moderation level** and select **Medium**.
 
 1. Select **Save**.
 

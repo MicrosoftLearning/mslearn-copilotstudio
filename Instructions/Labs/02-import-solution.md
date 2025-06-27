@@ -16,7 +16,15 @@ This exercise will take approximately **10** minutes to complete.
 
 In this exercise, you will import a Dataverse solution into your environment that contains the tables needed for the labs.
 
-### Task 1.1 – Sign in to Power Apps
+### Task 1.1 – Download solution
+
+1. In a new broser tab, navigate to the **Bookings_1_0_0_0.zip** file in GitHub at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
+
+1. Select the **ellipses (...)** near the top-right and select **Download**.
+
+1. Close the brower tab.
+
+### Task 1.2 – Import solution
 
 1. In a new browser tab, navigate to `https://make.powerapps.com`.
 
@@ -26,23 +34,11 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In the upper-right of the screen, verify that the **Environment** is set to your environment. This is where you will be working for the entirety of the labs. If it is not, select the appropriate environment.
 
-### Task 1.2 – Download solution
-
-1. Go to [**Bookings_1_0_0_0.zip**](../../Allfiles/Bookings_1_0_0_0.zip) in GitHub. The file is located at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
-
-1. Select the **ellipses (...)** near the top-right and select **Download**.
-
-### Task 1.3 – Import solution
-
-1. Go to `https://make.powerapps.com`.
-
-1. Make sure you are in the appropriate environment.
-
 1. In the left navigation, select **Solutions**.
 
 1. In the top bar, select **Import solution**.
 
-1. Select **Browse** and locate the **Bookings_1_0_0_0.zip** file and select **Open**.
+1. Select **Browse** and locate the **Bookings_1_0_0_0.zip** file from your Downloads folder and select **Open**.
 
     ![Solution to import.](../media/solution-to-import.png)
 
@@ -64,7 +60,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Select **Publish all customizations**.
 
-### Task 1.4 – Test data
+### Task 1.3 – Test data
 
 1. In the left navigation of the Bookings solution, select the **Objects** tab.
 
@@ -103,3 +99,5 @@ In this exercise, you will import a Dataverse solution into your environment tha
     ![Overview.](../media/add-record2.png)
 
 1. Select **Save & Close**.
+
+You now have 2 Active Real Estate Properties in the view. 
