@@ -41,15 +41,13 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 
 1. Select the **Real Estate Booking Service** you created in the earlier lab.
 
-1. Select the **Actions** tab.
+1. Select the **Tools** tab.
 
-1. Select **+ Add an action**.
+1. Select **+ Add a tool**.
 
-1. Select the **ellipses (...)** and select **Flow**.
+1. Select **+ New tool**.
 
-    ![Screenshot of step 1 of add an action.](../media/add-action-step-1.png)
-
-1. Select **New action** and select **New Power Automate flow**.
+1. Select **Agent flow**.
 
 1. Select **Run a flow from Copilot** in the top-left of the screen and enter `Get Property` as the flow name.
 
