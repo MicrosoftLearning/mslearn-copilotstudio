@@ -4,24 +4,24 @@ lab:
     module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
-# Create agent actions
+# Create agent flows
 
 ## Scenario
 
 In this exercise, you will:
 
-- Create agent actions using Power Automate cloud flows
+- Create an agent flow
 
 This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 
-- How to add use Power Automate to access data in Microsoft Dataverse
+- How to create a tool for running an agent flow in Copilot Studio
 
 ## High-level lab steps
 
-- Create a Power Automate cloud flow to retrieve Dataverse data with an agent action
-- Create a Power Automate cloud flow to create Dataverse data with an agent action
+- Create an agent flow to retrieve Dataverse data with an agent action
+- Create an agent flow to create Dataverse data with an agent action
   
 ## Prerequisites
 
@@ -31,9 +31,9 @@ This exercise will take approximately **30** minutes to complete.
 
 ## Exercise 1 - Create agent action to retrieve data from Dataverse
 
-Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Automate cloud flows.
+Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flows.
 
-### Task 1.1 - Create Power Automate flow to retrieve a property
+### Task 1.1 - Create agent flow to retrieve a property
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
@@ -139,7 +139,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using Power Auto
 1. Select **Tools** and see the Get Property flow you created.
 
 
-### Task 1.3 - Add the Get Property agent action to the topic
+### Task 1.2 - Add the Get Property agent action to the topic
 
 1. Select the **Topics** tab.
 
