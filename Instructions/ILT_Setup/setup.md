@@ -6,7 +6,7 @@ Before you start the lab exercise, you must create a development environment for
 1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/manage/environments`, and sign in using your credentials for this exercise. If prompted, choose the option to stay signed in.
 1. Close any pop-up messages that are displayed.
 1. Select **+New** and create a new environment with the following settings:
-    - **Name**: *Enter the unique environment name provided in your lab environment*
+    - **Name**: *Your name*
     - **Region**: *Choose the **default** region*
     - **Get new features early**: No
     - **Type**: Developer
