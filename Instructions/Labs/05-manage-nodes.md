@@ -37,9 +37,7 @@ Variables can be accessed by other topics.
 
 ### Task 1.1 - Configure the scope of the variables
 
-1. Navigate to the Microsoft  Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
-
-1. Select the **Test** button in the upper-right of the screen to close the testing panel if the panel is open.
+1. Navigate to the Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
 1. Select **Agents** from the left navigation pane.
 
@@ -59,7 +57,7 @@ Variables can be accessed by other topics.
 
 ## Exercise 2 - Author topics manually
 
-The conversational flow in a topics can be created manually by adding nodes.
+The conversational flow in a topic can be created manually by adding nodes.
 
 ### Task 2.1 - Add a message node
 
@@ -79,7 +77,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
 ### Task 2.2 - Add a Topic management node
 
-1. Select the the **+** icon under the **Message** node, **Topic management**, then **Go to another topic**, then select **Customer Details**.
+1. Select the the **+** icon under the **Message** node, then select **Topic management** > **Go to another topic** > **Customer Details**.
 
     ![Screenshot of adding a topic management node.](../media/topic-management-node.png)
 
@@ -137,7 +135,7 @@ The conversational flow in a topics can be created manually by adding nodes.
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. Select the **Start a new conversation** icon at the top of the testing panel.
+1. Select the **Start a new conversation** (refresh) icon at the top of the testing panel.
 
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
 
