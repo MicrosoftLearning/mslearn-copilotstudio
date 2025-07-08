@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Add agent flows'
+    title: 'Create agent flows'
     module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
