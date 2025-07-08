@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Create agent actions'
+    title: 'Add tools to your agent'
     module: 'Enhance Microsoft Copilot Studio agents'
 ---
 
@@ -20,8 +20,8 @@ This exercise will take approximately **30** minutes to complete.
 
 ## High-level lab steps
 
-- Create an agent flow to retrieve Dataverse data with an agent action
-- Create an agent flow to create Dataverse data with an agent action
+- Create an agent flow to retrieve Dataverse data
+- Create an agent flow to create Dataverse data
   
 ## Prerequisites
 
@@ -29,7 +29,7 @@ This exercise will take approximately **30** minutes to complete.
 
 ## Detailed steps
 
-## Exercise 1 - Create agent action to retrieve data from Dataverse
+## Exercise 1 - Create a tool to retrieve data from Dataverse
 
 Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flows.
 
@@ -139,7 +139,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 1. Select **Tools** and see the Get Property flow you created.
 
 
-### Task 1.2 - Add the Get Property agent action to the topic
+### Task 1.2 - Add the Get Property tool to the topic
 
 1. Select the **Topics** tab.
 
@@ -163,7 +163,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 1. Select **Save**.
 
-## Exercise 2 - Create agent action to create data in Dataverse
+## Exercise 2 - Create a tool to create data in Dataverse
 
 Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows.
 
@@ -251,7 +251,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+Add a tool** > **Flow** > and select the missing agent flow. Select **Add to agent**.
 
-### Task 2.3 - Add the Create Booking Request agent action to the topic
+### Task 2.3 - Add the Create Booking Request tool to the topic
 
 1. Select the **Topics** tab.
 
@@ -271,7 +271,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select **Publish** and select **Publish** again.
 
-## Exercise 3 - Test the agent actions
+## Exercise 3 - Test your agent
 
 ### Task 3.1 - Make a booking request
 
