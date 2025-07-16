@@ -115,13 +115,14 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     - **Conversational boosting**: This topic is triggered when the user submits a message for which the agent can't identify a corresponding topic (the user's *intent* is unknown). The topic then attempts to respond to the user's message by using generative AI.
     - **Fallback**: This topic is a "fail-safe" topic that responds when the intent is unknown and an appropriate conversational AI response can't be generated. The fallback topic includes logic to enable the user to try again up to three times before gracefully ending the conversation, often by escalating to a human operator.
 1. Return to the **Topics** page, and in the **+ Add a topic** menu, select
-    **Topic** \> **Create from description with Copilot**.
+    **Topic** \> **Add from description with Copilot**.
 
-1. In the **Create from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell Copilot Studio what the topic should do:
+1. In the **Add from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell Copilot Studio what the topic should do:
 
     ```prompt
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.
     ```
+    > **Note**: Copilot results may vary, so you may need to play around with this prompt for your expected results. 
 
 1. Select **Create**.
 
