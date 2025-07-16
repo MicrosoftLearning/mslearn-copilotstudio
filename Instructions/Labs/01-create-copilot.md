@@ -122,6 +122,7 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     ```prompt
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.
     ```
+    > **Note**: Copilot results may vary, so you may need to play around with this prompt for your expected results. 
 
 1. Select **Create**.
 
