@@ -120,7 +120,7 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
 1. In the **Add from description with Copilot** dialog box, name the new topic `Ask about expenses contact` and enter the following text to tell Copilot Studio what the topic should do:
 
     ```prompt
-    When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com.
+    When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com
     ```
     > **Note**: Copilot results may vary, so you may need to play around with this prompt for your expected results. 
 
