@@ -69,7 +69,7 @@ With your agent published, you can make your agent available to users in Teams. 
 
     ![Screenshot of dialog to add the app to Teams.](../media/teams-add-app.png)
 
-1. select **Open**.I wan tto 
+1. Select **Open**.
 
 1. Test the agent.
 
