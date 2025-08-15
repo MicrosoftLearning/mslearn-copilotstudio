@@ -16,7 +16,7 @@ This exercise will take approximately **30** minutes to complete.
 
 Let’s start by using Copilot Studio to create a new agent. The agent will initially have very limited capabilities, which you’ll extend later in the exercise.
 
-1. In a web browser, navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/`, signing in with your work or school account if prompted. Skip any welcome messages.
+1. In a web browser, navigate to **Copilot Studio** at `https://copilotstudio.microsoft.com/`, signing in with your work or school account if prompted. Skip any welcome messages.
 
     > **Note**: The first time you open Copilot Studio, it may display a chat interface to create your first agent. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel agent creation** to leave the chat interface and view the Copilot Studio home page.
 
