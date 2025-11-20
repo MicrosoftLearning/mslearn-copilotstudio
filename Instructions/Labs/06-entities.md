@@ -43,7 +43,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Settings** in the upper-right of the screen.
 
-1. Select the **Entities** tab.
+1. Select the **Entities** tab. You should see a list of the prebuilt entities for your agent.
 
     ![Screenshot of the Entities tab.](../media/system-entities.png)
 
@@ -77,7 +77,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Save**.
 
-1. Select **Close**.
+1. Close the Property Type window.
 
 ### Task 1.3 - Create number of bedrooms entity
 
@@ -91,7 +91,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Save**.
 
-1. Select **Close**.
+1. Close the Number of Bedrooms pane.
 
 1. Select the **X** icon in the top-right to close out of Settings and return to your agent.
 
