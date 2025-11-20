@@ -233,14 +233,6 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Wait for the save to complete, then select **Publish**.
 
-1. Select **Overview** tab.
-
-1. Select **Edit** in the Details section.
-
-1. Rename the agent flow `Create Booking Request`
-
-1. Select **Save**.
-
 ### Task 2.2 - Validate your tools
 
 1. Select **Agents** and open your **Real Estate Booking Service** agent.
@@ -253,7 +245,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select the **Book a Real Estate Showing** topic.
 
-1. Select the the **+** icon below the **What date and time do you want to see the property?** node, select **Add a tool**, then select the **Create Booking Request** flow.
+1. Select the the **+** icon below the **Message** node at the bottom, select **Add a tool**, then select the **Create Booking Request** flow.
 
 1. Select the **PropertyId** variable for the **PropertyId** input parameter.
 
@@ -279,20 +271,13 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. If it's not enabled, enable **Track between topics**.
 
-1. Select the **Start a new conversation** (refresh) icon at the top of the testing panel.
+1. Select the **Start new test session** icon at the top of the testing panel.
 
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
 
     `I want to book a real estate showing`
 
-1. Enter the following information:
-
-    ```
-    Name: <Your name>
-    ```
-    ```
-    Email address: <Your email address>
-    ```
+1. Enter a name and email address.
 
 1. After you supply the information, an Adaptive Card displays the information that you entered and asks if the details are correct. Select **Yes**.
 
