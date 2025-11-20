@@ -43,7 +43,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 ### Task 1.2 – Create an agent
 
-1. Select **Create** from the left navigation pane and select the **+ New agent** and **Skip to configure** in the top right.
+1. Select **Create** from the left navigation pane and select the **+ New agent**.
+
+1. Select the **Configure** tab.
 
 1. In the **Name** text box, enter **`Real Estate Booking Service`**
 
@@ -51,13 +53,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the **Instructions** text box, enter **`Create an agent for topics relating to creating bookings for real estate properties`**
 
-1. At the top, **Language** should be set to **English (en-US)**.
-
-    ![Copilot agent language.](../media/copilot-agent-language.png)
-
-1. Select the **three dots** in the upper-right of the page and select **Edit advanced settings**.
-
-    ![More options in Copilot Studio portal.](../media/copilot-studio-more-options-2.png)
+1. Select the ellipses (**...**) and select **Update advanced settings**.
 
 1. Select **Bookings** under **Solution**.
 
@@ -65,9 +61,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
     ![Advanced settings in Copilot Studio portal.](../media/copilot-studio-advanced-settings.png)
 
-1. Select **Save**.
+1. Select **Update**.
 
-1. In the upper-right of the screen, select **Create**.
+1. In the upper-right of the screen, select **Create**. Wait for your agent to finish setting up.
 
 1. In the right **Test your agent** pane, enter **`How do I make a booking?`** and view the response.
 
@@ -99,7 +95,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **Add**.
 
-1. Select **Add**.
+1. Select **Add to agent**.
 
 1. Select the **Overview** tab.
 
@@ -109,7 +105,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. At the top of the **Test your agent** pane, select the  **Start a new conversation** icon (refresh icon).
+1. At the top of the **Test your agent** pane, select the  **Start a new test session** icon.
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
