@@ -163,7 +163,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 1. In the **Upload file** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` in another browser tab!
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) in another browser tab! If indexing is still not complete, you may move on to the next lab and come back to complete the rest of this lab once it is done. 
 
 1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
 
