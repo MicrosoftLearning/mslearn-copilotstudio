@@ -214,7 +214,7 @@ Now that you have a working agent, you can publish it for people to use. The ava
     ![Screenshot of the demo website for an agent.](media/demo-website.png)
 
 1. Enter the message `What are the expense limits for meals?` and view the response.
-1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims.
+1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims. Once you are done exploring this agent, you may close your browser window.
 
 ## Challenge
 
