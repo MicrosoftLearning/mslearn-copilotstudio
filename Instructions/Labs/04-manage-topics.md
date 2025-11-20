@@ -181,6 +181,8 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Yes**.
 
+1. Select **Save**
+
 ## Exercise 3 - Author topics manually
 
 Topics can be created manually by adding trigger phrases.
@@ -191,7 +193,7 @@ Topics can be created manually by adding trigger phrases.
 
 1. Select **+ Add a topic** and select **From blank**.
 
-1. Select the **Details** icon to open the Topic details dialog.
+1. Select the **Details** icon to open the Topic details dialog (you may need to select **More** \> **Details**).
 
     ![Screenshot of the topic details dialog ](../media/topic-details.png)
 
@@ -199,7 +201,7 @@ Topics can be created manually by adding trigger phrases.
 
     `Book a Real Estate Showing`
 
-1. In the **Display Name** field, enter the following text:
+1. In the **Display name** field, enter the following text:
 
     `Book`
 
@@ -207,7 +209,7 @@ Topics can be created manually by adding trigger phrases.
 
     `Select the property and requested date and create a booking request`
 
-1. Select **Save**.
+1. Select **Save**. Select **Publish** \> **Publish**. 
 
 ### Task 3.2 - Add trigger phrases
 
