@@ -41,7 +41,11 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the **Settings** button in the upper-right of the screen.
 
-1. In the **Details** section, turn Orchestration to **Enabled**.
+1. In the **Details** section, turn Orchestration to **Yes**.
+
+1. Select **Save**.
+
+1. Close the Settings window.
 
 ### Task 1.2 - Use generative answers in the Conversational boosting topic
 
@@ -55,7 +59,7 @@ This exercise will take approximately **30** minutes to complete.
 
 ### Task 1.3 - Configure Authentication
 
-1. Select the ellipses (**...**) > **Settings** in the upper-right of the screen.
+1. Select **Settings** in the upper-right of the screen.
 
 1. Select the **Security** tab.
 
@@ -67,7 +71,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select **Save**.
 
-1. Close the **Settings** menu by selecting the **X** in the upper-right of Copilot Studio.
+1. Close the Settings window.
 
 1. Select **Publish** and select **Publish** again.
 
@@ -85,13 +89,11 @@ This exercise will take approximately **30** minutes to complete.
 
     ![Screenshot of adding website knowledge.](../media/add-dataverse-knowedge-step1.png)
 
-1. Select **Add**.
+1. Select **Add to agent**.
 
 ### Task 2.2 - Add knowledge from files
 
-1. Download this [**Microsoft case study**](https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx) or [**SummitRealtyCaseStudy.docx**](../../Allfiles/SummitRealtyCaseStudy.docx) from GitHub.
-
-> ℹ️ **NOTE:** The link to the Microsoft case study is here: `https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx`
+1. Open and new window and navigate to `https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx` to download the [**Microsoft case study**](https://download.microsoft.com/documents/customerevidence/Files/4000007499/SummitRealtyCaseStudy.docx) file.
 
 1. Select **+ Add knowledge**.
 
@@ -99,7 +101,7 @@ This exercise will take approximately **30** minutes to complete.
 
     ![Screenshot of adding file knowledge.](../media/add-file-knowledge.png)
 
-1. Select **Add**.
+1. Select **Add to agent**.
 
     ![Screenshot of knowledge.](../media/knowledge-added.png)
 
@@ -117,7 +119,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the the **+** icon under the **Condition** node, select **Advanced**, and select **Generative answers**.
 
-1. Select **System** tab and select **Activity.Text** for the **Input** field.
+1. In the **Input** field, select the **System** tab and select **Activity.Text**.
 
 1. Select **Edit** under **Data sources**.
 
@@ -138,12 +140,6 @@ This exercise will take approximately **30** minutes to complete.
 ### Task 4.1 Test the agent's knowledge
 
 1. If it's not open, select the **Test** button in the upper-right of the screen to open the testing panel.
-
-1. Select the **Conversation map** icon at the top of the testing panel in the upper-right of the screen.
-
-    ![Screenshot of the Testing panel conversation map.](../media/test-pane-conversation-map.png)
-
-1. Select **On**.
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 

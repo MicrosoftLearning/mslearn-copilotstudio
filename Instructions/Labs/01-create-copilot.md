@@ -151,7 +151,7 @@ agent.
 
 You can add topics for all of the inputs that you expect a user to enter; but you can’t realistically expect to anticipate every question that will be asked. Currently, your agent uses a *Conversation boosting* topic to generate AI responses from a language model, but this results in generic answers. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
 
-1. Open a new browser tab and download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/expenses/Expenses_Policy.docx) file from `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx`, saving it locally. This document contains details of the expenses policy for the fictional Contoso corporation.
+1. Open a new browser tab and navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/expenses/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional Contoso corporation.
 
 1. Return to the browser tab for Copilot Studio, and close the **Test your agent** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
 
@@ -163,7 +163,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 1. In the **Upload file** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` in another browser tab!
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) in another browser tab! If indexing is still not complete, you may move on to the next lab and come back to complete the rest of this lab once it is done. 
 
 1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
 
@@ -187,7 +187,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 Now that you have a working agent, you can publish it for people to use. The available channels through which you can deliver your agent depend on the type of authentication you want to use to restrict access to it. In this case, you’ll enable access for anyone and then publish the agent for use in a demo web page.
 
-1. Hide the **Test your agent** pane. Then, at the top of the page, select the **Channels** tab and review the channels to which you can deploy your agent. The available channels depend on the authentication settings for your agent.
+1. At the top of the page, select the **Channels** tab and review the channels to which you can deploy your agent. The available channels depend on the authentication settings for your agent.
 1. Select **Settings** at the top of the page.
 1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration and **Save** again (confirming that you want to enable access to the agent for everyone).
 1. Close the **Settings** pane. Then, view the **Channels** page.
@@ -207,13 +207,14 @@ Now that you have a working agent, you can publish it for people to use. The ava
         "What are the expense limits for flights?"`
         ```
 
-1. Select **Save** to save the settings. Then **Copy** the link to your agent demo website to the clipboard.
+1. Select **Save** to save the settings.
+2. Select **Copy** to copy the link to your agent demo website to the clipboard.
 1. In a new browser tab, navigate to the URL you copied to open the demo website, which should look similar to this:
 
     ![Screenshot of the demo website for an agent.](media/demo-website.png)
 
 1. Enter the message `What are the expense limits for meals?` and view the response.
-1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims.
+1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims. Once you are done exploring this agent, you may close your browser window.
 
 ## Challenge
 

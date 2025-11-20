@@ -18,9 +18,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 ### Task 1.1 – Download solution
 
-1. In a new broser tab, navigate to the **Bookings_1_0_0_0.zip** file in GitHub at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
-
-1. Select the **ellipses (...)** near the top-right and select **Download**.
+1. In a new browser tab, navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Bookings_1_0_0_0.zip` to download the **Bookings_1_0_0_0.zip** file.
 
 1. Close the brower tab.
 
@@ -64,7 +62,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In the left navigation of the Bookings solution, select the **Objects** tab.
 
-1. Select the **ellipsis …** menu for the **Real Estate Property Management** Model-Driven App, and select **Play**.
+1. Select the **ellipsis …** menu for the **Real Estate Property Management** Model-Driven App, and select **Play**. This is a simple model-driven app that will allow you to create new Real Estate Property records. 
 
     ![Overview.](../media/play-app.png)
 
@@ -73,7 +71,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 1. Enter the following data:
 
     - **Property Name:** `1100 High Villas`
-    - **Owner:** Select your user
+    - **Owner:** Select your user (search for your provided username)
     - **Asking Price:** `250,000`
     - **Street:** `Main Avenue`
     - **City:** `Redmond`

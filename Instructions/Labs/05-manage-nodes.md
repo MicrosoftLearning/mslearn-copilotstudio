@@ -41,13 +41,13 @@ Variables can be accessed by other topics.
 
 1. Select **Agents** from the left navigation pane.
 
-1. Select the agent you created in the earlier lab.
+1. Select the Real Estate Booking agent you created in the earlier lab.
 
 1. Select the **Topics** tab.
 
 1. Select the **Customer Details** topic.
 
-1. Select **Variables** in the top bar to open the Variables pane.
+1. Select **Variables** in the top bar to open the Variables pane (you may need to select **More** \> **Variables**).
 
 1. Select the right-hand check boxes for the three topic variables.
 
@@ -123,6 +123,12 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 1. Select the variable in **Save user response as** and enter **`DateTime`** for **Variable name**
 
+1. Select the **+** icon under the left **Question** node and select **Send a messsage**.
+
+1. In the **Enter a message** field, enter the following text:
+
+    `Great! Let me get that scheduled for you.`
+
 1. Select **Save**.
 
 ### Task 2.5 - Test the agent
@@ -135,7 +141,7 @@ The conversational flow in a topic can be created manually by adding nodes.
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. Select the **Start a new conversation** (refresh) icon at the top of the testing panel.
+1. Select the **Start new test session** icon at the top of the testing panel.
 
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
 

@@ -55,10 +55,6 @@ With your agent published, you can make your agent available to users in Teams. 
 
 1. Select **Add channel**.
 
-1. Select **Availability options**.
-
-    ![Screenshot of the Teams channel availability options.](../media/teams-availability-options.png)
-
 1. Select **See agent in Teams**
 
 1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams**.
@@ -69,7 +65,7 @@ With your agent published, you can make your agent available to users in Teams. 
 
     ![Screenshot of dialog to add the app to Teams.](../media/teams-add-app.png)
 
-1. Select **Open**.
+1. Select **Open** and wait for the agent to load in Teams.
 
 1. Test the agent.
 

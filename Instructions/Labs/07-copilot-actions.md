@@ -124,19 +124,19 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 1. Select **Save draft** near the upper-right of the page.
 
-1. Wait for the save to complete, then select **Publish**. In the **Your agent flow published successfully!** pop-up, select **Go back to agent**.
+1. Wait for the save to complete, then select **Publish**.
 
-1. Select the **Overview** tab.
+1. In the **Your agent flow published successfully!** pop-up, select **Go back to agent**.
 
-1. Select **Edit** in the **Details** section. 
+1. Select the agent flow tool that you just created. 
 
-1. Update the **Flow name** to `Get Property`
+1. In the **Details** section, update the Flow **Name** to `Get Property`
+
+1. Update the **Description** to `Get properties with the right number of bedrooms.`
 
 1. Select **Save**
 
-1. Select **Agents** and select your **Real Estate Booking Service** agent. 
-
-1. Select **Tools** and see the Get Property flow you created.
+1. Select the **Tools** tab and see the Get Property flow you created.
 
 
 ### Task 1.2 - Add the Get Property tool to the topic
@@ -145,15 +145,11 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 1. Select the **Book a Real Estate Showing** topic.
 
-1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Add a tool**, then select the **Get Property** flow.
+1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Add a tool**, then select the **Get Property** flow under Tools.
 
-1. Select the **NumberofBedrooms** variable for the **Bedrooms** input parameter.
+1. Select the **ellipses (...)** in the **Which property do you want to see?** question node and select **Delete**.
 
-    ![Screenshot of step 3 of add a flow action.](../media/add-action-flow-step-3.png)
-
-1. Select the **three dots** in the **Which property do you want to see?** question node and select **Delete**.
-
-1. Select the the **+** icon under the **Action** node and select **Send a message**.
+1. Select the the **+** icon under the **Tool** node and select **Send a message**.
 
 1. In the **Enter a message** field, enter `Property ` (with a space following it).
 
@@ -173,7 +169,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select **+ Add a tool**.
 
-1. SSelect **+ New tool** and then **Agent flow** .
+1. Select **+ New tool** and then **Agent flow** .
 
 1. Select **Save draft** and wait for the agent flow to save.
 
@@ -185,7 +181,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select **Save**.
 
-1. Select te **Designer** tab.
+1. Select the **Designer** tab.
 
 1. Select the trigger step **When an agent calls the flow** and select **+ Add an input**.
 
@@ -237,14 +233,6 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Wait for the save to complete, then select **Publish**.
 
-1. Select **Overview** tab.
-
-1. Select **Edit** in the Details section.
-
-1. Rename the agent flow `Create Booking Request`
-
-1. Select **Save**.
-
 ### Task 2.2 - Validate your tools
 
 1. Select **Agents** and open your **Real Estate Booking Service** agent.
@@ -257,7 +245,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select the **Book a Real Estate Showing** topic.
 
-1. Select the the **+** icon below the **What date and time do you want to see the property?** node, select **Add a tool**, then select the **Create Booking Request** flow.
+1. Select the the **+** icon below the **Message** node at the bottom, select **Add a tool**, then select the **Create Booking Request** flow.
 
 1. Select the **PropertyId** variable for the **PropertyId** input parameter.
 
@@ -283,20 +271,13 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. If it's not enabled, enable **Track between topics**.
 
-1. Select the **Start a new conversation** (refresh) icon at the top of the testing panel.
+1. Select the **Start new test session** icon at the top of the testing panel.
 
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
 
     `I want to book a real estate showing`
 
-1. Enter the following information:
-
-    ```
-    Name: <Your name>
-    ```
-    ```
-    Email address: <Your email address>
-    ```
+1. Enter a name and email address.
 
 1. After you supply the information, an Adaptive Card displays the information that you entered and asks if the details are correct. Select **Yes**.
 

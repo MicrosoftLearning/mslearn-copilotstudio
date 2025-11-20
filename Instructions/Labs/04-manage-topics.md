@@ -44,7 +44,7 @@ In this exercise, you will remove topics in an agent.
 
     ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
 
-1. Select the agent you created in the previous lab.
+1. Select the Real Estate Booking Service agent you created in the previous lab.
 
 1. Select the **Topics** tab.
 
@@ -151,7 +151,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
     }
     ```
 
-1. Select the **Copilot** icon to reopen the **Edit with Copilot** pane.
+1. Select the **Copilot** icon (You may need to select **More** \> **Copilot** ) to reopen the **Edit with Copilot** pane.
 
 1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
 
@@ -161,7 +161,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Update**.
 
-A new question node is added to the end of the topic with options for the user to select.
+1. A new question node is added to the end of the topic with options for the user to select.
 
     ![Screenshot of the new question node with yes and no options.](../media/new-question-node.png)
 
@@ -171,13 +171,17 @@ A new question node is added to the end of the topic with options for the user t
 
 1. If the **Test your agent** panel is closed, select the **Test** button in the upper-right of the screen.
 
-1. Select the **Start a new conversation** (Refresh) icon at the top of the testing panel.
+1. Select the **Start a new test session** icon at the top of the testing panel.
+
+    ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
 1. In the **Ask a question or describe what you need** text box, enter **`Customer information`**.
 
 1. Enter your name and email address.
 
 1. Select **Yes**.
+
+1. Select **Save**
 
 ## Exercise 3 - Author topics manually
 
@@ -189,7 +193,7 @@ Topics can be created manually by adding trigger phrases.
 
 1. Select **+ Add a topic** and select **From blank**.
 
-1. Select the **Details** icon to open the Topic details dialog.
+1. Select the **Details** icon to open the Topic details dialog (you may need to select **More** \> **Details**).
 
     ![Screenshot of the topic details dialog ](../media/topic-details.png)
 
@@ -197,7 +201,7 @@ Topics can be created manually by adding trigger phrases.
 
     `Book a Real Estate Showing`
 
-1. In the **Display Name** field, enter the following text:
+1. In the **Display name** field, enter the following text:
 
     `Book`
 
@@ -205,7 +209,7 @@ Topics can be created manually by adding trigger phrases.
 
     `Select the property and requested date and create a booking request`
 
-1. Select **Save**.
+1. Select **Save**. Select **Publish** \> **Publish**. 
 
 ### Task 3.2 - Add trigger phrases
 
