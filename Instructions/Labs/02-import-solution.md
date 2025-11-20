@@ -18,7 +18,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 ### Task 1.1 – Download solution
 
-1. In a new broser tab, navigate to the **Bookings_1_0_0_0.zip** file in GitHub at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
+1. In a new browser tab, navigate to the **Bookings_1_0_0_0.zip** file in GitHub at `https://github.com/MicrosoftLearning/mslearn-copilotstudio/blob/main/Allfiles/Bookings_1_0_0_0.zip`
 
 1. Select the **ellipses (...)** near the top-right and select **Download**.
 
