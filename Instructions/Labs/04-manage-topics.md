@@ -44,7 +44,7 @@ In this exercise, you will remove topics in an agent.
 
     ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
 
-1. Select the agent you created in the previous lab.
+1. Select the Real Estate Booking Service agent you created in the previous lab.
 
 1. Select the **Topics** tab.
 
@@ -151,7 +151,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
     }
     ```
 
-1. Select the **Copilot** icon to reopen the **Edit with Copilot** pane.
+1. Select the **Copilot** icon (You may need to select **More** \> **Copilot** ) to reopen the **Edit with Copilot** pane.
 
 1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
 
@@ -171,7 +171,9 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. If the **Test your agent** panel is closed, select the **Test** button in the upper-right of the screen.
 
-1. Select the **Start a new conversation** (Refresh) icon at the top of the testing panel.
+1. Select the **Start a new test session** icon at the top of the testing panel.
+
+    ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
 1. In the **Ask a question or describe what you need** text box, enter **`Customer information`**.
 
