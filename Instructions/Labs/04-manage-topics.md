@@ -161,7 +161,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Update**.
 
-A new question node is added to the end of the topic with options for the user to select.
+1. A new question node is added to the end of the topic with options for the user to select.
 
     ![Screenshot of the new question node with yes and no options.](../media/new-question-node.png)
 
