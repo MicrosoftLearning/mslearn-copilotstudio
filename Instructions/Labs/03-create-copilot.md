@@ -75,9 +75,11 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 - Disable generative orchestration
 
-1. In the **Overview** tab, ensure that **Use generative AI to determine how best to respond to users and events.** is set to **Disabled** within the **Details** section. This turns Orchestration off for the purpose of this lab.
+1. Select **Settings**. 
 
-    ![Generative orchestration disabled](../media/settings-generative-ai-1.png)
+1. For **Use generative AI orchestration for your agent's responses?** select **No**. This turns Orchestration off for the purpose of this lab.
+
+1. Close out of the Settings window. 
 
 ### Task 2.2 – Add a knowledge source
 
