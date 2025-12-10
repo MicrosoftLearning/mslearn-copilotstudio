@@ -159,25 +159,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 1. In the **Upload file** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes or longer. Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) in another browser tab! If indexing is still not complete, you may move on to the next lab and come back to complete the rest of this lab once it is done. 
-
-1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
-
-    > **Note**: If no relevant answer is found in the custom knowledge sources you have added, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
-
-1. Expand the **Test** pane and restart the conversation. Then enter the following prompt:
-
-    ```prompt
-    What's the expense limit for a hotel stay?
-    ```
-
-    The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
-
-    ![Screenshot of the test pane with a citation from a knowledge source.](media/test-knowledge.png)
-
-1. Try asking some follow-up questions, such as:
-    - `What about flights?`
-    - `What guidelines are there for entertainment expenses?`
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes or longer. We will continue with the lab and check on the file indexing later.
 
 ## Publish your agent
 
@@ -207,6 +189,32 @@ Now that you have a working agent, you can publish it for people to use. The ava
 
 1. Enter the message `What are the expense limits for meals?` and view the response.
 1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims. Once you are done exploring this agent, you may close your browser window.
+
+## Check in on your file indexing
+Let's see if the file you uploaded is finished indexing. If it is not, take a coffee break and check back in every few minutes. 
+
+1. Navigate to the previous Copilot Studio tab and close the Demo Website pane. 
+1. Select the **Knowledge** tab.
+1. Check on the **Status** of your file upload. If it is still **In progress**, refresh every few minutes until it is ready. 
+1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
+
+    > **Note**: If no relevant answer is found in the custom knowledge sources you have added, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
+
+1. Expand the **Test** pane and restart the conversation. Then enter the following prompt:
+
+    ```prompt
+    What's the expense limit for a hotel stay?
+    ```
+
+    The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
+
+    ![Screenshot of the test pane with a citation from a knowledge source.](media/test-knowledge.png)
+
+1. Try asking some follow-up questions, such as:
+    - `What about flights?`
+    - `What guidelines are there for entertainment expenses?`
+
+1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. 
 
 ## Challenge
 
