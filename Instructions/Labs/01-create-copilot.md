@@ -208,8 +208,6 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
     The response should be based on the information in the knowledge source you uploaded, and include a citation reference.
 
-    ![Screenshot of the test pane with a citation from a knowledge source.](media/test-knowledge.png)
-
 1. Try asking some follow-up questions, such as:
     - `What about flights?`
     - `What guidelines are there for entertainment expenses?`
