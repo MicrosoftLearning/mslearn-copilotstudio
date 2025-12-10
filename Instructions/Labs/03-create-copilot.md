@@ -111,6 +111,6 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
-1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`**. View your response. 
+1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`** View your response. 
 
     ![Screenshot of the Testing panel results.](../media/test-pane-results.png)
