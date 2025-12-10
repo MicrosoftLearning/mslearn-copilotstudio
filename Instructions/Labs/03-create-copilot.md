@@ -35,15 +35,17 @@ This exercise will take approximately **15** minutes to complete.
 
 In this exercise, you will access the Microsoft Copilot Studio portal, the Developer environment and create a new agent.
 
-### Task 1.1 – Microsoft Copilot Studio portal
+### Task 1.1 – Open Bookings solution
 
-1. In a new tab, navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and sign in with your Microsoft 365 credentials if prompted again.
+1. In a new browser tab, navigate to `https://make.powerapps.com`.
 
 1. Make sure that you are in the appropriate environment.
 
-### Task 1.2 – Create an agent
+1. Select **Solutions** /> **Bookings**
 
-1. Select **Create** from the left navigation pane and select the **+ New agent**.
+1. Select **New** /> **Agent** /> **Agent**
+
+### Task 1.2 – Create an agent
 
 1. Select the **Configure** tab.
 
@@ -55,9 +57,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select the ellipses (**...**) and select **Update advanced settings**.
 
-1. Select **Bookings** under **Solution**.
-
-1. Enter `labagent` for **Schema Name**.
+1. Enter `labagent` for **labagent**.
 
     ![Advanced settings in Copilot Studio portal.](../media/copilot-studio-advanced-settings.png)
 
