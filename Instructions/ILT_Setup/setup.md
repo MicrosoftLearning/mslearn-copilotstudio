@@ -19,7 +19,9 @@ Before you start the lab exercise, you must create a development environment for
         - **Deploy sample apps and data**: No
 1. **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display)
 1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your credentials if prompted).
-1. If presented with the Start building your agent page, select **...** /> **Cancel agent creation** /> **Yes, continue.** 
+
+    > **Note**: The first time you open Copilot Studio, it may display a chat interface to create your first agent. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel agent creation** to leave the chat interface and view the Copilot Studio home page.
+
 2. If prompted, select the option to start a free trial.
 1. Skip any welcome messages.
 1. At the top of the page, select **Environment**. Then in the **Select environment** pane, select the environment you just created.
