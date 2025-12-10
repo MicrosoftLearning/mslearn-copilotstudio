@@ -36,17 +36,13 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
 1. Select the option to create a **New agent**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the agent you want to build.
 
-    > **Tip**: You can use the **Skip to Configure** option to skip the chat-based agent creation experience. In this exercise, we'll use the chat interface.
-
 1. Enter the following prompt:
 
     ```prompt
     Create an agent to help employees with expense claims.
     ```
 
-1. Review the response from Copilot Studio. The chat pane should look similar to the following:
-
-    ![Screenshot of the chat conversation to create a new agent.](media/create-copilot-chat.png)
+1. Review the response from Copilot Studio.
 
 1. Continue the conversation to define your agent, which should:
     - Have an appropriate name
