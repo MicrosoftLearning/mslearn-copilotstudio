@@ -159,7 +159,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
 1. In the **Upload file** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes (or longer). Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) in another browser tab! If indexing is still not complete, you may move on to the next lab and come back to complete the rest of this lab once it is done. 
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes or longer. Now might be a good time to take a coffee break while you review the [expenses policy document](https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx) in another browser tab! If indexing is still not complete, you may move on to the next lab and come back to complete the rest of this lab once it is done. 
 
 1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
 
@@ -188,10 +188,6 @@ Now that you have a working agent, you can publish it for people to use. The ava
 1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration and **Save** again (confirming that you want to enable access to the agent for everyone).
 1. Close the **Settings** pane. Then, view the **Channels** page.
 1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. Publishing will take a minute or so.
-1. After your agent has been published, verify the **Publish status** on the **Channels** page.
-
-    ![Screenshot of the Channels page in Copilot Studio.](media/channels-page.png)
-
 1. Select the **Demo website** channel. This is an appropriate channel for users to test your agent.
 1. In the **Demo website** pane, enter the following settings:
     - **Welcome message**: `Ask me about Expense claims`
