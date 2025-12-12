@@ -42,9 +42,9 @@ In this exercise, you will remove topics in an agent.
 
 1. Select **Agents** from the left navigation pane.
 
-    ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
+1. Select the **Real Estate Booking Service** agent you created in the previous lab.
 
-1. Select the Real Estate Booking Service agent you created in the previous lab.
+    ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
 
 1. Select the **Topics** tab.
 
@@ -201,15 +201,17 @@ Topics can be created manually by adding trigger phrases.
 
     `Book a Real Estate Showing`
 
-1. In the **Display name** field, enter the following text:
-
-    `Book`
-
 1. In the **Description** field, enter the following text:
 
     `Select the property and requested date and create a booking request`
 
-1. Select **Save**. Select **Publish** \> **Publish**. 
+1. In the **Model display name** field, enter the following text:
+
+    `Book Showing`
+
+1. Select **Save**.
+
+1. Select **Publish** \> **Publish**. 
 
 ### Task 3.2 - Add trigger phrases
 
