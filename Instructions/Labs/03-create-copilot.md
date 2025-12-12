@@ -41,9 +41,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Make sure that you are in the appropriate environment.
 
-1. Select **Solutions** /> **Bookings**
+1. Select **Solutions** \> **Bookings**
 
-1. Select **New** /> **Agent** /> **Agent**
+1. Select **New** /> **Agent** \> **Agent**
 
 ### Task 1.2 – Create an agent
 
@@ -57,7 +57,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select the ellipses (**...**) and select **Update advanced settings**.
 
-1. Enter `labagent` for **labagent**.
+1. Enter `labagent` for **Schema Name**.
 
     ![Advanced settings in Copilot Studio portal.](../media/copilot-studio-advanced-settings.png)
 
