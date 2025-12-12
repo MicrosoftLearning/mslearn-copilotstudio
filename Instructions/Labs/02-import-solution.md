@@ -20,8 +20,6 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In a new browser tab, navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/Allfiles/Bookings_1_0_0_0.zip` to download the **Bookings_1_0_0_0.zip** file.
 
-1. Close the brower tab.
-
 ### Task 1.2 – Import solution
 
 1. In a new browser tab, navigate to `https://make.powerapps.com`.
