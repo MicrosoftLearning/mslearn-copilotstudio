@@ -91,7 +91,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Save**.
 
-1. Close the Number of Bedrooms pane.
+1. Once the entity is saved, close the Number of Bedrooms pane.
 
 1. Select the **X** icon in the top-right to close out of Settings and return to your agent.
 
@@ -103,7 +103,7 @@ Use entities in the conversational flow to improve the agent.
 
 1. Select the **Topics** tab.
 
-1. Select the **Book a Real Estate Showing** topic.
+1. Select the **Book Showing** topic.
 
 1. Select the the **+** icon between the **Condition** and property **Question** nodes, then select **Ask a question**.
 
