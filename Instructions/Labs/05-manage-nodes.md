@@ -189,6 +189,6 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 1. Select the **three dots** next to the **Settings** button in the upper-right of the screen and select **Go to demo website**.
 
-1. In the **Type your message** text box, enter **`I want to book a property`**.
+1. In the **Type your message** text box, enter **`I want to book a property showing`**.
 
 1. Answer the prompts to test the agent.
