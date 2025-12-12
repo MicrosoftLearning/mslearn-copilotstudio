@@ -41,9 +41,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Make sure that you are in the appropriate environment.
 
-1. Select **Solutions** /> **Bookings**
+1. Select **Solutions** \> **Bookings**
 
-1. Select **New** /> **Agent** /> **Agent**
+1. Select **New** /> **Agent** \> **Agent**
 
 ### Task 1.2 – Create an agent
 
