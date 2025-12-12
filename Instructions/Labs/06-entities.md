@@ -77,7 +77,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Save**.
 
-1. Close the Property Type window.
+1. Once the entity is saved, close the Property Type window.
 
 ### Task 1.3 - Create number of bedrooms entity
 
