@@ -42,7 +42,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Select **Import**.
 
-    The solution will import in the background. This may take a few minutes.
+    The solution will import in the background. This may take a few minutes. You may refresh the window.
 
     ![Solution imported.](../media/solution-imported.png)
 
