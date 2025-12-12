@@ -57,7 +57,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select the ellipses (**...**) and select **Update advanced settings**.
 
-1. Enter `labagent` for **labagent**.
+1. Enter `labagent` for **Schema Name**.
 
     ![Advanced settings in Copilot Studio portal.](../media/copilot-studio-advanced-settings.png)
 
