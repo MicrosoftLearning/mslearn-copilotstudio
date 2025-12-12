@@ -63,7 +63,7 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 1. Select the **Topics** tab.
 
-1. Select the **Book a Real Estate Showing** topic.
+1. Select the **Book Showing** topic.
 
 1. Select the the **+** icon under the Trigger node and select **Send a message**.
 
