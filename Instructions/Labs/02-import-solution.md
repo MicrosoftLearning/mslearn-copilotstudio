@@ -60,7 +60,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. In the left navigation of the Bookings solution, select the **Objects** tab.
 
-1. Select the **ellipsis …** menu for the **Real Estate Property Management** Model-Driven App, and select **Play**. This is a simple model-driven app that will allow you to create new Real Estate Property records. 
+1. Select the **ellipses …** menu for the **Real Estate Property Management** Model-Driven App, and select **Play**. This is a simple model-driven app that will allow you to create new Real Estate Property records.
 
     ![Overview.](../media/play-app.png)
 
@@ -96,4 +96,4 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Select **Save & Close**.
 
-You now have 2 Active Real Estate Properties in the view. 
+You now have 2 Active Real Estate Properties in the view.
