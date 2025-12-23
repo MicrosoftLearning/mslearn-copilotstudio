@@ -114,7 +114,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
     ![Screenshot of the message node with an Adaptive Card.](../media/message-node-adaptive-card.png)
 
-1. Select the **Media** box in the Adaptive Card. The Adaptive Card properties should appear on the right of the screen.
+1. Select the **Media** box in the Adaptive Card. The Adaptive Card properties should appear on the right of the page.
 
     ![Screenshot of the Adaptive Card properties.](../media/adaptive-card-properties.png)
 
@@ -201,7 +201,7 @@ Topics can be created manually by adding trigger phrases.
 
 1. In the **Name** field, enter the following text:
 
-    `Book a Real Estate Showing`
+    `Book Showing`
 
 1. In the **Display Name** field, enter the following text:
 

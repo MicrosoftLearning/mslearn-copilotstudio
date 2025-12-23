@@ -33,7 +33,7 @@ This exercise will take approximately **30** minutes to complete.
 
 ## Exercise 1 - Variable scope
 
-Variables can be accessed by other topics.
+Enable variables to be be accessed by other topics.
 
 ### Task 1.1 - Configure the scope of the variables
 
@@ -41,13 +41,15 @@ Variables can be accessed by other topics.
 
 1. Select **Agents** from the left navigation pane.
 
-1. Select the Real Estate Booking agent you created in the earlier lab.
+1. Select the **Real Estate Booking Service** agent you created in the earlier lab.
 
 1. Select the **Topics** tab.
 
 1. Select the **Customer Details** topic.
 
 1. Select **Variables** in the top bar to open the Variables pane (you may need to select **More** \> **Variables**).
+
+1. Select and expand **Topic** variables.
 
 1. Select the right-hand check boxes for the three topic variables.
 
@@ -121,7 +123,7 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 1. Select **Date and time** for **Identify**.
 
-1. Select the variable in **Save user response as** and enter **`DateTime`** for **Variable name**
+1. Select the variable in **Save user response as** and enter **`VisitDateTime`** for **Variable name**
 
 1. Select the **+** icon under the left **Question** node and select **Send a messsage**.
 
@@ -133,9 +135,9 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 ### Task 2.5 - Test the agent
 
-1. If it's not open, select the **Test** button in the upper-right of the screen to open the testing panel.
+1. If the **Test your agent** panel is not open, select the **Test** icon in the upper-right of the page to open the testing panel.
 
-1. Select the **three dots** at the top of the testing panel in the upper-right of the screen.
+1. Select the **ellipses ...** menu at the top of the testing panel in the upper-right of the page.
 
 1. If it's not enabled, enable **Track between topics**.
 
@@ -180,15 +182,3 @@ The conversational flow in a topic can be created manually by adding nodes.
 1. Select **Save** in the confirmation window.
 
 1. Select the **X** in the upper-right to close out of the **Settings**.
-
-### Task 3.2 - Publish the agent
-
-1. Select **Publish** in the upper-right, then select **Publish** again.
-
-### Task 3.3 - Demo Website
-
-1. Select the **three dots** next to the **Settings** button in the upper-right of the screen and select **Go to demo website**.
-
-1. In the **Type your message** text box, enter **`I want to book a property showing`**.
-
-1. Answer the prompts to test the agent.

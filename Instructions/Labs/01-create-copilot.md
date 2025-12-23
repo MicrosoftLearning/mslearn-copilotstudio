@@ -216,7 +216,7 @@ Now that you have a working agent, you can test it to check that it is ready for
 
 1. At the top of the page, select the **Test** icon to open the **Test your agent** pane.
 
-1. Select the **ellipses **...**  menu in the **Test your agent** pane and toggle **Track between topics** to **On**
+1. Select the **ellipses ...**  menu in the **Test your agent** pane and toggle **Track between topics** to **On**
 
     ![Screenshot of Channels in Copilot Studio.](media/test-pane-options.png)
 
