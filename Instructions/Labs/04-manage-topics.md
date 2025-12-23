@@ -44,7 +44,7 @@ In this exercise, you will remove topics in an agent.
 
 1. Select the **Real Estate Booking Service** agent you created in the previous lab.
 
-    ![Agents in Copilot Studio portal.](../media/copilot-studio-copilots.png)
+    ![Agents in Copilot Studio portal.](../media/copilot-studio-agents.png)
 
 1. Select the **Topics** tab.
 
@@ -66,13 +66,15 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
 1. In the **Name your topic** text box, enter **`Customer Details`**.
 
-1. In the **Create a topic to...** text box, enter **`Ask the customer for their name and email address.`**
+1. In the **Create a topic to...** text box, enter **`Ask the customer for their name and email address`**.
 
 1. Select **Create**.
 
 1. Select **Save**.
 
 ### Task 2.2 – Update nodes with natural language
+
+1. If the **Test your agent** pane is open, close the pane.
 
 1. If the **Edit with Copilot** pane is not shown on the right side of the **Customer Details** pane, select the **Copilot** icon in the upper part of the authoring canvas.
 
@@ -169,7 +171,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 ### Task 2.4 - Test the topic
 
-1. If the **Test your agent** panel is closed, select the **Test** button in the upper-right of the screen.
+1. If the **Test your agent** panel is closed, select the **Test** icon in the upper-right of the page.
 
 1. Select the **Start a new test session** icon at the top of the testing panel.
 
@@ -201,6 +203,10 @@ Topics can be created manually by adding trigger phrases.
 
     `Book a Real Estate Showing`
 
+1. In the **Display Name** field, enter the following text:
+
+    `Book a Real Estate Showing`
+
 1. In the **Description** field, enter the following text:
 
     `Select the property and requested date and create a booking request`
@@ -210,8 +216,6 @@ Topics can be created manually by adding trigger phrases.
     `Book Showing`
 
 1. Select **Save**.
-
-1. Select **Publish** \> **Publish**. 
 
 ### Task 3.2 - Add trigger phrases
 
