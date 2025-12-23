@@ -171,7 +171,7 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 1. Select the **Security** tab.
 
-1. Select the **Authentication** tile.
+1. Select **Authentication**.
 
     ![Screenshot of the authentication settings.](../media/configure-authentication.png)
 
