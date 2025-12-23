@@ -43,7 +43,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Solutions** \> **Bookings**
 
-1. Select **New** /> **Agent** \> **Agent**
+1. Select **New** \> **Agent** \> **Agent**
 
 ### Task 1.2 – Create an agent
 
@@ -55,7 +55,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the **Instructions** text box, enter **`Create an agent for topics relating to creating bookings for real estate properties`**
 
-1. Select the ellipses (**...**) and select **Update advanced settings**.
+1. Select the **ellipses ...** menu in the upper-right of the page, and select **Update advanced settings**.
 
 1. Enter `labagent` for **Schema Name**.
 
@@ -63,7 +63,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Update**.
 
-1. In the upper-right of the screen, select **Create**. Wait for your agent to finish setting up.
+1. In the upper-right of the page, select **Create**. Wait for your agent to finish setting up.
 
 1. In the right **Test your agent** pane, enter **`How do I make a booking?`** and view the response.
 
@@ -75,11 +75,13 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 ### Task 2.1 - Disable generative orchestration
 
-1. Select **Settings**. 
+1. Select **Settings**.
 
 1. For **Use generative AI orchestration for your agent's responses?** select **No**. This turns Orchestration off for the purpose of this lab.
 
-1. Close out of the Settings window. 
+1. Select **Save**.
+
+1. Close out of the Settings window.
 
 ### Task 2.2 – Add a knowledge source
 
@@ -91,7 +93,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **Public websites**
 
-1. In the **Public website link** text box, enter **`https://create.microsoft.com/en-us/`**.
+1. In the **Public website link** text box, enter **`https://word.cloud.microsoft/`**.
 
     ![Add public website link in Copilot Studio portal.](../media/add-website-knowledge-source.png)
 
@@ -101,7 +103,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select the **Overview** tab.
 
-1. Select the **three dots** at the top of the **Test your agent** pane.
+1. Select the **ellipses …** menu at the top of the **Test your agent** pane.
 
 1. Enable **Track between topics**.
 
@@ -111,6 +113,6 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
-1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`** View your response. 
+1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`** View your response.
 
     ![Screenshot of the Testing panel results.](../media/test-pane-results.png)

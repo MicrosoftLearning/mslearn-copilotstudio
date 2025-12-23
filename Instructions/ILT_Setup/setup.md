@@ -10,8 +10,8 @@ Before you start the lab exercise, you must create a development environment for
     - **Region**: *Choose the **default** region*
     - **Get new features early**: No
     - **Type**: Developer
-    - **Purpose**: `Lab exercise`
-    - **Add a Dataverse store**: Yes
+    - **Purpose**: `Lab exercises`
+    - **Add a Dataverse data store**: Yes
     - **Pay-as-you-go with Azure**: No
     - **Add Dataverse options**:
         - **Language**: English
