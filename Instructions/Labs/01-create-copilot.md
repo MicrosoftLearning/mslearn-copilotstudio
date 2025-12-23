@@ -24,37 +24,41 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
     ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
 
-    On the home page, you can start creating an agent and view agents you have recently worked on. The Power Apps **environment** in which your agents are defined is shown at the top of the page. You can also navigate to the **Create** page for more agent creation options and the **Agents** page to view all of your existing agents.
+    On the home page, you can start creating an agent and view agents you have recently worked on. The Power Apps **environment** in which your agents are defined is shown at the top of the page.
 
-    > **Note**: In addition to agents you have created, you may see **Copilot for Microsoft 365**, which you can use Copilot Studio to extend.
+1. In the navigation pane on the left, select **Agents** to view existing agents.
 
-1. In the navigation pane on the left, select **Create** to view a page on which you can create a new agent, like this:
+    ![Screenshot of the Copilot Studio agents page.](media/copilot-studio-agents.png)
 
-    ![Screenshot of the Create page in Copilot Studio.](media/create-copilot-agent.png)
+    > **Note**: In addition to agents you have created, you may see **Microsoft 365 Copilot**, which can be extended by using Copilot Studio.
 
-    You can create a completely new agent or start with a template. In this exercise, you'll create a brand new agent.
+    You can create a completely new agent or start with an agent template. In this exercise, you'll create a brand new agent by describing the functionality of the agent that you want to build.
 
-1. Select the option to create a **New agent**. Copilot Studio responds by providing a chat interface in which you can describe the functionality of the agent you want to build.
-
-1. Enter the following prompt:
+1. Enter the following prompt in **Start building by describing what your agent needs to do**:
 
     ```prompt
     Create an agent to help employees with expense claims.
     ```
 
-1. Review the response from Copilot Studio.
+    ![Screenshot of the prompt to create an agent in Copilot Studio.](media/create-copilot-agent.png)
 
-1. Continue the conversation to define your agent, which should:
-    - Have an appropriate name
-    - Use a friendly, professional tone.
-    - Not use any publicly accessible websites to get its information (you'll add a source of knowledge for your agent later).
-    - Avoid providing any tax advice.
+1. Select the **Send** icon
 
-    When you're done, a preview of the chat interface for your agent is displayed beside the conversation used to create it.
+1. Review the agent created by Copilot Studio.
 
-1. When you're ready, select **Create** at the top right to create your agent. After a short while, it will be displayed like this (you can unpin the pane on the left to see it more clearly):
+    ![Screenshot of the agent created in Copilot Studio.](media/copilot-studio-agent.png)
 
-    ![Screenshot of a new agent in Copilot Studio.](media/new-copilot.png)
+1. Select the **Edit** icon in the **Instructions** section.
+
+1. Change the **Instructions** so your agent `Maintains a friendly and professional tone`.
+
+1. Add `Avoid providing any tax advice` to the the **Instructions**.
+
+1. Select **Save**.
+
+1. In the **Knowledge** section, toggle **Enable your agent to search all public websites** to **Disabled**.
+
+    ![Disable web search for the agent](media/web-disabled.png)
 
 1. In the **Test your agent** pane, enter the following prompt:
 
@@ -62,7 +66,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
     Hello
     ```
 
-    Review the response, which should be an appropriate message.
+    Review the response, which should be an appropriate greeting message.
 
 1. Now try the following prompt:
 
@@ -70,7 +74,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
     Who should I contact about submitting an expense claim?
     ```
 
-    This time the response may be appropriate, but it's also likely to be fairly generic. In a real organization, you'd want the agent to provide an email address of phone number for the user to contact.
+    This time the response may be appropriate, but it's also likely to be fairly generic. In a real organization, you'd may want the agent to provide an email address or phone number for the user to contact.
 
 1. Let's try another prompt:
 
@@ -118,7 +122,8 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     ```prompt
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com
     ```
-    > **Note**: Copilot results may vary, so you may need to play around with this prompt for your expected results. 
+
+    > **Note**: Copilot results may vary, so you may need to play around with this prompt for your expected results.
 
 1. Select **Create**.
 
@@ -143,13 +148,15 @@ agent.
 
     View the response, which should be based on the topic you just added (even though the text you entered doesn’t match any of the phrases in the trigger exactly - it should be close enough semantically to trigger the topic).
 
+    ![Screenshot of the test pane](media/test-pane.png)
+
 ## Add a knowledge source for Generative AI responses
 
 You can add topics for all of the inputs that you expect a user to enter; but you can’t realistically expect to anticipate every question that will be asked. Currently, your agent uses a *Conversation boosting* topic to generate AI responses from a language model, but this results in generic answers. You need to provide a source of knowledge in which the generative AI responses can be *grounded* to provide more relevant information.
 
 1. Open a new browser tab and navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/expenses/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional Contoso corporation.
 
-1. Return to the browser tab for Copilot Studio, and close the **Test your agent** pane to see the page more easily, then select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
+1. Return to the browser tab for Copilot Studio, and close the **Test your agent** pane, then select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
 
     ![Screenshot of the Knowledge page in Copilot Studio.](media/knowledge-page.png)
 
@@ -157,20 +164,26 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of available Knowledge sources in Copilot Studio.](media/knowledge-sources.png)
 
-1. In the **Upload file** section, upload the expense policy document you downloaded previously and add it to your agent's knowledge.
+1. In the **Upload file** section, use **select to browse** to upload the expense policy document you downloaded previously and select **Add to agent**.
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes or longer. We will continue with the lab and check on the file indexing later.
+    ![Screenshot of adding the Expenses policy document as knowledge to your agent in Copilot Studio.](media/add-knowledge-file.png)
 
-## Publish your agent
+    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes or longer.
 
-Now that you have a working agent, you can publish it for people to use. The available channels through which you can deliver your agent depend on the type of authentication you want to use to restrict access to it. In this case, you’ll enable access for anyone and then publish the agent for use in a demo web page.
+## Configure your agent
 
-1. At the top of the page, select the **Channels** tab and review the channels to which you can deploy your agent. The available channels depend on the authentication settings for your agent.
 1. Select **Settings** at the top of the page.
+
 1. In the **Settings** pane, on the **Security** page, select **Authentication**. Then select the option for **No authentication** and **Save** the changes to the configuration and **Save** again (confirming that you want to enable access to the agent for everyone).
-1. Close the **Settings** pane. Then, view the **Channels** page.
-1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. Publishing will take a minute or so.
+
+1. Close the **Settings** pane.
+
+1. Select the **Channels** tab.
+
+    ![Screenshot of Channels in Copilot Studio.](media/channels-page.png)
+
 1. Select the **Demo website** channel. This is an appropriate channel for users to test your agent.
+
 1. In the **Demo website** pane, enter the following settings:
     - **Welcome message**: `Ask me about Expense claims`
     - **Conversation starters**:
@@ -181,24 +194,31 @@ Now that you have a working agent, you can publish it for people to use. The ava
         "What are the expense limits for flights?"`
         ```
 
-1. Select **Save** to save the settings.
-2. Select **Copy** to copy the link to your agent demo website to the clipboard.
-1. In a new browser tab, navigate to the URL you copied to open the demo website, which should look similar to this:
+1. Select **Save**.
 
-    ![Screenshot of the demo website for an agent.](media/demo-website.png)
-
-1. Enter the message `What are the expense limits for meals?` and view the response.
-1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims. Once you are done exploring this agent, you may close your browser window.
+1. Close the **Demo website** pane.
 
 ## Check in on your file indexing
-Let's see if the file you uploaded is finished indexing. If it is not, take a coffee break and check back in every few minutes. 
 
-1. Navigate to the previous Copilot Studio tab and close the Demo Website pane. 
+Let's see if the file you uploaded is finished indexing. If it is not, take a coffee break and check back in every few minutes.
+
 1. Select the **Knowledge** tab.
-1. Check on the **Status** of your file upload. If it is still **In progress**, refresh every few minutes until it is ready. 
+
+1. Check on the **Status** of your file upload. If it is still **In progress**, refresh every few minutes until it is **Ready**.
+
 1. When the file is ready, view the **Topics** page and open the **Conversational boosting** system topic. Recall that this topic is triggered by an unknown intent, and then tries to create a generative AI response based on data sources containing knowledge; such as the file you uploaded.
 
     > **Note**: If no relevant answer is found in the custom knowledge sources you have added, the topic may use the knowledge inherent in the language model to provide a more generic answer. You can configure the topic to restrict its search to specific knowledge stores if you want greater control over the generative AI responses it returns.
+
+## Test your agent
+
+Now that you have a working agent, you can test it to check that it is ready for people to use.
+
+1. At the top of the page, select the **Test** icon to open the **Test your agent** pane.
+
+1. Select the ellipses (...) in the **Test your agent** pane and toggle **Track between topics** to **On**
+
+    ![Screenshot of Channels in Copilot Studio.](media/test-pane-options.png)
 
 1. Expand the **Test** pane and restart the conversation. Then enter the following prompt:
 
@@ -211,8 +231,9 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 1. Try asking some follow-up questions, such as:
     - `What about flights?`
     - `What guidelines are there for entertainment expenses?`
+    - `What are the expense limits for meals?`
 
-1. At the top of the page, select **Publish**. Then, on the **Publish** page, select **Publish**. 
+1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about expense claims.
 
 ## Challenge
 
@@ -221,6 +242,5 @@ time to apply what you’ve learned on your own. Try creating an agent that prov
 
 - Create a new agent.
 - Use the `https://www.microsoft.com/en-us/microsoft-copilot/` website as a knowledge source.
-- Publish the agent so that users can test it in a demo website.
 
 > **Tip**: If you need help, consult the [Copilot Studio documentation](https://learn.microsoft.com/microsoft-copilot-studio/) at `https://learn.microsoft.com/microsoft-copilot-studio/`.
