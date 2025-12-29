@@ -6,6 +6,9 @@ lab:
 
 # Deploy agent to Microsoft Teams
 
+>! IMPORTANT
+> This lab is currently unavailable with a Copilot Studio trial as it is not possible to publish an agent.
+
 ## Scenario
 
 In this exercise, you will:

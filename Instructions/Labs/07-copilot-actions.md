@@ -57,6 +57,8 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
     ![Screenshot of trigger properties of the flow.](../media/create-flow-step2.png)
 
+1. Select **Save draft** near the upper-right of the page.
+
 1. Select the **+** icon between the two steps in the flow to add a new action.
 
 1. Enter `Dataverse` in the **Search** field and select **See more** for the **Microsoft Dataverse** connector.
@@ -82,6 +84,8 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
     ![Screenshot of configuring list rows action.](../media/create-flow-step4.png)
 
     > **Important:** Ensure there is a space between eq and Bedrooms.
+
+1. Select **Save draft** near the upper-right of the page.
 
 1. Select the **Respond to Copilot** action in the authoring canvas and select **+ Add an output**.
 
@@ -112,6 +116,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
     ```
     first(outputs('List_rows')?['body/value'])['contoso_propertyname']
     ```
+
     ![Screenshot of configuring response action.](../media/create-flow-step5.png)
 
 1. Select **Add**.
@@ -128,24 +133,23 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 1. In the **Your agent flow published successfully!** pop-up, select **Go back to agent**.
 
-1. Select the agent flow tool that you just created. 
+1. Select the agent flow tool that you just created.
 
 1. In the **Details** section, update the Flow **Name** to `Get Property`
 
-1. Update the **Description** to `Get properties with the right number of bedrooms.`
+1. Update the **Description** to `Get properties with the right number of bedrooms`.
 
 1. Select **Save**
 
 1. Select the **Tools** tab and see the Get Property flow you created.
 
-
 ### Task 1.2 - Add the Get Property tool to the topic
 
 1. Select the **Topics** tab.
 
-1. Select the **Book a Real Estate Showing** topic.
+1. Select the **Book Showing** topic.
 
-1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Add a tool**, then select the **Get Property** flow under Tools.
+1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Add a tool**, select the **Tool** tab, and then select the **Get Property** agent flow.
 
 1. Select the **ellipses (...)** in the **Which property do you want to see?** question node and select **Delete**.
 
@@ -165,7 +169,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 ### Task 2.1 - Create agent flow to make a booking
 
-1. Select the **tools** tab in **Real Estate Booking Service**.
+1. Select the **Tools** tab in **Real Estate Booking Service**.
 
 1. Select **+ Add a tool**.
 
@@ -175,7 +179,7 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select the **Overview** tab
 
-1. Select **Edit** in the **Details** section. 
+1. Select **Edit** in the **Details** section.
 
 1. Rename the flow `Create Booking Request`
 
@@ -237,13 +241,13 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select **Agents** and open your **Real Estate Booking Service** agent.
 
-1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+Add a tool** > **Flow** > and select the missing agent flow. Select **Add to agent**.
+1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+Add a tool** > **Flow** > and select the missing agent flow. Select **Add and configure**.
 
 ### Task 2.3 - Add the Create Booking Request tool to the topic
 
 1. Select the **Topics** tab.
 
-1. Select the **Book a Real Estate Showing** topic.
+1. Select the **Book Showing** topic.
 
 1. Select the the **+** icon below the **Message** node at the bottom, select **Add a tool**, then select the **Create Booking Request** flow.
 
@@ -257,15 +261,13 @@ Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows
 
 1. Select **Save**.
 
-1. Select **Publish** and select **Publish** again.
-
 ## Exercise 3 - Test your agent
 
 ### Task 3.1 - Make a booking request
 
-1. If closed, select the **Test** button in the upper-right of the screen to open the testing panel.
+1. If closed, select the **Test** icon in the upper-right of the page to open the testing panel.
 
-1. Select the **three dots** at the top of the testing panel in the upper-right of the screen.
+1. Select the **ellipses ...** menu at the top of the testing panel in the upper-right of the page.
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 

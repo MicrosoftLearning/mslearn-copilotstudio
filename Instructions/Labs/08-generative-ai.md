@@ -41,7 +41,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the **Settings** button in the upper-right of the screen.
 
-1. In the **Details** section, turn Orchestration to **Yes**.
+1. For **Use generative AI orchestration for your agent's responses?** select **Yes**.
 
 1. Select **Save**.
 
@@ -63,17 +63,15 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the **Security** tab.
 
-1. Select the **Authentication** tile.
+1. Select **Authentication**.
 
 1. Select **Authenticate with Microsoft**.
 
 1. Select **Save**.
 
-1. Select **Save**.
+1. Select **Save** in the confirmation window.
 
-1. Close the Settings window.
-
-1. Select **Publish** and select **Publish** again.
+1. Select the **X** in the upper-right to close out of the **Settings**.
 
 ## Exercise 2 - Add knowledge
 
@@ -115,7 +113,7 @@ This exercise will take approximately **30** minutes to complete.
 
     ![Screenshot of the system fallback topic nodes.](../media/fallback-topic-original.png)
 
-1. Select the **three dots** in the **Message** node and select **Delete**.
+1. Select the **ellipses (...)** menu in the **Message** node and select **Delete**.
 
 1. Select the the **+** icon under the **Condition** node, select **Advanced**, and select **Generative answers**.
 
@@ -139,8 +137,10 @@ This exercise will take approximately **30** minutes to complete.
 
 ### Task 4.1 Test the agent's knowledge
 
-1. If it's not open, select the **Test** button in the upper-right of the screen to open the testing panel.
+1. If it's not open, select the **Test** icon in the upper-right of the page to open the testing panel.
 
 1. Select the **Start a new conversation** icon at the top of the testing panel.
 
-1. Explore the agent and see how it uses the knowledge sources.
+1. Explore the agent and see how it uses the knowledge sources e.g.
+  - `Which cities have property listings?`
+  - `Which CRM does Summit Realty Group use?`
