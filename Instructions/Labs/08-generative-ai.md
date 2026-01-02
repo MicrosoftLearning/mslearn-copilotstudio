@@ -25,7 +25,7 @@ This exercise will take approximately **30** minutes to complete.
   
 ## Prerequisites
 
-- Must have completed **Lab: Create agent actions**
+- Must have completed **Lab: Create agent flows**
 
 ## Detailed steps
 
@@ -41,7 +41,7 @@ This exercise will take approximately **30** minutes to complete.
 
 1. Select the **Settings** button in the upper-right of the screen.
 
-1. For **Use generative AI orchestration for your agent's responses?** select **Yes**.
+1. For **Use generative AI orchestration for your agent's responses?** select **Yes - Responses will be dynamic, using available tools and knowledge as appropriate**.
 
 1. Select **Save**.
 
@@ -139,8 +139,8 @@ This exercise will take approximately **30** minutes to complete.
 
 1. If it's not open, select the **Test** icon in the upper-right of the page to open the testing panel.
 
-1. Select the **Start a new conversation** icon at the top of the testing panel.
+1. Select the **Start new test session** icon at the top of the testing panel.
 
 1. Explore the agent and see how it uses the knowledge sources e.g.
   - `Which cities have property listings?`
-  - `Which CRM does Summit Realty Group use?`
+  - `Which CRM does Summit Realty use?`

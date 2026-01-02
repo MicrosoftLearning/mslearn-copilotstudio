@@ -67,7 +67,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 1. Select the **List rows** action.
 
-1. If prompted for authentication, enter `Lab connection` for **Connection name**, select **OAuth** for **Authentication Type, and select **Sign in**.
+1. If prompted for authentication, enter `Lab connection` for **Connection name**, select **OAuth** for **Authentication Type**, and select **Sign in**, and use your tenant credentials and **Allow access**.
 
     > **Note:** If you see a '**Failed to create OAuth connection**' error, you may need to allow popups in your browser.
 

@@ -56,7 +56,17 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 1. Select **Publish all customizations**.
 
-### Task 1.3 – Test data
+### Task 1.3 – Set preferred solution
+
+1. Select **Solutions**.
+
+1. Select **Manage** in the *Current preferred solution* tile.
+
+1. Select **Bookings (contoso)**.
+
+1. Select **Apply**.
+
+### Task 1.4 – Test data
 
 1. In the left navigation of the Bookings solution, select the **Objects** tab.
 
