@@ -173,7 +173,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. If the **Test your agent** panel is closed, select the **Test** icon in the upper-right of the page.
 
-1. Select the **Start a new test session** icon at the top of the testing panel.
+1. Select the **Start new test session** icon at the top of the testing panel.
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
@@ -210,10 +210,6 @@ Topics can be created manually by adding trigger phrases.
 1. In the **Description** field, enter the following text:
 
     `Select the property and requested date and create a booking request`
-
-1. In the **Model display name** field, enter the following text:
-
-    `Book Showing`
 
 1. Select **Save**.
 

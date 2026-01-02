@@ -56,6 +56,8 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
 1. Select **Save**.
 
+    ![Screenshot of the agent instructions in Copilot Studio.](media/copilot-studio-instructions.png)
+
 1. In the **Knowledge** section, toggle **Enable your agent to search all public websites** to **Disabled**.
 
     ![Disable web search for the agent](media/web-disabled.png)
@@ -220,7 +222,7 @@ Now that you have a working agent, you can test it to check that it is ready for
 
     ![Screenshot of Channels in Copilot Studio.](media/test-pane-options.png)
 
-1. Expand the **Test** pane and restart the conversation. Then enter the following prompt:
+1. Expand the **Test** pane and start a new test session. Then enter the following prompt:
 
     ```prompt
     What's the expense limit for a hotel stay?
@@ -241,6 +243,6 @@ Now that you’ve seen how to use Copilot Studio to create a simple agent, it’
 time to apply what you’ve learned on your own. Try creating an agent that provides answers to questions about Microsoft Copilot!
 
 - Create a new agent.
-- Use the `https://www.microsoft.com/en-us/microsoft-copilot/` website as a knowledge source.
+- Use `https://www.microsoft.com/en-us/microsoft-copilot/` and `https://learn.microsoft.com/en-us/copilot/` websites as knowledge sources.
 
 > **Tip**: If you need help, consult the [Copilot Studio documentation](https://learn.microsoft.com/microsoft-copilot-studio/) at `https://learn.microsoft.com/microsoft-copilot-studio/`.
