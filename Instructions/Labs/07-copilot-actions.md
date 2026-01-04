@@ -165,7 +165,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 ## Exercise 2 - Create a tool to create data in Dataverse
 
-Microsoft Copilot Studio can ceate data in Microsoft Dataverse using agent flows.
+Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flows.
 
 ### Task 2.1 - Create agent flow to make a booking
 
