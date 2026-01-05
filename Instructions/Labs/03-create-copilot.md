@@ -77,7 +77,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **Settings**.
 
-1. For **Use generative AI orchestration for your agent's responses?** select **No**. This turns Orchestration off for the purpose of this lab.
+1. For **Use generative AI orchestration for your agent's responses?** select **No - Use classic orchestration, limiting responses to the content and behavior defined in your agent's topics**. This turns Orchestration off for the purpose of this lab.
 
 1. Select **Save**.
 
@@ -109,7 +109,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
     ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
 
-1. At the top of the **Test your agent** pane, select the  **Start a new test session** icon.
+1. At the top of the **Test your agent** pane, select the  **Start new test session** icon.
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 

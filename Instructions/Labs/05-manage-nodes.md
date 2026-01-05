@@ -87,7 +87,7 @@ The conversational flow in a topic can be created manually by adding nodes.
 
 ### Task 2.3 - Add condition node
 
-1. Select the the **+** icon under the **Redirect** node and select **Add a condition**.
+1. Select the the **+** icon under the **Topic** node and select **Add a condition**.
 
 1. In the **Condition** node, select the **DetailsCorrect** variable.
 
