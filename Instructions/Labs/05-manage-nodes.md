@@ -153,7 +153,9 @@ The conversational flow in a topic can be created manually by adding nodes.
 
     ![Screenshot of the Conversation Start message and response.](../media/conversation-start-message.png)
 
-1. Enter your name and email address.
+1. Enter your name.
+
+1. Enter your email address.
 
 1. After you supply the information, an Adaptive Card displays the information that you entered and asks if the details are correct. Select **Yes**.
 
