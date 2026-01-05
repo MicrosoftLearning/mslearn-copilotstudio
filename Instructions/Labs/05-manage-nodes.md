@@ -23,7 +23,7 @@ This exercise will take approximately **30** minutes to complete.
 
 - Configure variable scope
 - Create and edit nodes
-- Deploy and test the agent
+- Test the agent and configure authentication
   
 ## Prerequisites
 
@@ -165,9 +165,9 @@ The conversational flow in a topic can be created manually by adding nodes.
 
     ![Screenshot of the Adaptive Card with the information entered.](../media/adaptive-card-information.png)
 
-## Exercise 3 - Deploy agent
+## Exercise 3 - Configure authentication
 
-### Task 3.1 - Configure Authentication
+### Task 3.1 - Configure authentication
 
 1. Select **Settings** in the upper-right of **Real Estate Booking Service**.
 
