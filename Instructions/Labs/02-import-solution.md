@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Import Dataverse solution'
-    module: 'Build an initial agent with Microsoft Copilot Studio'
+    module: 'Get started with Copilot Studio'
 ---
 
 # Import Dataverse solution
