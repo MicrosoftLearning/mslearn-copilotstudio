@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Create an agent with Copilot Studio'
-    module: 'Build an initial agent with Microsoft Copilot Studio'
+    module: 'Get started with Copilot Studio'
 ---
 
 # Create an agent with Copilot Studio
