@@ -51,6 +51,8 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Confirm and create**.
 
+> **Note:** if **Confirm and create** is grayed out once you delete the originally proposed schema name, close the popup and repeat the steps above. While trying to update the schema name, select the proposed one instead of deleting it, and overwrite it with `labagent`.
+
 ### Task 1.2 – Configure your agent
 
 1. In the **Details** section, select **Edit**
