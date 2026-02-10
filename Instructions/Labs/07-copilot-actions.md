@@ -45,9 +45,7 @@ Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flow
 
 1. Select **+ Add a tool**.
 
-1. Select **+ New tool**.
-
-1. Select **Agent flow**.
+1. Under **Create new**, select **Agent flow**.
 
 1. Select the trigger step **When an agent calls the flow** and select **+ Add an input**.
 
