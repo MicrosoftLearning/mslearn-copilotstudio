@@ -95,7 +95,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **Public websites**
 
-1. In the **Public website link** text box, enter **`https://www.har.com/insight_subcategory/buying`**. This public website has many resources on the process for searching for a home to buy that could be useful information for your agent to know.
+1. In the **Public website link** text box, enter **`https://word.cloud.microsoft/en/create`**. This public website has many templates for marketing materials that could be useful for your agent.
 
 1. Select **Add**.
 
