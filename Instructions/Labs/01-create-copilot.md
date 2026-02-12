@@ -20,19 +20,13 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
     > **Note**: The first time you open Copilot Studio, it may display a chat interface to create your first agent. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel agent creation** to leave the chat interface and view the Copilot Studio home page.
 
+1. The Power Apps **environment** in which your agents are defined is shown at the top of the page. Change the environment to the one you created. 
+
 1. View the Copilot Studio home page, which should look similar to this:
 
     ![Screenshot of the Copilot Studio home page.](media/copilot-studio-home.png)
 
-    On the home page, you can start creating an agent and view agents you have recently worked on. The Power Apps **environment** in which your agents are defined is shown at the top of the page.
-
-1. In the navigation pane on the left, select **Agents** to view existing agents.
-
-    ![Screenshot of the Copilot Studio agents page.](media/copilot-studio-agents.png)
-
-    > **Note**: In addition to agents you have created, you may see **Microsoft 365 Copilot**, which can be extended by using Copilot Studio.
-
-    You can create a completely new agent or start with an agent template. In this exercise, you'll create a brand new agent by describing the functionality of the agent that you want to build.
+    On the home page, you can start creating an agent.
 
 1. Enter the following prompt in **Start building by describing what your agent needs to do**:
 
@@ -40,11 +34,11 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
     Create an agent to help employees with expense claims.
     ```
 
-    ![Screenshot of the prompt to create an agent in Copilot Studio.](media/create-copilot-agent.png)
-
 1. Select the **Send** icon
 
-1. Review the agent created by Copilot Studio.
+    ![Screenshot of the prompt to create an agent in Copilot Studio.](media/create-copilot-agent.png)
+
+1. Review the agent created by Copilot Studio. Notice that the Description and Instructions have been populated for the agent. They will look similar to this: 
 
     ![Screenshot of the agent created in Copilot Studio.](media/copilot-studio-agent.png)
 
@@ -52,13 +46,13 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
 
 1. Change the **Instructions** so your agent `Maintains a friendly and professional tone`.
 
-1. Add `Avoid providing any tax advice` to the the **Instructions**.
+1. Add `Avoid providing any tax advice.` to the the **Instructions**.
 
 1. Select **Save**.
 
     ![Screenshot of the agent instructions in Copilot Studio.](media/copilot-studio-instructions.png)
 
-1. In the **Knowledge** section, toggle **Enable your agent to search all public websites** to **Disabled**.
+1. Scroll down to the **Knowledge** section and toggle **Enable your agent to search all public websites** to **Disabled**.
 
     ![Disable web search for the agent](media/web-disabled.png)
 
@@ -125,8 +119,6 @@ You can use *topics* to provide explicit responses to *triggers*, such as common
     When the user asks who to contact about expense claims, tell them to send an email to finance@contoso.com
     ```
 
-    > **Note**: Copilot results may vary, so you may need to play around with this prompt for your expected results.
-
 1. Select **Create**.
 
 1. If prompted, select **Allow** for **see text and images copied to the clipboard**.
@@ -170,7 +162,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
     ![Screenshot of adding the Expenses policy document as knowledge to your agent in Copilot Studio.](media/add-knowledge-file.png)
 
-    > **Note**: After uploading the file, you will need to wait while it is indexed; which may take 10 minutes or longer.
+    > **Note**: After uploading the file, Copilot Studio will begin indexing the file. This may take 10 minutes or longer, so we will check back in after the next exercise.
 
 ## Configure your agent
 
@@ -192,7 +184,7 @@ You can add topics for all of the inputs that you expect a user to enter; but yo
 
         ```prompt
         "Hello"
-        "Who should I contact with expense enquiries?"
+        "Who should I contact with expense inquiries?"
         "What are the expense limits for flights?"
         ```
 
