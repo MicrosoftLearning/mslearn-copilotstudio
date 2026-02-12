@@ -101,6 +101,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **Add to agent**.
 
+> ### ⚠️ Important: Enable Web Search 
+> **Please ensure that the _"Web Search"_ feature is turned on.** 
+
 1. Select the **Overview** tab.
 
 1. Select the **ellipses …** menu at the top of the **Test your agent** pane.
