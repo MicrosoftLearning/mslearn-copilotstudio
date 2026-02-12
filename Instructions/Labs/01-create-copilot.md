@@ -206,15 +206,15 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
 ## Test your agent
 
-Now that you have a working agent, you can test it to check that it is ready for people to use.
+Now that you have a working agent, you can test it with your demo website to check that it is ready for people to use.
 
-1. At the top of the page, select the **Test** icon to open the **Test your agent** pane.
+1. Select the **Channels** tab.
 
-1. Select the **ellipses ...** menu in the **Test your agent** pane and toggle **Track between topics** to **On**
+1. Select the **Demo website** channel.
 
-    ![Screenshot of Channels in Copilot Studio.](media/test-pane-options.png)
+1. Select **Open demo website**.
 
-1. Expand the **Test** pane and start a new test session. Then enter the following prompt:
+1. Enter the following prompt:
 
     ```prompt
     What's the expense limit for a hotel stay?
