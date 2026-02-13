@@ -11,7 +11,7 @@ lab:
 In this exercise, you will:
 
 - Create and name an agent
-- Add description for what the agent should do
+- Define how the agent should behave using instructions
 - Configure Generative AI answers
 
 This exercise will take approximately **15** minutes to complete.
@@ -19,13 +19,14 @@ This exercise will take approximately **15** minutes to complete.
 ## What you will learn
 
 - How to create an agent using natural language
-- How to configure Generative AI answers for an agent
+- How agent instructions influence generative behavior
+- How Generative AI answers work with configured knowledge
 
 ## High-level lab steps
 
 - Create a new agent
-- Tell your agent what its primary purpose is and how it should act
-- Add Generative AI instructions
+- Define agent behavior using instructions
+- Add Generative AI knowledge sources
   
 ## Prerequisites
 
@@ -33,7 +34,7 @@ This exercise will take approximately **15** minutes to complete.
 
 ## Exercise 1 - Create agent
 
-In this exercise, you will access the Microsoft Copilot Studio portal, the Developer environment and create a new agent.
+In this exercise, you will access the Microsoft Copilot Studio portal, select the appropriate environment, and create a new agent.
 
 ### Task 1.1 – Create an agent in the Bookings solution
 
@@ -51,9 +52,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. Select **Confirm and create**.
 
-> **Note:** if **Confirm and create** is grayed out once you delete the originally proposed schema name, close the popup and repeat the steps above. While trying to update the schema name, select the proposed one instead of deleting it, and overwrite it with `labagent`.
+    > **Note:** if **Confirm and create** is grayed out once you delete the originally proposed schema name, close the popup and repeat the steps above. While trying to update the schema name, select the proposed one instead of deleting it, and overwrite it with `labagent`.
 
-### Task 1.2 – Configure your agent
+### Task 1.2 – Configure agent details and instructions
 
 1. In the **Details** section, select **Edit**
 
@@ -65,7 +66,24 @@ In this exercise, you will access the Microsoft Copilot Studio portal, the Devel
 
 1. In the **Instructions** section, select **Edit**
 
-1. Update the instructions to **`Create an agent for topics relating to creating bookings for real estate properties`** and **Save**.
+1. Update the instructions to:
+
+    ```prompt
+    You are a real estate booking assistant.
+    Help users with questions related to real estate properties and booking showings by using the knowledge and data that are available to you.
+
+    When responding:
+    Use the information provided through your configured knowledge sources whenever possible.
+    If a user’s request is unclear or missing required details, ask a follow‑up question to gather the information you need.
+    If you do not have enough information to answer confidently, do not guess. Instead, explain what information is missing or guide the user to provide it.
+    
+    Keep responses clear, helpful, and focused on assisting the user with booking‑related tasks.
+    ```
+
+1. **Save** the instructions.
+
+    > **Note**: Agent instructions guide how the agent should behave, but they do not strictly enforce behavior.
+In later labs, you will learn how to make this behavior predictable by using topics, generative answers with restricted knowledge sources, and fallback configuration
 
 1. In the right **Test your agent** pane, enter **`How do I make a booking?`** and view the response.
 
@@ -73,19 +91,9 @@ Leave this window open.
 
 ## Exercise 2 - Add Generative AI answers
 
-In this exercise, you will access the Microsoft Copilot Studio portal and add knowledge that the agent will use to answer questions by using Generative AI.
+In this exercise, you will add knowledge that the agent can use to generate responses.
 
-### Task 2.1 - Disable generative orchestration
-
-1. Select **Settings**.
-
-1. For **Use generative AI orchestration for your agent's responses?** select **No - Use classic orchestration, limiting responses to the content and behavior defined in your agent's topics**. This turns Orchestration off for the purpose of this lab.
-
-1. Select **Save**.
-
-1. Close out of the Settings window.
-
-### Task 2.2 – Add a knowledge source
+### Task 2.1 - Add a knowledge source
 
 1. Select the **Knowledge** tab.
 
@@ -100,6 +108,8 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 1. Select **Add**.
 
 1. Select **Add to agent**.
+
+### Task 2.1 - Test Generative AI responses
 
 1. Select the **Overview** tab.
 
@@ -116,3 +126,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`** View your response.
 
     ![Screenshot of the Testing panel results.](../media/test-pane-results.png)
+
+
+## Summary
+In this lab, you created an agent and defined its expected behavior using instructions. While these instructions guide generative responses, later labs will show how to enforce predictable behavior using topics, entities, tools, and fallback configuration
