@@ -8,6 +8,8 @@ lab:
 
 ## Scenario
 
+In this lab, you will use the structured values collected in earlier labs (such as property type, property name, and visit date) to retrieve data from Dataverse and create a booking request in Dataverse.
+
 In this exercise, you will:
 
 - Create an agent flow
@@ -29,11 +31,11 @@ This exercise will take approximately **30** minutes to complete.
 
 ## Detailed steps
 
-## Exercise 1 - Create a tool to retrieve data from Dataverse
+## Exercise 1 - Create a tool to retrieve data property data from Dataverse
 
-Microsoft Copilot Studio can access data in Microsoft Dataverse using agent flows.
+In this exercise, you will create an agent flow that retrieves a property based on user‑provided criteria.
 
-### Task 1.1 - Create agent flow to retrieve a property
+### Task 1.1 - Create the Get Property agent flow
 
 1. Navigate to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
