@@ -11,30 +11,45 @@ lab:
 In this exercise, you will:
 
 - Manage existing topics
-- Create and edit topics by using natural language
+- Create and edit topics using Copilot
 - Create a topic manually by using trigger phrases
 
 This exercise will take approximately **30** minutes to complete.
 
 ## What you will learn
 
-- How to configure agent topics
+- How topics complement generative AI responses
+- When topics are used to enforce structured conversations
+- How to create and refine topics using natural language
 
 ## High-level lab steps
 
-- Disable topics
-- Create new and edit topics with natural language
-- Create a new topic and add trigger phrases
+- Review and disable unnecessary topics
+- Create a topic using Copilot
+- Edit topic content using natural language
+- Test topic behavior with generative AI enabled
   
 ## Prerequisites
 
 - Must have completed **Lab: Build an initial agent**
 
+
+## Key concept: Topics and generative AI
+When generative AI is enabled, the agent may answer questions dynamically without triggering a topic. This is expected behavior.
+
+Topics are used when you need to:
+- Collect required information step by step
+- Control the order of questions
+- Store responses in variables
+- Ensure predictable outcomes
+
+In later labs, you will use topics together with nodes, entities, and tools to enforce your agent's behavior.
+
 ## Detailed steps
 
-## Exercise 1 - Remove topics
+## Exercise 1 - Review and disable topics
 
-In this exercise, you will remove topics in an agent.
+In this exercise, you will review existing topics and disable one that is not required.
 
 ### Task 1.1 – Disable topics
 
@@ -48,15 +63,19 @@ In this exercise, you will remove topics in an agent.
 
 1. Select the **Topics** tab.
 
+1. Locate the **Start Over** topic.
+
 1. Toggle **Enabled** to **Off** for the **Start Over** topic.
 
     ![Topics removed and disabled in Copilot Studio portal.](../media/topics-removed.png)
 
+Disabling unused topics helps reduce ambiguity when multiple topics or generative responses could handle the same request.
+
 ## Exercise 2 - Create topics with natural language
 
-In this exercise, you will create topics in an agent and add trigger phrases.
+In this exercise, you will use Copilot to create a topic from a description. This allows generative AI to draft the initial structure, which you can then refine.
 
-### Task 2.1 – Add a topic using copilot
+### Task 2.1 – Add a topic from description
 
 1. Select **+ Add a topic** and select **Create from description with Copilot**. A new window appears.
 
@@ -72,7 +91,7 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
 1. Select **Save**.
 
-### Task 2.2 – Update nodes with natural language
+### Task 2.2 – Edit topic content using natural language
 
 1. If the **Test your agent** pane is open, close the pane.
 
@@ -98,11 +117,11 @@ In this exercise, you will create topics in an agent and add trigger phrases.
 
 1. Select **Save**.
 
-### Task 2.3 – Add nodes with natural language
+### Task 2.3 – Add a summary using natural language
 
 In addition to adding updating existing nodes, you can use Copilot to add new ones.
 
-1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
+1. Click an empty area on the authoring canvas so no node is selected.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
@@ -110,7 +129,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Update**.
 
-1. A message node with an Adaptive Card is added to the end of the topic.
+A message node with an Adaptive Card is added to the end of the topic.
 
     ![Screenshot of the message node with an Adaptive Card.](../media/message-node-adaptive-card.png)
 
@@ -169,7 +188,9 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Save**.
 
-### Task 2.4 - Test the topic
+In later labs, you will use this response to control branching logic and enforce predictable behavior.
+
+## Exercise 3 - Test the topic
 
 1. If the **Test your agent** panel is closed, select the **Test** icon in the upper-right of the page.
 
@@ -179,54 +200,10 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. In the **Ask a question or describe what you need** text box, enter **`Customer information`**.
 
-1. Enter your name and email address.
+1. Provide a name and email address when prompted.
 
-1. Select **Yes**.
+1. Select **Yes** when asked to confirm the details.
 
 1. Select **Save**
 
-## Exercise 3 - Author topics manually
-
-Topics can be created manually by adding trigger phrases.
-
-### Task 3.1 - Create a topic from blank
-
-1. Select the **Topics** tab in the top bar of **Real Estate Booking Service**.
-
-1. Select **+ Add a topic** and select **From blank**.
-
-1. Select the **Details** icon to open the Topic details dialog (you may need to select **More** \> **Details**).
-
-    ![Screenshot of the topic details dialog ](../media/topic-details.png)
-
-1. In the **Name** field, enter the following text:
-
-    `Book Showing`
-
-1. In the **Display Name** field, enter the following text:
-
-    `Book a Real Estate Showing`
-
-1. In the **Description** field, enter the following text:
-
-    `Select the property and requested date and create a booking request`
-
-1. Select **Save**.
-
-### Task 3.2 - Add trigger phrases
-
-1. Select **Edit** under **User says a phrase** in the **Trigger**.
-
-    ![Screenshot of the topic trigger phrases pane.](../media/topic-trigger-phrases.png)
-
-1. Enter `I want to book a real estate showing` under **Add phrases** and select the **+** icon.
-
-1. Enter `Schedule a real estate showing` under **Add phrases** and select the **+** icon.
-
-1. Enter `Arrange the viewing for a real estate property` under **Add phrases** and select the **+** icon.
-
-1. Enter `Set up an appointment to view a house` under **Add phrases** and select the **+** icon.
-
-1. Enter `Plan a property viewing` under **Add phrases** and select the **+** icon.
-
-1. Select **Save**.
+Observe how the agent uses the topic to control the conversation, collects required information step by step, and temporarily overrides free-form generative responses.
