@@ -95,7 +95,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal and add kn
 
 1. Select **Public websites**
 
-1. In the **Public website link** text box, enter **`https://word.cloud.microsoft/en/create`**. This public website has many templates for marketing materials that could be useful for your agent.
+1. In the **Public website link** text box, enter **`https://www.realtor.com/marketing/resources`**. This public website has many templates for marketing materials that could be useful for your agent.
 
 1. Select **Add**.
 
