@@ -16,7 +16,8 @@ This exercise will take approximately **15** minutes to complete.
 
 ## What you will learn
 
-- How to create and use entities to improve the agent
+- How to use entities with generative AI
+- How entities turn free-form input into structured variables
 
 ## High-level lab steps
 
@@ -29,7 +30,7 @@ This exercise will take approximately **15** minutes to complete.
 
 ## Detailed steps
 
-## Exercise 1 - Create entities
+## Exercise 1 - Create a Property Type entity
 
 Microsoft Copilot Studio uses entities to understand user intent. There are many prebuilt entities included for commonly used information. You can create custom entities for your specific purpose.
 
@@ -47,13 +48,13 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
     ![Screenshot of the Entities tab.](../media/system-entities.png)
 
-### Task 1.2 - Create the property type entity
+### Task 1.2 - Create the Property Type entity
 
 1. Select **+ Add an entity** and select **+ New entity**.
 
     ![Screenshot of the selecting the method for a new entity.](../media/add-an-entity.png)
 
-1. Select the **Closed list** tile.
+1. Select **Closed list**.
 
 1. Enter **`Property Type`** in the **Name** field.
 
@@ -130,3 +131,46 @@ Use entities in the conversational flow to improve the agent.
 1. Select the variable in **Save user response as** and enter **`NumberofBedrooms`** for **Variable name**
 
 1. Select **Save**.
+
+### 2.2 - Test entity extraction
+
+1. Open the **Test** panel.
+
+1. Enable **Track between topics**.
+
+1. Start a new test session.
+
+1. When the Conversation Start message appears, type and send `I want to book a real estate showing`.
+
+1. Confirm that the agent responds with the greeting message from the **Book Showing** topic.
+
+1. Provide a name and email address when prompted and confirm the information.
+
+1. When asked which type of property you want to see, enter `I'm looking for a house`.
+
+    > This response is intentionally using natural language. The **Property Type** entity should capture **House**.
+
+1. When asked which property you want to see, enter `555 Oak Lane, Denver, CO 80203`.
+
+1. When asked what date and time you want to see the property, enter `Tomorrow 8:00 AM`.
+
+Confirm that the agent responds with the message indicating the booking request is being scheduled.
+
+### 2.3 - Validate the results
+In this task, you will confirm that the Property Type entity successfully captured a structured value from natural language input.
+
+1. In the **Test your agent** panel, look at the conversation transcript.
+
+1. Select the message corresponding to your response: I'm looking for a house.
+
+1. In the right-hand side of the test panel, expand the **Variables** section (you may need to scroll).
+
+1. Locate the **PropertyType** variable and confirm that its value is set to **House**.
+
+This confirms that the Property Type entity extracted a structured value from natural language input.
+
+## Summary
+
+In this lab, you used entities to extract structured values from natural language while keeping generative AI enabled. Entities allow your agent to accept flexible input while maintaining predictable behavior.
+
+In the next lab, you will use tools to act on these structured values and perform real operations, such as retrieving or creating data.
