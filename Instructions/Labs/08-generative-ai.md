@@ -8,20 +8,19 @@ lab:
 
 ## Scenario
 
+In this lab, you will prepare your agent for production use by configuring grounding, fallback behavior, and safety controls while keeping generative AI enabled.
+
 In this exercise, you will:
 
-- Use knowledge and Generative AI in your agent
+- Configure your agent to use generative AI only within approved knowledge sources
+- Guide your agent to respond predictably and safely when it cannot answer a question
 
-This exercise will take approximately **30** minutes to complete.
+This exercise will take approximately **20** minutes to complete.
 
 ## What you will learn
 
-- How to use the Generative answers feature to improve your agent's responses.
-
-## High-level lab steps
-
-- Enable Generative AI
-- Add knowledge
+- How to constrain generative AI using grounding
+- How to configure system topics for safe fallback behavior
   
 ## Prerequisites
 
@@ -29,23 +28,29 @@ This exercise will take approximately **30** minutes to complete.
 
 ## Detailed steps
 
-## Exercise 1 - Configure Generative AI
+## Exercise 1 - Ground generative answers to approved data
 
-### Task 1.1 - Enable Orchestration
+### Task 1.1 - Restrict generative answers in Conversational boosting
 
 1. If it's not still open, go to the Microsoft Copilot Studio portal `https://copilotstudio.microsoft.com` and ensure you are in the appropriate environment.
 
-1. Select **Agents** from the left navigation.
+1. Open the **Real Estate Booking Service** agent.
 
-1. Select the **Real Estate Booking Service** you created in the earlier lab.
+1. Select **Topics**
 
-1. Select the **Settings** button in the upper-right of the screen.
+1. Open the **Conversational boosting** topic.
 
-1. For **Use generative AI orchestration for your agent's responses?** select **Yes - Responses will be dynamic, using available tools and knowledge as appropriate**.
+1. Select the **create generative answers** node.
+
+1. Select **Edit** for **Data sources**.
+
+1. Select **Search only selected sources.**
+
+1. Select the approved knowledge sources for your agent (for example, Dataverse tables, websites, or uploaded files).
+
+1. Clear **Allow the AI to use its own general knowledge**.
 
 1. Select **Save**.
-
-1. Close the Settings window.
 
 ### Task 1.2 - Use generative answers in the Conversational boosting topic
 
