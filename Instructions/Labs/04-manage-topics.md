@@ -12,7 +12,7 @@ In this exercise, you will:
 
 - Manage existing topics
 - Create and edit topics using Copilot
-- Create a topic manually by using trigger phrases
+- Create a topic manually and add trigger phrases
 
 This exercise will take approximately **30** minutes to complete.
 
@@ -131,7 +131,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 A message node with an Adaptive Card is added to the end of the topic.
 
-    ![Screenshot of the message node with an Adaptive Card.](../media/message-node-adaptive-card.png)
+![Screenshot of the message node with an Adaptive Card.](../media/message-node-adaptive-card.png)
 
 1. Select the **Media** box in the Adaptive Card. The Adaptive Card properties should appear on the right of the page.
 
@@ -172,9 +172,9 @@ A message node with an Adaptive Card is added to the end of the topic.
     }
     ```
 
-1. Select the **Copilot** icon (You may need to select **More** \> **Copilot** ) to reopen the **Edit with Copilot** pane.
-
 1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
+
+1. Select the **Copilot** icon to reopen the **Edit with Copilot** pane.
 
 1. In the **What do you want to do?** field, enter the following text:
 
@@ -192,13 +192,13 @@ In later labs, you will use this response to control branching logic and enforce
 
 ## Exercise 3 - Test the topic
 
-1. If the **Test your agent** panel is closed, select the **Test** icon in the upper-right of the page.
+1. To reopen the Test pane, select the **Test** icon in the upper-right of the page.
 
 1. Select the **Start new test session** icon at the top of the testing panel.
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
-1. In the **Ask a question or describe what you need** text box, enter **`Customer information`**.
+1. In the text box, enter **`Customer information`**.
 
 1. Provide a name and email address when prompted.
 
