@@ -12,11 +12,9 @@ In this exercise, you will build a predictable, step-by-step conversation flow u
 
 In this exercise, you will:
 
-- Create the **Book Showing** topic and add trigger phrases
-- Configure variable scope so topic variables can be reused across topics
+- Create the **Book Showing** topic and configure when the agent should trigger this topic
 - Add nodes to enforce a structured conversation flow
 - Test the agent and verify topic routing
-- Configure authentication settings
 
 This exercise will take approximately **30** minutes to complete.
 
@@ -26,10 +24,9 @@ This exercise will take approximately **30** minutes to complete.
 - How to share variables across topics using variable scope
 - How to build repeatable, step-by-step topic flows using message, question, condition, and topic management nodes
 
-
 ## High-level lab steps
 
-- Create Book Showing topic and trigger phrases
+- Create Book Showing topic
 - Configure variable scope
 - Create and edit nodes
 - Test the agent
@@ -65,35 +62,17 @@ In this exercise, you will create the **Book Showing** topic and add trigger phr
 
     `Book Showing`
 
-1. In the **Display Name** field, enter the following text:
-
-    `Book a Real Estate Showing`
-
 1. In the **Description** field, enter the following text:
 
-    `Select the property and requested date and create a booking request`
+    `Use this topic when a user wants to book, schedule, or arrange a real estate property showing`
 
 1. Select **Save**.
 
-### Task 1.2 - Add trigger phrases
+### Task 1.2 - Verify trigger type
 
-1. Select **Edit** under **User says a phrase** in the **Trigger**.
+1. Select the **Trigger** node at the top of the topic. Confirm the trigger type is set to **The agent chooses**. 
 
-    ![Screenshot of the topic trigger phrases pane.](../media/topic-trigger-phrases.png)
-
-1. Enter `I want to book a real estate showing` under **Add phrases** and select the **+** icon.
-
-1. Enter `Schedule a real estate showing` under **Add phrases** and select the **+** icon.
-
-1. Enter `Arrange the viewing for a real estate property` under **Add phrases** and select the **+** icon.
-
-1. Enter `Set up an appointment to view a house` under **Add phrases** and select the **+** icon.
-
-1. Enter `Plan a property viewing` under **Add phrases** and select the **+** icon.
-
-1. Select **Save**.
-
-> **Note** With generative AI enabled, trigger phrases improve routing but do not guarantee a topic will always trigger for every wording. In the test steps later in this lab, use one of the trigger phrases exactly as listed.
+> **Note** With generative orchestration enabled, the agent uses this description to decide when to start the topic.
 
 ## Exercise 2 - Variable scope
 
@@ -109,7 +88,7 @@ Enable variables to be be accessed by other topics.
 
 1. Select and expand **Topic** variables.
 
-1. Select the right-hand check boxes for the three topic variables.
+1. Select the right-hand check boxes for the three topic variables. This enables the variables in this topic to be available for other topics to use.
 
     ![Screenshot of the variables pane.](../media/variables-pane.png)
 
@@ -199,7 +178,7 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 ### Task 4.1 - Test the Book Showing topic
 
-1. If the **Test your agent** panel is not open, select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing panel.
 
 1. Select the **ellipses ...** menu at the top of the testing panel in the upper-right of the page.
 
@@ -209,11 +188,11 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 1. Select the **Start new test session** icon at the top of the testing panel.
 
-1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter a trigger phrase for the topic that you've created:
+1. When the **Conversation Start** message appears, your agent will start a conversation. In response, let's try to trigger the topic that you've created:
 
     `I want to book a real estate showing`
 
-1. The agent responds with the "What is your name?" question, as shown in the following image.
+1. The agent should respond with the "What is your name?" question.
 
     ![Screenshot of the Conversation Start message and response.](../media/conversation-start-message.png)
 
@@ -222,6 +201,8 @@ In this exercise, you will test topic routing and confirm the conversation follo
 1. Provide an email address.
 
 1. After you supply the information, an Adaptive Card displays the information that you entered and asks if the details are correct. Select **Yes**.
+
+Notice that you were routed back to the **Book Showing** topic.
 
 1. Enter `555 Oak Lane, Denver, CO 80203` to the **Which property to you want to see?** prompt
 
