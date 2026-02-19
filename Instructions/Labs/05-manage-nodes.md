@@ -30,7 +30,6 @@ This exercise will take approximately **30** minutes to complete.
 - Configure variable scope to use variables from the Customer Details topic in the Book Showing topic
 - Create and edit nodes
 - Test the agent
-- Configure authentication
   
 ## Prerequisites
 
@@ -211,26 +210,6 @@ Notice that you were routed back to the **Book Showing** topic.
 1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to see the property?** prompt.
 
     ![Screenshot of the Adaptive Card with the information entered.](../media/adaptive-card-information.png)
-
-## Exercise 5 - Configure authentication
-
-### Task 5.1 - Configure authentication
-
-1. Select **Settings** in the upper-right of **Real Estate Booking Service**.
-
-1. Select the **Security** tab.
-
-1. Select **Authentication**.
-
-    ![Screenshot of the authentication settings.](../media/configure-authentication.png)
-
-1. Select **No authentication**.
-
-1. Select **Save**.
-
-1. Select **Save** in the confirmation window.
-
-1. Select the **X** in the upper-right to close out of the **Settings**.
 
 ## Summary
 In this lab, you created the Book Showing topic and used nodes to enforce a structured, step-by-step interaction while generative AI remained enabled. You also configured variable scope so information collected in Customer Details can be used across topics.
