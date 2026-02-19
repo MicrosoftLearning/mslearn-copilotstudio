@@ -12,7 +12,7 @@ In this exercise, you will:
 
 - Create and name an agent
 - Define how the agent should behave using instructions
-- Configure Generative AI answers
+- Add a public website as a knowledge source
 
 This exercise will take approximately **15** minutes to complete.
 
