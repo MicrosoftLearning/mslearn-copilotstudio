@@ -46,13 +46,13 @@ In this exercise, you will access the Microsoft Copilot Studio portal, select th
 
 1. Select the arrow next to **Create blank agent** \> **Advanced create**.
 
-1. Update the **Solution** to **Bookings**
+1. Validate that the **Solution** is defaulted to **Bookings**.
 
 1. Enter `labagent` for **Schema Name**.
 
 1. Select **Confirm and create**.
 
-    > **Note:** if **Confirm and create** is grayed out once you delete the originally proposed schema name, close the popup and repeat the steps above. While trying to update the schema name, select the proposed one instead of deleting it, and overwrite it with `labagent`.
+Your agent will begin setting up. Once provisioned, you may proceed with configuring your agent.
 
 ### Task 1.2 – Configure agent details and instructions
 
@@ -82,8 +82,7 @@ In this exercise, you will access the Microsoft Copilot Studio portal, select th
 
 1. **Save** the instructions.
 
-    > **Note**: Agent instructions guide how the agent should behave, but they do not strictly enforce behavior.
-In later labs, you will learn how to make this behavior predictable by using topics, generative answers with restricted knowledge sources, and fallback configuration
+    > **Note**: Agent instructions guide how the agent should behave, but they do not strictly enforce behavior. In later labs, you will learn how to make this behavior predictable by using topics, generative answers with restricted knowledge sources, and fallback configuration
 
 1. In the right **Test your agent** pane, enter **`How do I make a booking?`** and view the response.
 
@@ -123,10 +122,10 @@ In this exercise, you will add knowledge that the agent can use to generate resp
 
     ![Screenshot of the Testing panel options.](../media/copilot-test-pane-start-new-conversation.png)
 
-1. In the **Ask a question or describe what you need** text box, enter **`How do I boost real estate promotion?`** View your response.
+1. In the text box, enter **`How do I boost real estate promotion?`** View your response.
 
     ![Screenshot of the Testing panel results.](../media/test-pane-results.png)
 
 
 ## Summary
-In this lab, you created an agent and defined its expected behavior using instructions. While these instructions guide generative responses, later labs will show how to enforce predictable behavior using topics, entities, tools, and fallback configuration
+In this lab, you created an agent and defined its expected behavior using instructions. You also added a public website as a knowledge source and tested your agent with questions that the knowledge source could help answer. While these instructions guide generative responses, later labs will show how to enforce predictable behavior using topics, entities, tools, and fallback configuration
