@@ -130,7 +130,7 @@ Use entities in the conversational flow to improve the agent.
 
 1. Select **Save**.
 
-### 2.2 - Test entity extraction
+### Task 2.2 - Test entity extraction
 
 1. Open the **Test** panel.
 
