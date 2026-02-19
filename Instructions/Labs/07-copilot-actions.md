@@ -295,7 +295,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 ### Task 3.2 - Verify the booking request
 
-1. If it's not still open, navigate to `https://make.powerapps.com` in a new tab.
+1. Navigate to `https://make.powerapps.com` in a new tab.
 
 1. Make sure you are in the appropriate environment.
 
