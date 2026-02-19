@@ -41,7 +41,7 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select **Agents** from the left navigation pane.
 
-1. Select the **Real Estate Booking Service** you created in the earlier lab.
+1. Open the **Real Estate Booking Service** agent.
 
 1. Select the **Tools** tab.
 
@@ -58,6 +58,8 @@ In this exercise, you will create an agent flow that retrieves a property based 
     ![Screenshot of trigger properties of the flow.](../media/create-flow-step2.png)
 
 1. Select **Save draft** near the upper-right of the page.
+
+### Task 1.2 - Retrieve data from Dataverse
 
 1. Select the **+** icon between the two steps in the flow to add a new action.
 
@@ -83,11 +85,11 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
     ![Screenshot of configuring list rows action.](../media/create-flow-step4.png)
 
-    > **Important:** Ensure there is a space between eq and Bedrooms.
-
 1. Select **Save draft** near the upper-right of the page.
 
-1. Select the **Respond to Copilot** action in the authoring canvas and select **+ Add an output**.
+### Task 1.3 - Return results to agent
+
+1. Select the **Respond to Copilot** node in the authoring canvas and select **+ Add an output**.
 
 1. Select **Text**.
 
@@ -129,8 +131,6 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select **Save draft** near the upper-right of the page.
 
-1. Wait for the save to complete, then select **Publish**.
-
 1. In the **Your agent flow published successfully!** pop-up, select **Go back to agent**.
 
 1. Select the agent flow tool that you just created.
@@ -143,13 +143,15 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select the **Tools** tab and see the Get Property flow you created.
 
-### Task 1.2 - Add the Get Property tool to the topic
+1. Select **Publish**.
+
+### Task 1.4 - Add the Get Property tool to the topic
 
 1. Select the **Topics** tab.
 
 1. Select the **Book Showing** topic.
 
-1. Select the the **+** icon below the **How many bedrooms do you need question?** node, select **Add a tool**, select the **Tool** tab, and then select the **Get Property** agent flow.
+1. Select the the **+** icon below the **How many bedrooms do you need?** question node, select **Add a tool**, select the **Tool** tab, and then select the **Get Property** agent flow.
 
 1. Select the **ellipses (...)** in the **Which property do you want to see?** question node and select **Delete**.
 
@@ -157,13 +159,13 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. In the **Enter a message** field, enter `Property ` (with a space following it).
 
-1. In the same node, select the **{X} (Insert variable)** icon and select the **PropertyName** variable.
+1. In the same node, select the **{X} (Insert variable)** icon and select the **propertyname** variable.
 
     ![Screenshot of step 4 of add a flow action.](../media/add-action-flow-step-4.png)
 
 1. Select **Save**.
 
-## Exercise 2 - Create a tool to create data in Dataverse
+## Exercise 2 - Create a tool to create a booking request
 
 Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flows.
 
@@ -173,7 +175,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select **+ Add a tool**.
 
-1. Select **+ New tool** and then **Agent flow** .
+1. Under **Create new**, select **Agent flow** .
 
 1. Select **Save draft** and wait for the agent flow to save.
 
@@ -181,7 +183,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select **Edit** in the **Details** section.
 
-1. Rename the flow `Create Booking Request`
+1. Rename the agent flow `Create Booking Request`
 
 1. Select **Save**.
 
@@ -227,7 +229,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
     ![Screenshot of configuring flow add row action.](../media/create-flow2-step2.png)
 
-1. Select the **Respond to Copilot** action.
+1. Select the **Respond to Copilot** action and open the **Respond to Copilot** pane.
 
 1. Select the **Settings** tab.
 
@@ -239,9 +241,9 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 ### Task 2.2 - Validate your tools
 
-1. Select **Agents** and open your **Real Estate Booking Service** agent.
+1. Return to your **Real Estate Booking Service** agent.
 
-1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+Add a tool** > **Flow** > and select the missing agent flow. Select **Add and configure**.
+1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+ Add a tool** > **Flow** > and select the missing agent flow. Select **Add and configure**.
 
 ### Task 2.3 - Add the Create Booking Request tool to the topic
 
@@ -249,7 +251,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select the **Book Showing** topic.
 
-1. Select the the **+** icon below the **Message** node at the bottom, select **Add a tool**, then select the **Create Booking Request** flow.
+1. Select the the **+** icon above the **End all topics** node at the bottom, select **Add a tool**, then select the **Create Booking Request** agent flow.
 
 1. Select the **PropertyId** variable for the **PropertyId** input parameter.
 
@@ -257,19 +259,13 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select the **EmailAddress** variable for the **ViewerEmail** input parameter.
 
-1. Select the the **+** icon below the new **Action** node, select **Topic management**, select **Go to another topic** and select **End of Conversation**.
-
 1. Select **Save**.
 
 ## Exercise 3 - Test your agent
 
 ### Task 3.1 - Make a booking request
 
-1. If closed, select the **Test** icon in the upper-right of the page to open the testing panel.
-
-1. Select the **ellipses ...** menu at the top of the testing panel in the upper-right of the page.
-
-    ![Screenshot of the Testing panel options.](../media/test-pane-options.png)
+1. Open the **Test** panel.
 
 1. If it's not enabled, enable **Track between topics**.
 
