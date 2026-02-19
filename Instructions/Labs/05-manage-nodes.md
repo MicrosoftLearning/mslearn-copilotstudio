@@ -170,6 +170,8 @@ In this exercise, you will add nodes to the Book Showing topic to enforce a repe
 
     `Great! Let me get that scheduled for you.`
 
+1. After that message node, add a node to end the topics by selecting **Topic Management** \> **End all topics**.
+
 1. Select **Save**.
 
 ## Exercise 4 - Test the agent
