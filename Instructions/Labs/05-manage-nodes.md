@@ -12,7 +12,7 @@ In this exercise, you will build a predictable, step-by-step conversation flow u
 
 In this exercise, you will:
 
-- Create the **Book Showing** topic and configure when the agent should trigger this topic
+- Create the **Book Showing** topic
 - Add nodes to enforce a structured conversation flow
 - Test the agent and verify topic routing
 
@@ -27,7 +27,7 @@ This exercise will take approximately **30** minutes to complete.
 ## High-level lab steps
 
 - Create Book Showing topic
-- Configure variable scope
+- Configure variable scope to use variables from the Customer Details topic in the Book Showing topic
 - Create and edit nodes
 - Test the agent
 - Configure authentication
