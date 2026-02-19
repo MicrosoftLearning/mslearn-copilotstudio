@@ -40,7 +40,7 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Select **Agents** from the left navigation pane.
 
-1. Select the **Real Estate Booking Service** agent you created in the earlier lab.
+1. Open the **Real Estate Booking Service** agent.
 
 1. Select **Settings** in the upper-right of the screen.
 
@@ -58,13 +58,11 @@ Microsoft Copilot Studio uses entities to understand user intent. There are many
 
 1. Enter **`Property Type`** in the **Name** field.
 
-1. Enter **`Apartment`** in the **Enter item** field and select **Add**.
-
-1. Enter **`Condominium`** in the **Enter item** field and select **Add**.
-
-1. Enter **`Duplex`** in the **Enter item** field and select **Add**.
-
-1. Enter **`House`** in the **Enter item** field and select **Add**.
+1. Add the following items to the list: 
+    - Apartment
+    - Condominium
+    - Duplex
+    - House
 
 1. Select **+ Synonyms** for **Apartment**, enter **`Flat`** and select the **+** icon and select **Done**.
 
@@ -155,19 +153,6 @@ Use entities in the conversational flow to improve the agent.
 1. When asked what date and time you want to see the property, enter `Tomorrow 8:00 AM`.
 
 Confirm that the agent responds with the message indicating the booking request is being scheduled.
-
-### 2.3 - Validate the results
-In this task, you will confirm that the Property Type entity successfully captured a structured value from natural language input.
-
-1. In the **Test your agent** panel, look at the conversation transcript.
-
-1. Select the message corresponding to your response: I'm looking for a house.
-
-1. In the right-hand side of the test panel, expand the **Variables** section (you may need to scroll).
-
-1. Locate the **PropertyType** variable and confirm that its value is set to **House**.
-
-This confirms that the Property Type entity extracted a structured value from natural language input.
 
 ## Summary
 
