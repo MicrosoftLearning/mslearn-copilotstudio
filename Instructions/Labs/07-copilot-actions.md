@@ -131,6 +131,8 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select **Save draft** near the upper-right of the page.
 
+1. Select **Publish**.
+
 1. In the **Your agent flow published successfully!** pop-up, select **Go back to agent**.
 
 1. Select the agent flow tool that you just created.
@@ -261,6 +263,16 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select **Save**.
 
+1. Select the Action node you just created for the Create Booking Request tool.
+
+1. Select **Copilot**.
+
+1. In **What do you want to do?**, enter: `After this action runs, send a message that the Real Estate Booking has been scheduled and thank the user`.
+
+1. Select **Update**. 
+
+A Message node has been created. Revise the message as desired to let the user know that a booking has been scheduled.
+
 ## Exercise 3 - Test your agent
 
 ### Task 3.1 - Make a booking request
@@ -287,11 +299,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Enter `Tomorrow 2:00 PM` to the **What date and time do you want to see the property?** prompt.
 
-1. Select **Yes** to the **Did that answer your question?** prompt.
-
-1. Select any rating.
-
-1. Enter **No** to the **Can I help with anything else?** prompt.
+A Booking Request should be created based on the information you have given the agent.
 
 ### Task 3.2 - Verify the booking request
 
