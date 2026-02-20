@@ -6,9 +6,6 @@ lab:
 
 # Deploy agent to Microsoft Teams
 
->! IMPORTANT
-> This lab is currently unavailable with a Copilot Studio trial as it is not possible to publish an agent.
-
 ## Scenario
 
 In this exercise, you will:
@@ -43,8 +40,6 @@ This exercise will take approximately **10** minutes to complete.
 1. Select the agent you created in the earlier lab.
 
 1. Select **Publish** and select **Publish** again.
-   > **Note:**
-   > Publishing can take a few minutes.
 
 ## Exercise 2 - Channels
 
@@ -55,6 +50,8 @@ With your agent published, you can make your agent available to users in Teams. 
 1. With your agent open in Microsoft Copilot Studio, select the **Channels** tab.
 
 1. Select the **Teams and Microsoft 365 Copilot** tile.
+
+1. Deselect **Make agent available in Microsoft 365 Copilot.
 
 1. Select **Add channel**.
 
@@ -73,3 +70,5 @@ With your agent published, you can make your agent available to users in Teams. 
 1. Test the agent.
 
     ![Screenshot of the agent in Teams.](../media/teams-copilot.png)
+
+In this lab, you deployed your agent to Microsoft Teams. Congratulations on completing your labs!
