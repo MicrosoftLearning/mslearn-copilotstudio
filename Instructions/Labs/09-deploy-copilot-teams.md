@@ -27,7 +27,6 @@ This exercise will take approximately **10** minutes to complete.
 
 - Must have completed **Lab: Use Generative AI in Microsoft Copilot Studio**
 
-## Detailed steps
 
 ## Exercise 1 - Publish the agent
 
@@ -51,7 +50,7 @@ With your agent published, you can make your agent available to users in Teams. 
 
 1. Select the **Teams and Microsoft 365 Copilot** tile.
 
-1. Deselect **Make agent available in Microsoft 365 Copilot.
+1. Deselect **Make agent available in Microsoft 365 Copilot**.
 
 1. Select **Add channel**.
 
