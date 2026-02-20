@@ -6,7 +6,7 @@ lab:
 
 # Import Dataverse solution
 
-In this exercise, you'll import a Dataverse solution to use in the following labs.
+In this exercise, you'll import a Dataverse solution to use in the following labs. The solution includes a model-driven app for creating and managing Real Estate Properties.
 
 This exercise will take approximately **10** minutes to complete.
 
@@ -29,6 +29,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 1. If prompted for contact information, set the Country/region and select **Get Started**.
 
 1. In the upper-right of the screen, verify that the **Environment** is set to your environment. This is where you will be working for the entirety of the labs. If it is not, select the appropriate environment.
+    > **Note:** If, at any time during these labs, the top navigation bar does not load full and you are unable to see the Environment name, you may need to refresh your browser (Fn+F5).
 
 1. In the left navigation, select **Solutions**.
 
@@ -58,9 +59,9 @@ In this exercise, you will import a Dataverse solution into your environment tha
 
 ### Task 1.3 – Set preferred solution
 
-1. Select **Solutions**.
+1. Select **Back to solutions** (back arrow icon).
 
-1. Select **Manage** in the *Current preferred solution* tile.
+1. Select **Set preferred solution**.
 
 1. Select **Bookings (contoso)**.
 
