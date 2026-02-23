@@ -155,6 +155,8 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select the the **+** icon below the **How many bedrooms do you need?** question node, select **Add a tool**, select the **Tool** tab, and then select the **Get Property** agent flow.
 
+1. In the **Get Property** action pane, select the variable list for **Bedrooms (String)** and choose the **NumberofBedrooms** variable.
+
 1. Select the **ellipses (...)** in the **Which property do you want to see?** question node and select **Delete**.
 
 1. Select the the **+** icon under the **Tool** node and select **Send a message**.
