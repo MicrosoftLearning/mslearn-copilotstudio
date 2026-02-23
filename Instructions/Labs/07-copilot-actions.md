@@ -89,7 +89,7 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 ### Task 1.3 - Return results to agent
 
-1. Select the **Respond to Copilot** node in the authoring canvas and select **+ Add an output**.
+1. Select the **Respond to the agent** node in the authoring canvas and select **+ Add an output**.
 
 1. Select **Text**.
 
@@ -123,7 +123,7 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select **Add**.
 
-1. Select the **Settings** tab in the **Respond to Copilot** pane.
+1. Select the **Settings** tab in the **Respond to the agent** pane.
 
 1. Ensure that **Asynchronous Response** is set to **Off**.
 
@@ -154,6 +154,8 @@ In this exercise, you will create an agent flow that retrieves a property based 
 1. Select the **Book Showing** topic.
 
 1. Select the the **+** icon below the **How many bedrooms do you need?** question node, select **Add a tool**, select the **Tool** tab, and then select the **Get Property** agent flow.
+
+1. In the **Get Property** action pane, select the variable list for **Bedrooms (String)** and choose the **NumberofBedrooms** variable.
 
 1. Select the **ellipses (...)** in the **Which property do you want to see?** question node and select **Delete**.
 
@@ -231,7 +233,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
     ![Screenshot of configuring flow add row action.](../media/create-flow2-step2.png)
 
-1. Select the **Respond to Copilot** action and open the **Respond to Copilot** pane.
+1. Select the **Respond to the agent** action and open the **Respond to the agent** pane.
 
 1. Select the **Settings** tab.
 
