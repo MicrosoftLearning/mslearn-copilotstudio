@@ -29,7 +29,7 @@ In this exercise, you will import a Dataverse solution into your environment tha
 1. If prompted for contact information, set the Country/region and select **Get Started**.
 
 1. In the upper-right of the screen, verify that the **Environment** is set to your environment. This is where you will be working for the entirety of the labs. If it is not, select the appropriate environment.
-    > **Note:** If, at any time during these labs, the top navigation bar does not load full and you are unable to see the Environment name, you may need to refresh your browser (Fn+F5).
+    > **Note:** If, at any time during these labs, the top navigation bar does not load fully and you are unable to see the Environment name, you may need to refresh your browser (Fn+F5).
 
 1. In the left navigation, select **Solutions**.
 
