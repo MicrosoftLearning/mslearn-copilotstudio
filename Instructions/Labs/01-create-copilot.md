@@ -21,6 +21,7 @@ Let’s start by using Copilot Studio to create a new agent. The agent will init
     > **Note**: The first time you open Copilot Studio, it may display a chat interface to create your first agent. If this happens, click the **...** menu at the top right (next to the **Create** button) and select **Cancel agent creation** to leave the chat interface and view the Copilot Studio home page.
 
 1. The Power Apps **environment** in which your agents are defined is shown at the top of the page. Change the environment to the one you created. 
+    > **Note:** If, at any time during these labs, the top navigation bar does not load fully and you are unable to see the Environment name, you may need to refresh your browser (Fn+F5).
 
 1. View the Copilot Studio home page, which should look similar to this:
 
