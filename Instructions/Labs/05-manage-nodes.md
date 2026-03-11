@@ -1,7 +1,15 @@
 ---
 lab:
-    title: 'Manage nodes'
-    module: 'Manage topics in Microsoft Copilot Studio'
+  title: Manage nodes
+  module: Manage topics in Microsoft Copilot Studio
+  description: In this exercise, you will build a predictable, step-by-step conversation
+    flow using nodes while generative AI remains enabled. When generative AI is enabled,
+    the agent may respond dynamically to some prompts. Topics and nodes are used when
+    you need structured, repeatable outcomes—for example, collecting required information
+    in a fixed order.
+  duration: 152 minutes
+  level: 100
+  islab: true
 ---
 
 # Manage nodes
