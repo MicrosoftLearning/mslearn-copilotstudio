@@ -1,7 +1,12 @@
 ---
 lab:
-    title: 'Create an agent with Copilot Studio'
-    module: 'Build an initial agent with Microsoft Copilot Studio'
+  title: Create an agent with Copilot Studio
+  module: Build an initial agent with Microsoft Copilot Studio
+  description: In this exercise, you’ll use Copilot Studio to create a simple agent
+    that answers employee questions about expense policies in a fictional corporation.
+  duration: 10 minutes
+  level: 100
+  islab: true
 ---
 
 # Create an agent with Copilot Studio
