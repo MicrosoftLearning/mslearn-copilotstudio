@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Build an initial agent'
-    module: 'Manage topics in Microsoft Copilot Studio'
+  title: Build an initial agent
+  module: Manage topics in Microsoft Copilot Studio
+  description: 'In this exercise, you will:'
+  duration: 84 minutes
+  level: 200
+  islab: true
 ---
 
 # Build an initial agent
