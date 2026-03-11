@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Work with entities'
-    module: 'Work with entities and variables in Microsoft Copilot Studio'
+  title: Work with entities
+  module: Work with entities and variables in Microsoft Copilot Studio
+  description: 'In this exercise, you will:'
+  duration: 122 minutes
+  level: 100
+  islab: true
 ---
 
 # Work with entities
