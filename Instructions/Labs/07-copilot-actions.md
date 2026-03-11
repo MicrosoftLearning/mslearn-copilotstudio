@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Create agent flows'
-    module: 'Enhance Microsoft Copilot Studio agents'
+  title: Create agent flows
+  module: Enhance Microsoft Copilot Studio agents
+  description: In this exercise, you will create an agent flow that retrieves a property based on user‑provided criteria.
+  duration: 164 minutes
+  level: 100
+  islab: true
 ---
 
 # Create agent flows

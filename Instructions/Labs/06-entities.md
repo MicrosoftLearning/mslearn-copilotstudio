@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Work with entities'
-    module: 'Work with entities and variables in Microsoft Copilot Studio'
+  title: Work with entities
+  module: Work with entities and variables in Microsoft Copilot Studio
+  description: In this lab, you used entities to extract structured values from natural language while keeping generative AI enabled. Entities allow your agent to accept flexible input while maintaining predictable behavior.
+  duration: 122 minutes
+  level: 100
+  islab: true
 ---
 
 # Work with entities
