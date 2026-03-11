@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Create agent flows'
-    module: 'Enhance Microsoft Copilot Studio agents'
+  title: Create agent flows
+  module: Enhance Microsoft Copilot Studio agents
+  description: In this lab, you will use the structured values collected in earlier
+    labs (such as property type, property name, and visit date) to retrieve data from
+    Dataverse and create a booking request in Dataverse.
+  duration: 164 minutes
+  level: 100
+  islab: true
 ---
 
 # Create agent flows
