@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Deploy agent to Microsoft Teams'
-    module: 'Create an agent with Microsoft Copilot Studio and Dataverse for Teams'
+  title: Deploy agent to Microsoft Teams
+  module: Create an agent with Microsoft Copilot Studio and Dataverse for Teams
+  description: In this lab, you deployed your agent to Microsoft Teams. Congratulations on completing your labs!
+  duration: 54 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - Microsoft Teams
 ---
 
 # Deploy agent to Microsoft Teams
