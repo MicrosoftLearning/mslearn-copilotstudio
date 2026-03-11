@@ -1,7 +1,16 @@
 ---
 lab:
-    title: 'Use Generative AI in Microsoft Copilot Studio'
-    module: 'Enhance Microsoft Copilot Studio agents'
+  title: Use Generative AI in Microsoft Copilot Studio
+  module: Enhance Microsoft Copilot Studio agents
+  description: In this lab, you will prepare your agent for production use by configuring
+    grounding, fallback behavior, and safety controls while keeping generative AI
+    enabled.
+  duration: 120 minutes
+  level: 100
+  islab: true
+  primarytopics:
+  - Microsoft Copilot
+  - Microsoft Copilot Studio
 ---
 
 # Use Generative AI in Microsoft Copilot Studio
