@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Import Dataverse solution'
-    module: 'Build an initial agent with Microsoft Copilot Studio'
+  title: Import Dataverse solution
+  module: Build an initial agent with Microsoft Copilot Studio
+  description: In this exercise, you will import a Dataverse solution into your environment that contains the tables needed for the labs.
+  duration: 70 minutes
+  level: 100
+  islab: true
 ---
 
 # Import Dataverse solution

@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Manage nodes'
-    module: 'Manage topics in Microsoft Copilot Studio'
+  title: Manage nodes
+  module: Manage topics in Microsoft Copilot Studio
+  description: In this lab, you created the Book Showing topic and used nodes to enforce a structured, step-by-step interaction while generative AI remained enabled. You also configured variable scope so information collected in Customer Details can be used across topics.
+  duration: 152 minutes
+  level: 100
+  islab: true
 ---
 
 # Manage nodes

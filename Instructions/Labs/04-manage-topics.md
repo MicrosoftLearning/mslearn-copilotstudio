@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Manage topics'
-    module: 'Manage topics in Microsoft Copilot Studio'
+  title: Manage topics
+  module: Manage topics in Microsoft Copilot Studio
+  description: In this exercise, you will use Copilot to create a topic from a description. This allows generative AI to draft the initial structure, which you can then refine.
+  duration: 102 minutes
+  level: 100
+  islab: true
 ---
 
 # Manage topics

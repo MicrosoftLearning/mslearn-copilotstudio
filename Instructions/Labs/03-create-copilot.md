@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Build an initial agent'
-    module: 'Manage topics in Microsoft Copilot Studio'
+  title: Build an initial agent
+  module: Manage topics in Microsoft Copilot Studio
+  description: In this exercise, you will access the Microsoft Copilot Studio portal, select the appropriate environment, and create a new agent.
+  duration: 84 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Copilot
+    - Microsoft Copilot Studio
 ---
 
 # Build an initial agent
