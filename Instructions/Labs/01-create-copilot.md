@@ -211,7 +211,9 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
 ## Test your agent
 
-Now that you have a working agent, you can test it with your demo website to check that it is ready for people to use.
+Now that you have a working agent, you can test it with your demo website to check that it is ready for people to use. You will need to publish your agent to view the demo website. If you do not have the appropriate licensing to publish your agent, you may skip this exercise.
+
+1. Select **Publish** and select **Publish** again.
 
 1. Select the **Channels** tab.
 
