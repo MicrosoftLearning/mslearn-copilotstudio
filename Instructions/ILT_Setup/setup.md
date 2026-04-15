@@ -15,7 +15,6 @@ Before you start the lab exercise, let's create a development environment for yo
     - **Region**: ***default** region*
     - **Get new features early**: No
     - **Type**: Developer
-    - **Purpose**: `Lab exercises`
     - **Create on behalf**: *No*
     - **Add a Dataverse data store**: Yes
     - **Pay-as-you-go with Azure**: No
