@@ -16,6 +16,6 @@ Before you start the lab exercise, let's create a development environment for yo
 7. Select the newly created environment
 8. In the **Details** section, copy the **Environment ID** value.
 9. In a new browser tab, enter `https://copilotstudio.microsoft.com/environments/<Environment ID>`, replacing `<Environment ID>` with the value you copied.
-    > **Note:** Save this URL so you can use it later to navigate directly to your environment. There is currently an issue opening Copilot Studio in the default environment. 
+    > **Note:** Save this URL or add it to your Favorites Bar so you can use it later to navigate directly to your environment. There is currently an issue opening Copilot Studio in the default environment. 
 11. If prompted, sign in with your credentials and skip any welcome messages.
 12. **Skip to Task 2 in the next lab to build your first agent.** 
