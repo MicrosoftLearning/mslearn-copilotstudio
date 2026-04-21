@@ -14,8 +14,6 @@ In this exercise, you'll import a Dataverse solution to use in the following lab
 
 This exercise will take approximately **10** minutes to complete.
 
-> **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605) and have a Power Platform environment to work in.
-
 ## Exercise 1 – Import solution
 
 In this exercise, you will import a Dataverse solution into your environment that contains the tables needed for the labs.
