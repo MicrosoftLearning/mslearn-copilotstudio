@@ -11,17 +11,17 @@ Before you start the lab exercise, let's create a development environment for yo
 2. Select **+New** to create a new environment with the following settings:
     - **Name**: *Your name*
     - **Make this a Managed Environment**: *No*
-    - **Group**: *None*
+    - **Environment group**: *None*
     - **Region**: ***default** region*
     - **Get new features early**: No
     - **Type**: Developer
     - **Create on behalf**: *No*
-    - **Add a Dataverse data store**: Yes
-    - **Pay-as-you-go with Azure**: No
-    - **Add Dataverse options**:
-        - **Language**: English
+    - **Add Dataverse**:
+        - **Language**: English (United States)
         - **Currency**: USD ($)
         - **Deploy sample apps and data**: No
 1. **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display)
-1. Navigate to `https://copilotstudio.microsoft.com/` (sign in with your credentials if prompted).
+
+1. Select the newly created environment and, in the **Details** section, copy the **Environment ID** value.
+1. In the browser address bar, enter `https://copilotstudio.microsoft.com/environments/<Environment ID>`, replacing `<Environment ID>` with the value you copied. If prompted, sign in with your credentials.
 1. Skip any welcome messages.
