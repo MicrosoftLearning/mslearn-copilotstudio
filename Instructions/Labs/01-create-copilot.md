@@ -16,14 +16,13 @@ This exercise will take approximately **30** minutes to complete.
 
 > **Note**: This exercise assumes you already have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
-## Create an agent
-
-Let’s start by using Copilot Studio to create a new agent. The agent will initially have very limited capabilities, which you’ll extend later in the exercise.
-
+## Open Copilot Studio
+Please skip this task if you already have Copilot Studio open.
 1. In a web browser, navigate to **Copilot Studio** at `https://copilotstudio.microsoft.com/` and sign in if prompted. Skip any welcome messages.
-
 1. The Power Apps **environment** in which your agents are defined is shown at the top of the page. Change the environment to the one you created. 
-    > **Note:** If, at any time during these labs, the top navigation bar does not load fully and you are unable to see the Environment name, you may need to refresh your browser (Fn+F5).
+
+## Create an agent
+Let’s start by using Copilot Studio to create a new agent. The agent will initially have very limited capabilities, which you’ll extend later in the exercise.
 
 1. View the Copilot Studio home page, which should look similar to this:
 
