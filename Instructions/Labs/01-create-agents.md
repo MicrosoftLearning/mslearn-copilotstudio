@@ -66,7 +66,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
 
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/create-environment.png)
+   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
 1. Leave all of the default settings and select **Add**.
 
