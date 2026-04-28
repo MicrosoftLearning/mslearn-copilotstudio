@@ -86,11 +86,11 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English*
+   - **Language**: *English (United States)*
    - **Currency**: *USD ($)*
    - **Deploy sample apps and data**: *No*
 
-1. Select  **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
+1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
    ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
@@ -106,7 +106,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane select the ellipses (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -132,7 +132,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
-1. Select **Set as your preferred solution**.
+1. Select the **Set as your preferred solution** checkbox.
 
    ![New solution.](../media/new-solution.png)
 
