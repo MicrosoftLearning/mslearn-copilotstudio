@@ -329,13 +329,13 @@ Enable variables to be accessed by other topics.
 
 1. Select the **Customer Details** topic.
 
-1. Select **Variables** in the top bar to open the Variables pane (you may need to select **More** \> **Variables**).
+1. Select **Variables** in the top bar to open the **Variables** pane (you may need to select **More** \> **Variables**).
 
 1. Select and expand **Topic** variables.
 
 1. Select the right-hand check boxes for the three topic variables. This enables the variables in this topic to be available for other topics to use.
 
-  ![Screenshot of the variables pane.](../media/variables-pane.png)
+   ![Screenshot of the variables pane.](../media/variables-pane.png)
 
 1. Select **Save**.
 
