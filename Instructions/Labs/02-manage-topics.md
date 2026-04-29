@@ -73,7 +73,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
 
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/create-environment.png)
+   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
 1. Leave all of the default settings and select **Add**.
 
@@ -82,20 +82,20 @@ Before you start the lab exercises, you must create a development environment fo
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
 
    - **Type**: Developer
-   - **Region**: ***default** region*
+   - **Region**: default region
    - **Name**: *Your name*
-   - **Environment group**: *None*
-   - **Make this a Managed Environment**: *No*
-   - **Get new features early**: *No*
-   - **Create on behalf**: *No*
+   - **Environment group**: None
+   - **Make this a Managed Environment**: No
+   - **Get new features early**: No
+   - **Create on behalf**: No
 
    ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English*
-   - **Currency**: *USD ($)*
-   - **Deploy sample apps and data**: *No*
+   - **Language**: English (United States)
+   - **Currency**: USD ($)
+   - **Deploy sample apps and data**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
@@ -113,7 +113,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane select the ellipses (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -139,7 +139,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
-1. Select **Set as your preferred solution**.
+1. Select the **Set as your preferred solution** checkbox.
 
    ![New solution.](../media/new-solution.png)
 
@@ -155,25 +155,23 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 2.1 – Create an agent to review insurance claims
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
-
-1. Make sure that you are in the environment that you created.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what you agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Leave **English** set as the primary language for the agent.
+1. Leave **English (United States)** set as the primary language for the agent.
 
-1. Select the **Lab Exercises** *solution*.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `insuranceagent` for the *Schema name*.
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* prompt, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
 
    ```prompt
    You are an agent that assists with reviewing insurance claims including damage assessment details and repair estimates.
@@ -181,7 +179,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select the **Send** icon.
 
-   Once you agent has been provisioned, you may proceed with configuring your agent.
+   Once your agent has been provisioned, you may proceed with configuring your agent.
 
 ## Exercise 3 - Manage topics
 
