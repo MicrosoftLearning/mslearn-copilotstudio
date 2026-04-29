@@ -384,7 +384,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.4 - Route to the Customer Details topic
 
-1. Select the the **+** icon under the **Message** node
+1. Select the **+** icon under the **Message** node
 
 1. Select **Topic management** \> **Go to another topic** \> **Customer Details**.
 
@@ -394,7 +394,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.5 - Add condition node
 
-1. Select the the **+** icon under the **Topic** node and select **Add a condition**.
+1. Select the **+** icon under the **Topic** node and select **Add a condition**.
 
 1. In the **Condition** node, select the **DetailsCorrect** variable.
 
@@ -408,7 +408,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.6 - Add question nodes
 
-1. Select the the **+** icon under the left **Condition** node and select **Ask a question**.
+1. Select the **+** icon under the left **Condition** node and select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
@@ -424,7 +424,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
    `Great! Let me get that scheduled for you.`
 
-1. After that message node, add a node to end the topics by selecting **Topic Management** \> **End all topics**.
+1. After that message node, add a node to end the topics by selecting **Topic management** \> **End all topics**.
 
 1. Select **Save**.
 
