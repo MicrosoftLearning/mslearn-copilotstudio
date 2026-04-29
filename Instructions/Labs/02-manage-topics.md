@@ -241,7 +241,8 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
    ![Screenshot of the message updated to include the Name variable.](../media/message-updated-name-variable.png)
 
-   > **Note**: The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above. If Edit with copilot did not update the question node correctly, select Undo, and retry with a different prompt.
+   > [!NOTE]
+   > The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above. If Edit with Copilot did not update the question node correctly, select **Undo**, and retry with a different prompt.
 
 1. Select **Save**.
 
