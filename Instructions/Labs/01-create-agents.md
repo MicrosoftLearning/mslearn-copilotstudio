@@ -234,7 +234,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
@@ -246,7 +246,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* prompt, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
 
    ```prompt
    You are an agent that assists with questions related claiming US government benefits.
