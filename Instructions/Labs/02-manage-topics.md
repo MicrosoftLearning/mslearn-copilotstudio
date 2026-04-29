@@ -434,7 +434,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under *# Skills* in the agent instructions, add the following `Use the ` and then enter the `/` character and select the **Repair Estimate** topic and then enter ` when a repair estimate is required.`
+1. Under *# Skills* in the agent instructions, enter `Use the`, then type `/` and select the **Estimate Repair** topic, then enter `when a repair estimate is required.`
 
    ![Screenshot of referencing the topic in the agent instructions.](../media/add-topic-to-instructions.png)
 
@@ -446,15 +446,15 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 ### Task 7.1 - Test the Book Showing topic
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the **Test** pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test pane**, select the **Start new test session** icon **+**.
 
-1. When the **Conversation Start** message appears, your agent will start a conversation. In response, let's try to trigger the topic that you've created:
+1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter the following text to trigger the topic:
 
    `I need to book a repair estimate`
 
@@ -470,7 +470,7 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
    Notice that you were routed back to the **Estimate Repair** topic.
 
-1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repaid estimate?** prompt.
+1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repair estimate?** prompt.
 
 ## Summary
 
