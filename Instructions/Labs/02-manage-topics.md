@@ -472,6 +472,8 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repair estimate?** prompt.
 
+   The agent responds with a confirmation message indicating the repair estimate has been scheduled.
+
 ## Summary
 
 In this lab, you created the Customer Details and Estimate Repair topics and used nodes to enforce a structured, step-by-step interaction while generative AI remained enabled. You also configured variable scope so information collected in Customer Details can be used across topics.
