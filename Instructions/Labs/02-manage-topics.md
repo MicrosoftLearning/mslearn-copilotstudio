@@ -250,7 +250,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 In addition to adding updating existing nodes, you can use Copilot to add new ones.
 
-1. Click an empty area on the authoring canvas so no node is selected.
+1. Select an empty area on the authoring canvas so no node is selected.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
@@ -268,7 +268,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
    Your Adaptive Card formula should look similar to the one above. If it doesn't, then you can paste in the formula below:
 
-   ```json
+   ```powerfx
    {
    type: "AdaptiveCard", 
        body: 
