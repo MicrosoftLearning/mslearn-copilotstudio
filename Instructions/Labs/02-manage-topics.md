@@ -321,7 +321,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 ## Exercise 5 - Variable scope
 
-Enable variables to be be accessed by other topics.
+Enable variables to be accessed by other topics.
 
 ### Task 5.1 - Configure the scope of the variables
 
