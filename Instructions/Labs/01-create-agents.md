@@ -230,19 +230,17 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 3.1 – Create an agent to answer questions about government benefits
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
-
-1. Make sure that you are in the environment that you created.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what you agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Leave **English** set as the primary language for the agent.
+1. Leave **English (United States)** set as the primary language for the agent.
 
-1. Select the **Lab Exercises** *solution*.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `govbenefitsagent` for the *Schema name*.
 
@@ -260,7 +258,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
    ![Screenshot of the created agent.](../media/new-agent-overview.png)
 
-   Once you agent has been provisioned, you may proceed with configuring your agent.
+   Once your agent has been provisioned, you may proceed with configuring your agent.
 
 ### Task 3.2 – Configure the Overview tab
 
