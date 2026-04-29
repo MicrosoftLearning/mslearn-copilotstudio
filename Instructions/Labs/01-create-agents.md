@@ -75,20 +75,20 @@ Before you start the lab exercises, you must create a development environment fo
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
 
    - **Type**: Developer
-   - **Region**: ***default** region*
+   - **Region**: default region
    - **Name**: *Your name*
-   - **Environment group**: *None*
-   - **Make this a Managed Environment**: *No*
-   - **Get new features early**: *No*
-   - **Create on behalf**: *No*
+   - **Environment group**: None
+   - **Make this a Managed Environment**: No
+   - **Get new features early**: No
+   - **Create on behalf**: No
 
    ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English (United States)*
-   - **Currency**: *USD ($)*
-   - **Deploy sample apps and data**: *No*
+   - **Language**: English (United States)
+   - **Currency**: USD ($)
+   - **Deploy sample apps and data**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
@@ -172,7 +172,7 @@ In this exercise, you will create an agent by using a template to create the age
 
 1. Select the **Topics** tab and select the **System** filter.
 
-1. Select the **Conversational Start** topic. Review the contents of the **Message** node. Note that the contents of the message are displayed in the Test panel.
+1. Select the **Conversational Start** topic. Review the contents of the **Message** node. Note that the contents of the message are displayed in the **Test** pane.
 
    ![Conversation Start topic from the Safe Travels template.](../media/safe-travels-conversation-start-topic.png)
 
@@ -180,9 +180,9 @@ In this exercise, you will create an agent by using a template to create the age
 
 ### Task 2.2 – Test the agent
 
-1. If the **Test panel** is not visible, select the **Test** icon in the upper-right of the page.
+1. If the **Test** pane is not visible, select the **Test** icon in the upper-right of the page.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Track between topics** to **On**.
 
    ![Track between topics.](../media/track-between-topics.png)
 
@@ -194,7 +194,7 @@ In this exercise, you will create an agent by using a template to create the age
 
    The **Greeting** topic should be selected and the response is provided from the message node in the Greeting topic.
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -272,7 +272,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Save**.
 
-1. In *Select your agent's model*, select **GPT-5 Auto**.
+1. In the **Select your agent's model** section, select **GPT-5 Auto (Preview)**.
 
 1. In the **Instructions** section, select **Edit**.
 
@@ -284,13 +284,14 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Save**.
 
-   > **Note**: Agent instructions guide how the agent should behave, but they do not strictly enforce behavior. In later labs, you will learn how to change behavior by using topics, knowledge, and generative answers with restricted knowledge sources.
+   > [!NOTE]
+   > Agent instructions guide how the agent should behave, but they do not strictly enforce behavior. In later labs, you will learn how to change behavior by using topics, knowledge, and generative answers with restricted knowledge sources.
 
 1. In the **Suggested prompts** section, select **Add suggested prompts**.
 
-1. For *Title*, enter `Health`.
+1. For **Title**, enter `Health`.
 
-1. For *Prompt*, enter `What health assistance programs are available for me?`.
+1. For **Prompt**, enter `What health assistance programs are available for me?`.
 
 1. Select **Save**.
 
@@ -308,9 +309,9 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Add**.
 
-1. For *Name*, enter `Government benefits`.
+1. For **Name**, enter `Government benefits`.
 
-1. For *Description*, enter `This knowledge source contains information on government programs that may help you pay for food, housing, health care, and other basic living expenses.`.
+1. For **Description**, enter `This knowledge source contains information on government programs that may help you pay for food, housing, health care, and other basic living expenses.`.
 
 1. Select **Add to agent**.
 
@@ -320,7 +321,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Note that **Orchestration** is set to **Yes - Responses will be dynamic, using available tools and knowledge as appropriate**.
 
-1. In the Responses section, enter `
+1. In the **Responses** section, enter the following:
 
    ```prompt
    - For process related answer respond with a single sentence.
@@ -341,17 +342,17 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Save** and select **Save** again.
 
-1. In the upper-right of the Settings page, select **X** to close settings.
+1. In the upper-right of the **Settings** page, select **X** to close settings.
 
 ### Task 3.5 – Test the agent
 
-1. If the **Test panel** is not visible, select the **Test** icon in the upper-right of the page.
+1. If the **Test** pane is not visible, select the **Test** icon in the upper-right of the page.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -359,11 +360,11 @@ In this exercise, you will create a new agent using natural language to answer q
    What health insurance information is available?
    ```
 
-   The **Activity map** topic should be displayed, showing that knowledge sources were used to generate the response.
+   The **Activity map** should be displayed, showing that knowledge sources were used to generate the response.
 
    ![Activity map.](../media/activity-map.png)
 
-1. Close the Test panel.
+1. Close the **Test** pane.
 
 ### Task 3.6 – Publish the agent to the Demo website
 
@@ -375,7 +376,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select the **Demo website** channel. This is an appropriate channel for users to test your agent.
 
-1. In the **Demo website** pane, enter the following settings:
+1. In the **Demo Website** pane, enter the following settings:
 
    - **Welcome message**: `Ask me about government benefit programs`
    - **Conversation starters**:
