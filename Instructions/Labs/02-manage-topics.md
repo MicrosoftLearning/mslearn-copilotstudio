@@ -205,7 +205,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 ### Task 4.1 – Add a topic from description
 
-1. Select **+ Add a topic** and select **Add from description with Copilot**. A new window appears.
+1. Select **+ Add a topic** and select **Add from description with Copilot**. A new dialog appears.
 
    ![Create topic with copilot option.](../media/topic-create-from-description-1.png)
 
