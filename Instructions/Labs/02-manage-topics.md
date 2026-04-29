@@ -372,7 +372,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.3 - Add a message node
 
-1. Select the the **+** icon under the Trigger node and select **Send a message**.
+1. Select the **+** icon under the Trigger node and select **Send a message**.
 
    ![Screenshot of adding a node.](../media/add-message-node.png)
 
