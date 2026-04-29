@@ -349,7 +349,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **+ Add a topic** and select **From blank**.
 
-1. Select the **Details** icon to open the Topic details dialog (you may need to select **More** \> **Details**).
+1. Select the **Details** icon to open the **Topic details** pane (you may need to select **More** \> **Details**).
 
 1. In the **Name** field, enter the following text:
 
@@ -367,7 +367,8 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select the **Trigger** node at the top of the topic. Confirm the trigger type is set to **The agent chooses**.
 
-   > **Note** With generative orchestration enabled, the agent uses this description to decide when to use the topic.
+   > [!NOTE]
+   > With generative orchestration enabled, the agent uses this description to decide when to use the topic.
 
 ### Task 6.3 - Add a message node
 
