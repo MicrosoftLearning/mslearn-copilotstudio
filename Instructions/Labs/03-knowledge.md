@@ -430,7 +430,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to variables **{x}** icon and verify that **Show activity map when testing** is set to **Off** and **Track between topics** is set to **On**.
 
 1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
@@ -438,7 +438,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
    `What is the federal per diem rate?`
 
-1. The knowledge sources and generative answers will not provide an answer. The **Fallback** topic will be triggered
+1. The knowledge sources and generative answers will not provide an answer. The **Fallback** topic will be triggered.
 
    ![Screenshot of the conversation using the Fallback topic.](../media/knowledge-conversation-5.png)
 
@@ -454,15 +454,15 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. Select **Authentication**.
 
-1. Select **Authenticate with Microsoft**.
+1. If not already selected, select **Authenticate with Microsoft**.
 
 1. Select **Save** and select **Save** again.
 
-1. In the upper-right of the Settings page, select **X** to close settings.
+1. In the upper-right of the **Settings** page, select **X** to close settings.
 
 ### Task 6.2 - Publish the agent
 
-1. In the action bar of the agent, select the **Publish** button and select **Publish** again.
+1. On the agent page, select **Publish** and select **Publish** again to confirm.
 
 ### Task 6.3 - Microsoft Teams channel
 
@@ -480,7 +480,7 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. Select **Add channel**.
 
-1. Select **See agent in Teams**
+1. Select **See agent in Teams**.
 
 1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams**.
 
@@ -498,4 +498,4 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 ## Summary
 
-In this lab, you added knowledge sources to an agent and explored how generative IA settings affect when and how the knowledge sources are used to generate responses to prompts.
+In this lab, you added knowledge sources to an agent and explored how generative AI settings affect when and how the knowledge sources are used to generate responses to prompts.
