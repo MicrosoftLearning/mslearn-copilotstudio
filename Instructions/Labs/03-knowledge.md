@@ -376,6 +376,8 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Open the **Conversational boosting** topic.
 
+1. If a **Boost your conversations with copilots** dialog appears, select **Done**.
+
 1. Select the **Create generative answers** node.
 
    ![Screenshot of generative answers node.](../media/generative-answers-node.png)
@@ -384,7 +386,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select and enable **Search only selected sources.**
 
-1. Select the Public website knowledge source.
+1. Select the **Public website** knowledge source.
 
 1. Select and enable **Web search**.
 
