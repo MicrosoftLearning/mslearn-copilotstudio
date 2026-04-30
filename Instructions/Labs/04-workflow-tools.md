@@ -259,7 +259,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Publish** near the upper-right of the page.
 
-1. In Copilot Studio, select **Tools** in the left-hand navigation.
+1. In Copilot Studio, select **Tools** in the left-hand navigation to verify the workflow status is **Ready**.
 
 ### Task 3.4 - Add workflow as a tool to the agent
 
