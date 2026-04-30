@@ -310,13 +310,13 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 ### Task 3.6 - Test the workflow tool in the agent
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, let's try to trigger the topic that you've created:
 
@@ -328,7 +328,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. In a new browser tab, navigate to `https://teams.cloud.microsoft/` and sign in if prompted.
 
-1. Navigate to the Team and channel you selected earlier in the workflow.
+1. Navigate to the Team and channel you selected earlier in the workflow and verify the task analysis summary was posted.
 
    ![Screenshot of the message in Teams.](../media/workflow-test-agent-teams.png)
 
