@@ -95,7 +95,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
 
-1. Select **Get Started**, if prompted leaving the default country/region.
+1. Select **Get Started**, if prompted, leaving the default country/region.
 
 1. Skip any welcome messages.
 
@@ -105,7 +105,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane select the ellipses (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -201,7 +201,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Update**.
 
-1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
 
    ```prompt
    You are an agent that helps employees with expense claims including questions around expense policy and procedures.
@@ -209,7 +209,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select the **Send** icon.
 
-   Once you agent has been provisioned, you may proceed with configuring your agent.
+   Once your agent has been provisioned, you may proceed with configuring your agent.
 
 ## Exercise 4 - Ground the agent with knowledge
 
@@ -430,7 +430,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** pane, select the ellipses (**...**) next to variables **{x}** icon and verify that **Show activity map when testing** is set to **Off** and **Track between topics** is set to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon and verify that **Show activity map when testing** is set to **Off** and **Track between topics** is set to **On**.
 
 1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
