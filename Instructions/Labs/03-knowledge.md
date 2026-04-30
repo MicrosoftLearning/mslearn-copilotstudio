@@ -274,15 +274,15 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. In the Copilot Studio agent, select the **Knowledge** tab.
 
-1. Select ellipses (**...**) for the Dataverse table and select **Edit**.
+1. Select the ellipses (**⋮**) for the Dataverse table and select **Edit**.
 
    ![Screenshot of editing a knowledge source for an agent in Copilot Studio.](../media/knowledge-edit.png)
 
-1. In the Details tab, for *Name*, enter `Expense Claims data`.
+1. In the **Details** tab, for *Name*, enter `Expense Claims data`.
 
 1. Select the **Synonyms** tab.
 
-1. Select the **Expense Type** column and select **+ Add synonyms**.
+1. In the **Expense Type** row, select **+ Add synonyms**.
 
 1. Enter `Expense label` and select **Add**.
 
