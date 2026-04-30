@@ -39,7 +39,7 @@ This exercise will take approximately **45** minutes to complete.
   
 ## Prerequisites
 
-- Have a Microsoft Entra Id account
+- Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
 ## Key concept: Tools in agents
@@ -62,7 +62,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
 
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/create-environment.png)
+   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
 1. Leave all of the default settings and select **Add**.
 
@@ -71,20 +71,20 @@ Before you start the lab exercises, you must create a development environment fo
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
 
    - **Type**: Developer
-   - **Region**: ***default** region*
+   - **Region**: default region
    - **Name**: *Your name*
-   - **Environment group**: *None*
-   - **Make this a Managed Environment**: *No*
-   - **Get new features early**: *No*
-   - **Create on behalf**: *No*
+   - **Environment group**: None
+   - **Make this a Managed Environment**: No
+   - **Get new features early**: No
+   - **Create on behalf**: No
 
    ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English*
-   - **Currency**: *USD ($)*
-   - **Deploy sample apps and data**: *No*
+   - **Language**: English (United States)
+   - **Currency**: USD ($)
+   - **Deploy sample apps and data**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
@@ -92,7 +92,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
 
-1. Select **Get Started**, if prompted leaving the default country/region.
+1. Select **Get Started**, if prompted, leaving the default country/region.
 
 1. Skip any welcome messages.
 
@@ -102,7 +102,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane select the ellipses (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -128,7 +128,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
-1. Select **Set as your preferred solution**.
+1. Select the **Set as your preferred solution** checkbox.
 
    ![New solution.](../media/new-solution.png)
 
