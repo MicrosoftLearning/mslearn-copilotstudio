@@ -478,17 +478,15 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
    ![Screenshot Teams channel Copilot Studio.](../media/channel-teams.png)
 
-1. Select **Add channel**.
-
 1. Select **See agent in Teams**.
 
-1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams**.
+1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams (work or school)**.
 
 1. In the pop-up, select **Cancel** and select **Use the web app instead**.
 
-    ![Screenshot of dialog to add the app to Teams.](../media/channel-teams-app.png)
-
 1. Select **Add** to add the agent to Teams.
+
+   ![Screenshot of dialog to add the app to Teams.](../media/channel-teams-app.png)
 
 1. Select **Open** and wait for the agent to load in Teams.
 
