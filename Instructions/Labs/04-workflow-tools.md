@@ -192,7 +192,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Text**.
 
-1. Enter `Task Summary` for **Input** and `Analyzed tasks` for **Please enter your input**.
+1. Enter `Task Summary` for *Input* and `Analyzed tasks` for *Please enter your input*.
 
    ![Screenshot of trigger properties of the flow.](../media/workflow-trigger-step.png)
 
@@ -239,7 +239,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For **Channel**, select a channel from the list, for example, **General**.
 
-1. For **Message**, use **Dynamic Content** to select **Task Summary**.
+1. For *Message*, use **Dynamic Content** to select **Task Summary**.
 
    ![Screenshot of Teams action in the workflow.](../media/workflow-teams-action.png)
 
@@ -249,9 +249,9 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Text**.
 
-1. For *Enter a name*, enter **`Message`**.
+1. For *Enter a name*, enter `Message`.
 
-1. For *Enter a value to respond with*, use *Dynamic Content* and select the **Message link** from the Teams action.
+1. For *Enter a value to respond with*, use **Dynamic Content** and select the **Message link** from the Teams action.
 
    ![Screenshot of the response action in the workflow.](../media/workflow-response-action.png)
 
