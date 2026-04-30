@@ -222,15 +222,24 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select the **Post message in a chat or channel** action.
 
-1. For *Post as* select **Flow bot**.
+1. Select **Sign in**.
 
-1. For *Post in* select **Channel**.
+   > [!NOTE]
+   > If you receive the error "Failed to create OAuth connection: ClientWarning: The browser has blocked the connection authentication popup window", select the **pop-up blocked** icon in the browser address bar and then select **Always allow pop-ups and redirects from `https://copilotstudio.microsoft.com**`.
 
-1. For *Team* select one of the Teams listed e.g., **Leadership**.
+1. Select your account.
 
-1. For *Channel* select one of the channels listed e.g., **General**.
+1. In the **Confirmation required** dialog, select the **I have verified this request and trust the source** checkbox, then select **Allow access**.
 
-1. For *Message**, use *Dynamic Content* to select **Task Summary**.
+1. For **Post as**, select **Flow bot**.
+
+1. For **Post in**, select **Channel**.
+
+1. For **Team**, select a team from the list, for example, **Leadership**.
+
+1. For **Channel**, select a channel from the list, for example, **General**.
+
+1. For **Message**, use **Dynamic Content** to select **Task Summary**.
 
    ![Screenshot of Teams action in the workflow.](../media/workflow-teams-action.png)
 
