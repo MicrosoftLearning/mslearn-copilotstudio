@@ -310,13 +310,13 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
 ### Task 4.6 - Test grounding
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -326,7 +326,7 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
    ![Screenshot of the conversation.](../media/knowledge-conversation-1.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -336,7 +336,7 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
    ![Screenshot of the conversation.](../media/knowledge-conversation-2.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -394,11 +394,11 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select the **Overview** tab.
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -426,11 +426,11 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select the **Overview** tab.
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
