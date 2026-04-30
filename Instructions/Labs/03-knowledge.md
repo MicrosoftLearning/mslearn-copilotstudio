@@ -18,7 +18,7 @@ In this exercise, you will:
 
 - Create a Dataverse table
 - Create an agent
-- Upload file to use as a knowledge source
+- Upload a file to use as a knowledge source
 - Add a public website as a knowledge source
 - Add the Dataverse table as a knowledge source
 - Configure generative AI settings
@@ -42,7 +42,7 @@ This exercise will take approximately **60** minutes to complete.
   
 ## Prerequisites
 
-- Have a Microsoft Entra Id account
+- Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
 ## Key concept: Grounding an agent with knowledge
@@ -201,10 +201,10 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* text box, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
 
    ```prompt
-   You are an agent that help employees with expense claims including questions around expense policy and procedures.
+   You are an agent that helps employees with expense claims including questions around expense policy and procedures.
    ```
 
 1. Select the **Send** icon.
