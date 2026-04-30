@@ -144,25 +144,23 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 ### Task 2.1 – Create an agent to analyze tasks
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
-
-1. Make sure that you are in the environment that you created.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what you agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Leave **English** set as the primary language for the agent.
+1. Leave **English (United States)** set as the primary language for the agent.
 
-1. Select the **Lab Exercises** *solution*.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `analyzetaskagent` for the *Schema name*.
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* prompt, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
 
    ```prompt
    You are an agent that analyzes, categorizes, and prioritizes tasks.
@@ -170,7 +168,7 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 1. Select the **Send** icon.
 
-   Once you agent has been provisioned, you may proceed with configuring your agent.
+   Once your agent has been provisioned, you may proceed with configuring your agent.
 
 ## Exercise 3 - Create a workflow tool
 
