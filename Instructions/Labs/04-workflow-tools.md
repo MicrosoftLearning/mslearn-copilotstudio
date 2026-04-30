@@ -279,18 +279,18 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Add and configure**.
 
-1. In the *Details* section, for *Description* enter `Sends a summary of the completed task analysis to a Microsoft Teams channel`.
+1. In the **Details** section, for **Description**, enter `Sends a summary of the completed task analysis to a Microsoft Teams channel`.
 
 1. Expand **Additional details** and select or enter the following:
 
-   - **When this tool may be used**: *Agent may use this tool at any time*
-   - **Ask the end user before running**: *No*
-   - **Credentials to use**: *End user credentials*
-   - **Description**: *`Please sign in to notify Teams`*
+   - **When this tool may be used**: Agent may use this tool at any time
+   - **Ask the end user before running**: No
+   - **Credentials to use**: End user credentials
+   - **Description**: `Please sign in to notify Teams`
 
-1. In the *Inputs* section, for *Fill using* select **Dynamically fill with AI**.
+1. In the **Inputs** section, for *Fill using* select **Dynamically fill with AI**.
 
-1. In the *Completion* section, for *After running*, select **Write the response with generative AI**.
+1. In the **Completion** section, for **After running**, select **Write the response with generative AI**.
 
    ![Screenshot of the configuration of workflow as a tool.](../media/workflow-tool-configuration.png)
 
@@ -302,7 +302,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under the *## Step-by-step instructions* in the agent instructions, add the following to the final step `Use the ` and then enter the `/` character and select the **Send  Summary to Teams** tool and then enter ` when the task analysis is complete.`
+1. Under the *## Step-by-step instructions* in the agent instructions, add the following to the final step: `Use the ` and then enter the `/` character and select the **Send Summary to Teams** tool and then enter ` when the task analysis is complete.`
 
    ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions.png)
 
