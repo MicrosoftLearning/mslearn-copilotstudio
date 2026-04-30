@@ -73,7 +73,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
 
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/create-environment.png)
+   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
 1. Leave all of the default settings and select **Add**.
 
@@ -82,20 +82,20 @@ Before you start the lab exercises, you must create a development environment fo
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
 
    - **Type**: Developer
-   - **Region**: ***default** region*
+   - **Region**: default region
    - **Name**: *Your name*
-   - **Environment group**: *None*
-   - **Make this a Managed Environment**: *No*
-   - **Get new features early**: *No*
-   - **Create on behalf**: *No*
+   - **Environment group**: None
+   - **Make this a Managed Environment**: No
+   - **Get new features early**: No
+   - **Create on behalf**: No
 
    ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English*
-   - **Currency**: *USD ($)*
-   - **Deploy sample apps and data**: *No*
+   - **Language**: English (United States)
+   - **Currency**: USD ($)
+   - **Deploy sample apps and data**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
@@ -113,7 +113,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane select the ellipses (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -139,7 +139,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
-1. Select **Set as your preferred solution**.
+1. Select the **Set as your preferred solution** checkbox.
 
    ![New solution.](../media/new-solution.png)
 
@@ -155,25 +155,23 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 2.1 – Create an agent to review insurance claims
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
-
-1. Make sure that you are in the environment that you created.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what you agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Leave **English** set as the primary language for the agent.
+1. Leave **English (United States)** set as the primary language for the agent.
 
-1. Select the **Lab Exercises** *solution*.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `insuranceagent` for the *Schema name*.
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* prompt, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
 
    ```prompt
    You are an agent that assists with reviewing insurance claims including damage assessment details and repair estimates.
@@ -181,7 +179,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select the **Send** icon.
 
-   Once you agent has been provisioned, you may proceed with configuring your agent.
+   Once your agent has been provisioned, you may proceed with configuring your agent.
 
 ## Exercise 3 - Manage topics
 
@@ -207,7 +205,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 ### Task 4.1 – Add a topic from description
 
-1. Select **+ Add a topic** and select **Add from description with Copilot**. A new window appears.
+1. Select **+ Add a topic** and select **Add from description with Copilot**. A new dialog appears.
 
    ![Create topic with copilot option.](../media/topic-create-from-description-1.png)
 
@@ -243,7 +241,8 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
    ![Screenshot of the message updated to include the Name variable.](../media/message-updated-name-variable.png)
 
-   > **Note**: The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above. If Edit with copilot did not update the question node correctly, select Undo, and retry with a different prompt.
+   > [!NOTE]
+   > The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above. If Edit with Copilot did not update the question node correctly, select **Undo**, and retry with a different prompt.
 
 1. Select **Save**.
 
@@ -251,7 +250,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 In addition to adding updating existing nodes, you can use Copilot to add new ones.
 
-1. Click an empty area on the authoring canvas so no node is selected.
+1. Select an empty area on the authoring canvas so no node is selected.
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
@@ -269,7 +268,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
    Your Adaptive Card formula should look similar to the one above. If it doesn't, then you can paste in the formula below:
 
-   ```json
+   ```powerfx
    {
    type: "AdaptiveCard", 
        body: 
@@ -322,7 +321,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 ## Exercise 5 - Variable scope
 
-Enable variables to be be accessed by other topics.
+Enable variables to be accessed by other topics.
 
 ### Task 5.1 - Configure the scope of the variables
 
@@ -330,13 +329,13 @@ Enable variables to be be accessed by other topics.
 
 1. Select the **Customer Details** topic.
 
-1. Select **Variables** in the top bar to open the Variables pane (you may need to select **More** \> **Variables**).
+1. Select **Variables** in the top bar to open the **Variables** pane (you may need to select **More** \> **Variables**).
 
 1. Select and expand **Topic** variables.
 
 1. Select the right-hand check boxes for the three topic variables. This enables the variables in this topic to be available for other topics to use.
 
-  ![Screenshot of the variables pane.](../media/variables-pane.png)
+   ![Screenshot of the variables pane.](../media/variables-pane.png)
 
 1. Select **Save**.
 
@@ -350,7 +349,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **+ Add a topic** and select **From blank**.
 
-1. Select the **Details** icon to open the Topic details dialog (you may need to select **More** \> **Details**).
+1. Select the **Details** icon to open the **Topic details** pane (you may need to select **More** \> **Details**).
 
 1. In the **Name** field, enter the following text:
 
@@ -368,11 +367,12 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select the **Trigger** node at the top of the topic. Confirm the trigger type is set to **The agent chooses**.
 
-   > **Note** With generative orchestration enabled, the agent uses this description to decide when to use the topic.
+   > [!NOTE]
+   > With generative orchestration enabled, the agent uses this description to decide when to use the topic.
 
 ### Task 6.3 - Add a message node
 
-1. Select the the **+** icon under the Trigger node and select **Send a message**.
+1. Select the **+** icon under the Trigger node and select **Send a message**.
 
    ![Screenshot of adding a node.](../media/add-message-node.png)
 
@@ -384,7 +384,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.4 - Route to the Customer Details topic
 
-1. Select the the **+** icon under the **Message** node
+1. Select the **+** icon under the **Message** node
 
 1. Select **Topic management** \> **Go to another topic** \> **Customer Details**.
 
@@ -394,7 +394,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.5 - Add condition node
 
-1. Select the the **+** icon under the **Topic** node and select **Add a condition**.
+1. Select the **+** icon under the **Topic** node and select **Add a condition**.
 
 1. In the **Condition** node, select the **DetailsCorrect** variable.
 
@@ -408,7 +408,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 ### Task 6.6 - Add question nodes
 
-1. Select the the **+** icon under the left **Condition** node and select **Ask a question**.
+1. Select the **+** icon under the left **Condition** node and select **Ask a question**.
 
 1. In the **Enter a message** field, enter the following text:
 
@@ -424,7 +424,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
    `Great! Let me get that scheduled for you.`
 
-1. After that message node, add a node to end the topics by selecting **Topic Management** \> **End all topics**.
+1. After that message node, add a node to end the topics by selecting **Topic management** \> **End all topics**.
 
 1. Select **Save**.
 
@@ -434,7 +434,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under *# Skills* in the agent instructions, add the following `Use the ` and then enter the `/` character and select the **Repair Estimate** topic and then enter ` when a repair estimate is required.`
+1. Under *# Skills* in the agent instructions, enter `Use the`, then type `/` and select the **Estimate Repair** topic, then enter `when a repair estimate is required.`
 
    ![Screenshot of referencing the topic in the agent instructions.](../media/add-topic-to-instructions.png)
 
@@ -446,15 +446,15 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 ### Task 7.1 - Test the Book Showing topic
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the **Test** pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test pane**, select the **Start new test session** icon **+**.
 
-1. When the **Conversation Start** message appears, your agent will start a conversation. In response, let's try to trigger the topic that you've created:
+1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter the following text to trigger the topic:
 
    `I need to book a repair estimate`
 
@@ -470,7 +470,9 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
    Notice that you were routed back to the **Estimate Repair** topic.
 
-1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repaid estimate?** prompt.
+1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repair estimate?** prompt.
+
+   The agent responds with a confirmation message indicating the repair estimate has been scheduled.
 
 ## Summary
 
