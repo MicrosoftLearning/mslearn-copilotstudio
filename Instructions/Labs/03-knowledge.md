@@ -65,7 +65,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
 
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/create-environment.png)
+   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
 1. Leave all of the default settings and select **Add**.
 
@@ -74,20 +74,20 @@ Before you start the lab exercises, you must create a development environment fo
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
 
    - **Type**: Developer
-   - **Region**: ***default** region*
+   - **Region**: default region
    - **Name**: *Your name*
-   - **Environment group**: *None*
-   - **Make this a Managed Environment**: *No*
-   - **Get new features early**: *No*
-   - **Create on behalf**: *No*
+   - **Environment group**: None
+   - **Make this a Managed Environment**: No
+   - **Get new features early**: No
+   - **Create on behalf**: No
 
    ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English*
-   - **Currency**: *USD ($)*
-   - **Deploy sample apps and data**: *No*
+   - **Language**: English (United States)
+   - **Currency**: USD ($)
+   - **Deploy sample apps and data**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
@@ -131,7 +131,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
-1. Select **Set as your preferred solution**.
+1. Select the **Set as your preferred solution** checkbox.
 
    ![New solution.](../media/new-solution.png)
 
@@ -153,7 +153,7 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
    ![Select your environment in the Maker portal.](../media/select-powerapps-environment.png)
 
-1. In the left-hand navigation in the Maker portal, select **Tables**.
+1. In the left-hand navigation in the **Maker portal**, select **Tables**.
 
    ![Dataverse Tables in the Maker portal.](../media/dataverse-tables.png)
 
@@ -163,7 +163,7 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
    ![Table options in the Maker portal.](../media/dataverse-table-options.png)
 
-1. In the *Describe the tables you want to Copilot to build* prompt, Enter the following prompt:
+1. In the *Describe the tables you want Copilot to build* text box, enter the following prompt:
 
    ```prompt
    A table to store and process expense claims with an Expense Title, Expense Type (Accommodation, Meals, Entertainment or Travel), Expense Date, Submission Date, Approved Date, Amount Requested, Amount Approved, and Expense Status (Submitted, Evaluating, Approved, Rejected).
@@ -189,19 +189,19 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what you agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Leave **English** set as the primary language for the agent.
+1. Leave **English (United States)** set as the primary language for the agent.
 
-1. Select the **Lab Exercises** *solution*.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `expenseagent` for the *Schema name*.
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* prompt, Enter the following prompt:
+1. In the *Start building by describing what you agent needs to do* text box, Enter the following prompt:
 
    ```prompt
    You are an agent that help employees with expense claims including questions around expense policy and procedures.
@@ -219,7 +219,9 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. Open a new browser tab and navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/expenses/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional corporation.
 
-1. In the Copilot Studio agent you created in Exercise 3, select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
+1. Return to the **Copilot Studio** browser tab with the agent you created in Exercise 3.
+
+1. Select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
 
    ![Screenshot of the Knowledge page in Copilot Studio.](../media/knowledge-page.png)
 
@@ -231,7 +233,8 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
    ![Screenshot of adding the Expenses policy document as knowledge to your agent in Copilot Studio.](../media/knowledge-add-file.png)
 
-   > **Note**: After uploading the file, Copilot Studio will begin indexing the file. This may take 10 minutes or longer, so we will check back in after the next exercise.
+   > [!NOTE]
+   > After uploading the file, Copilot Studio begins indexing. This may take 10 minutes or longer, so you will check back after the next exercise.
 
 ### Task 4.2 – Add a public website as a knowledge source
 
