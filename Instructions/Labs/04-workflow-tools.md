@@ -338,19 +338,19 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 ### Task 4.1 - Create an Excel file
 
-1. In Copilot Studio, select the **App launcher** in the upper-left of the screen.
+1. In Copilot Studio, select the **App launcher** icon in the upper-left corner, then select **OneDrive**.
 
    ![Screenshot of App Launcher.](../media/copilot-studio-app-launcher.png)
 
-1. Select **OneDrive**.
+1. If prompted, skip any welcome messages.
 
-1. Select **Create or upload**.
+1. Select **+ Create or upload**.
 
 1. Select **Excel workbook**.
 
    ![Screenshot of creating a file in OneDrive.](../media/onedrive-create.png)
 
-1. In the upper-left of the Excel workbook, rename the file by clicking on **Book** and entering `Operations tasks`.O
+1. In the upper-left of the **Excel workbook**, rename the file by clicking on **Book** and entering `Operations tasks`.
 
    ![Screenshot of renaming a file in OneDrive.](../media/onedrive-rename.png)
 
@@ -401,7 +401,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
    ![Screenshot of tasks in a file in OneDrive.](../media/onedrive-tasks.png)
 
-1. Select the rows and columns containing data (A1:F5), and in the toolbar select the **Insert** tab, and select **Table**, select **OK**.
+1. Select the rows and columns containing data (A1:F5), and in the toolbar select the **Insert** tab, and select **Table**, then select **OK**.
 
 1. Select the **Table Design** tab and in the upper-left change the name of the table from *Table1* to **`Tasks`**.
 
@@ -411,7 +411,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. In OneDrive, select **My files** and verify that the Operations tasks Excel workbook is listed.
 
-1. Close the browser tab containing OneDrive.
+1. Close the OneDrive browser tab.
 
 ### Task 4.2 – Create the Analyze Excel tasks workflow
 
