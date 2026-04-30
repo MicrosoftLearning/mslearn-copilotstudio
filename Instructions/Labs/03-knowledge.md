@@ -18,7 +18,7 @@ In this exercise, you will:
 
 - Create a Dataverse table
 - Create an agent
-- Upload file to use as a knowledge source
+- Upload a file to use as a knowledge source
 - Add a public website as a knowledge source
 - Add the Dataverse table as a knowledge source
 - Configure generative AI settings
@@ -42,7 +42,7 @@ This exercise will take approximately **60** minutes to complete.
   
 ## Prerequisites
 
-- Have a Microsoft Entra Id account
+- Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
 ## Key concept: Grounding an agent with knowledge
@@ -65,7 +65,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
 
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/create-environment.png)
+   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
 1. Leave all of the default settings and select **Add**.
 
@@ -74,20 +74,20 @@ Before you start the lab exercises, you must create a development environment fo
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
 
    - **Type**: Developer
-   - **Region**: ***default** region*
+   - **Region**: default region
    - **Name**: *Your name*
-   - **Environment group**: *None*
-   - **Make this a Managed Environment**: *No*
-   - **Get new features early**: *No*
-   - **Create on behalf**: *No*
+   - **Environment group**: None
+   - **Make this a Managed Environment**: No
+   - **Get new features early**: No
+   - **Create on behalf**: No
 
    ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
 
 1. Select **Next** and in the **Add Dataverse** section:
 
-   - **Language**: *English*
-   - **Currency**: *USD ($)*
-   - **Deploy sample apps and data**: *No*
+   - **Language**: English (United States)
+   - **Currency**: USD ($)
+   - **Deploy sample apps and data**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
@@ -95,7 +95,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
 
-1. Select **Get Started**, if prompted leaving the default country/region.
+1. Select **Get Started**, if prompted, leaving the default country/region.
 
 1. Skip any welcome messages.
 
@@ -105,7 +105,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane select the ellipses (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -131,7 +131,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
-1. Select **Set as your preferred solution**.
+1. Select the **Set as your preferred solution** checkbox.
 
    ![New solution.](../media/new-solution.png)
 
@@ -153,7 +153,7 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
    ![Select your environment in the Maker portal.](../media/select-powerapps-environment.png)
 
-1. In the left-hand navigation in the Maker portal, select **Tables**.
+1. In the left-hand navigation in the **Maker portal**, select **Tables**.
 
    ![Dataverse Tables in the Maker portal.](../media/dataverse-tables.png)
 
@@ -163,7 +163,7 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
    ![Table options in the Maker portal.](../media/dataverse-table-options.png)
 
-1. In the *Describe the tables you want to Copilot to build* prompt, Enter the following prompt:
+1. In the *Describe the tables you want Copilot to build* text box, enter the following prompt:
 
    ```prompt
    A table to store and process expense claims with an Expense Title, Expense Type (Accommodation, Meals, Entertainment or Travel), Expense Date, Submission Date, Approved Date, Amount Requested, Amount Approved, and Expense Status (Submitted, Evaluating, Approved, Rejected).
@@ -189,27 +189,27 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what you agent needs to do* prompt window, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Leave **English** set as the primary language for the agent.
+1. Leave **English (United States)** set as the primary language for the agent.
 
-1. Select the **Lab Exercises** *solution*.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `expenseagent` for the *Schema name*.
 
 1. Select **Update**.
 
-1. In the *Start building by describing what you agent needs to do* prompt, Enter the following prompt:
+1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
 
    ```prompt
-   You are an agent that help employees with expense claims including questions around expense policy and procedures.
+   You are an agent that helps employees with expense claims including questions around expense policy and procedures.
    ```
 
 1. Select the **Send** icon.
 
-   Once you agent has been provisioned, you may proceed with configuring your agent.
+   Once your agent has been provisioned, you may proceed with configuring your agent.
 
 ## Exercise 4 - Ground the agent with knowledge
 
@@ -219,7 +219,9 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. Open a new browser tab and navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/expenses/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional corporation.
 
-1. In the Copilot Studio agent you created in Exercise 3, select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
+1. Return to the **Copilot Studio** browser tab with the agent you created in Exercise 3.
+
+1. Select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
 
    ![Screenshot of the Knowledge page in Copilot Studio.](../media/knowledge-page.png)
 
@@ -231,7 +233,8 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
    ![Screenshot of adding the Expenses policy document as knowledge to your agent in Copilot Studio.](../media/knowledge-add-file.png)
 
-   > **Note**: After uploading the file, Copilot Studio will begin indexing the file. This may take 10 minutes or longer, so we will check back in after the next exercise.
+   > [!NOTE]
+   > After uploading the file, Copilot Studio begins indexing. This may take 10 minutes or longer, so you will check back after the next exercise.
 
 ### Task 4.2 – Add a public website as a knowledge source
 
@@ -271,15 +274,15 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. In the Copilot Studio agent, select the **Knowledge** tab.
 
-1. Select ellipses (**...**) for the Dataverse table and select **Edit**.
+1. Select the ellipses (**⋮**) for the Dataverse table and select **Edit**.
 
    ![Screenshot of editing a knowledge source for an agent in Copilot Studio.](../media/knowledge-edit.png)
 
-1. In the Details tab, for *Name*, enter `Expense Claims data`.
+1. In the **Details** tab, for *Name*, enter `Expense Claims data`.
 
 1. Select the **Synonyms** tab.
 
-1. Select the **Expense Type** column and select **+ Add synonyms**.
+1. In the **Expense Type** row, select **+ Add synonyms**.
 
 1. Enter `Expense label` and select **Add**.
 
@@ -307,13 +310,13 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
 ### Task 4.6 - Test grounding
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -323,7 +326,7 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
    ![Screenshot of the conversation.](../media/knowledge-conversation-1.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -333,7 +336,7 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
    ![Screenshot of the conversation.](../media/knowledge-conversation-2.png)
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -373,6 +376,8 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Open the **Conversational boosting** topic.
 
+1. If a **Boost your conversations with copilots** dialog appears, select **Done**.
+
 1. Select the **Create generative answers** node.
 
    ![Screenshot of generative answers node.](../media/generative-answers-node.png)
@@ -381,7 +386,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select and enable **Search only selected sources.**
 
-1. Select the Public website knowledge source.
+1. Select the **Public website** knowledge source.
 
 1. Select and enable **Web search**.
 
@@ -391,11 +396,11 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select the **Overview** tab.
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
@@ -423,17 +428,17 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select the **Overview** tab.
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon and verify that **Show activity map when testing** is set to **Off** and **Track between topics** is set to **On**.
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. Enter the following prompt:
 
    `What is the federal per diem rate?`
 
-1. The knowledge sources and generative answers will not provide an answer. The **Fallback** topic will be triggered
+1. The knowledge sources and generative answers will not provide an answer. The **Fallback** topic will be triggered.
 
    ![Screenshot of the conversation using the Fallback topic.](../media/knowledge-conversation-5.png)
 
@@ -449,15 +454,15 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. Select **Authentication**.
 
-1. Select **Authenticate with Microsoft**.
+1. If not already selected, select **Authenticate with Microsoft**.
 
 1. Select **Save** and select **Save** again.
 
-1. In the upper-right of the Settings page, select **X** to close settings.
+1. In the upper-right of the **Settings** page, select **X** to close settings.
 
 ### Task 6.2 - Publish the agent
 
-1. In the action bar of the agent, select the **Publish** button and select **Publish** again.
+1. On the agent page, select **Publish** and select **Publish** again to confirm.
 
 ### Task 6.3 - Microsoft Teams channel
 
@@ -473,17 +478,15 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
    ![Screenshot Teams channel Copilot Studio.](../media/channel-teams.png)
 
-1. Select **Add channel**.
+1. Select **See agent in Teams**.
 
-1. Select **See agent in Teams**
-
-1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams**.
+1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams (work or school)**.
 
 1. In the pop-up, select **Cancel** and select **Use the web app instead**.
 
-    ![Screenshot of dialog to add the app to Teams.](../media/channel-teams-app.png)
-
 1. Select **Add** to add the agent to Teams.
+
+   ![Screenshot of dialog to add the app to Teams.](../media/channel-teams-app.png)
 
 1. Select **Open** and wait for the agent to load in Teams.
 
@@ -493,4 +496,4 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 ## Summary
 
-In this lab, you added knowledge sources to an agent and explored how generative IA settings affect when and how the knowledge sources are used to generate responses to prompts.
+In this lab, you added knowledge sources to an agent and explored how generative AI settings affect when and how the knowledge sources are used to generate responses to prompts.
