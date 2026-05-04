@@ -265,7 +265,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Analysis Agent** agent.
+1. Open the **Task Analysis** agent.
 
 1. Select the **Tools** tab.
 
@@ -415,11 +415,11 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 ### Task 4.2 – Create the Analyze Excel tasks workflow
 
-1. In Copilot Studio, select **Tools** in the left-hand navigation.
+1. In Copilot Studio, in the left-hand navigation, select **Tools**.
 
-1. Select **+ New tool**.
+1. Select **+ Add a tool**.
 
-1. In the **New Tool** dialog, select the **Agent flow** tile.
+1. In the **Add tool** dialog, select the **Agent flow** tile.
 
 1. Verify that the **When an agent calls the flow** trigger and the **Respond to the agent** action have been added to the workflow.
 
@@ -427,7 +427,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Text**.
 
-1. Enter `Priority` for **Input** and `Priority of Tasks` for **Please enter your input**.
+1. Enter `Priority` for *Input* and `Priority of Tasks` for *Please enter your input*.
 
 1. Select **Save draft** near the upper-right of the page.
 
@@ -451,23 +451,23 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Sign in** to create a connection.
 
-1. In the Sign into your account dialog select the **MOD Administrator** account, select **I have verified this request and trust the source**, and select **Allow access**.
+1. In the **Sign into your account** dialog, select the **MOD Administrator** account, select the **I have verified this request and trust the source** checkbox, and select **Allow access**.
 
-1. For *Location* select **OneDrive for Business**.
+1. For **Location** select **OneDrive for Business**.
 
-1. For *Document library* select **OneDrive**.
+1. For **Document library** select **OneDrive**.
 
-1. For *File* browse and select the **Operations tasks** workbook.
+1. For **File** browse and select the **Operations tasks** workbook.
 
-1. For *Table* select **Tasks**.
+1. For **Table** select **Tasks**.
 
    ![Screenshot of Excel action in the workflow.](../media/onedrive-action.png)
 
 1. Select **Show all**.
 
-1. For *Filter query*, enter **`Priority eq ''`**.
+1. For **Filter query**, enter **`Priority eq ''`**.
 
-1. Move the cursor between the two single quotes and use *Dynamic content* to insert the **Priority** input parameter.
+1. Move the cursor between the two single quotes and use **Dynamic content** to insert the **Priority** input parameter.
 
    ![Screenshot of Excel filter in the workflow.](../media/onedrive-action-filter.png)
 
@@ -477,35 +477,35 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. For *Enter a name*, enter **`Task list`**.
 
-1. For *Enter a value to respond with*, use *Dynamic Content* and select the **body/value** from the List rows action.
+1. For *Enter a value to respond with*, use **Dynamic Content** and select the **body/value** from the **List rows present in a table** action.
 
 1. Select **Save draft** near the upper-right of the page.
 
 1. Select **Publish** near the upper-right of the page.
 
-1. In Copilot Studio, select **Tools** in the left-hand navigation.
+1. Select **Tools** in the left-hand navigation to verify the workflow status is **Ready**.
 
 ### Task 4.3 – Add a topic to the agent
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Analysis Agent** agent.
+1. Open the **Task Analysis** agent.
 
 1. Select the **Topics** tab.
 
-1. Select **+ Add a topic** and select **Add from description with Copilot**. A new window appears.
+1. Select **+ Add a topic** and select **Add from description with Copilot**. A new dialog window appears.
 
 1. In the **Name your topic** text box, enter **`Priority Tasks`**.
 
-1. In the **Create a topic to...** text box, enter **`Ask the the user to choose a priority from a list containing High, Medium, and Low`**.
+1. In the **Create a topic to...** text box, enter **`Ask the user to choose a priority from a list containing High, Medium, and Low`**.
 
 1. Select **Create**.
 
    ![Screenshot of topic with a question node.](../media/topic-question-node.png)
 
-1. Select the **Priority** variable in the bottom of the question node to open  Variables properties.
+1. Select the **Priority** variable in the bottom of the question node to open **Variables properties**.
 
-1. Under *Usage* select **Global**.
+1. Under **Usage** select **Global (any topic can access)**.
 
    ![Screenshot of global variable for a question node.](../media/variable-global.png)
 
