@@ -2,7 +2,7 @@
 lab:
   title: Workflow tools in Copilot Studio agents
   module: Incorporate workflows to enhance agent behavior
-  description: In this lab, you will use Copilot to create an agent, create workflow, add workflows as tools to the agent and to a topic.
+  description: In this lab, you will use Copilot to create an agent, create workflows, and add workflows as tools to the agent and to a topic.
   duration: 45 minutes
   level: 200
   islab: true
@@ -26,7 +26,7 @@ This exercise will take approximately **45** minutes to complete.
 
 ## What you will learn
 
-- How workflows can be used to perform deterministic actions in an agent
+- How to use workflows to perform deterministic actions in an agent
 - How to configure workflows as tools
 - How to use workflows in a topic
 
@@ -56,7 +56,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. If prompted, choose the option to stay signed in.
 
-1. Close any pop-up messages that are displayed.
+1. Close any pop-up messages.
 
 ### Task 1.2 - Add Dataverse to the default environment
 
@@ -208,7 +208,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For **Description**, enter `Post a message to Teams with the summary of the task analysis`.
 
-1. Select **Save**
+1. Select **Save**.
 
 ### Task 3.2 - Post to Teams action
 
@@ -332,7 +332,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of the message in Teams.](../media/workflow-test-agent-teams.png)
 
-## Exercise 4 - Create a workflow tool that analyzes an Excel tile in a topic
+## Exercise 4 - Create a workflow tool that analyzes an Excel file in a topic
 
 In this exercise, you will use Copilot to create a topic from a description, a workflow tool that analyzes the tasks in an Excel file, and call this tool from a topic.
 
@@ -350,7 +350,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
    ![Screenshot of creating a file in OneDrive.](../media/onedrive-create.png)
 
-1. In the upper-left of the **Excel workbook**, rename the file by clicking on **Book** and entering `Operations tasks`.
+1. In the upper-left of the **Excel workbook**, rename the file by selecting **Book** and entering `Operations tasks`.
 
    ![Screenshot of renaming a file in OneDrive.](../media/onedrive-rename.png)
 
@@ -437,9 +437,9 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. In the **Details** pane, update **Flow name** to `Get Task List`.
 
-1. For **Description**, enter **`Retrieve a list of tasks with a matching priority`**.
+1. For **Description**, enter `Retrieve a list of tasks with a matching priority`.
 
-1. Select **Save**
+1. Select **Save**.
 
 1. Select the **Designer** tab.
 
@@ -566,7 +566,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Save**.
 
-### Task 4.5 - Test the workflow tools
+### Task 4.7 - Test the workflow tools
 
 1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
