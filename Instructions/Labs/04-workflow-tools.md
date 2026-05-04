@@ -550,7 +550,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select the **Priority Tasks** topic.
 
-1. Select the the **+** icon under the **Question** node and select **Add a tool** and select the **Tool** tab, and select the **Get Task List** tool.
+1. Under the **Question** node, select the **+** icon, select **Add a tool**, select the **Tool** tab, and then select the **Get Task List** tool.
 
    ![Screenshot of adding a workflow as a tool to a topic.](../media/topic-add-tool.png)
 
@@ -562,17 +562,17 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under the *## Skills* in the agent instructions, add the following to the final step `Use the ` and then enter the `/` character and select the **Priority Tasks** topic and then enter ` to get the task list.`
+1. Under the *## Skills* in the agent instructions, add the following to the final step: `Use the ` and then enter the `/` character and select the **Priority Tasks** topic and then enter ` to get the task list.`
 
 1. Select **Save**.
 
 ### Task 4.5 - Test the workflow tools
 
-1. Select the **Test** icon in the upper-right of the page to open the testing panel.
+1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
-1. In the **Test** panel, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **Off** and **Track between topics** to **On**.
 
-1. At the top of the Test panel, select the **Start new test session** icon **+**.
+1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, let's try to trigger the topic that you've created:
 
@@ -582,7 +582,9 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Medium**.
 
-1. The test pane should contain two tasks.
+1. If prompted to connect to **Excel Online (Business)**, select **Allow**.
+
+1. The **test** pane should contain two tasks.
 
    ![Screenshot of the workflow tool used when testing the agent.](../media/workflow-test-topic-tool.png)
 
