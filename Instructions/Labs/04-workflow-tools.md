@@ -465,7 +465,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Show all**.
 
-1. For **Filter query**, enter **`Priority eq ''`**.
+1. For **Filter query**, enter `Priority eq ''`.
 
 1. Move the cursor between the two single quotes and use **Dynamic content** to insert the **Priority** input parameter.
 
@@ -475,7 +475,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Text**.
 
-1. For *Enter a name*, enter **`Task list`**.
+1. For *Enter a name*, enter `Task list`.
 
 1. For *Enter a value to respond with*, use **Dynamic Content** and select the **body/value** from the **List rows present in a table** action.
 
@@ -515,7 +515,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Analysis Agent** agent.
+1. Open the **Task Analysis** agent.
 
 1. Select the **Tools** tab.
 
@@ -527,20 +527,20 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Add and configure**.
 
-1. In the *Details* section, for *Description* enter **`Retrieves a list of tasks for a specified priority`**.
+1. In the **Details** section, for **Description** enter `Retrieves a list of tasks for a specified priority`.
 
 1. Expand **Additional details** and select or enter the following:
 
-   - **When this tool may be used**: *Only when referenced by topics or agents*
-   - **Ask the end user before running**: *No*
-   - **Credentials to use**: *End user credentials*
+   - **When this tool may be used**: Only when referenced by topics or agents
+   - **Ask the end user before running**: No
+   - **Credentials to use**: End user credentials
    - **Description**: *`Please sign in to retrieve tasks`*
 
-1. In the *Inputs* section, for *Fill using* select **Custom value** and select the **Priority** global variable.
+1. In the **Inputs** section, for **Fill using** select **Custom value** and select the **Priority** global variable.
 
    ![Screenshot of the inputs of workflow as a tool.](../media/workflow-tool-inputs.png)
 
-1. In the *Completion* section, for *After running*, select **Write the response with generative AI**.
+1. In the **Completion** section, for **After running**, select **Write the response with generative AI**.
 
 1. Select **Save**.
 
