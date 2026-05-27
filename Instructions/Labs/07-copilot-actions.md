@@ -51,7 +51,7 @@ In this exercise, you will create an agent flow that retrieves a property based 
 
 1. Select **+ Add a tool**.
 
-1. Under **Create new**, select **Agent flow**.
+1. Select  **Add new Workflows**.
 
 1. Select the trigger step **When an agent calls the flow** and select **+ Add an input**.
 
@@ -154,7 +154,7 @@ In this exercise, you will create an agent flow that retrieves a property based 
 1. Select the **Get Property** agent flow tool that you just created.
 
    > [!NOTE]
-   > If you don't see the agent flow in the list of tools, select **+ Add a tool**, select the **Flow** tab, and select the **Get Property** agent flow. Select **Add and configure**.
+   > If you don't see the agent flow in the list of tools, select **+ Add a tool**, select the **Workflows** tab, and select the **Get Property** agent flow. Select **Add and configure**.
 
 1. In the **Details** section, update the **Description** to `Get properties with the right number of bedrooms`.
 
@@ -196,7 +196,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select **+ Add a tool**.
 
-1. Under **Create new**, select **Agent flow** .
+1. Under **Create new**, select **Add new Workflows** .
 
 1. Select **Save draft** and wait for the agent flow to save.
 
@@ -238,7 +238,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Select **Booking Requests** for table name.
 
-1. Enter `Agent booking` in the **Booking Name** field.
+1. Enter `Copilot booking` in the **Booking Name** field.
 
 1. Select **Show all** under **Advanced parameters**.
 
@@ -264,7 +264,7 @@ Microsoft Copilot Studio can create data in Microsoft Dataverse using agent flow
 
 1. Return to your **Real Estate Booking Service** agent.
 
-1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+ Add a tool** > **Flow** > and select the missing agent flow. Select **Add and configure**.
+1. Select the **Tools** tab and validate that both of your agent flows are in the list. If not, select **+ Add a tool** > **Workflows** > and select the missing agent flow. Select **Add and configure**.
 
 ### Task 2.3 - Add the Create Booking Request tool to the topic
 
