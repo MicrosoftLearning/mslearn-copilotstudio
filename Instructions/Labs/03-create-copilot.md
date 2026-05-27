@@ -51,7 +51,9 @@ In this exercise, you will access the Microsoft Copilot Studio portal, select th
 
 1. Select **Agents** in the left navigation.
 
-1. Select the arrow next to **Create blank agent** \> **Advanced create**.
+1. Select the arrow next to **Create blank agent** \> **Agent Settings**.
+
+1. In the **Name** text box, enter **`Real Estate Booking Service`**
 
 1. Validate that the **Solution** is defaulted to **Bookings**.
 
@@ -64,8 +66,6 @@ Your agent will begin setting up. Once provisioned, you may proceed with configu
 ### Task 1.2 – Configure agent details and instructions
 
 1. In the **Details** section, select **Edit**
-
-1. In the **Name** text box, enter **`Real Estate Booking Service`**
 
 1. In the **Description** text box, enter **`Create bookings for real estate properties`**
 
