@@ -46,103 +46,11 @@ This exercise will take approximately **45** minutes to complete.
 
 When generative AI is enabled, the agent can use tools to perform actions in external systems, retrieve data, and send messages.
 
-## Exercise 1 - Create a Power Platform environment
-
-### Task 1.1 - Power Platform Admin Center
-
-Before you start the lab exercises, you must create a development environment for you to work in.
-
-1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/manage/environments`, and sign in using your credentials for this exercise.
-
-1. If prompted, choose the option to stay signed in.
-
-1. Close any pop-up messages.
-
-### Task 1.2 - Add Dataverse to the default environment
-
-1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
-
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
-
-1. Leave all of the default settings and select **Add**.
-
-### Task 1.3 - Create a new environment
-
-1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
-
-   - **Type**: Developer
-   - **Region**: default region
-   - **Name**: *Your name*
-   - **Environment group**: None
-   - **Make this a Managed Environment**: No
-   - **Get new features early**: No
-   - **Create on behalf**: No
-
-   ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
-
-1. Select **Next** and in the **Add Dataverse** section:
-
-   - **Language**: English (United States)
-   - **Currency**: USD ($)
-   - **Deploy sample apps and data**: No
-
-1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
-
-   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
-
-1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
-
-1. Select **Get Started**, if prompted, leaving the default country/region.
-
-1. Skip any welcome messages.
-
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created above from the list.
-
-   ![Select your environment in the Copilot Studio.](../media/select-environment.png)
-
-### Task 1.4 - Create a solution
-
-1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
-
-1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
-
-   ![List of solutions in Maker portal.](../media/solutions-list.png)
-
-1. Select **+ New solution**.
-
-1. In the **Display name** text box, enter **`Lab Exercises`**
-
-1. Verify that **Name** is automatically populated.
-
-1. Select **+ New publisher** below the **Publisher** drop-down.
-
-1. For **Display name**, enter `Fabrikam`
-
-1. For **Name**, enter `fabrikam`
-
-1. For **Prefix**, enter `fab`
-
-   ![New publisher.](../media/new-publisher.png)
-
-1. Select **Save**.
-
-1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
-
-1. Select the **Set as your preferred solution** checkbox.
-
-   ![New solution.](../media/new-solution.png)
-
-1. Select **Create**.
-
-1. Close the **Solutions** browser tab.
-
-1. Refresh the **Copilot Studio** page.
-
-## Exercise 2 - Create an agent
+## Exercise 1 - Create an agent
 
 In this exercise, you will create a new agent using natural language to analyze, categorize, and prioritize tasks.
 
-### Task 2.1 – Create an agent to analyze tasks
+### Task 1.1 – Create an agent to analyze tasks
 
 1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
@@ -170,11 +78,11 @@ In this exercise, you will create a new agent using natural language to analyze,
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
-## Exercise 3 - Create a workflow tool
+## Exercise 2 - Create a workflow tool
 
 In this exercise, you create a workflow that sends a message to Microsoft Teams. You will add this workflow to the agent.
 
-### Task 3.1 – Create the Send Message to Teams workflow
+### Task 2.1 – Create the Send Message to Teams workflow
 
 1. In Copilot Studio, select **Tools** in the left-hand navigation.
 
@@ -210,7 +118,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Save**.
 
-### Task 3.2 - Post to Teams action
+### Task 2.2 - Post to Teams action
 
 1. Select the **Designer** tab.
 
@@ -243,7 +151,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of Teams action in the workflow.](../media/workflow-teams-action.png)
 
-### Task 3.3 - Response action
+### Task 2.3 - Response action
 
 1. Select the **Respond to the agent** node in the authoring canvas and select **+ Add an output**.
 
@@ -261,7 +169,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. In Copilot Studio, select **Tools** in the left-hand navigation to verify the workflow status is **Ready**.
 
-### Task 3.4 - Add workflow as a tool to the agent
+### Task 2.4 - Add workflow as a tool to the agent
 
 1. Select **Agents** from the left navigation pane.
 
@@ -296,7 +204,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Save**.
 
-### Task 3.5 - Update agent instructions
+### Task 2.5 - Update agent instructions
 
 1. Select the **Overview** tab.
 
@@ -308,7 +216,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Save**.
 
-### Task 3.6 - Test the workflow tool in the agent
+### Task 2.6 - Test the workflow tool in the agent
 
 1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
@@ -332,11 +240,11 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of the message in Teams.](../media/workflow-test-agent-teams.png)
 
-## Exercise 4 - Create a workflow tool that analyzes an Excel file in a topic
+## Exercise 3 - Create a workflow tool that analyzes an Excel file in a topic
 
 In this exercise, you will use Copilot to create a topic from a description, a workflow tool that analyzes the tasks in an Excel file, and call this tool from a topic.
 
-### Task 4.1 - Create an Excel file
+### Task 3.1 - Create an Excel file
 
 1. In Copilot Studio, select the **App launcher** icon in the upper-left corner, then select **OneDrive**.
 
@@ -413,7 +321,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Close the OneDrive browser tab.
 
-### Task 4.2 – Create the Analyze Excel tasks workflow
+### Task 3.2 – Create the Analyze Excel tasks workflow
 
 1. In Copilot Studio, in the left-hand navigation, select **Tools**.
 
@@ -485,7 +393,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Tools** in the left-hand navigation to verify the workflow status is **Ready**.
 
-### Task 4.3 – Add a topic to the agent
+### Task 3.3 – Add a topic to the agent
 
 1. Select **Agents** from the left navigation pane.
 
@@ -511,7 +419,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Save**.
 
-### Task 4.4 - Add workflow as a tool
+### Task 3.4 - Add workflow as a tool
 
 1. Select **Agents** from the left navigation pane.
 
@@ -544,7 +452,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Save**.
 
-### Task 4.5 - Add workflow tool to the topic
+### Task 3.5 - Add workflow tool to the topic
 
 1. Select the **Topics** tab.
 
@@ -556,7 +464,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Save**.
 
-### Task 4.6 - Update agent instructions with the topic
+### Task 3.6 - Update agent instructions with the topic
 
 1. Select the **Overview** tab.
 
@@ -566,7 +474,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Save**.
 
-### Task 4.7 - Test the workflow tools
+### Task 3.7 - Test the workflow tools
 
 1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
