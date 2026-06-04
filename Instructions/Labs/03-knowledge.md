@@ -49,103 +49,11 @@ This exercise will take approximately **60** minutes to complete.
 
 When generative AI is enabled, the agent uses instructions, knowledge, and tools to answer questions dynamically. There are multiple types of knowledge that can be used to ground the agent and several settings that affect how generative AI is used by the agent that affect the responses.
 
-## Exercise 1 - Create a Power Platform environment
-
-### Task 1.1 - Power Platform Admin Center
-
-Before you start the lab exercises, you must create a development environment for you to work in.
-
-1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/manage/environments`, and sign in using your credentials for this exercise.
-
-1. If prompted, choose the option to stay signed in.
-
-1. Close any pop-up messages that are displayed.
-
-### Task 1.2 - Add Dataverse to the default environment
-
-1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
-
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
-
-1. Leave all of the default settings and select **Add**.
-
-### Task 1.3 - Create a new environment
-
-1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
-
-   - **Type**: Developer
-   - **Region**: default region
-   - **Name**: *Your name*
-   - **Environment group**: None
-   - **Make this a Managed Environment**: No
-   - **Get new features early**: No
-   - **Create on behalf**: No
-
-   ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
-
-1. Select **Next** and in the **Add Dataverse** section:
-
-   - **Language**: English (United States)
-   - **Currency**: USD ($)
-   - **Deploy sample apps and data**: No
-
-1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
-
-   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
-
-1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
-
-1. Select **Get Started**, if prompted, leaving the default country/region.
-
-1. Skip any welcome messages.
-
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created above from the list.
-
-   ![Select your environment in the Copilot Studio.](../media/select-environment.png)
-
-### Task 1.4 - Create a solution
-
-1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
-
-1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
-
-   ![List of solutions in Maker portal.](../media/solutions-list.png)
-
-1. Select **+ New solution**.
-
-1. In the **Display name** text box, enter **`Lab Exercises`**
-
-1. Verify that **Name** is automatically populated.
-
-1. Select **+ New publisher** below the **Publisher** drop-down.
-
-1. For **Display name**, enter `Fabrikam`
-
-1. For **Name**, enter `fabrikam`
-
-1. For **Prefix**, enter `fab`
-
-   ![New publisher.](../media/new-publisher.png)
-
-1. Select **Save**.
-
-1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
-
-1. Select the **Set as your preferred solution** checkbox.
-
-   ![New solution.](../media/new-solution.png)
-
-1. Select **Create**.
-
-1. Close the **Solutions** browser tab.
-
-1. Refresh the **Copilot Studio** page.
-
-## Exercise 2 - Create a table in Dataverse
+## Exercise 1 - Create a table in Dataverse
 
 In this exercise, you will create a Dataverse table that will be used as a knowledge source by an agent.
 
-### Task 2.1 – Create a table for expense claims
+### Task 1.1 – Create a table for expense claims
 
 1. In a web browser, navigate to **Power Apps Maker portal** at `https://make.powerapps.com/` and sign in if prompted. Skip any welcome messages.
 
@@ -177,11 +85,11 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
 1. Select **Save and exit** and select **Save and exit** again.
 
-## Exercise 3 - Create an agent
+## Exercise 2 - Create an agent
 
 In this exercise, you will create a new agent using natural language to answer questions about expense policies in a fictional corporation.
 
-### Task 3.1 – Create an agent for expense claims
+### Task 2.1 – Create an agent for expense claims
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
@@ -211,11 +119,11 @@ In this exercise, you will create a new agent using natural language to answer q
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
-## Exercise 4 - Ground the agent with knowledge
+## Exercise 3 - Ground the agent with knowledge
 
 In this exercise, you will add knowledge sources to the agent to ground the agent.
 
-### Task 4.1 – Add a document as a knowledge source
+### Task 3.1 – Add a document as a knowledge source
 
 1. Open a new browser tab and navigate to `https://github.com/MicrosoftLearning/mslearn-copilotstudio/raw/main/expenses/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-copilotstudio/main/expenses/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional corporation.
 
@@ -236,7 +144,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
    > [!NOTE]
    > After uploading the file, Copilot Studio begins indexing. This may take 10 minutes or longer, so you will check back after the next exercise.
 
-### Task 4.2 – Add a public website as a knowledge source
+### Task 3.2 – Add a public website as a knowledge source
 
 1. In the Copilot Studio agent, select the **Knowledge** tab.
 
@@ -254,7 +162,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. Select **Add to agent**.
 
-### Task 4.3 – Add a Dataverse table as a knowledge source
+### Task 3.3 – Add a Dataverse table as a knowledge source
 
 1. In the Copilot Studio agent, select the **Knowledge** tab.
 
@@ -270,7 +178,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
    ![Screenshot of all knowledge sources for your agent in Copilot Studio.](../media/knowledge-added.png)
 
-### Task 4.4 – Configure the Dataverse knowledge source
+### Task 3.4 – Configure the Dataverse knowledge source
 
 1. In the Copilot Studio agent, select the **Knowledge** tab.
 
@@ -300,7 +208,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. Select **Save**.
 
-### Task 4.5 – Check in on your file indexing
+### Task 3.5 – Check in on your file indexing
 
 Let's see if the file you uploaded is finished indexing. If it is not, take a coffee break and check back in every few minutes.
 
@@ -308,7 +216,7 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
 1. Check on the **Status** of your file upload. If it is still **In progress**, refresh every few minutes until it is **Ready**.
 
-### Task 4.6 - Test grounding
+### Task 3.6 - Test grounding
 
 1. Select the **Test** icon in the upper-right of the page to open the testing pane.
 
@@ -346,11 +254,11 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
    ![Screenshot of the conversation.](../media/knowledge-conversation-3.png)
 
-## Exercise 5 - Generative AI settings
+## Exercise 4 - Generative AI settings
 
 In this exercise you will configure generative AI for the agent and for the generative answers node.
 
-### Task 5.1 – Configure agent knowledge settings
+### Task 4.1 – Configure agent knowledge settings
 
 1. In the upper-right of the agent page, select the **Settings** button.
 
@@ -368,7 +276,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Test the agent using the prompts from the previous exercise. The file and Dataverse knowledge sources will be used but the public website will not be used when generating a response.
 
-### Task 5.2 – Configure generative answers node
+### Task 4.2 – Configure generative answers node
 
 1. Select the **Topics** tab.
 
@@ -410,7 +318,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
    ![Screenshot of the conversation in the Conversational Boosting topic.](../media/knowledge-conversation-4.png)
 
-### Task 5.3 – Fallback topic
+### Task 4.3 – Fallback topic
 
 1. Select the **Topics** tab.
 
@@ -442,11 +350,11 @@ In this exercise you will configure generative AI for the agent and for the gene
 
    ![Screenshot of the conversation using the Fallback topic.](../media/knowledge-conversation-5.png)
 
-## Exercise 6 - Publish the agent to Microsoft Teams
+## Exercise 5 - Publish the agent to Microsoft Teams
 
 In this exercise, you will publish the agent to Microsoft Teams, first ensuring that Microsoft Entra ID authentication is enabled.
 
-### Task 6.1 - Microsoft Entra ID authentication
+### Task 5.1 - Microsoft Entra ID authentication
 
 1. In the upper-right of the agent page, select the **Settings** button.
 
@@ -460,11 +368,11 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. In the upper-right of the **Settings** page, select **X** to close settings.
 
-### Task 6.2 - Publish the agent
+### Task 5.2 - Publish the agent
 
 1. On the agent page, select **Publish** and select **Publish** again to confirm.
 
-### Task 6.3 - Microsoft Teams channel
+### Task 5.3 - Microsoft Teams channel
 
 1. Select the **Channels** tab.
 
