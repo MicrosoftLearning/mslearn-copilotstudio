@@ -57,103 +57,11 @@ Topics are used when you need to:
 - Store responses in variables
 - Ensure predictable outcomes
 
-## Exercise 1 - Create a Power Platform environment
-
-### Task 1.1 - Power Platform Admin Center
-
-Before you start the lab exercises, you must create a development environment for you to work in.
-
-1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/manage/environments`, and sign in using your credentials for this exercise.
-
-1. If prompted, choose the option to stay signed in.
-
-1. Close any pop-up messages that are displayed.
-
-### Task 1.2 - Add Dataverse to the default environment
-
-1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
-
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
-
-1. Leave all of the default settings and select **Add**.
-
-### Task 1.3 - Create a new environment
-
-1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
-
-   - **Type**: Developer
-   - **Region**: default region
-   - **Name**: *Your name*
-   - **Environment group**: None
-   - **Make this a Managed Environment**: No
-   - **Get new features early**: No
-   - **Create on behalf**: No
-
-   ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
-
-1. Select **Next** and in the **Add Dataverse** section:
-
-   - **Language**: English (United States)
-   - **Currency**: USD ($)
-   - **Deploy sample apps and data**: No
-
-1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
-
-   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
-
-1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
-
-1. Select **Get Started**, if prompted leaving the default country/region.
-
-1. Skip any welcome messages.
-
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created above from the list.
-
-   ![Select your environment in the Copilot Studio.](../media/select-environment.png)
-
-### Task 1.4 - Create a solution
-
-1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
-
-1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
-
-   ![List of solutions in Maker portal.](../media/solutions-list.png)
-
-1. Select **+ New solution**.
-
-1. In the **Display name** text box, enter **`Lab Exercises`**
-
-1. Verify that **Name** is automatically populated.
-
-1. Select **+ New publisher** below the **Publisher** drop-down.
-
-1. For **Display name**, enter `Fabrikam`
-
-1. For **Name**, enter `fabrikam`
-
-1. For **Prefix**, enter `fab`
-
-   ![New publisher.](../media/new-publisher.png)
-
-1. Select **Save**.
-
-1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
-
-1. Select the **Set as your preferred solution** checkbox.
-
-   ![New solution.](../media/new-solution.png)
-
-1. Select **Create**.
-
-1. Close the **Solutions** browser tab.
-
-1. Refresh the **Copilot Studio** page.
-
-## Exercise 2 - Create an agent
+## Exercise 1 - Create an agent
 
 In this exercise, you will create a new agent using natural language to answer questions about government benefits.
 
-### Task 2.1 – Create an agent to review insurance claims
+### Task 1.1 – Create an agent to review insurance claims
 
 1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
@@ -181,11 +89,11 @@ In this exercise, you will create a new agent using natural language to answer q
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
-## Exercise 3 - Manage topics
+## Exercise 2 - Manage topics
 
 In this exercise, you will disable the Escalate system topic as the agent will not have human representatives to hand-off to.
 
-### Task 3.1 – Disable topics
+### Task 2.1 – Disable topics
 
 1. Select the **Topics** tab.
 
@@ -199,11 +107,11 @@ In this exercise, you will disable the Escalate system topic as the agent will n
 
 Disabling unused topics helps reduce ambiguity when multiple topics or generative responses could handle the same request.
 
-## Exercise 4 - Create a topic with natural language
+## Exercise 3 - Create a topic with natural language
 
 In this exercise, you will use Copilot to create a topic from a description. This allows generative AI to draft the initial structure, which you can then refine.
 
-### Task 4.1 – Add a topic from description
+### Task 3.1 – Add a topic from description
 
 1. Select **+ Add a topic** and select **Add from description with Copilot**. A new dialog appears.
 
@@ -219,7 +127,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 1. Select **Save**.
 
-### Task 4.2 – Edit nodes using natural language
+### Task 3.2 – Edit nodes using natural language
 
 1. If the **Test your agent** panel is open, close the panel.
 
@@ -246,7 +154,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 1. Select **Save**.
 
-### Task 4.3 – Add an adaptive card node using natural language
+### Task 3.3 – Add an adaptive card node using natural language
 
 In addition to adding updating existing nodes, you can use Copilot to add new ones.
 
@@ -301,7 +209,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
    }
    ```
 
-### Task 4.4 – Add a question node using natural language
+### Task 3.4 – Add a question node using natural language
 
 1. Make sure that no node is selected by selecting the empty space in the authoring canvas.
 
@@ -319,11 +227,11 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
 1. Select **Save**.
 
-## Exercise 5 - Variable scope
+## Exercise 4 - Variable scope
 
 Enable variables to be accessed by other topics.
 
-### Task 5.1 - Configure the scope of the variables
+### Task 4.1 - Configure the scope of the variables
 
 1. Select the **Topics** tab.
 
@@ -339,11 +247,11 @@ Enable variables to be accessed by other topics.
 
 1. Select **Save**.
 
-## Exercise 6 - Create a topic from blank
+## Exercise 5 - Create a topic from blank
 
 In this exercise, you will create the **Estimate Repair** topic, add nodes, and call the Customer Details topic.
 
-### Task 6.1 - Create a topic from blank
+### Task 5.1 - Create a topic from blank
 
 1. Select the **Topics** tab.
 
@@ -363,14 +271,14 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-### Task 6.2 - Verify trigger type
+### Task 5.2 - Verify trigger type
 
 1. Select the **Trigger** node at the top of the topic. Confirm the trigger type is set to **The agent chooses**.
 
    > [!NOTE]
    > With generative orchestration enabled, the agent uses this description to decide when to use the topic.
 
-### Task 6.3 - Add a message node
+### Task 5.3 - Add a message node
 
 1. Select the **+** icon under the Trigger node and select **Send a message**.
 
@@ -382,7 +290,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-### Task 6.4 - Route to the Customer Details topic
+### Task 5.4 - Route to the Customer Details topic
 
 1. Select the **+** icon under the **Message** node
 
@@ -392,7 +300,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-### Task 6.5 - Add condition node
+### Task 5.5 - Add condition node
 
 1. Select the **+** icon under the **Topic** node and select **Add a condition**.
 
@@ -406,7 +314,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-### Task 6.6 - Add question nodes
+### Task 5.6 - Add question nodes
 
 1. Select the **+** icon under the left **Condition** node and select **Ask a question**.
 
@@ -428,7 +336,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-### Task 6.7 - Update agent instructions
+### Task 5.7 - Update agent instructions
 
 1. Select the **Overview** tab.
 
@@ -440,11 +348,11 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-## Exercise 7 - Test the agent
+## Exercise 6 - Test the agent
 
 In this exercise, you will test topic routing and confirm the conversation follows the expected step-by-step flow.
 
-### Task 7.1 - Test the Book Showing topic
+### Task 6.1 - Test the Book Showing topic
 
 1. Select the **Test** icon in the upper-right of the page to open the **Test** pane.
 
