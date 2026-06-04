@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Workflow tools in Copilot Studio agents
+  title: Create workflows in Copilot Studio agents
   module: Incorporate workflows to enhance agent behavior
   description: In this lab, you will use Copilot to create an agent, create workflows, and add workflows as tools to the agent and to a topic.
   duration: 45 minutes
@@ -10,7 +10,7 @@ lab:
     - Microsoft Copilot Studio
 ---
 
-# Workflow tools in Copilot Studio agents
+# Create workflows in Copilot Studio agents
 
 ## Scenario
 
