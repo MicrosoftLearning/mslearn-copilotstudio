@@ -50,103 +50,11 @@ This exercise will take approximately **45** minutes to complete.
 
 When generative AI is enabled, the agent uses instructions, knowledge, and tools to answer questions dynamically.
 
-## Exercise 1 - Create a Power Platform environment
-
-### Task 1.1 - Power Platform Admin Center
-
-Before you start the lab exercises, you must create a development environment for you to work in.
-
-1. Open a web browser, navigate to `https://admin.powerplatform.microsoft.com/manage/environments`, and sign in using your credentials for this exercise.
-
-1. If prompted, choose the option to stay signed in.
-
-1. Close any pop-up messages that are displayed.
-
-### Task 1.2 - Add Dataverse to the default environment
-
-1. Select the ellipses (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
-
-   ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
-
-1. Leave all of the default settings and select **Add**.
-
-### Task 1.3 - Create a new environment
-
-1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
-
-   - **Type**: Developer
-   - **Region**: default region
-   - **Name**: *Your name*
-   - **Environment group**: None
-   - **Make this a Managed Environment**: No
-   - **Get new features early**: No
-   - **Create on behalf**: No
-
-   ![Create an environment in the Power Platform Admin center.](../media/create-environment.png)
-
-1. Select **Next** and in the **Add Dataverse** section:
-
-   - **Language**: English (United States)
-   - **Currency**: USD ($)
-   - **Deploy sample apps and data**: No
-
-1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
-
-   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
-
-1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
-
-1. Select **Get Started**, if prompted leaving the default country/region.
-
-1. Skip any welcome messages.
-
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created above from the list.
-
-   ![Select your environment in the Copilot Studio.](../media/select-environment.png)
-
-### Task 1.4 - Create a solution
-
-1. In the left navigation pane, select the ellipses (**...**), and select **Solutions**.
-
-1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
-
-   ![List of solutions in Maker portal.](../media/solutions-list.png)
-
-1. Select **+ New solution**.
-
-1. In the **Display name** text box, enter **`Lab Exercises`**
-
-1. Verify that **Name** is automatically populated.
-
-1. Select **+ New publisher** below the **Publisher** drop-down.
-
-1. For **Display name**, enter `Fabrikam`
-
-1. For **Name**, enter `fabrikam`
-
-1. For **Prefix**, enter `fab`
-
-   ![New publisher.](../media/new-publisher.png)
-
-1. Select **Save**.
-
-1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
-
-1. Select the **Set as your preferred solution** checkbox.
-
-   ![New solution.](../media/new-solution.png)
-
-1. Select **Create**.
-
-1. Close the **Solutions** browser tab.
-
-1. Refresh the **Copilot Studio** page.
-
-## Exercise 2 - Create an agent from a template
+## Exercise 1 - Create an agent from a template
 
 In this exercise, you will create an agent by using a template to create the agent, and then test the agent.
 
-### Task 2.1 – Create an agent from the Safe Travels template
+### Task 1.1 – Create an agent from the Safe Travels template
 
 1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, select **Agents** in the left-hand navigation.
 
@@ -178,7 +86,7 @@ In this exercise, you will create an agent by using a template to create the age
 
 1. In the drop-down in the upper-left of the page that is showing Conversation Start, select the custom **What can I ask** topic.
 
-### Task 2.2 – Test the agent
+### Task 1.2 – Test the agent
 
 1. If the **Test** pane is not visible, select the **Test** icon in the upper-right of the page.
 
@@ -224,11 +132,11 @@ In this exercise, you will create an agent by using a template to create the age
 
 1. Select **Agents** in the left-hand navigation. The **Safe Travels** agent should be listed.
 
-## Exercise 3 - Create an agent using Copilot
+## Exercise 2 - Create an agent using Copilot
 
 In this exercise, you will create a new agent using natural language to answer questions about government benefits.
 
-### Task 3.1 – Create an agent to answer questions about government benefits
+### Task 2.1 – Create an agent to answer questions about government benefits
 
 1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
 
@@ -260,7 +168,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
-### Task 3.2 – Configure the Overview tab
+### Task 2.2 – Configure the Overview tab
 
 1. Select the **Overview** tab for the agent.
 
@@ -295,7 +203,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Save**.
 
-### Task 3.3 – Add a public website as a knowledge source
+### Task 2.3 – Add a public website as a knowledge source
 
 1. Select the **Knowledge** tab.
 
@@ -315,7 +223,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Add to agent**.
 
-### Task 3.4 – Agent settings
+### Task 2.4 – Agent settings
 
 1. In the upper-right of the page, select the **Settings** button.
 
@@ -344,7 +252,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. In the upper-right of the **Settings** page, select **X** to close settings.
 
-### Task 3.5 – Test the agent
+### Task 2.5 – Test the agent
 
 1. If the **Test** pane is not visible, select the **Test** icon in the upper-right of the page.
 
@@ -366,7 +274,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Close the **Test** pane.
 
-### Task 3.6 – Publish the agent to the Demo website
+### Task 2.6 – Publish the agent to the Demo website
 
 1. In the action bar of the agent, select the **Publish** button and select **Publish** again.
 
