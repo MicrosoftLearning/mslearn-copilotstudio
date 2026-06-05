@@ -30,7 +30,7 @@ This exercise will take approximately **45** minutes to complete.
 - How to create an agent from a template
 - How to create an agent using natural language
 - How agent instructions influence generative behavior
-- How Generative AI answers work with configured knowledge
+- How Generative AI answers use configured knowledge sources
 - How to publish an agent to Microsoft Teams
 
 ## High-level lab steps
@@ -40,15 +40,22 @@ This exercise will take approximately **45** minutes to complete.
 - Define agent behavior using instructions
 - Add Generative AI knowledge sources
 - Publish the agent
-  
-## Prerequisites
-
-- Have a Microsoft Entra Id account
-- Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 
 ## Key concept: Agent components and behavior
 
-When generative AI is enabled, the agent uses instructions, knowledge, and tools to answer questions dynamically.
+When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically.
+
+## Prerequisites
+- Have a Microsoft Entra ID account
+- Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
+- Have access to a Power Platform environment and a solution where you can create agents and related assets.
+- You can use:
+  - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
+  - your own existing environment and solution.
+- If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
+  
+> [!IMPORTANT]
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
 
 ## Exercise 1 - Create an agent from a template
 
@@ -57,6 +64,8 @@ In this exercise, you will create an agent by using a template to create the age
 ### Task 1.1 – Create an agent from the Safe Travels template
 
 1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, select **Agents** in the left-hand navigation.
+
+1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Under **Start with an agent template** section, select the **Safe Travels** template.
 
@@ -110,11 +119,11 @@ In this exercise, you will create an agent by using a template to create the age
    What can I ask?
    ```
 
-   The **What Can I Ask** topic should be selected, and three options should be provided in the response.
+   The **What Can I Ask** topic should be triggered and present several prompt options to continue the conversation.
 
 1. Select the **How do I get a passport?** option.
 
-   The **Conversational boosting** topic should be selected, and the response is provided from the public website knowledge source with references listed.
+   The response should be generated using the configured knowledge source and may reference the Conversational boosting system topic.
 
    ![Screenshot of the test pane.](../media/safe-travels-test.png)
 
@@ -127,8 +136,7 @@ In this exercise, you will create an agent by using a template to create the age
    The **Fallback** topic should be selected, and agent should ask you to try rephrasing.
 
 1. Repeat the same prompt twice more.
-
-   The agent should redirect to the **Escalate** topic.
+  Depending on your environment and orchestration behavior, the agent may trigger the Fallback or Escalate system topics.
 
 1. Select **Agents** in the left-hand navigation. The **Safe Travels** agent should be listed.
 
@@ -157,7 +165,7 @@ In this exercise, you will create a new agent using natural language to answer q
 1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
 
    ```prompt
-   You are an agent that assists with questions related claiming US government benefits.
+   You are an agent that assists with questions related to claiming US government benefits.
    ```
 
 1. Select the **Send** icon.
@@ -180,7 +188,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Save**.
 
-1. In the **Select your agent's model** section, select **GPT-5 Auto (Preview)**.
+1. In the **Select your agent's model** section, select **GPT-5 Auto (Preview)**, if available. Otherwise, select the default recommended GPT model.
 
 1. In the **Instructions** section, select **Edit**.
 
@@ -223,6 +231,9 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Add to agent**.
 
+   > [!NOTE]
+   > Public website indexing may take several minutes. If responses are incomplete, wait a few minutes and test the agent again.
+
 ### Task 2.4 – Agent settings
 
 1. In the upper-right of the page, select the **Settings** button.
@@ -246,7 +257,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Authentication**.
 
-1. Select **No authentication**.
+1. Select **No authentication** for this lab scenario to simplify testing in the Demo website channel.
 
 1. Select **Save** and select **Save** again.
 
@@ -282,7 +293,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
    ![Screenshot of Channels in Copilot Studio.](../media/channels-tab.png)
 
-1. Select the **Demo website** channel. This is an appropriate channel for users to test your agent.
+1. Select the **Demo website** channel. This channel is useful for quickly testing and previewing your agent experience.
 
 1. In the **Demo Website** pane, enter the following settings:
 
@@ -305,7 +316,7 @@ In this exercise, you will create a new agent using natural language to answer q
    What welfare and assistance can I claim for?
    ```
 
-   The response should be based on the information in the knowledge source you added, and include a citation reference.
+   The response should reference information from the configured knowledge source and may include citations or source references.
 
 1. Try a few more questions and view the responses from your agent. It will have limited functionality, but should be able to provide relevant answers to questions about benefits.
 
