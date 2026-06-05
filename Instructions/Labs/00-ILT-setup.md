@@ -2,7 +2,7 @@
 lab:
   title: ILT Setup
   module: Introduction
-  description: In this exercise, you will access the Microsoft Copilot Studio portal and create an environment and solution to complete the proceeding labs in.
+  description: In this exercise, you will access the Microsoft Copilot Studio portal and create an environment and solution to use throughout the remaining labs.
   duration: 10 minutes
   level: 200
   islab: true
