@@ -40,15 +40,24 @@ This exercise will take approximately **45** minutes to complete.
 - Create a topic using Copilot
 - Edit topic content using natural language
 - Test topic behavior
-  
+
 ## Prerequisites
 
-- Have a Microsoft Entra Id account
+- Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
+- Have access to a Power Platform environment and a solution where you can create agents and related assets.
+- You can use:
+  - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
+  - your own existing environment and solution.
+- If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
+  
+> [!IMPORTANT]
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
 
-## Key concept: Topics and generative AI
 
-When generative AI is enabled, the agent may answer questions dynamically without triggering a topic. This is expected behavior.
+## Key concept: Agent components and behavior
+
+When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically.
 
 Topics are used when you need to:
 
