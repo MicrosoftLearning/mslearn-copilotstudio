@@ -53,15 +53,18 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
 
+   > [!NOTE]
+   > Environment provisioning can take several minutes depending on tenant configuration.
+
    ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
 1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
 
-1. Select **Get Started**, if prompted leaving the default country/region.
+1. If prompted, select **Get Started** and keep the default country or region settings.
 
 1. Skip any welcome messages.
 
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created above from the list.
+1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created.
 
    ![Select your environment in the Copilot Studio.](../media/select-environment.png)
 
@@ -95,6 +98,9 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Select the **Set as your preferred solution** checkbox.
 
+   > [!NOTE]
+   > Setting this as your preferred solution ensures new assets created during later labs are added to the Lab Exercises solution by default.
+
    ![New solution.](../media/new-solution.png)
 
 1. Select **Create**.
@@ -102,3 +108,5 @@ Before you start the lab exercises, you must create a development environment fo
 1. Close the **Solutions** browser tab.
 
 1. Refresh the **Copilot Studio** page.
+
+You now have a Power Platform environment and solution to work in.
