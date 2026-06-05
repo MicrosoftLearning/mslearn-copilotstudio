@@ -21,8 +21,8 @@ In this exercise, you will:
 - Upload a file to use as a knowledge source
 - Add a public website as a knowledge source
 - Add the Dataverse table as a knowledge source
-- Configure generative AI settings
-- Configure the generative answers node
+- Configure generative orchestration settings
+- Configure the Create generative answers node
 - Publish the agent to Microsoft Teams
 
 This exercise will take approximately **60** minutes to complete.
@@ -30,7 +30,7 @@ This exercise will take approximately **60** minutes to complete.
 ## What you will learn
 
 - How to add knowledge sources to an agent
-- How to configure generative AI for the agent and for topics
+- How to configure generative orchestration and generative answers behavior
 
 ## High-level lab steps
 
@@ -55,7 +55,7 @@ This exercise will take approximately **60** minutes to complete.
 
 ## Key concept: Agent components and behavior
 
-When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically. There are multiple types of knowledge that can be used to ground the agent and several settings that affect how generative AI is used by the agent that affect the responses.
+When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically. Multiple types of knowledge sources can be used to ground an agent, and several settings influence how generative responses are generated.
 
 ## Exercise 1 - Create a table in Dataverse
 
@@ -65,7 +65,7 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
 1. In a web browser, navigate to **Power Apps Maker portal** at `https://make.powerapps.com/` and sign in if prompted. Skip any welcome messages.
 
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created above from the list.
+1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
    ![Select your environment in the Maker portal.](../media/select-powerapps-environment.png)
 
@@ -86,6 +86,9 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
    ```
 
 1. Select **Generate**.
+  
+    > [!NOTE]
+    > The generated table schema may vary slightly from the screenshot shown in this lab. Minor differences in column naming or formatting are expected.
 
 1. A table will be created. Make a note of the name of the table.
 
@@ -101,7 +104,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
-1. Make sure that you are in the environment that you created.
+1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
@@ -111,7 +114,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
-1. In the **Solution** drop-down, select **Lab Exercises**.
+1. In the **Solution** drop-down, select **Lab Exercises** or another solution you want to use for this exercise.
 
 1. Enter `expenseagent` for the *Schema name*.
 
@@ -137,7 +140,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. Return to the **Copilot Studio** browser tab with the agent you created in Exercise 3.
 
-1. Select the **Knowledge** tab to see the knowledge sources defined in your agent (currently there should be none).
+1. Select the **Knowledge** tab to verify the knowledge sources defined in your agent (currently there should be none).
 
    ![Screenshot of the Knowledge page in Copilot Studio.](../media/knowledge-page.png)
 
@@ -149,8 +152,8 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
    ![Screenshot of adding the Expenses policy document as knowledge to your agent in Copilot Studio.](../media/knowledge-add-file.png)
 
-   > [!NOTE]
-   > After uploading the file, Copilot Studio begins indexing. This may take 10 minutes or longer, so you will check back after the next exercise.
+> [!NOTE]
+> After uploading the file, Copilot Studio begins indexing. This may take 10 minutes or longer, so you will check back after the next exercise.
 
 ### Task 3.2 – Add a public website as a knowledge source
 
@@ -169,6 +172,8 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 1. For *Description*, enter `This knowledge source contains information on reimbursement of travel expenses.`.
 
 1. Select **Add to agent**.
+> [!NOTE]
+> Public website indexing may take several minutes. If responses are incomplete, wait a few minutes and test the agent again.
 
 ### Task 3.3 – Add a Dataverse table as a knowledge source
 
@@ -218,7 +223,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 ### Task 3.5 – Check in on your file indexing
 
-Let's see if the file you uploaded is finished indexing. If it is not, take a coffee break and check back in every few minutes.
+Check whether the uploaded file has completed indexing. If indexing is still in progress, wait a few minutes and refresh the page before continuing.
 
 1. Select the **Knowledge** tab.
 
@@ -238,7 +243,7 @@ Let's see if the file you uploaded is finished indexing. If it is not, take a co
 
    `What can I claim for expenses?`
 
-1. The agent should search all the knowledge sources and generate a response using the uploaded expense policy document.
+1. The response should be grounded using the uploaded expense policy document and may also reference other configured knowledge sources.
 
    ![Screenshot of the conversation.](../media/knowledge-conversation-1.png)
 
@@ -305,7 +310,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 1. Select the **Public website** knowledge source.
 
 1. Select and enable **Web search**.
-
+  When enabled, Web search allows generative answers to supplement configured knowledge sources with public web information.
    ![Screenshot of generative answers properties.](../media/generative-answers-properties.png)
 
 1. Select **Save**.
@@ -354,7 +359,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
    `What is the federal per diem rate?`
 
-1. The knowledge sources and generative answers will not provide an answer. The **Fallback** topic will be triggered.
+1. The knowledge sources and generative answers will not provide an answer. If no suitable grounded or generative response is available, the conversation may route to the Fallback topic.
 
    ![Screenshot of the conversation using the Fallback topic.](../media/knowledge-conversation-5.png)
 
@@ -381,6 +386,8 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 1. On the agent page, select **Publish** and select **Publish** again to confirm.
 
 ### Task 5.3 - Microsoft Teams channel
+> [!NOTE]
+> Publishing to Teams in this lab is intended for testing and learning purposes. Production deployments may require additional governance, security, and app approval processes.
 
 1. Select the **Channels** tab.
 
@@ -406,7 +413,7 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. Select **Open** and wait for the agent to load in Teams.
 
-1. Test the agent.
+1. Test the published agent in Microsoft Teams.
 
     ![Screenshot of the agent in Teams.](../media/channel-teams-test.png)
 
