@@ -41,10 +41,6 @@ This exercise will take approximately **45** minutes to complete.
 - Add Generative AI knowledge sources
 - Publish the agent
 
-## Key concept: Agent components and behavior
-
-When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically.
-
 ## Prerequisites
 - Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
@@ -56,6 +52,10 @@ When generative orchestration is enabled, the agent can use instructions, knowle
   
 > [!IMPORTANT]
 > You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
+
+## Key concept: Agent components and behavior
+
+When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically.
 
 ## Exercise 1 - Create an agent from a template
 
