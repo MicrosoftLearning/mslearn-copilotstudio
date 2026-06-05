@@ -59,7 +59,7 @@ This exercise will take approximately **45** minutes to complete.
 
 When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically.
 
-Topics are used when you need to:
+Topics are especially useful when you need to:
 
 - Collect required information step by step
 - Control the order of questions
@@ -72,7 +72,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 1.1 – Create an agent to review insurance claims
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
@@ -82,7 +82,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
-1. In the **Solution** drop-down, select **Lab Exercises**.
+1. In the **Solution** drop-down, select **Lab Exercises** or another solution you want to use for this exercise.
 
 1. Enter `insuranceagent` for the *Schema name*.
 
@@ -100,7 +100,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ## Exercise 2 - Manage topics
 
-In this exercise, you will disable the Escalate system topic as the agent will not have human representatives to hand-off to.
+In this exercise, you will disable the Escalate system topic as the agent will not have human representatives to hand-off to. Disabling unused system topics helps reduce ambiguity when generative orchestration determines how to respond.
 
 ### Task 2.1 – Disable topics
 
@@ -159,13 +159,13 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
    ![Screenshot of the message updated to include the Name variable.](../media/message-updated-name-variable.png)
 
    > [!NOTE]
-   > The message should be updated to include the *Name* variable from the prior node, and should look similar to the screenshot above. If Edit with Copilot did not update the question node correctly, select **Undo**, and retry with a different prompt.
+   > The updated message should reference the **Name** variable collected in the previous question node and should look similar to the screenshot. If **Edit with Copilot** did not update the question node correctly, select **Undo**, and retry with a different prompt.
 
 1. Select **Save**.
 
 ### Task 3.3 – Add an adaptive card node using natural language
 
-In addition to adding updating existing nodes, you can use Copilot to add new ones.
+In addition to modifying existing nodes, you can use Copilot to add new ones.
 
 1. Select an empty area on the authoring canvas so no node is selected.
 
@@ -183,7 +183,7 @@ In addition to adding updating existing nodes, you can use Copilot to add new on
 
    ![Screenshot of the Adaptive Card properties.](../media/adaptive-card-properties.png)
 
-   Your Adaptive Card formula should look similar to the one above. If it doesn't, then you can paste in the formula below:
+   Your Adaptive Card formula should look similar to the one above. If your Adaptive Card differs significantly, you can replace it with this formula:
 
    ```powerfx
    {
@@ -250,7 +250,7 @@ Enable variables to be accessed by other topics.
 
 1. Select and expand **Topic** variables.
 
-1. Select the right-hand check boxes for the three topic variables. This enables the variables in this topic to be available for other topics to use.
+1. Select the right-hand check boxes for the three topic variables. This makes the variables available across other topics in the agent.
 
    ![Screenshot of the variables pane.](../media/variables-pane.png)
 
@@ -329,7 +329,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. In the **Enter a message** field, enter the following text:
 
-   `What date and time do you book the repair estimate?`
+   `What date and time would you like to book the repair estimate?`
 
 1. Select **Date and time** for **Identify**.
 
@@ -361,7 +361,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 In this exercise, you will test topic routing and confirm the conversation follows the expected step-by-step flow.
 
-### Task 6.1 - Test the Book Showing topic
+### Task 6.1 - Test the Estimate Repair topic
 
 1. Select the **Test** icon in the upper-right of the page to open the **Test** pane.
 
@@ -375,7 +375,7 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
    `I need to book a repair estimate`
 
-1. The agent should respond with the "What is your name?" question from the **Customer Details** topic.
+1. The conversation should begin by asking for the customer's name.
 
    ![Screenshot of the Conversation.](../media/topic-conversation-1.png)
 
@@ -385,7 +385,7 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 1. After you supply the information, an Adaptive Card displays the information that you entered and asks if the details are correct. Select **Yes**.
 
-   Notice that you were routed back to the **Estimate Repair** topic.
+   Notice that the conversation flow returns to the **Estimate Repair** topic.
 
 1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repair estimate?** prompt.
 
