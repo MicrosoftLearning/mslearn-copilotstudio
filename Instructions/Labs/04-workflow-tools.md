@@ -41,10 +41,18 @@ This exercise will take approximately **45** minutes to complete.
 
 - Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
+- Have access to a Power Platform environment and a solution where you can create agents and related assets.
+- You can use:
+  - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
+  - your own existing environment and solution.
+- If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
+  
+> [!IMPORTANT]
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
 
-## Key concept: Tools in agents
+## Key concept: Agent components and behavior
 
-When generative AI is enabled, the agent can use tools to perform actions in external systems, retrieve data, and send messages.
+When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically. The agent can use tools to perform actions in external systems, retrieve data, and send messages.
 
 ## Exercise 1 - Create an agent
 
