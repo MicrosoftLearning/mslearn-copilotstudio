@@ -54,7 +54,6 @@ This exercise will take approximately **45** minutes to complete.
 > [!IMPORTANT]
 > You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
 
-
 ## Key concept: Agent components and behavior
 
 When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically.
