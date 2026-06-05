@@ -26,7 +26,7 @@ This exercise will take approximately **45** minutes to complete.
 
 ## What you will learn
 
-- How to use workflows to perform deterministic actions in an agent
+- How workflows enable agents to perform deterministic actions
 - How to configure workflows as tools
 - How to use workflows in a topic
 
@@ -42,6 +42,7 @@ This exercise will take approximately **45** minutes to complete.
 - Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 - Have access to a Power Platform environment and a solution where you can create agents and related assets.
+- Have access to Microsoft Teams and permission to post messages to a Teams channel.
 - You can use:
   - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
   - your own existing environment and solution.
@@ -52,7 +53,7 @@ This exercise will take approximately **45** minutes to complete.
 
 ## Key concept: Agent components and behavior
 
-When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically. The agent can use tools to perform actions in external systems, retrieve data, and send messages.
+When generative orchestration is enabled, the agent can use instructions, knowledge, topics, and tools to generate responses dynamically. The agent can use tools to perform actions in external systems, retrieve data, and send messages. Tools are typically used for performing actions or retrieving external data, while topics guide structured conversational flows.
 
 ## Exercise 1 - Create an agent
 
@@ -60,7 +61,7 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 ### Task 1.1 – Create an agent to analyze tasks
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you created.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
@@ -70,7 +71,7 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
-1. In the **Solution** drop-down, select **Lab Exercises**.
+1. In the **Solution** drop-down, select **Lab Exercises** or another solution you want to use for this exercise.
 
 1. Enter `analyzetaskagent` for the *Schema name*.
 
@@ -89,6 +90,8 @@ In this exercise, you will create a new agent using natural language to analyze,
 ## Exercise 2 - Create a workflow tool
 
 In this exercise, you create a workflow that sends a message to Microsoft Teams. You will add this workflow to the agent.
+> [!NOTE]
+> Agent responses, orchestration behavior, and tool usage may vary slightly from the screenshots shown in this lab depending on your tenant configuration and model behavior.
 
 ### Task 2.1 – Create the Send Message to Teams workflow
 
@@ -205,6 +208,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
    - **Description**: `Please sign in to notify Teams`
 
 1. In the **Inputs** section, for *Fill using* select **Dynamically fill with AI**.
+  This allows the agent to determine the appropriate input value dynamically from the conversation context.
 
 1. In the **Completion** section, for **After running**, select **Write the response with generative AI**.
 
@@ -218,7 +222,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under the *## Step-by-step instructions* in the agent instructions, add the following to the final step: `Use the ` and then enter the `/` character and select the **Send Summary to Teams** tool and then enter ` when the task analysis is complete.`
+1. Under the *## Step-by-step instructions* in the agent instructions, add the following to the final step: `Use the ` and type `/` and select the **Send Summary to Teams** tool and then enter ` when the task analysis is complete.`
 
    ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions.png)
 
@@ -244,13 +248,13 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. In a new browser tab, navigate to `https://teams.cloud.microsoft/` and sign in if prompted.
 
-1. Navigate to the Team and channel you selected earlier in the workflow and verify the task analysis summary was posted.
+1. Navigate to the Team and channel you selected earlier in the workflow and verify the task analysis summary was posted to the Teams channel.
 
    ![Screenshot of the message in Teams.](../media/workflow-test-agent-teams.png)
 
 ## Exercise 3 - Create a workflow tool that analyzes an Excel file in a topic
 
-In this exercise, you will use Copilot to create a topic from a description, a workflow tool that analyzes the tasks in an Excel file, and call this tool from a topic.
+In this exercise, you will use Copilot to create a topic from a description, create a workflow tool that analyzes the tasks in an Excel file, and call the tool from a topic.
 
 ### Task 3.1 - Create an Excel file
 
@@ -367,7 +371,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. Select **Sign in** to create a connection.
 
-1. In the **Sign into your account** dialog, select the **MOD Administrator** account, select the **I have verified this request and trust the source** checkbox, and select **Allow access**.
+1. In the **Sign into your account** dialog, select the account you are using for this lab environment (such as **MOD Administrator**), select the **I have verified this request and trust the source** checkbox, and select **Allow access**.
 
 1. For **Location** select **OneDrive for Business**.
 
@@ -413,7 +417,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. In the **Name your topic** text box, enter **`Priority Tasks`**.
 
-1. In the **Create a topic to...** text box, enter **`Ask the user to choose a priority from a list containing High, Medium, and Low`**.
+1. In the **Create a topic to...** text box, enter `Ask the user to choose a priority from a list containing High, Medium, and Low`.
 
 1. Select **Create**.
 
@@ -478,7 +482,7 @@ In this exercise, you will use Copilot to create a topic from a description, a w
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under the *## Skills* in the agent instructions, add the following to the final step: `Use the ` and then enter the `/` character and select the **Priority Tasks** topic and then enter ` to get the task list.`
+1. Under the *## Skills* in the agent instructions, add the following to the final step: `Use the ` and type `/` and select the **Priority Tasks** topic and then enter ` to get the task list.`
 
 1. Select **Save**.
 
