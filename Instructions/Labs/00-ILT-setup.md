@@ -101,10 +101,6 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. For **Prefix**, enter `fab`
 
-   ![New publisher.](../media/new-publisher.png)
-
-1. Select **Save**.
-
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
 1. Select the **Set as your preferred solution** checkbox.
