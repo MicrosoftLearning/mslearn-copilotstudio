@@ -98,11 +98,14 @@ In this exercise, you will create an IT support agent for a fictional company ca
 
 1. Select **Home** in the left-hand navigation.
 
-1. On the **Home** page, enter the following description in the build prompt text box:
+1. On the **Home** page, enter the following description in the build prompt box:
 
    ```prompt
    You are an IT support agent for Contoso. You help employees troubleshoot common IT issues such as password resets, software installation problems, and network connectivity. When you cannot resolve an issue, you help the employee submit a support ticket.
    ```
+
+   > [!NOTE]
+   > In some environments, the build prompt box might not appear on the **Home** page when you access Copilot Studio through the standard URL. If the prompt box is unavailable, open Copilot Studio using the Copilot Studio Preview URL `https://copilotstudio.preview.microsoft.com/` and continue with the exercise.
 
    > [!NOTE]
    > The new experience uses your description to automatically generate a set of initial instructions. Review them before continuing.
