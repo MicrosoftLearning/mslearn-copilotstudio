@@ -25,7 +25,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.2 - Add Dataverse to the default environment
 
-1. Select the ellipsis (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
+1. Select the ellipsis (**...**) for the **default** environment (for example, **Contoso (default)**) and select **Add Dataverse**.
 
    ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
@@ -78,13 +78,21 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. Skip any welcome messages.
 
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created.
+1. In the bottom-left corner of the page, select the ellipsis (**...**) next to your username and select **Open classic experience**.
+
+   ![Open classic experience in Copilot Studio.](../media/open-classic-experience.png)
+
+1. In the **Share feedback before opening the previous experience?** dialog, select **Skip feedback**. The classic experience opens in a new browser tab.
+
+1. If the **Welcome to Microsoft Copilot Studio** dialog appears, select **Get Started** and skip any additional welcome messages.
+
+1. In the upper right corner of the classic experience page, switch environments by using the Environment Selector and select the environment you created.
 
    ![Select your environment in the Copilot Studio.](../media/select-environment.png)
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane, select the ellipsis (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipsis **(…)**, and select **Solutions**.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 

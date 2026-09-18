@@ -51,7 +51,7 @@ This exercise will take approximately **60** minutes to complete.
 - If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
   
 > [!IMPORTANT]
-> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the Classic Copilot Studio UI experience throughout these exercises.
 
 ## Key concept: Agent components and behavior
 
@@ -103,6 +103,8 @@ In this exercise, you will create a new agent using natural language to answer q
 ### Task 2.1 – Create an agent for expense claims
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
+
+1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
 
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
@@ -220,6 +222,8 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. For **Enter description**, enter `Minor, necessary business costs that arise in addition to a primary expense such as tips or fees.`.
 
+1. Select **Add**.
+
 1. Select **Save**.
 
 ### Task 3.5 – Check in on your file indexing
@@ -306,7 +310,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
 1. Select **Edit** under **Data sources**.
 
-1. Select and enable **Search only selected sources.**
+1. Select and enable **Search only selected sources**.
 
 1. Select the **Public website** knowledge source.
 
@@ -409,6 +413,8 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams (work or school)**.
 
 1. Select **Use the web app instead**.
+
+1. Sign in to Microsoft Teams if prompted.
 
 1. Select **Add** to add the agent to Teams.
 
