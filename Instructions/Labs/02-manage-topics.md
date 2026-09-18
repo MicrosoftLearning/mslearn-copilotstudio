@@ -52,7 +52,7 @@ This exercise will take approximately **45** minutes to complete.
 - If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
   
 > [!IMPORTANT]
-> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the Classic Copilot Studio UI experience throughout these exercises.
 
 ## Key concept: Agent components and behavior
 
@@ -71,7 +71,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 1.1 – Create an agent to review insurance claims
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you want to use for this exercise.
+1. In the **Copilot Studio** classic experience home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
