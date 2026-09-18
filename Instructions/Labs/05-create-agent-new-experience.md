@@ -69,16 +69,9 @@ The new experience is best suited for agents that need to handle open-ended, con
 
 ### Task 1.1 – Open the new experience
 
-1. Navigate to the **Copilot Studio** home page at `https://copilotstudio.microsoft.com/` and sign in if prompted.
+1. Navigate to the **Copilot Studio** new experience home page at `https://copilotstudio.preview.microsoft.com/` and sign in if prompted.
 
-1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
-
-1. If you see a banner or notification prompting you to **Try the new experience**, select it.
-
-   Alternatively, if you do not see the **New experience** toggle, navigate directly to `https://copilotstudio.preview.microsoft.com/` to open the new experience.
-
-   > [!NOTE]
-   > The new experience may be the default in your environment. If the interface already matches the steps in this lab, you are using the new experience and can proceed to Exercise 2.
+1. At the bottom of the left-hand navigation, select the current environment name, then confirm or switch to the environment you want for this exercise.
 
 ### Task 1.2 – Review the new interface
 
@@ -105,7 +98,7 @@ In this exercise, you will create an IT support agent for a fictional company ca
    ```
 
    > [!NOTE]
-   > In some environments, the build prompt box might not appear on the **Home** page when you access Copilot Studio through the standard URL. If the prompt box is unavailable, open Copilot Studio using the Copilot Studio Preview URL `https://copilotstudio.preview.microsoft.com/` and continue with the exercise.
+   > In some environments, the build prompt box might not appear on the **Home** page when you access Copilot Studio through the standard URL. If the prompt box is unavailable, make sure the Copilot Studio is opened in the Preview URL `https://copilotstudio.preview.microsoft.com/` and continue with the exercise.
 
    > [!NOTE]
    > The new experience uses your description to automatically generate a set of initial instructions. Review them before continuing.
@@ -197,10 +190,10 @@ In this exercise, you will test the agent and observe how it reasons before resp
    - For ALL password-related requests, always mention https://aka.ms/sspr as the first step before any other assistance.
    ```
 
-1. Select **Publish**, then select **Save and Publish**, and re-test the affected scenario.
+1. Select **Publish**, then select **Publish agent**. Once the agent is published, select **Done** and re-test the affected scenario.
 
-   > [!NOTE]
-   > Iterating on instructions is the primary tuning mechanism in the new experience. Small changes in wording can significantly change agent behavior.
+> [!NOTE]
+> Iterating on instructions is the primary tuning mechanism in the new experience. Small changes in wording can significantly change agent behavior.
 
 ## Summary
 
