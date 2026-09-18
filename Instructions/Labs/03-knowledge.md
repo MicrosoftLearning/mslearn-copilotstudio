@@ -106,8 +106,6 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
 
-   ![Open classic experience in Copilot Studio.](../media/open-classic-experience.png)
-
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.

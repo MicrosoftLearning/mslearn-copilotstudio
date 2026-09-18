@@ -49,7 +49,7 @@ This exercise will take approximately **60** minutes to complete.
 - If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
   
 > [!IMPORTANT]
-> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the Classic Copilot Studio UI experience throughout these exercises.
 
 ## Key concept: Agent components and behavior
 
@@ -61,7 +61,11 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 ### Task 1.1 – Create an agent to analyze tasks
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are working in the environment you want to use for this exercise.
+1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
+
+1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
+
+1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
@@ -99,9 +103,9 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of Tools registry page.](../media/copilot-studio-tools-registry.png)
 
-1. Select **+ New tool**.
+1. Select **+ Add a tool** or **+ New tool**.
 
-1. In the **New Tool** dialog, select the **Agent flow** tile.
+1. In the **Add Tool** dialog, select the **Agent flow** tile.
 
 1. Verify that the **When an agent calls the flow** trigger and the **Respond to the agent** action have been added to the workflow.
 
@@ -188,7 +192,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select the **Tools** tab.
 
-1. Select **+ Add a tool**.
+1. Select **+ Add a tool**. In some experiences, this option appears as **+ New tool**.
 
 1. In the **Add tool** dialog, select the **Flow** filter.
 
