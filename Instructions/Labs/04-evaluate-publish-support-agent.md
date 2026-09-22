@@ -2,8 +2,8 @@
 lab:
   title: Evaluate and publish a support agent
   module: Evaluate, publish, and manage agents in Microsoft Copilot Studio
-  description: Evaluate a support agent, correct an instruction defect, publish the agent, and validate its behavior in Microsoft Teams.
-  duration: 40 minutes
+   description: Connect a specialist agent, evaluate delegation, correct an instruction defect, publish the main agent, and validate its behavior in Microsoft Teams.
+   duration: 55 minutes
   level: 200
   islab: true
   primarytopics:
@@ -13,20 +13,22 @@ lab:
 
 ## Scenario
 
-In this exercise, you create the **Contoso Policy Agent**, evaluate its quality using a structured set of test conversations, diagnose and correct one deliberate instruction defect, publish the agent to Microsoft Teams and Microsoft 365 Copilot, and validate its behavior as a published user.
+In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft 365 Copilot, and validate its behavior as a published user.
 
-This exercise takes approximately **40 minutes** to complete.
+This exercise takes approximately **55 minutes** to complete.
 
-## What you'll learn
+## What you learn
 
 - How to create and run a repeatable agent evaluation.
+- How to connect a specialist agent and test delegation boundaries.
 - How to diagnose and correct an instruction defect.
 - How to publish an agent to Microsoft Teams and Microsoft 365 Copilot.
 - How to validate agent behavior as a published user.
 
 ## High-level lab steps
 
-- Create and configure a support policy agent.
+- Create and configure a support policy agent and an escalation specialist.
+- Connect the specialist to the main agent.
 - Create and run an evaluation test set.
 - Identify and correct an instruction defect.
 - Rerun the evaluation and compare results.
@@ -38,7 +40,7 @@ To complete this exercise, you need:
 
 - A Microsoft Entra work or school account.
 - [Access to Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions).
-- Permission to create an agent powered by the GitHub Copilot harness in a Power Platform environment.
+- Permission to create and publish two agents powered by the GitHub Copilot harness in the same Power Platform environment.
 - Access to the **Evaluate** feature. Evaluate is in production-ready preview. Confirm with your instructor or administrator that it's enabled in your environment before you begin Exercise 2.
 - A Microsoft Teams account to validate the agent after publishing.
 - Permission to install the agent for yourself or access to an administrator who can approve the agent after you publish it.
@@ -71,7 +73,7 @@ To complete this exercise, you need:
 ### Task 1.2 - Add the agent instructions
 
 > [!IMPORTANT]
-> The instructions below contain a deliberate defect in the **Scope boundaries** section. Do not change the escalation instruction at this stage. You'll identify the defect in Exercise 3 and correct it in Exercise 4.
+> The instructions below contain a deliberate defect in the **Scope boundaries** section. Do not change the escalation instruction at this stage. You identify the defect in Exercise 3 and correct it in Exercise 4.
 
 On the **Build** page, locate the **Instructions** section. Insert the text below:
 
@@ -128,12 +130,51 @@ New hires complete IT setup on their first day using the onboarding checklist in
 
 1. In the **Preview** tab, send the message `What are the IT Help Desk hours?` to confirm the agent responds. You should see a response that states Monday through Friday, 8 AM to 6 PM. If the agent doesn't respond or returns an error, verify the instructions are saved and that your environment supports agents powered by the GitHub Copilot harness.
 
+### Task 1.3 - Create and publish the escalation specialist
+
+1. Return to the **Agents** page, and then select **+ New agent**.
+
+1. In the **Name** field, enter `Contoso Support Escalation Agent <your initials>`. Use the same unique identifier that you used for the policy agent.
+
+1. In the **Instructions** section, insert the following text:
+
+   ```text
+   You are the Contoso Support Escalation Agent. You handle unresolved IT and HR support cases when an employee asks to escalate an issue or speak with a person.
+
+   - For IT issues, direct the employee to call the IT Help Desk at extension 4357. The help desk is available Monday through Friday, 8:00 AM to 6:00 PM.
+   - For HR matters, direct the employee to contact HR Support at hr-support@contoso.com or call the benefits and HR hotline at extension 2840.
+   - Ask one clarifying question if you can't determine whether the issue is related to IT or HR.
+   - Don't answer routine policy questions. Handle only escalation and human-support requests.
+   ```
+
+1. Select **Save**. On the **Preview** tab, send `I need to escalate an unresolved laptop ticket.` Confirm that the agent provides extension 4357.
+
+1. On the **Build** page, select **Publish** > **Publish agent**. The specialist must be published before the policy agent can connect to it.
+
+### Task 1.4 - Connect the escalation specialist
+
+1. Return to the **Agents** page, and then open `Contoso Policy Agent <your initials>`.
+
+1. On the **Build** tab, select **Connected agents** in the components panel.
+
+1. Search for and select `Contoso Support Escalation Agent <your initials>`.
+
+1. Use the following description:
+
+   ```text
+   Handles unresolved Contoso IT or HR support cases when an employee asks to escalate an issue or speak with a person. Provides approved human-support contact information. Do not use for routine policy questions.
+   ```
+
+1. Select **Connect**, and then confirm that the specialist appears under **Connected agents**.
+
+The specialist's distinct description helps the main agent decide when to delegate. The deliberate instruction defect in the main agent still conflicts with this routing. You identify and correct the conflict after you run the baseline evaluation.
+
 ## Exercise 2 - Create evaluation conversations
 
 > [!IMPORTANT]
 > The **Evaluate** feature for agents powered by the GitHub Copilot harness is in production-ready preview. Confirm it's available in your environment before proceeding. If Evaluate is not enabled, skip to Exercise 4 and validate the agent using Preview and the published channel.
 
-You'll create four evaluation conversations that together cover the most important scenarios for the support policy agent: a direct in-scope answer, an ambiguous request requiring clarification, an out-of-scope boundary, and an escalation request.
+You create four evaluation conversations that cover the most important scenarios for the support policy agent: a direct answer retained by the main agent, an ambiguous request requiring clarification, an out-of-scope boundary, and an escalation request that should delegate to the connected agent.
 
 ### Task 2.1 - Configure a new test set
 
@@ -176,7 +217,7 @@ You'll create four evaluation conversations that together cover the most importa
 | --- | --- | --- |
 | Ambiguity and clarification | I need help with my benefits. | Agent asks a clarifying question to understand whether the user has a question about benefits enrollment, leave requests, or another HR topic. Agent does not assume a specific intent. |
 | Out-of-scope boundary | Can you recommend a good restaurant near the office for a team lunch? | Agent declines the request and explains that it can only help with Contoso IT and HR support topics. Agent does not attempt to answer the restaurant question. |
-| Escalation | I submitted a ticket about my laptop three days ago, and nobody has responded. I need to speak with someone urgently. What should I do? | Agent acknowledges the urgency and provides specific escalation contact information, including the IT Help Desk extension. |
+| Connected-agent delegation | I submitted a ticket about my laptop three days ago, and nobody has responded. I need to speak with someone urgently. What should I do? | Main agent delegates the request to the connected escalation specialist, which provides the IT Help Desk extension. |
 
 ## Exercise 3 - Run the baseline evaluation and observe the defect
 
@@ -219,7 +260,7 @@ You'll create four evaluation conversations that together cover the most importa
    If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
    ```
 
-1. Notice that this instruction prevents the agent from providing actionable escalation contact information. This instruction must be replaced with specific escalation guidance.
+1. Notice that this instruction conflicts with the connected agent's purpose and prevents delegation to the escalation specialist. This instruction must allow the main agent to delegate matching requests.
 
 ## Exercise 4 - Correct the defect
 
@@ -234,14 +275,14 @@ You'll create four evaluation conversations that together cover the most importa
 1. Replace that sentence with the following text:
 
    ```text
-   If a user needs to speak with a person or escalate an issue that you cannot resolve from the policies in your instructions, provide the following contacts:
-   - IT issues: Call the IT Help Desk at extension 4357. The help desk is available Monday through Friday, 8:00 AM to 6:00 PM.
-   - HR matters: Contact HR Support at hr-support@contoso.com or call the benefits and HR hotline at extension 2840.
+   If a user asks to speak with a person or escalate an unresolved IT or HR issue, delegate the request to the connected escalation specialist. Don't block the request or attempt to provide escalation details yourself.
    ```
 
 1. Select **Save**.
 
-1. In the **Preview** tab, start a new conversation and send the message `I need to speak to someone about my laptop ticket.` Confirm that the agent now provides extension 4357 as the escalation contact.
+1. In the **Preview** tab, start a new conversation and send the message `I need to speak to someone about my laptop ticket.` Confirm that the main agent delegates the request and the response provides extension 4357.
+
+1. Start another conversation and send `What are the IT Help Desk hours?` Confirm that the main agent answers the routine policy question without delegating it to the escalation specialist.
 
 ## Exercise 5 - Rerun the evaluation and compare results
 
@@ -259,9 +300,9 @@ You'll create four evaluation conversations that together cover the most importa
 
 1. If the results view is not displayed, select the latest evaluation run to open its results.
 
-1. Compare the General quality result and actual response for the escalation conversation between the baseline run and this run. The score might change, but the updated response must now include the specific escalation contact.
+1. Compare the General quality result and actual response for the delegation conversation between the baseline run and this run. The score might change, but the updated response must show successful delegation and include the specific escalation contact.
 
-1. Select the conversation detail to read the agent's updated response. Confirm that the agent now provides the IT Help Desk extension when the user asks for escalation.
+1. Select the conversation detail to read the agent's updated response. Confirm that the connected escalation specialist provides the IT Help Desk extension when the user asks for escalation.
 
 1. Review the other three conversations and confirm that the instruction change didn't reduce their scores.
 
@@ -327,13 +368,14 @@ After the agent is installed by you or your administrator, open and test it from
    | `What are the IT Help Desk hours?` | Agent states Monday through Friday, 8 AM to 6 PM local time |
    | `How do I request new software?` | Agent explains the IT Service Catalog process and approval timelines |
    | `Can you book a meeting room for me?` | Agent declines and states it can only help with Contoso IT and HR support topics |
-   | `I've been waiting three days on a ticket. I need to talk to someone now.` | Agent provides IT Help Desk extension 4357 |
+   | `I've been waiting three days on a ticket. I need to talk to someone now.` | Main agent delegates to the escalation specialist, which provides IT Help Desk extension 4357 |
 
 1. For each response, verify:
 
    - The response is accurate and matches the policy content in the agent's instructions.
    - The agent declines out-of-scope requests without attempting to answer them.
-   - The escalation response includes extension 4357.
+   - The main agent retains routine policy questions.
+   - The escalation request is delegated and the response includes extension 4357.
 
 1. If a response is incorrect or missing expected content, open **Monitor** in Copilot Studio to review the conversation and determine whether the issue is a quality defect, a permission failure, or a runtime error.
 
@@ -346,7 +388,8 @@ In your lab notes, record the result of each validation test in the following ta
 | Authentication (agent loads without error) | Pass / Fail | |
 | In-scope answer accuracy | Pass / Fail | |
 | Out-of-scope decline | Pass / Fail | |
-| Escalation response with specific contact | Pass / Fail | |
+| Connected-agent delegation | Pass / Fail | |
+| Routine request retained by main agent | Pass / Fail | |
 | No unexpected errors in responses | Pass / Fail | |
 
 ## Completion criteria
@@ -354,20 +397,24 @@ In your lab notes, record the result of each validation test in the following ta
 You have completed this exercise when you can confirm all of the following:
 
 - [ ] The Contoso Policy Agent is created with a unique name that includes your initials.
+- [ ] The Contoso Support Escalation Agent is created, tested, and published in the same environment.
+- [ ] The escalation specialist is connected to the policy agent with a distinct routing description.
 - [ ] Four evaluation conversations are saved in the Evaluate page.
 - [ ] A baseline evaluation run is complete, and the escalation response lacks a specific support contact.
 - [ ] You can identify the specific instruction text that caused the escalation defect.
-- [ ] The corrected instructions replace the defective escalation boundary with specific IT Help Desk and HR contact details.
-- [ ] A second evaluation run shows that the escalation response now includes the IT Help Desk extension.
+- [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
+- [ ] A second evaluation run shows successful delegation and includes the IT Help Desk extension.
 - [ ] The agent is published and the Teams + Microsoft 365 Copilot channel is added.
 - [ ] You installed the Teams app for yourself, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
 
 ## Clean up
 
-After you complete the exercise, delete the agent to avoid consuming Copilot Credits from any future testing or accidental interactions.
+After you complete the exercise, disconnect and delete both agents to avoid consuming Copilot Credits from future testing or accidental interactions.
 
-1. In Copilot Studio, open the agent you created.
+1. In Copilot Studio, open `Contoso Policy Agent <your initials>`.
+
+1. On the **Build** tab, select **Connected agents**. Open the escalation specialist, and then select **Disconnect**.
 
 1. Locate your agent in the **Agents** list, and then select **More options** (**...**) in the upper-right corner.
 
@@ -375,4 +422,6 @@ After you complete the exercise, delete the agent to avoid consuming Copilot Cre
 
 1. Enter the agent's exact name, and then select **Delete agent** to confirm the permanent deletion.
 
-If you created the agent within a solution, remove it from the solution before deleting it from the environment to ensure a complete cleanup.
+1. Repeat the deletion steps for `Contoso Support Escalation Agent <your initials>`.
+
+If you created the agents within a solution, remove them from the solution before deleting them from the environment to ensure a complete cleanup.
