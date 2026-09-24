@@ -25,7 +25,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 ### Task 1.2 - Add Dataverse to the default environment
 
-1. Select the ellipsis (**...**) for the **Contoso (default)** environment and select **Add Dataverse**.
+1. Select the ellipsis (**...**) for the **default** environment (e.g **Contoso (default)**) and select **Add Dataverse**.
 
    ![Add Dataverse to the default environment in the Power Platform Admin center.](../media/add-dataverse.png)
 
@@ -44,7 +44,6 @@ Before you start the lab exercises, you must create a development environment fo
 1. Expand **Change default settings** and configure the following:
    - **Environment group**: None
    - **Make this a Managed Environment**: No
-   - **Get new features early**: No
    - **Create on behalf**: No
    - **Add a Dataverse data store?**: Yes
    
@@ -74,17 +73,17 @@ Before you start the lab exercises, you must create a development environment fo
    >   https://copilotstudio.microsoft.com/environments/<your-environment-id>/home
    >   ```
 
-1. If prompted, select **Get Started** and keep the default country or region settings.
+1. If prompted with a **Get Started** screen, accept the default country or region and continue. Skip any welcome messages.
 
-1. Skip any welcome messages.
-
-1. In the upper right corner of the page, switch environments by using the Environment Selector and select the environment you created.
+1. In the bottom-left corner, select the **environment selector** that displays the name of the currently selected environment
 
    ![Select your environment in the Copilot Studio.](../media/select-environment.png)
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane, select the ellipsis (**...**), and select **Solutions**.
+1. In the left navigation pane, select the ellipsis (**...**) next to your account name and then select **Solutions**.
+
+1. If prompted with a **Get Started** screen, select **Get Started** and then skip any welcome messages.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
