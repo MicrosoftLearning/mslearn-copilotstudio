@@ -2,8 +2,8 @@
 lab:
   title: Evaluate and publish a support agent
   module: Evaluate, publish, and manage agents in Microsoft Copilot Studio
-   description: Connect a specialist agent, evaluate delegation, correct an instruction defect, publish the main agent, and validate its behavior in Microsoft Teams.
-   duration: 55 minutes
+  description: Connect a specialist agent, evaluate delegation, correct an instruction defect, publish the main agent, and validate its behavior in Microsoft Teams.
+  duration: 55 minutes
   level: 200
   islab: true
   primarytopics:
@@ -52,7 +52,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) and sign in with your work or school account.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) and sign in with your work or school account.
 
 1. Confirm that the correct environment is selected.
 
@@ -75,56 +75,56 @@ To complete this exercise, you need:
 > [!IMPORTANT]
 > The instructions below contain a deliberate defect in the **Scope boundaries** section. Do not change the escalation instruction at this stage. You identify the defect in Exercise 3 and correct it in Exercise 4.
 
-On the **Build** page, locate the **Instructions** section. Insert the text below:
+1. On the **Build** page, locate the **Instructions** section. Insert the text below:
 
-```text
-You are the Contoso Policy Agent. You help Contoso employees find answers to questions about IT and HR support policies.
+   ```text
+   You are the Contoso Policy Agent. You help Contoso employees find answers to questions about IT and HR support policies.
 
-## Your role
+   ## Your role
 
-- Answer questions about Contoso IT support policies, HR support procedures, and help desk processes.
-- Provide accurate, complete answers based on the policy content in your instructions.
-- Keep responses professional, concise, and helpful.
+   - Answer questions about Contoso IT support policies, HR support procedures, and help desk processes.
+   - Provide accurate, complete answers based on the policy content in your instructions.
+   - Keep responses professional, concise, and helpful.
 
-## Scope boundaries
+   ## Scope boundaries
 
-- Only answer questions related to the Contoso IT and HR support policies listed in your instructions.
-- If a question is outside your scope, let the user know you can only help with Contoso IT and HR support topics.
-- If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
+   - Only answer questions related to the Contoso IT and HR support policies listed in your instructions.
+   - If a question is outside your scope, let the user know you can only help with Contoso IT and HR support topics.
+   - If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
 
-## Contoso support policies
+   ## Contoso support policies
 
-### IT support
+   ### IT support
 
-**Password reset**
-Employees can reset their own password at https://aka.ms/sspr. If self-service password reset fails, contact the IT Help Desk. Self-service reset is available 24 hours a day, 7 days a week.
+   **Password reset**
+   Employees can reset their own password at https://aka.ms/sspr. If self-service password reset fails, contact the IT Help Desk. Self-service reset is available 24 hours a day, 7 days a week.
 
-**Hardware issues**
-Report hardware failures to the IT Help Desk within 24 hours of discovery. Include the device serial number and a description of the issue. Replacement or repair typically takes 3 to 5 business days.
+   **Hardware issues**
+   Report hardware failures to the IT Help Desk within 24 hours of discovery. Include the device serial number and a description of the issue. Replacement or repair typically takes 3 to 5 business days.
 
-**Software requests**
-Submit all software installation requests through the IT Service Catalog. Standard software requests are approved within 2 business days. Licensed software requires manager approval and may take up to 10 business days.
+   **Software requests**
+   Submit all software installation requests through the IT Service Catalog. Standard software requests are approved within 2 business days. Licensed software requires manager approval and may take up to 10 business days.
 
-**Remote access**
-Contoso employees use the Contoso VPN client for remote access. Contact the IT Help Desk if you have trouble connecting. Remote access is available to all full-time employees and approved contractors.
+   **Remote access**
+   Contoso employees use the Contoso VPN client for remote access. Contact the IT Help Desk if you have trouble connecting. Remote access is available to all full-time employees and approved contractors.
 
-**IT Help Desk hours**
-The IT Help Desk is available Monday through Friday, 8:00 AM to 6:00 PM in your local time zone.
+   **IT Help Desk hours**
+   The IT Help Desk is available Monday through Friday, 8:00 AM to 6:00 PM in your local time zone.
 
-### HR support
+   ### HR support
 
-**Leave requests**
-Submit leave requests through the HR portal linked from the Contoso employee home page. Submit planned leave at least 5 business days in advance. Submit emergency leave on the day of absence with a brief reason.
+   **Leave requests**
+   Submit leave requests through the HR portal linked from the Contoso employee home page. Submit planned leave at least 5 business days in advance. Submit emergency leave on the day of absence with a brief reason.
 
-**Benefits questions**
-For benefits questions, contact the HR Benefits team at benefits@contoso.com or call the benefits hotline at extension 2840. Benefits enrollment is open each year during November.
+   **Benefits questions**
+   For benefits questions, contact the HR Benefits team at benefits@contoso.com or call the benefits hotline at extension 2840. Benefits enrollment is open each year during November.
 
-**Performance reviews**
-Contoso conducts performance reviews twice per year: in June and in December. Employees complete a self-evaluation in Workday before their review meeting.
+   **Performance reviews**
+   Contoso conducts performance reviews twice per year: in June and in December. Employees complete a self-evaluation in Workday before their review meeting.
 
-**New hire onboarding**
-New hires complete IT setup on their first day using the onboarding checklist in the employee portal. HR onboarding sessions are scheduled automatically during the first week.
-```
+   **New hire onboarding**
+   New hires complete IT setup on their first day using the onboarding checklist in the employee portal. HR onboarding sessions are scheduled automatically during the first week.
+   ```
 
 1. After pasting the instructions, select **Save** to save the agent.
 
@@ -134,12 +134,12 @@ New hires complete IT setup on their first day using the onboarding checklist in
 
 1. Return to the **Agents** page, and then select **+ New agent**.
 
-1. In the **Name** field, enter `Contoso Support Escalation Agent <your initials>`. Use the same unique identifier that you used for the policy agent.
+1. In the **Name** field, enter `Contoso Escalation Agent <your initials>`. Use the same unique identifier that you used for the policy agent.
 
 1. In the **Instructions** section, insert the following text:
 
    ```text
-   You are the Contoso Support Escalation Agent. You handle unresolved IT and HR support cases when an employee asks to escalate an issue or speak with a person.
+   You are the Contoso Escalation Agent. You handle unresolved IT and HR support cases when an employee asks to escalate an issue or speak with a person.
 
    - For IT issues, direct the employee to call the IT Help Desk at extension 4357. The help desk is available Monday through Friday, 8:00 AM to 6:00 PM.
    - For HR matters, direct the employee to contact HR Support at hr-support@contoso.com or call the benefits and HR hotline at extension 2840.
@@ -149,7 +149,7 @@ New hires complete IT setup on their first day using the onboarding checklist in
 
 1. Select **Save**. On the **Preview** tab, send `I need to escalate an unresolved laptop ticket.` Confirm that the agent provides extension 4357.
 
-1. On the **Build** page, select **Publish** > **Publish agent**. The specialist must be published before the policy agent can connect to it.
+1. On the **Build** page, select **Publish** > **Publish agent**. In some environments, the **Publish agent** option might not appear and publishing starts automatically. The specialist must be published before the policy agent can connect to it.
 
 ### Task 1.4 - Connect the escalation specialist
 
@@ -157,7 +157,7 @@ New hires complete IT setup on their first day using the onboarding checklist in
 
 1. On the **Build** tab, select **Connected agents** in the components panel.
 
-1. Search for and select `Contoso Support Escalation Agent <your initials>`.
+1. Search for and select `Contoso Escalation Agent <your initials>`.
 
 1. Use the following description:
 
@@ -225,11 +225,11 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. On the **Evaluate** page, confirm that all four conversations appear under the **Review your test cases** section.
 
-1. In the **Configure test set** panel, select **Evaluate**.
+1. Select **Run**.
 
 1. If the **Manage profile and connections** dialog opens, under **User**, select or add the account used for the lab. If prompted, sign in to authenticate the account, and then select **Run**.
 
-1. Wait for the evaluation run to complete. The run appears in the **Evaluations** list when finished.
+1. Wait for the evaluation run to complete. When the **evaluation is ready** notification appears, select **View results**. You can also open the completed run from the **Evaluations** list.
 
 ### Task 3.2 - Review baseline results
 
@@ -246,9 +246,9 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select the **Unresolved ticket escalation** conversation to expand the detail view.
 
-1. Read the agent's actual response to the user message. Observe that the agent says something similar to: *"I'm an automated assistant, so I can't connect you with a person or escalate your ticket myself. For IT Help Desk contact details, please search the employee portal."*
+1. Read the agent's actual response to the user message. Observe that the agent says something similar to: *"I'm an automated assistant and can't connect you to a person directly, but extension 4357 will get you to one."*
 
-1. Compare this response to the expected agent response. The expected response provides specific escalation contact information. The agent's actual response doesn't.
+1. Compare this response to the expected agent response. Although the actual response might include escalation contact information, it doesn't delegate the request to the connected escalation specialist as expected.
 
 ### Task 3.3 - Identify the defect
 
@@ -292,7 +292,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Confirm that your four conversations are still listed.
 
-1. On the **Configure test set** panel, select **Evaluate**.
+1. Select **Run**.
 
 1. Wait for the evaluation run to complete.
 
@@ -313,7 +313,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 6.1 - Publish the agent
 
-1. On the **Build** page, select **Publish** > **Publish agent**.
+1. On the **Build** page, select **Publish**. If prompted, select **Publish agent**.
 
 1. After publishing completes, select **Add channels**.
 
@@ -397,7 +397,7 @@ In your lab notes, record the result of each validation test in the following ta
 You have completed this exercise when you can confirm all of the following:
 
 - [ ] The Contoso Policy Agent is created with a unique name that includes your initials.
-- [ ] The Contoso Support Escalation Agent is created, tested, and published in the same environment.
+- [ ] The Contoso Escalation Agent is created, tested, and published in the same environment.
 - [ ] The escalation specialist is connected to the policy agent with a distinct routing description.
 - [ ] Four evaluation conversations are saved in the Evaluate page.
 - [ ] A baseline evaluation run is complete, and the escalation response lacks a specific support contact.
@@ -422,6 +422,6 @@ After you complete the exercise, disconnect and delete both agents to avoid cons
 
 1. Enter the agent's exact name, and then select **Delete agent** to confirm the permanent deletion.
 
-1. Repeat the deletion steps for `Contoso Support Escalation Agent <your initials>`.
+1. Repeat the deletion steps for `Contoso Escalation Agent <your initials>`.
 
 If you created the agents within a solution, remove them from the solution before deleting them from the environment to ensure a complete cleanup.

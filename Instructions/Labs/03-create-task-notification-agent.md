@@ -49,7 +49,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create and configure the Contoso task alert agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in.
 
 1. Confirm that the correct environment is selected.
 
@@ -167,12 +167,12 @@ To complete this exercise, you need:
 
 1. In the search field, enter `Send an email`.
 
-1. From the results, select the **Send an email (V2)** action under the **Office 365 Outlook** connector.
+1. From the results, select the **Send an email** (it may also appear as **Send an email (V2)**) action under the **Office 365 Outlook** connector.
 
    If this is the first time you use this connector, Copilot Studio prompts you to sign in. Sign in with the Microsoft 365 account that has the Outlook mailbox you want to use for sending notifications.
 
    > [!NOTE]
-   > If a browser pop-up is blocked, allow pop-ups from `https://copilotstudio.microsoft.com` and then select sign in again.
+   > If a browser pop-up is blocked, allow pop-ups from `https://copilotstudio.preview.microsoft.com` and then select sign in again.
 
 1. In the **To** field, select the **Insert dynamic content** icon and select **Recipient Email**.
 
@@ -248,7 +248,7 @@ To complete this exercise, you need:
 
 1. Verify that the workflow you created shows a status of **Published**.
 
-   If the status shows **Error**, select the workflow and review the error details on the **Overview** tab before continuing.
+   If the status shows **Error**, select the workflow and review the error details before continuing.
 
 ## Exercise 3 - Add and configure the workflow tool
 
@@ -256,7 +256,7 @@ To complete this exercise, you need:
 
 1. Select **Agents** in the left navigation and open the **Contoso Task Alert Agent** you created in Exercise 1.
 
-1. On the **Build** tab, select the **Tools** section to open the **Add a tool** dialog.
+1. On the **Build** tab, select the **Tools** section of the components panel to open the **Add a tool** dialog.
 
 1. In the **Add tool** dialog, select the **Workflows** filter.
 
@@ -272,7 +272,7 @@ To complete this exercise, you need:
    Send task notification email
    ```
 
-1. In the **Description** field, enter:
+1. In the **Description for AI** field, enter:
 
    ```text
    Sends a formatted task notification email to a specified recipient. Use when the user asks to send a notification about a task and all required details are available and confirmed: recipient email, task title, task details, and due date.
@@ -282,13 +282,13 @@ To complete this exercise, you need:
 
 In the **Inputs** section, configure each input:
 
-1. For **Recipient Email**, set **How is this filled?** to **AI**. Confirm the description reads: `The complete work or school email address of the person who should receive the task notification. Do not guess or infer this value.`
+1. For **Recipient Email**, confirm the description reads: `The complete work or school email address of the person who should receive the task notification. Do not guess or infer this value.`
 
-1. For **Task Title**, set **How is this filled?** to **AI**. Confirm the description reads: `The short title of the task that the notification is about.`
+1. For **Task Title**, confirm the description reads: `The short title of the task that the notification is about.`
 
-1. For **Task Details**, set **How is this filled?** to **AI**. Confirm the description reads: `A brief description of what the task involves, including any relevant context.`
+1. For **Task Details**, confirm the description reads: `A brief description of what the task involves, including any relevant context.`
 
-1. For **Due Date**, set **How is this filled?** to **AI**. Confirm the description reads: `The due date of the task, stated as the user provided it, such as October 15, 2026.`
+1. For **Due Date**, confirm the description reads: `The due date of the task, stated as the user provided it, such as October 15, 2026.`
 
 ### Task 3.4 - Configure the workflow outputs
 
@@ -340,7 +340,7 @@ Open the **Preview** tab in Copilot Studio. Use the following tasks to run all f
    **Expected behavior after approval**:
 
    - The agent calls the workflow.
-   - The workflow runs the **Send an email (V2)** action.
+   - The workflow runs the **Send an email** action.
    - The agent responds with a confirmation that uses the `Status` and `Confirmation` outputs.
 
 1. Verify success by checking the inbox of the email account you specified as the recipient. Confirm:
@@ -368,6 +368,7 @@ Open the **Preview** tab in Copilot Studio. Use the following tasks to run all f
 
 1. Provide each piece of missing information as the agent asks for it. Use these values:
 
+   - **Task title**: `Backup Validation.`
    - **Recipient email**: Your own work or school email address.
    - **Task details**: `Verify that nightly backups completed successfully and review the backup logs.`
    - **Due date**: `October 20, 2026`
@@ -414,7 +415,7 @@ This test runs the workflow directly with a deliberately malformed email address
 > [!NOTE]
 > This test intentionally produces a failure. The purpose is to practice using workflow activity to diagnose problems. No real email is sent to a real address.
 
-1. In the left navigation pane, select **Workflows**, and then select the **Send Task Notification Email** workflow to open it in the workflow designer. On the top of the page, select **Run**.
+1. In the left navigation pane, select **Workflows**, and then select the **Send Task Notification Email** workflow to open it in the workflow designer. On the top of the page, select **Run** (**▶**) from the command bar.
 
 1. Enter these test values:
 
@@ -432,12 +433,12 @@ This test runs the workflow directly with a deliberately malformed email address
    1. In the workflow designer, open the **Activity** tab.
    1. Filter the runs by **Failed**.
    1. Select the most recent failed run to load its step details on the canvas.
-   1. Identify the step that failed (the **Send an email (V2)** action) and read the error message.
+   1. Identify the step that failed (the **Send an email** action) and read the error message.
 
    **What to look for**:
 
    - The **Recipient Email** input received `not-an-email`, which confirms the workflow test used the value you entered.
-   - The **Send an email (V2)** step shows a validation or delivery error because the address is malformed.
+   - The **Send an email** step shows a validation or delivery error because the address is malformed.
    - All preceding steps, including the trigger, ran without error.
 
 1. Note the error type and the step that failed. This is the information you use to decide whether to add input validation, update the input description, or adjust the confirmation prompt.

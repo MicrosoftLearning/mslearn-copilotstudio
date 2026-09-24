@@ -94,7 +94,7 @@ Create the fictional company guide that the agent uses as a knowledge source.
 
 ## Exercise 2 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in.
 
 1. Confirm that the correct environment is selected.
 
@@ -129,13 +129,13 @@ Create the fictional company guide that the agent uses as a knowledge source.
    - Politely decline requests unrelated to benefits.
    ```
 
-1. Select **Save**.
+1. Select the **Save** (disk) icon.
 
 ## Exercise 3 - Add knowledge sources
 
 Add the fictional company guide and an official government website to the agent.
 
-1. On the **Build** tab, select the **Knowledge** section to open the **Add knowledge** dialog.
+1. On the **Build** tab, select the **Knowledge** section in the components panel to open the **Add knowledge** dialog.
 
 1. Select **Drag and drop or click to upload**, and then upload `contoso-benefits-guide.md`.
 
@@ -147,7 +147,7 @@ Add the fictional company guide and an official government website to the agent.
 
 1. Select **Public websites**, disable **Search all websites**, and then enter `https://www.usa.gov/benefits` as the website address.
 
-1. Select **Add**, and then enter `USA.gov benefits` as the name and `Official US government information about benefit and assistance programs.` as the description.
+1. Select **Add**, and then enter `USA.gov benefits` as the name and `Official US government information about benefit and assistance programs.` as the description. Select **Add to agent**.
 
 > [!NOTE]
 > A new knowledge source can take several minutes to become available. Continue configuring the agent while Copilot Studio processes the sources.

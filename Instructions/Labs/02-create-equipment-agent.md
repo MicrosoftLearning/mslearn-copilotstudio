@@ -168,7 +168,7 @@ Create a standalone data source for this exercise.
 
 ![Copilot Studio home page showing the Agent and Workflow options.](../media/copilot-studio-home-page.png)
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in.
 
 1. Confirm that the correct environment is selected.
 
@@ -194,7 +194,7 @@ Create a standalone data source for this exercise.
 
 ## Exercise 5 - Add policy knowledge
 
-1. On the **Build** tab, select the **Knowledge** section to open the **Add knowledge** dialog.
+1. On the **Build** tab, select the **Knowledge** section in the components panel to open the **Add knowledge** dialog.
 
 1. Select **Drag and drop or click to upload**, and then upload `contoso-equipment-policy.md`.
 
@@ -214,12 +214,12 @@ Create a standalone data source for this exercise.
 
 1. In the **Tools** section, select the newly added SharePoint connector. In the **Details** section, set the tool name to `Get equipment inventory` and the tool description to `Retrieves the current Contoso equipment inventory, including category, location, price, available units, intended use, and accessibility notes. Use for equipment availability and recommendation requests. This tool reads inventory and doesn't reserve or order items.`
 
-1. In the **Inputs** section, configure the values as follows:
+1. In the **Inputs** section, select **Custom** next to each input and configure the values as follows:
 
-   | Input | How is this filled? | Value |
-   | --- | --- | --- |
-   | Site address | Value | The SharePoint site address that you copied. |
-   | List name | Value | `PL7008 Equipment Inventory <your initials>` |
+   | Input | Value |
+   | --- | --- |
+   | Site address | The SharePoint site address that you copied. |
+   | List name | `PL7008 Equipment Inventory <your initials>` |
 
 1. Leave all remaining optional inputs unchanged. The list is intentionally small, so the tool can return all exercise items for the agent to compare.
 
@@ -238,7 +238,7 @@ Create a standalone data source for this exercise.
 
 1. Start a new conversation, enter `Which laptops are currently available in Seattle?` and submit it.
 
-1. If prompted, select **Allow** to grant the agent permission to use SharePoint. You may need to grant permission more than once.
+1. If prompted, select **Approve** to grant the agent permission to use SharePoint. You may need to grant permission more than once.
 
 1. Verify that the agent uses the **Get equipment inventory** tool and reports only laptops with available units in Seattle.
 
@@ -248,7 +248,7 @@ Create a standalone data source for this exercise.
 
 ## Exercise 8 - Add and test the supplied skill
 
-1. Return to the **Build** tab and select the **Skills** section.
+1. Return to the **Build** tab and select the **Skills** section in the components panel.
 
 1. Select **Upload a skill**, upload `equipment-recommendation.md`, and confirm that the skill appears under **Skills**.
 
