@@ -52,7 +52,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) and sign in with your work or school account.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) and sign in with your work or school account.
 
 1. Confirm that the correct environment is selected.
 
@@ -312,9 +312,6 @@ You create four evaluation conversations that cover the most important scenarios
 ## Exercise 6 - Publish and add the Teams and Microsoft Copilot channel
 
 ### Task 6.1 - Publish the agent
-
-> [!NOTE]
-> Copilot Studio is updated frequently, so the interface can differ slightly between environments. If an option described in these steps is missing, renamed, or hidden under a drop-down menu, sign in at **https://copilotstudio.preview.microsoft.com** instead. The preview experience matches the steps used in this exercise.
 
 1. On the **Build** page, select **Publish**. If prompted, select **Publish agent**.
 

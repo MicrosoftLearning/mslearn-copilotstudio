@@ -94,7 +94,7 @@ Create the fictional company guide that the agent uses as a knowledge source.
 
 ## Exercise 2 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in.
 
 1. Confirm that the correct environment is selected.
 

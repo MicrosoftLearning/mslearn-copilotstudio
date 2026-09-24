@@ -49,7 +49,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create and configure the Contoso task alert agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in.
 
 1. Confirm that the correct environment is selected.
 
@@ -172,7 +172,7 @@ To complete this exercise, you need:
    If this is the first time you use this connector, Copilot Studio prompts you to sign in. Sign in with the Microsoft 365 account that has the Outlook mailbox you want to use for sending notifications.
 
    > [!NOTE]
-   > If a browser pop-up is blocked, allow pop-ups from `https://copilotstudio.microsoft.com` and then select sign in again.
+   > If a browser pop-up is blocked, allow pop-ups from `https://copilotstudio.preview.microsoft.com` and then select sign in again.
 
 1. In the **To** field, select the **Insert dynamic content** icon and select **Recipient Email**.
 

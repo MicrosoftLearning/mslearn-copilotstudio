@@ -60,7 +60,7 @@ Before you start the lab exercises, you must create a development environment fo
 
    ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
-1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
+1. In a new browser tab, navigate to `https://copilotstudio.preview.microsoft.com/` and sign in if prompted.
 
    > [!NOTE]  
    > If you experience issues loading Copilot Studio on your environment:
@@ -70,7 +70,7 @@ Before you start the lab exercises, you must create a development environment fo
    >   3. Copy and save this value.
    > - Then try accessing your environment directly by pasting your ID into the following URL:
    >   ```
-   >   https://copilotstudio.microsoft.com/environments/<your-environment-id>/home
+   >   https://copilotstudio.preview.microsoft.com/environments/<your-environment-id>/home
    >   ```
 
 1. If prompted with a **Get Started** screen, accept the default country or region and continue. Skip any welcome messages.

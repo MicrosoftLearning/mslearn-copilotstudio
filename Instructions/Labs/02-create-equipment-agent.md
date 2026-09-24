@@ -168,7 +168,7 @@ Create a standalone data source for this exercise.
 
 ![Copilot Studio home page showing the Agent and Workflow options.](../media/copilot-studio-home-page.png)
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in.
 
 1. Confirm that the correct environment is selected.
 
