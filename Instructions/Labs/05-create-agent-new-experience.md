@@ -117,7 +117,10 @@ In this exercise, you will create an IT support agent for a fictional company ca
 
 1. Review and accept the auto-generated instructions and create the agent.
 
-1. In the **Artifacts** panel on the right, select your agent to open its **Build** tab.
+1. On the right-hand side of the page, select your agent draft to open its **Build** tab.
+
+> [!NOTE]
+> The new Copilot Studio experience may automatically generate one or more skills for your agent. On the **Build** tab, review the **Skills** section and remove any automatically generated skills before continuing with the exercise.
 
 ### Task 2.2 – Review and refine the auto-generated instructions
 
