@@ -75,13 +75,16 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. If prompted with a **Get Started** screen, accept the default country or region and continue. Skip any welcome messages.
 
-1. In the bottom-left corner, select the **environment selector** that displays the name of the currently selected environment
+1. In the bottom-left corner, select the **environment selector** that displays the name of the currently selected environment, and then choose the environment you created.
 
    ![Select your environment in the Copilot Studio.](../media/select-environment.png)
 
 ### Task 1.4 - Create a solution
 
 1. In the left navigation pane, select the ellipsis (**...**) next to your account name and then select **Solutions**.
+
+   > [!NOTE]
+   > Selecting **Solutions** may redirect you to the classic experience. If this occurs, close the classic experience. Then, select the ellipsis (**...**) next to your account name again and select **Solutions** a second time to open the solutions list.
 
 1. If prompted with a **Get Started** screen, select **Get Started** and then skip any welcome messages.
 
@@ -104,6 +107,9 @@ Before you start the lab exercises, you must create a development environment fo
 1. For **Prefix**, enter `fab`
 
 1. Select **Save** to create the publisher.
+
+   > [!NOTE]
+   > If **Save** is unavailable, create the solution in [Power Apps](https://make.powerapps.com/) at `https://make.powerapps.com/solutions`.
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
