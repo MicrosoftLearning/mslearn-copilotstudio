@@ -141,7 +141,7 @@ Add the fictional company guide and an official government website to the agent.
 
 1. Select **Add to agent** and wait for the file upload to finish.
 
-1. Under **Knowledge**, select `contoso-benefits-guide.md`. In the **Edit knowledge source** dialog, enter `Contoso benefits guide` in **Name** and `Approved information about Contoso medical plans, enrollment periods, life events, wellness benefits, and benefits contacts.` in **Description**, and then select **Save**.
+1. Under **Knowledge**, select `contoso-benefits-guide.md`. In the **Edit knowledge source** dialog, enter `Contoso benefits guide` as the name and `Approved information about Contoso medical plans, enrollment periods, life events, wellness benefits, and benefits contacts.` as the description, and then select **Save**.
 
 1. Select the **Knowledge** section again to add a new source to the agent.
 
@@ -164,13 +164,13 @@ Add the fictional company guide and an official government website to the agent.
 
 1. Add the following suggested prompts:
 
-   | Title | Prompt |
+   | Title | Message |
    | --- | --- |
    | Compare medical plans | Compare the three Contoso medical plan types. |
    | Change my elections | When can I change my Contoso benefit elections? |
    | Government assistance | Where can I find government help with food costs? |
 
-1. Close the **Agent settings** dialog and save the agent.
+1. Select **Done** to close the **Agent settings** dialog and save the agent.
 
 ## Exercise 5 - Test the agent
 
