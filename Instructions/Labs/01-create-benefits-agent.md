@@ -102,7 +102,7 @@ Create the fictional company guide that the agent uses as a knowledge source.
 
 1. In the **Name** field, enter `Contoso Benefits Assistant <your initials>`. Replace `<your initials>` with your initials or another unique value.
 
-1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, select the solution provided for the exercise from the **Solution** list.
+1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, check the **Solution** list. If the solution provided for the exercise isn't already selected, select it and then select **Done**. If it's already selected, you don't need to select **Done**; close the settings dialog.
 
 1. In **Instructions**, enter the following text:
 
