@@ -52,7 +52,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) and sign in with your work or school account.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in with your work or school account.
 
 1. Confirm that the correct environment is selected.
 
@@ -66,7 +66,7 @@ To complete this exercise, you need:
 
    Replace `<your initials>` with your own initials or another short, unique identifier. For example: `Contoso Policy Agent CS`. Using your initials ensures the agent name is unique in a shared training environment.
 
-1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, select the solution provided for the exercise from the **Solution** list.
+1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, check the **Solution** list. If the solution provided for the exercise isn't already selected, select it and then select **Done**. If it's already selected, you don't need to select **Done**; close the settings dialog.
 
 1. Remain on the agent's **Build** page. In the next task, you configure the agent's instructions from this page.
 
@@ -132,7 +132,7 @@ To complete this exercise, you need:
 
 ### Task 1.3 - Create and publish the escalation specialist
 
-1. Return to the **Agents** page, and then select **+ New agent**.
+1. Return to the **Agents** page, and then select **New agent**.
 
 1. In the **Name** field, enter `Contoso Escalation Agent <your initials>`. Use the same unique identifier that you used for the policy agent.
 
@@ -157,7 +157,7 @@ To complete this exercise, you need:
 
 1. On the **Build** tab, select **Connected agents** in the components panel.
 
-1. Search for and select `Contoso Escalation Agent <your initials>`.
+1. Search for and select `Contoso Escalation Agent <your initials>`. If necessary, select **Refresh** to make the agent available for selection.
 
 1. Use the following description:
 
@@ -184,13 +184,13 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select **New evaluation** or **+ Create your first evaluation**.
 
-1. In **More ways to start**, select **Or, write some questions yourself**.
+1. In **Create or select a data set**, select **Conversations** as the data type, then select **Or, write some questions yourself**.
 
-1. In the **Configure test set** panel, enter `Contoso support release evaluation` for the name and confirm that **General quality** appears as the test method.
+1. Enter `Contoso support release evaluation` for the evaluation name and confirm that **General quality** appears as the test method.
 
 ### Task 2.2 - Create conversation 1: In-scope answer
 
-1. In **Review your test cases**, select **+ Add conversations** > **Write**.
+1. In **Review your test cases**, select **+ Add conversations** > **Write a conversation**.
 
 1. In the new row, select the empty field under **Conversation**, and then add the following user question:
 
@@ -246,7 +246,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select the **Unresolved ticket escalation** conversation to expand the detail view.
 
-1. Read the agent's actual response to the user message. Observe that the agent says something similar to: *"I'm an automated assistant and can't connect you to a person directly, but extension 4357 will get you to one."*
+1. Read the agent's actual response to the user message. Verify that the agent directs the user to the IT Help Desk, provides extension 4357, and explains that it can't connect the user to a person directly.
 
 1. Compare this response to the expected agent response. Although the actual response might include escalation contact information, it doesn't delegate the request to the connected escalation specialist as expected.
 
@@ -266,13 +266,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 4.1 - Update the agent instructions
 
-1. On the **Build** tab, in the **Instructions** area, locate the escalation boundary statement under **Scope boundaries:**
-
-   ```text
-   If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
-   ```
-
-1. Replace that sentence with the following text:
+1. Replace the escalation boundary statement you identified in the previous task with:
 
    ```text
    If a user asks to speak with a person or escalate an unresolved IT or HR issue, delegate the request to the connected escalation specialist. Don't block the request or attempt to provide escalation details yourself.
@@ -334,7 +328,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. In the **Teams + Microsoft 365** channel configuration panel, under **Use and share**, select **View in Teams**.
+1. In the **Teams + Microsoft 365** channel configuration panel, under **Use and share**, select **View in Microsoft Teams**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
 
