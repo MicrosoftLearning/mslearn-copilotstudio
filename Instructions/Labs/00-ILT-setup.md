@@ -109,7 +109,7 @@ Before you start the lab exercises, you must create a development environment fo
 1. Select **Save** to create the publisher.
 
    > [!NOTE]
-   > If **Save** is unavailable, create the solution in [Power Apps](https://make.powerapps.com/) at `https://make.powerapps.com/solutions`.
+   > If **Save** is unavailable, create the solution in [Power Apps](https://make.powerapps.com/) at `https://make.powerapps.com`.
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
