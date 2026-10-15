@@ -456,7 +456,7 @@ After completing all four test paths, review the configuration as a whole:
 1. Open the agent's **Build** tab and select the **Send Task Notification Email** tool.
 1. Confirm the tool description accurately reflects what the workflow does and when to use it.
 1. Confirm **Fill with AI** is selected for all four inputs.
-1. Confirm the confirmation prompt is clear and informative.
+1. Confirm the response returned by the workflow is clear and informative.
 
 ### Task 5.2 - Optional: Refine based on test results
 
