@@ -83,6 +83,9 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. In the left navigation pane, select the ellipsis (**...**) next to your account name and then select **Solutions**.
 
+> [!NOTE]
+> Selecting **Solutions** may open the Copilot Studio classic experience. If it does, close the classic experience page and  select the ellipsis (**...**) next to your account name, select **Solutions** again, and continue from the Solutions list.
+
 1. If prompted with a **Get Started** screen, select **Get Started** and then skip any welcome messages.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
