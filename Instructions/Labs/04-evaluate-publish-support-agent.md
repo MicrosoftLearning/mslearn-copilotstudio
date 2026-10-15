@@ -309,16 +309,18 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. On the **Build** page, select **Publish**. If prompted, select **Publish agent**.
 
-1. After publishing completes, select **Add channels**.
+1. After publishing completes, select **Add a trigger**.
 
-1. Select **Teams + Microsoft 365**. Under **Available in**, select **Microsoft 365 Copilot and Microsoft Teams**, then select **Add channel**.
+1. Select **Copilot and Teams**, select **Chat with the agent in Teams**.
 
-1. In the **Channels** section, select the **Teams + Microsoft 365** channel. Select the **About info** tab, and then complete the following fields where available:
+1. Select the **About info** tab, and then complete the following fields where available:
 
    | Field | Value |
    | --- | --- |
    | **Short description** | `Answers Contoso employee questions about IT and HR support policies.` |
    | **Long description** | `Use this agent to find answers about password resets, hardware issues, software requests, remote access, leave requests, benefits enrollment, and performance reviews.` |
+
+1. Select **Add trigger**.
 
 1. Select **Save**.
 
@@ -328,7 +330,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. In the **Teams + Microsoft 365** channel configuration panel, under **Use and share**, select **View in Microsoft Teams**.
+1. In the **Chat with the agent** channel configuration panel, under **Use and share**, select **View in Microsoft Teams**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
 
