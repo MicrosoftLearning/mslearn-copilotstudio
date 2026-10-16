@@ -11,6 +11,8 @@ lab:
     - Agents
 ---
 
+# Evaluate, publish, and manage agents in Microsoft Copilot Studio
+
 ## Scenario
 
 In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft Copilot, and validate its behavior as a published user.
