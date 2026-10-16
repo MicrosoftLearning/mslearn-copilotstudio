@@ -11,6 +11,8 @@ lab:
     - Agents
 ---
 
+# Create an equipment recommendation agent
+
 ## Scenario
 
 In this exercise, you create the **Contoso Equipment Advisor**, an agent powered by the GitHub Copilot harness. You create a small SharePoint inventory list, add an equipment policy as knowledge, configure a SharePoint connector tool, upload a supplied recommendation skill, and refine the skill description after testing.
