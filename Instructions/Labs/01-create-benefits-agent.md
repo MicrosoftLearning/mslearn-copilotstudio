@@ -11,6 +11,8 @@ lab:
     - Agents
 ---
 
+# Create a benefits information agent
+
 ## Scenario
 
 In this exercise, you create the **Contoso Benefits Assistant**, an agent powered by the GitHub Copilot harness. You add company and government knowledge sources, define the agent's behavior, configure its opening experience, and refine one instruction after testing.
