@@ -11,6 +11,8 @@ lab:
     - Workflows
 ---
 
+# Create a task notification agent and workflow
+
 ## Scenario
 
 In this exercise, you create the **Contoso Task Alert Agent**, a standalone workflow that sends task notification emails, add the workflow to the agent as a tool with end-user confirmation, and run all four required test paths.
