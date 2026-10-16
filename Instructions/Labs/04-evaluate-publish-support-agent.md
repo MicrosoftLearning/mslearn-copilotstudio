@@ -307,7 +307,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 6.1 - Publish the agent
 
-1. On the **Build** page, select **Publish**. In the **Publish agent** dialog, select **Publish**.
+1. On the **Build** page, select **Publish**. In the **Publish** dialog, select **Publish agent**.
 
 1. Select **+ Add channel**.
 
