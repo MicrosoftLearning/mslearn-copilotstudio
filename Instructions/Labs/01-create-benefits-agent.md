@@ -102,7 +102,7 @@ Create the fictional company guide that the agent uses as a knowledge source.
 
 1. In the **Name** field, enter `Contoso Benefits Assistant <your initials>`. Replace `<your initials>` with your initials or another unique value.
 
-1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, select the solution provided for the exercise from the **Solution** list.
+1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, check the **Solution** list. If the solution provided for the exercise isn't already selected, select it and then select **Done**. If it's already selected, you don't need to select **Done**; close the settings dialog.
 
 1. In **Instructions**, enter the following text:
 
@@ -141,7 +141,7 @@ Add the fictional company guide and an official government website to the agent.
 
 1. Select **Add to agent** and wait for the file upload to finish.
 
-1. Under the **Knowledge** section, select `contoso-benefits-guide.md`. In the **Edit knowledge source** dialog, enter `Contoso benefits guide` as the name and `Approved information about Contoso medical plans, enrollment periods, life events, wellness benefits, and benefits contacts.` as the description. Select **Save**.
+1. Under **Knowledge**, select `contoso-benefits-guide.md`. In the **Edit knowledge source** dialog, enter `Contoso benefits guide` as the name and `Approved information about Contoso medical plans, enrollment periods, life events, wellness benefits, and benefits contacts.` as the description, and then select **Save**.
 
 1. Select the **Knowledge** section again to add a new source to the agent.
 
@@ -164,13 +164,13 @@ Add the fictional company guide and an official government website to the agent.
 
 1. Add the following suggested prompts:
 
-   | Title | Prompt |
+   | Title | Message |
    | --- | --- |
    | Compare medical plans | Compare the three Contoso medical plan types. |
    | Change my elections | When can I change my Contoso benefit elections? |
    | Government assistance | Where can I find government help with food costs? |
 
-1. Close the **Agent settings** dialog and save the agent.
+1. Select **Done** to close the **Agent settings** dialog and save the agent.
 
 ## Exercise 5 - Test the agent
 

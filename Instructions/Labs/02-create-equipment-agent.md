@@ -176,7 +176,7 @@ Create a standalone data source for this exercise.
 
 1. In the **Name** field, enter `Contoso Equipment Advisor <your initials>`.
 
-1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, select the solution provided for the exercise from the **Solution** list.
+1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, check the **Solution** list. If the solution provided for the exercise isn't already selected, select it and then select **Done**. If it's already selected, you don't need to select **Done**; close the settings dialog.
 
 1. In **Instructions**, enter the following text:
 
@@ -212,7 +212,7 @@ Create a standalone data source for this exercise.
 
 1. Select the **Get items** action, and then select **+ Add** to create your SharePoint connection.
 
-1. In the **Tools** section, select the newly added SharePoint connector. In the **Details** section, set the tool name to `Get equipment inventory` and the tool description to `Retrieves the current Contoso equipment inventory, including category, location, price, available units, intended use, and accessibility notes. Use for equipment availability and recommendation requests. This tool reads inventory and doesn't reserve or order items.`
+1. In the **Tools** section, select the newly added SharePoint connector. In **Tool details**, set the tool name to `Get equipment inventory`. In **Description for AI**, enter `Retrieves the current Contoso equipment inventory, including category, location, price, available units, intended use, and accessibility notes. Use for equipment availability and recommendation requests. This tool reads inventory and doesn't reserve or order items.`
 
 1. In the **Inputs** section, select **Custom** next to each input and configure the values as follows:
 

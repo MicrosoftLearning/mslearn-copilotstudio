@@ -13,7 +13,7 @@ lab:
 
 ## Scenario
 
-In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft 365 Copilot, and validate its behavior as a published user.
+In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft Copilot, and validate its behavior as a published user.
 
 This exercise takes approximately **55 minutes** to complete.
 
@@ -22,7 +22,7 @@ This exercise takes approximately **55 minutes** to complete.
 - How to create and run a repeatable agent evaluation.
 - How to connect a specialist agent and test delegation boundaries.
 - How to diagnose and correct an instruction defect.
-- How to publish an agent to Microsoft Teams and Microsoft 365 Copilot.
+- How to publish an agent to Microsoft Teams and Microsoft Copilot.
 - How to validate agent behavior as a published user.
 
 ## High-level lab steps
@@ -52,7 +52,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) and sign in with your work or school account.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in with your work or school account.
 
 1. Confirm that the correct environment is selected.
 
@@ -66,7 +66,7 @@ To complete this exercise, you need:
 
    Replace `<your initials>` with your own initials or another short, unique identifier. For example: `Contoso Policy Agent CS`. Using your initials ensures the agent name is unique in a shared training environment.
 
-1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, select the solution provided for the exercise from the **Solution** list.
+1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, check the **Solution** list. If the solution provided for the exercise isn't already selected, select it and then select **Done**. If it's already selected, you don't need to select **Done**; close the settings dialog.
 
 1. Remain on the agent's **Build** page. In the next task, you configure the agent's instructions from this page.
 
@@ -132,7 +132,7 @@ To complete this exercise, you need:
 
 ### Task 1.3 - Create and publish the escalation specialist
 
-1. Return to the **Agents** page, and then select **+ New agent**.
+1. Return to the **Agents** page, and then select **New agent**.
 
 1. In the **Name** field, enter `Contoso Escalation Agent <your initials>`. Use the same unique identifier that you used for the policy agent.
 
@@ -157,7 +157,7 @@ To complete this exercise, you need:
 
 1. On the **Build** tab, select **Connected agents** in the components panel.
 
-1. Search for and select `Contoso Escalation Agent <your initials>`.
+1. Search for and select `Contoso Escalation Agent <your initials>`. If necessary, select **Refresh** to make the agent available for selection.
 
 1. Use the following description:
 
@@ -184,13 +184,13 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select **New evaluation** or **+ Create your first evaluation**.
 
-1. In **More ways to start**, select **Or, write some questions yourself**.
+1. In **Create or select a data set**, select **Conversations** as the data type, then select **Or, write some questions yourself**.
 
-1. In the **Configure test set** panel, enter `Contoso support release evaluation` for the name and confirm that **General quality** appears as the test method.
+1. Enter `Contoso support release evaluation` for the evaluation name and confirm that **General quality** appears as the test method.
 
 ### Task 2.2 - Create conversation 1: In-scope answer
 
-1. In **Review your test cases**, select **+ Add conversations** > **Write**.
+1. In **Review your test cases**, select **+ Add conversations** > **Write a conversation**.
 
 1. In the new row, select the empty field under **Conversation**, and then add the following user question:
 
@@ -246,7 +246,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select the **Unresolved ticket escalation** conversation to expand the detail view.
 
-1. Read the agent's actual response to the user message. Observe that the agent says something similar to: *"I'm an automated assistant and can't connect you to a person directly, but extension 4357 will get you to one."*
+1. Read the agent's actual response to the user message. Verify that the agent directs the user to the IT Help Desk, provides extension 4357, and explains that it can't connect the user to a person directly.
 
 1. Compare this response to the expected agent response. Although the actual response might include escalation contact information, it doesn't delegate the request to the connected escalation specialist as expected.
 
@@ -266,13 +266,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 4.1 - Update the agent instructions
 
-1. On the **Build** tab, in the **Instructions** area, locate the escalation boundary statement under **Scope boundaries:**
-
-   ```text
-   If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
-   ```
-
-1. Replace that sentence with the following text:
+1. Replace the escalation boundary statement you identified in the previous task with:
 
    ```text
    If a user asks to speak with a person or escalate an unresolved IT or HR issue, delegate the request to the connected escalation specialist. Don't block the request or attempt to provide escalation details yourself.
@@ -313,20 +307,24 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 6.1 - Publish the agent
 
-1. On the **Build** page, select **Publish**. If prompted, select **Publish agent**.
+1. On the **Build** page, select **Publish**.
 
-1. After publishing completes, select **Add channels**.
+1. Select **+ Add channel**.
 
-1. Select **Teams + Microsoft 365**. Under **Available in**, select **Microsoft 365 Copilot and Microsoft Teams**, then select **Add channel**.
+1. Select **Teams + Microsoft 365**.
 
-1. In the **Channels** section, select the **Teams + Microsoft 365** channel. Select the **About info** tab, and then complete the following fields where available:
+1. Under **Availability**, select **Microsoft Copilot and Microsoft Teams**.
+
+1. Select the **About info** tab, and then complete the following fields where available:
 
    | Field | Value |
    | --- | --- |
    | **Short description** | `Answers Contoso employee questions about IT and HR support policies.` |
    | **Long description** | `Use this agent to find answers about password resets, hardware issues, software requests, remote access, leave requests, benefits enrollment, and performance reviews.` |
 
-1. Select **Save**.
+1. Select **Add channel**.
+
+1. Select **Publish agent**.
 
 ### Task 6.2 - Install the agent for yourself
 
@@ -334,11 +332,14 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. In the **Teams + Microsoft 365** channel configuration panel, under **Use and share**, select **View in Teams**.
+1. In the **Teams + Microsoft 365** Channels configuration panel, under **Use and share**, select **View in Microsoft Teams**.
+
+   > [!NOTE]
+   > If **View in Microsoft Teams** doesn't redirect you to Microsoft Teams, change the availability to **Microsoft Teams only**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
 
-1. In Teams, select **Add**. This action installs the agent in Teams and Microsoft 365 Copilot when Microsoft 365 availability is enabled.
+1. In Microsoft Teams, select **Add**. This action installs the agent in Microsoft Teams when Microsoft 365 availability is enabled.
 
 **If your organization requires administrator approval:**
 
@@ -357,7 +358,7 @@ Choose the path that matches your organization's policy.
 
 ### Task 7.1 - Test the agent in Microsoft Teams
 
-After the agent is installed by you or your administrator, open and test it from within Microsoft Teams, not from the Copilot Studio authoring environment.
+After the agent is installed by you or your administrator, open and test it from Microsoft Teams, not from the Copilot Studio authoring environment.
 
 1. Open Microsoft Teams, and then locate and open the **Contoso Policy Agent** app you installed. Use the display name you configured.
 
@@ -404,8 +405,8 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] A second evaluation run shows successful delegation and includes the IT Help Desk extension.
-- [ ] The agent is published and the Teams + Microsoft 365 Copilot channel is added.
-- [ ] You installed the Teams app for yourself, contacted your administrator for approval, or documented the fallback validation path.
+- [ ] The agent is published and the Teams + Microsoft Copilot channel is added.
+- [ ] You accessed the agent in Microsoft Teams, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
 
 ## Clean up

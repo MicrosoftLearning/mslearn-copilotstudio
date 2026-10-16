@@ -57,7 +57,7 @@ To complete this exercise, you need:
 
 1. In the **Name** field, enter `Contoso Task Alert Agent <your initials>`. Replace `<your initials>` with your initials or another unique value.
 
-1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, select the solution provided for the exercise from the **Solution** list.
+1. If your organization requires a solution, in the upper-right corner, select **More options** (**...**), and then select **Settings**. In **Agent settings** > **Agent details**, check the **Solution** list. If the solution provided for the exercise isn't already selected, select it and then select **Done**. If it's already selected, you don't need to select **Done**; close the settings dialog.
 
 1. In **Instructions**, enter the following text:
 
@@ -163,13 +163,13 @@ To complete this exercise, you need:
 
 ### Task 2.4 - Add the send an email (V2) action
 
-1. Select the **+** icon between the **When an agent calls the flow** step and the **Respond to the agent** step to insert a new action.
+1. Select the **+** icon between the **When an agent calls the flow** trigger and the **Respond to the agent** action to insert a new action.
 
 1. In the search field, enter `Send an email`.
 
 1. From the results, select the **Send an email** (it may also appear as **Send an email (V2)**) action under the **Office 365 Outlook** connector.
 
-   If this is the first time you use this connector, Copilot Studio prompts you to sign in. Sign in with the Microsoft 365 account that has the Outlook mailbox you want to use for sending notifications.
+   If this is the first time you use this connector, Copilot Studio may prompt you to sign in. Sign in with the Microsoft 365 account that has the Outlook mailbox you want to use for sending notifications.
 
    > [!NOTE]
    > If a browser pop-up is blocked, allow pop-ups from `https://copilotstudio.preview.microsoft.com` and then select sign in again.
@@ -214,7 +214,7 @@ To complete this exercise, you need:
 
 ### Task 2.5 - Configure the response outputs
 
-1. Select the **Respond to the agent** step to open the configuration panel.
+1. Select the **Respond to the agent** action to open the configuration panel.
 
 1. Select **+ Add an output** and configure the first output:
 
@@ -269,7 +269,7 @@ To complete this exercise, you need:
 1. In the **Name** field, verify or update the name to:
 
    ```text
-   Send task notification email
+   Send Task Notification Email <your initials>
    ```
 
 1. In the **Description for AI** field, enter:
@@ -455,8 +455,8 @@ After completing all four test paths, review the configuration as a whole:
 
 1. Open the agent's **Build** tab and select the **Send Task Notification Email** tool.
 1. Confirm the tool description accurately reflects what the workflow does and when to use it.
-1. Confirm **AI** is selected under **How is this filled?** for all four inputs.
-1. Confirm the confirmation prompt is clear and informative.
+1. Confirm **Fill with AI** is selected for all four inputs.
+1. Confirm the response returned by the workflow is clear and informative.
 
 ### Task 5.2 - Optional: Refine based on test results
 
