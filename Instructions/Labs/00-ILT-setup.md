@@ -44,7 +44,6 @@ Before you start the lab exercises, you must create a development environment fo
 1. Expand **Change default settings** and configure the following:
    - **Environment group**: None
    - **Make this a Managed Environment**: No
-   - **Get new features early**: No
    - **Create on behalf**: No
    - **Add a Dataverse data store?**: Yes
    
@@ -61,7 +60,7 @@ Before you start the lab exercises, you must create a development environment fo
 
    ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
-1. In a new browser tab, navigate to `https://copilotstudio.microsoft.com/` and sign in if prompted.
+1. In a new browser tab, navigate to `https://copilotstudio.preview.microsoft.com/` and sign in if prompted.
 
    > [!NOTE]  
    > If you experience issues loading Copilot Studio on your environment:
@@ -71,28 +70,23 @@ Before you start the lab exercises, you must create a development environment fo
    >   3. Copy and save this value.
    > - Then try accessing your environment directly by pasting your ID into the following URL:
    >   ```
-   >   https://copilotstudio.microsoft.com/environments/<your-environment-id>/home
+   >   https://copilotstudio.preview.microsoft.com/environments/<your-environment-id>/home
    >   ```
 
-1. If prompted, select **Get Started** and keep the default country or region settings.
+1. If prompted with a **Get Started** screen, accept the default country or region and continue. Skip any welcome messages.
 
-1. Skip any welcome messages.
-
-1. In the bottom-left corner of the page, select the ellipsis (**...**) next to your username and select **Open classic experience**.
-
-   ![Open classic experience in Copilot Studio.](../media/open-classic-experience.png)
-
-1. In the **Share feedback before opening the previous experience?** dialog, select **Skip feedback**. The classic experience opens in a new browser tab.
-
-1. If the **Welcome to Microsoft Copilot Studio** dialog appears, select **Get Started** and skip any additional welcome messages.
-
-1. In the upper right corner of the classic experience page, switch environments by using the Environment Selector and select the environment you created.
+1. In the bottom-left corner, select the **environment selector** that displays the name of the currently selected environment, and then choose the environment you created.
 
    ![Select your environment in the Copilot Studio.](../media/select-environment.png)
 
 ### Task 1.4 - Create a solution
 
-1. In the left navigation pane, select the ellipsis **(…)**, and select **Solutions**.
+1. In the left navigation pane, select the ellipsis (**...**) next to your account name and then select **Solutions**.
+
+   > [!NOTE]
+   > Selecting **Solutions** may redirect you to the classic experience. If this occurs, close the classic experience. Then, select the ellipsis (**...**) next to your account name again and select **Solutions** a second time to open the solutions list.
+
+1. If prompted with a **Get Started** screen, select **Get Started** and then skip any welcome messages.
 
 1. You should see several solutions including the *Default Solution* and the *Common Data Services Default Solution*.
 
@@ -113,6 +107,9 @@ Before you start the lab exercises, you must create a development environment fo
 1. For **Prefix**, enter `fab`
 
 1. Select **Save** to create the publisher.
+
+   > [!NOTE]
+   > If **Save** is unavailable, create the solution in [Power Apps](https://make.powerapps.com/) at `https://make.powerapps.com`.
 
 1. Verify that **Fabrikam (fabrikam)** is selected in the **Publisher** drop-down.
 
