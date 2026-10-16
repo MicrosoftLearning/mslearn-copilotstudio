@@ -2,7 +2,7 @@
 lab:
   title: Evaluate and publish a support agent
   module: Evaluate, publish, and manage agents in Microsoft Copilot Studio
-  description: Connect a specialist agent, evaluate delegation, correct an instruction defect, publish the main agent, and validate its behavior in Microsoft Teams.
+  description: Connect a specialist agent, evaluate delegation, correct an instruction defect, publish the main agent, and validate its behavior in Microsoft Copilot.
   duration: 55 minutes
   level: 200
   islab: true
@@ -13,7 +13,7 @@ lab:
 
 ## Scenario
 
-In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft 365 Copilot, and validate its behavior as a published user.
+In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft Copilot, and validate its behavior as a published user.
 
 This exercise takes approximately **55 minutes** to complete.
 
@@ -22,7 +22,7 @@ This exercise takes approximately **55 minutes** to complete.
 - How to create and run a repeatable agent evaluation.
 - How to connect a specialist agent and test delegation boundaries.
 - How to diagnose and correct an instruction defect.
-- How to publish an agent to Microsoft Teams and Microsoft 365 Copilot.
+- How to publish an agent to Microsoft Teams and Microsoft Copilot.
 - How to validate agent behavior as a published user.
 
 ## High-level lab steps
@@ -32,7 +32,7 @@ This exercise takes approximately **55 minutes** to complete.
 - Create and run an evaluation test set.
 - Identify and correct an instruction defect.
 - Rerun the evaluation and compare results.
-- Publish and validate the agent in Microsoft Teams.
+- Publish and validate the agent in Microsoft Copilot.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ To complete this exercise, you need:
 - [Access to Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions).
 - Permission to create and publish two agents powered by the GitHub Copilot harness in the same Power Platform environment.
 - Access to the **Evaluate** feature. Evaluate is in production-ready preview. Confirm with your instructor or administrator that it's enabled in your environment before you begin Exercise 2.
-- A Microsoft Teams account to validate the agent after publishing.
+- Access to Microsoft Copilot to validate the agent after publishing.
 - Permission to install the agent for yourself or access to an administrator who can approve the agent after you publish it.
 
 > [!NOTE]
@@ -307,11 +307,11 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 6.1 - Publish the agent
 
-1. On the **Build** page, select **Publish**. If prompted, select **Publish agent**.
+1. On the **Build** page, select **Publish**. In the **Publish agent** dialog, select **Publish**.
 
-1. After publishing completes, select **Add a trigger**.
+1. Select **+ Add a trigger**.
 
-1. Select **Copilot and Teams**, select **Chat with the agent in Teams**.
+1. Select **Copilot and Teams**, select **Chat with the agent in Copilot and Teams**.
 
 1. Select the **About info** tab, and then complete the following fields where available:
 
@@ -322,7 +322,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select **Add trigger**.
 
-1. Select **Save**.
+1. Select **Publish agent**.
 
 ### Task 6.2 - Install the agent for yourself
 
@@ -330,11 +330,9 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. In the **Chat with the agent** channel configuration panel, under **Use and share**, select **View in Microsoft Teams**.
+1. In the **Chat with the agent** trigger configuration panel, under **Use and share**, select **View in Microsoft Copilot**.
 
-1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
-
-1. In Teams, select **Add**. This action installs the agent in Teams and Microsoft 365 Copilot when Microsoft 365 availability is enabled.
+1. In Microsoft Copilot, select **Add**. This action installs the agent in Microsoft Copilot when Microsoft 365 availability is enabled.
 
 **If your organization requires administrator approval:**
 
@@ -351,11 +349,11 @@ Choose the path that matches your organization's policy.
 
 ## Exercise 7 - Validate as the published user
 
-### Task 7.1 - Test the agent in Microsoft Teams
+### Task 7.1 - Test the agent in Microsoft Copilot
 
-After the agent is installed by you or your administrator, open and test it from within Microsoft Teams, not from the Copilot Studio authoring environment.
+After the agent is installed by you or your administrator, open and test it from Microsoft Copilot, not from the Copilot Studio authoring environment.
 
-1. Open Microsoft Teams, and then locate and open the **Contoso Policy Agent** app you installed. Use the display name you configured.
+1. Open Microsoft Copilot, and then locate and open the **Contoso Policy Agent** app you installed. Use the display name you configured.
 
 1. Send the following messages one at a time and observe the responses:
 
@@ -400,8 +398,8 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] A second evaluation run shows successful delegation and includes the IT Help Desk extension.
-- [ ] The agent is published and the Teams + Microsoft 365 Copilot channel is added.
-- [ ] You installed the Teams app for yourself, contacted your administrator for approval, or documented the fallback validation path.
+- [ ] The agent is published and the Teams + Microsoft Copilot channel is added.
+- [ ] You accessed the agent in Microsoft Copilot, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
 
 ## Clean up
