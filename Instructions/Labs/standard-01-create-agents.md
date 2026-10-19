@@ -47,7 +47,7 @@ This exercise will take approximately **45** minutes to complete.
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 - Have access to a Power Platform environment and a solution where you can create agents and related assets.
 - You can use:
-  - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
+  - the environment and **Lab Exercises** solution created in the [ILT Setup](https://microsoftlearning.github.io/mslearn-copilotstudio/Instructions/Labs/00-ILT-setup.html) lab, or
   - your own existing environment and solution.
 - If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
 
