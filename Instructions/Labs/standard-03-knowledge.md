@@ -1,7 +1,7 @@
 ---
 lab:
-  title: Manage knowledge in Copilot Studio agents
-  module: Ground agents with knowledge sources
+  title: Manage knowledge in Copilot Studio agents with the standard harness
+  module: Ground agents with knowledge sources with the standard harness
   description: In this lab, you will use Copilot to create an agent, create a Dataverse table, add knowledge to the agent, and configure generative AI.
   duration: 60 minutes
   level: 200
@@ -10,7 +10,7 @@ lab:
     - Microsoft Copilot Studio
 ---
 
-# Manage knowledge in Copilot Studio agents
+# Manage knowledge in Copilot Studio agents with the standard harness
 
 ## Scenario
 
