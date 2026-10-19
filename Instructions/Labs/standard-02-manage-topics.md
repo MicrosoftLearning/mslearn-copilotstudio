@@ -1,7 +1,7 @@
 ---
 lab:
-  title: Manage topics in Copilot Studio agents
-  module: Design agent conversations using topics
+  title: Manage topics in Copilot Studio agents with the standard harness
+  module: Design agent conversations using topics with the standard harness
   description: In this lab, you will use Copilot to create an agent, create a topic from a description, add nodes, use entities, and manage variables.
   duration: 45 minutes
   level: 200
@@ -10,7 +10,7 @@ lab:
     - Microsoft Copilot Studio
 ---
 
-# Manage topics in Copilot Studio agents
+# Manage topics in Copilot Studio agents with the standard harness
 
 ## Scenario
 
