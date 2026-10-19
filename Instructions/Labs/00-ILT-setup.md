@@ -10,6 +10,7 @@ lab:
     - Microsoft Copilot
     - Microsoft Copilot Studio
 ---
+# ILT Setup
 
 ## Exercise 1 - Create a Power Platform environment
 
