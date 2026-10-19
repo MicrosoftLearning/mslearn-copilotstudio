@@ -1,7 +1,7 @@
 ---
 lab:
-  title: Use workflows as tools
-  module: Incorporate workflows to enhance agent behavior
+  title: Use workflows as tools with the standard harness
+  module: Incorporate workflows to enhance agent behavior with the standard harness
   description: In this lab, you will use Copilot to create an agent, create workflows, and add workflows as tools to the agent and to a topic.
   duration: 60 minutes
   level: 200
@@ -10,7 +10,7 @@ lab:
     - Microsoft Copilot Studio
 ---
 
-# Use workflows as tools
+# Use workflows as tools with the standard harness
 
 ## Scenario
 
