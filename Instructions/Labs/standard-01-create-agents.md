@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Create agents with Copilot Studio
+  title: Create agents with Copilot Studio with the standard harness
   module: Create agents in Microsoft Copilot Studio
   description: In this exercise, you will access the Microsoft Copilot Studio portal, select the appropriate environment, and create a new agent.
   duration: 45 minutes
@@ -11,7 +11,7 @@ lab:
     - Microsoft Copilot Studio
 ---
 
-# Create agents with Copilot Studio
+# Create agents with Copilot Studio with the standard harness
 
 ## Scenario
 
