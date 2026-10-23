@@ -51,17 +51,17 @@ To complete this exercise, you need:
 
 Create a standalone data source for this exercise.
 
-1. Open the SharePoint site that you use for the exercise, and then select **New** > **List**. Under **Create from blank**, select **List**.
+> [!NOTE]
+> If you don't have a SharePoint site, create one before proceeding:
+> 1. Go to [Microsoft Copilot](https://copilot.cloud.microsoft/) at `https://copilot.cloud.microsoft` and sign in with your lab credentials.
+> 2. Select the App launcher **(⋮⋮⋮)** icon, and then select **SharePoint**. If you don't see it, select **More apps**.
+> 3. On the left navigation, select **Build**, and then select **Site** > **Team site**. 
+> 4. If prompted to choose a template, select **Standard team**, and then select **Use template**.
+> 5. Enter `PL7008 Equipment <your initials>` as the site name, replacing `<your initials>` with a unique value. 
+> 6. Confirm that **Privacy settings** is set to **Private - only members can access this site**, leave the other settings as default, and then select **Create site**.
+> 7. If prompted to add members, you can skip adding them and select **Go to site**. Wait for the new site to open.
 
-   > [!NOTE]
-   > If you don't have a SharePoint site, create one before proceeding:
-   > 1. Go to [Microsoft Copilot](https://copilot.cloud.microsoft/) at `https://copilot.cloud.microsoft` and sign in with your lab credentials.
-   > 2. Select the App launcher **(⋮⋮⋮)** icon, and then select **SharePoint**. If you don't see it, select **More apps**.
-   > 3. On the left navigation, select **Build**, and then select **Site** > **Team site**. 
-   > 4. If prompted to choose a template, select **Standard team**, and then select **Use template**.
-   > 5. Enter `PL7008 Equipment <your initials>` as the site name, replacing `<your initials>` with a unique value. 
-   > 6. Confirm that **Privacy settings** is set to **Private - only members can access this site**, leave the other settings as default, and then select **Create site**.
-   > 7. If prompted to add members, you can skip adding them and select **Go to site**. Wait for the new site to open.
+1. Open the SharePoint site that you use for the exercise, and then select **New** > **List**. Under **Create from blank**, select **List**.
    
 1. Enter `PL7008 Equipment Inventory <your initials>` as the list name, replacing `<your initials>` with a unique value, and then select **Create**.
 
