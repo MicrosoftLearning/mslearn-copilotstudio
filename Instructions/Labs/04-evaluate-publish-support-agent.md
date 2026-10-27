@@ -341,7 +341,7 @@ Choose the path that matches your organization's policy.
 
 1. When the publishing confirmation appears, select **View in Microsoft Teams**.
 
-1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
+1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**. If prompted, sign in with your work or school account.
 
 1. In Microsoft Teams, select **Add**. This action installs the agent in Microsoft Teams when Microsoft 365 availability is enabled.
 
