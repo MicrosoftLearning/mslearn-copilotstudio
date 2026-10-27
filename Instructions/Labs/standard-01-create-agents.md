@@ -175,14 +175,6 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Create**.
 
-1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
-
-   ```prompt
-   You are an agent that assists with questions related to claiming US government benefits.
-   ```
-
-1. Select the **Send** icon.
-
    Your agent will be created.
 
    ![Screenshot of the created agent.](../media/new-agent-overview.png)
