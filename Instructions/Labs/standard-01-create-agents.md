@@ -66,13 +66,15 @@ In this exercise, you will create an agent by using a template, and then test th
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
-1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
+1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding. If you are using the new Copilot Studio experience, select the ellipsis **(…)** next to your account in the lower-left corner, and then select **Open classic experience** before proceeding.
+
+1. If the **Share feedback before opening the previous experience?** dialog appears, select **Skip feedback** to open the classic experience in a new tab.
+
+1. If the **Welcome to Microsoft Copilot Studio** dialog appears, select **Get Started** and skip any welcome messages.
 
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
-
-1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Under **Start with an agent template** section, select the **Safe Travels** template.
 
