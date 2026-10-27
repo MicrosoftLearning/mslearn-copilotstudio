@@ -339,7 +339,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. When the publishing confirmation appears, under **Microsoft Teams**, select **View in Microsoft Teams**.
+1. When the publishing confirmation appears, select **View in Microsoft Teams**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
 
