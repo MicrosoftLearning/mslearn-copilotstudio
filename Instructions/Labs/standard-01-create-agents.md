@@ -163,9 +163,9 @@ In this exercise, you will create a new agent using natural language to answer q
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
-1. Enter `US Benefits Claim Assistant` for agent´s name.
+1. Enter `US Benefits Claim Assistant` as the agent name.
 
-1. Expand **Agent settings (Optional), if it is not already expanded.
+1. Expand **Agent settings (Optional)**, if it is not already expanded.
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
