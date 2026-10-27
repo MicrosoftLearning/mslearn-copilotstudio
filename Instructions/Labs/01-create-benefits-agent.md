@@ -147,7 +147,9 @@ Add the fictional company guide and an official government website to the agent.
 
 1. Select the **Knowledge** section again to add a new source to the agent.
 
-1. Select **Public websites**, disable **Search all websites**, and then enter `https://www.usa.gov/benefits` as the website address.
+1. Select **Public websites** and disable (deselect) **Search all websites**
+
+1. Enter `https://www.usa.gov/benefits` as the website address.
 
 1. Select **Add**, and then enter `USA.gov benefits` as the name and `Official US government information about benefit and assistance programs.` as the description. Select **Add to agent**.
 
