@@ -229,7 +229,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Select **Run**.
 
-1. If the **Manage connections** dialog opens, select the connection and confirm you are using the account provided for the lab. Then select **Continue**.
+1. If the **Manage connections** dialog opens, select the connection and confirm you are using your lab account. Then select **Continue**.
 
    > [!NOTE]
    > If the evaluation doesn't start, refresh the page, create a new connection and sign in to authenticate the account. Then try to run the evaluation again.
@@ -310,9 +310,9 @@ You create four evaluation conversations that cover the most important scenarios
 > [!NOTE]
 > Copilot Studio saves each evaluation run separately. Compare the latest run with the earlier baseline run after you save the corrected agent.
 
-## Exercise 6 - Publish and add the Teams and Microsoft Copilot channel
+## Exercise 6 - Add the Microsoft Teams trigger and publish the agent
 
-### Task 6.1 - Publish the agent
+### Task 6.1 - Configure the Microsoft Teams trigger and publish the agent
 
 1. On the **Build** page, select **Publish**.
 
@@ -341,7 +341,7 @@ Choose the path that matches your organization's policy.
 
 1. When the publishing confirmation appears, select **View in Microsoft Teams**.
 
-1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**. If prompted, sign in with your work or school account.
+1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**. If prompted, sign in with your lab account.
 
 1. In Microsoft Teams, select **Add**. This action installs the agent in Microsoft Teams when Microsoft 365 availability is enabled.
 
