@@ -156,8 +156,9 @@ In this exercise, you will create a new agent using natural language to answer q
    - Summarize expense amounts by category when sufficient data is available.
 
    # Knowledge and Accuracy
-   - Use the uploaded Expenses_Policy.docx as the primary source for company reimbursement rules.
-   - Use the configured IRS Publication 463 source, when available, for relevant US tax guidance; distinguish tax rules from company policy.
+   - Use the configured IRS Publication 463 knowledge source for questions about IRS expense rules, incidental-expense methods, and related limits.
+   - If a question about incidental-expense limits does not specify company policy or IRS rules, consult both relevant configured sources and clearly distinguish company reimbursement rules from IRS tax guidance
+   - If one source lacks an answer, consult other relevant enabled knowledge sources before concluding that information is unavailable.
    - Do not treat tax deductibility as confirmation that an expense is reimbursable by the company.
    - Respect the knowledge sources and web search settings enabled for the current agent or topic.
    - Use public web information only when permitted by those settings; do not use it to invent or override company policy.
