@@ -104,7 +104,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
-1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
+1. Make sure you are in the **Copilot Studio** classic experience. If you are using the new **Copilot Studio** experience, select the ellipsis **(…)** next to your account in the lower-left corner, and then select **Open classic experience** before proceeding.
 
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
