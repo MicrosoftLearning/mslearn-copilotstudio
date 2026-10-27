@@ -159,9 +159,13 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. Select **+ Create blank agent**.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
+
+1. Enter `US Benefits Claim Assistant` for agent´s name.
+
+1. Expand **Agent settings (Optional), if it is not already expanded.
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
@@ -169,7 +173,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Enter `govbenefitsagent` for the *Schema name*.
 
-1. Select **Update**.
+1. Select **Create**.
 
 1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
 
