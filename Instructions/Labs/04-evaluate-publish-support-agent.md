@@ -366,7 +366,7 @@ Choose the path that matches your organization's policy.
 
 After the agent is installed by you or your administrator, open and test it from Microsoft Teams, not from the Copilot Studio authoring environment.
 
-1. Open Microsoft Teams, and then locate and open the **Contoso Policy Agent** app you installed. Use the display name you configured.
+1. Open Microsoft Teams, and then locate and open the **Contoso Policy Agent** app you installed. Use the display name you configured. If the agent's dialog is still open, select **Open**.
 
 1. Send the following messages one at a time and observe the responses:
 
