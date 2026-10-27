@@ -58,7 +58,7 @@ To complete this exercise, you need:
 
 1. Confirm that the correct environment is selected.
 
-1. On the **Home** page, select **Agent**. Alternatively, select **Agents** in the left navigation and then select **+ New agent** in the upper-right corner.
+1. On the **Home** page, select **Agent**. Alternatively, select **Agents** in the left navigation and then select **New agent** in the upper-right corner.
 
 1. In the **Name** field, enter the agent name:
 
@@ -151,7 +151,7 @@ To complete this exercise, you need:
 
 1. Select **Save**. On the **Preview** tab, send `I need to escalate an unresolved laptop ticket.` Confirm that the agent provides extension 4357.
 
-1. On the **Build** page, select **Publish** > **Publish agent**. In some environments, the **Publish agent** option might not appear and publishing starts automatically. The specialist must be published before the policy agent can connect to it.
+1. On the **Build** page, select **Publish** > **Publish**. If publishing starts automatically, you don't need to select **Publish** a second time.. The specialist must be published before the policy agent can connect to it. Select **Done** when publishing is complete. When publishing is complete, select **Done**.
 
 ### Task 1.4 - Connect the escalation specialist
 
