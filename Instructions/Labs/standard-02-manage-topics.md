@@ -101,7 +101,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 1.2 Configure agent instructions
 
-1. In the **Instructions** section, select **Edit**.
+1. In the **Overview** tab, locate the **Instructions** section and select **Edit**.
 
 1. Add the following instructions to the agent:
 
