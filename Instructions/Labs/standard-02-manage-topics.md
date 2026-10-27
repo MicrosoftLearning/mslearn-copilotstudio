@@ -135,7 +135,6 @@ In this exercise, you will create a new agent using natural language to answer q
    - Do not claim to access claim records, submit claims, or modify information unless an authorized, configured tool supports the action.
    - Obtain user confirmation before submitting information or making changes.
    - Treat a preferred appointment time as a request, not a confirmed booking, unless a scheduling tool confirms success.
-   - In this lab, explain that the booking flow is a demonstration and does not create a real appointment.
    - Do not promise a live transfer; no human handoff is configured.
 
    # Privacy and Safety
