@@ -106,13 +106,19 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Make sure you are in the **Copilot Studio** classic experience. If you are using the new **Copilot Studio** experience, select the ellipsis **(…)** next to your account in the lower-left corner, and then select **Open classic experience** before proceeding.
 
+1. If the **Share feedback before opening the previous experience?** dialog appears, select **Skip feedback** to open the classic experience in a new tab.
+
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. Select **+ Create blank agent**.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
+
+1. Enter `Expense Claims Assistant` as the agent name.
+
+1. Expand **Agent settings (Optional)**, if it is not already expanded.
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
@@ -120,15 +126,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Enter `expenseagent` for the *Schema name*.
 
-1. Select **Update**.
-
-1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
-
-   ```prompt
-   You are an agent that helps employees with expense claims including questions around expense policy and procedures.
-   ```
-
-1. Select the **Send** icon.
+1. Select **Create**.
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
