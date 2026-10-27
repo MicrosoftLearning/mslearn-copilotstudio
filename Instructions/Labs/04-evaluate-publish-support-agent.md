@@ -15,7 +15,7 @@ lab:
 
 ## Scenario
 
-In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams and Microsoft Copilot, and validate its behavior as a published user.
+In this exercise, you create the **Contoso Policy Agent** and a specialized escalation agent. You connect the agents, evaluate delegation with a structured set of test conversations, correct one deliberate instruction defect, publish the main agent to Microsoft Teams, and validate its behavior as a published user.
 
 This exercise takes approximately **55 minutes** to complete.
 
@@ -24,7 +24,7 @@ This exercise takes approximately **55 minutes** to complete.
 - How to create and run a repeatable agent evaluation.
 - How to connect a specialist agent and test delegation boundaries.
 - How to diagnose and correct an instruction defect.
-- How to publish an agent to Microsoft Teams and Microsoft Copilot.
+- How to publish an agent to Microsoft Teams.
 - How to validate agent behavior as a published user.
 
 ## High-level lab steps
@@ -192,7 +192,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 2.2 - Create conversation 1: In-scope answer
 
-1. In **Review your test cases**, select **+ Add conversations** > **Write a conversation**.
+1. Select **+ Add conversations** > **Write a conversation**.
 
 1. In the new row, select the empty field under **Conversation**, and then add the following user question:
 
@@ -202,9 +202,9 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Optionally, add this expected agent response:
 
-   ```text
-   Agent states that the IT Help Desk is available Monday through Friday, 8 AM to 6 PM in the user's local time zone.
-   ```
+    ```text
+    Agent states that the IT Help Desk is available Monday through Friday, 8 AM to 6 PM in the user's local time zone.
+    ```
 
    > [!NOTE]
    > Expected agent responses are for your own reference during manual review. General quality evaluates standards such as relevance and completeness. It doesn't compare the actual response against the expected response.
@@ -225,13 +225,16 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 3.1 - Run the evaluation
 
-1. On the **Evaluate** page, confirm that all four conversations appear under the **Review your test cases** section.
+1. On the **Evaluate** page, confirm that all four conversations are listed.
 
 1. Select **Run**.
 
-1. If the **Manage profile and connections** dialog opens, under **User**, select or add the account used for the lab. If prompted, sign in to authenticate the account, and then select **Run**.
+1. If the **Manage connections** dialog opens, select the connection and confirm you are using the account provided for the lab. Then select **Continue**.
 
-1. Wait for the evaluation run to complete. When the **evaluation is ready** notification appears, select **View results**. You can also open the completed run from the **Evaluations** list.
+   > [!NOTE]
+   > If the evaluation doesn't start, refresh the page, create a new connection and sign in to authenticate the account. Then try to run the evaluation again.
+
+1. Wait for the evaluation run to complete. If the **evaluation is ready** notification appears, select **View results**. You can also open the completed run from the **Evaluations** list.
 
 ### Task 3.2 - Review baseline results
 
@@ -270,9 +273,9 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Replace the escalation boundary statement you identified in the previous task with:
 
-   ```text
-   If a user asks to speak with a person or escalate an unresolved IT or HR issue, delegate the request to the connected escalation specialist. Don't block the request or attempt to provide escalation details yourself.
-   ```
+    ```text
+    If a user asks to speak with a person or escalate an unresolved IT or HR issue, delegate the request to the connected escalation specialist. Don't block the request or attempt to provide escalation details yourself.
+    ```
 
 1. Select **Save**.
 
@@ -289,6 +292,8 @@ You create four evaluation conversations that cover the most important scenarios
 1. Confirm that your four conversations are still listed.
 
 1. Select **Run**.
+
+1. If the **Manage connections** dialog opens, select the connection and confirm you are using the account provided for the lab. Then select **Continue**.
 
 1. Wait for the evaluation run to complete.
 
@@ -311,20 +316,20 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. On the **Build** page, select **Publish**.
 
-1. Select **+ Add channel**.
+1. Select **+ Add a trigger**.
 
-1. Select **Teams + Microsoft 365**.
+1. Select **Microsoft Teams**.
 
-1. Under **Availability**, select **Microsoft Copilot and Microsoft Teams**.
+1. Select **Chat with the agent**.
 
-1. Select the **About info** tab, and then complete the following fields where available:
+1. On the **About info** tab, complete the following fields, where available:
 
    | Field | Value |
    | --- | --- |
    | **Short description** | `Answers Contoso employee questions about IT and HR support policies.` |
    | **Long description** | `Use this agent to find answers about password resets, hardware issues, software requests, remote access, leave requests, benefits enrollment, and performance reviews.` |
 
-1. Select **Add channel**.
+1. Select **Add trigger**.
 
 1. Select **Publish agent**.
 
@@ -334,10 +339,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. In the **Teams + Microsoft 365** Channels configuration panel, under **Use and share**, select **View in Microsoft Teams**.
-
-   > [!NOTE]
-   > If **View in Microsoft Teams** doesn't redirect you to Microsoft Teams, change the availability to **Microsoft Teams only**.
+1. When the publishing confirmation appears, under **Microsoft Teams**, select **View in Microsoft Teams**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**, and sign in with your work or school account.
 
@@ -345,7 +347,9 @@ Choose the path that matches your organization's policy.
 
 **If your organization requires administrator approval:**
 
-1. In **Availability options**, select **Use and share**, and then select **Submit to org catalog** twice.
+1. In the components panel, under **Triggers**, select **Chat with the agent**.
+
+1. Select **Use and share**, and then select **Submit to org catalog** twice.
 
 1. In the **Give everyone access to this agent?** dialog, select **Yes, submit** to send the agent for administrator approval.
 
@@ -407,7 +411,7 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] A second evaluation run shows successful delegation and includes the IT Help Desk extension.
-- [ ] The agent is published and the Teams + Microsoft Copilot channel is added.
+- [ ] The agent is published and the Microsoft Teams trigger is added.
 - [ ] You accessed the agent in Microsoft Teams, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
 
