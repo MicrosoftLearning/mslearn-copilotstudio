@@ -161,7 +161,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For **Channel**, select a channel from the list, for example, **General**.
 
-1. For *Message*, use **Dynamic Content** to select **Task Summary**.
+1. For *Message* (or **Adaptive Card**, if displayed), use **Dynamic Content** to select **Task Summary**.
 
    ![Screenshot of Teams action in the workflow.](../media/workflow-teams-action.png)
 
