@@ -220,16 +220,11 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Save**.
 
-### Task 2.5 - Update agent instructions
-
-> [!IMPORTANT]
-> The instructions that Copilot generates when it creates an agent vary, and they're often long and general. Those instructions can cause the agent to answer from knowledge or ask the user for a list of tasks instead of calling your topics and tools. In this task, you replace the generated instructions with a specific set of instructions so that the agent behaves predictably in the remaining exercises.
+### Task 2.5 - Add agent instructions
 
 1. Select the **Overview** tab.
 
 1. In the **Instructions** section, select **Edit**.
-
-1. Select all of the existing text in the **Instructions** box and delete it.
 
 1. Enter the following instructions. Where the text shows a placeholder such as `<Send Summary to Teams>`, don't type the placeholder. Instead, type `/`, and then select the **Send Summary to Teams** tool from the list so that the tool is inserted as a reference:
 
