@@ -66,13 +66,15 @@ In this exercise, you will create an agent by using a template, and then test th
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
-1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
+1. Make sure you are in the **Copilot Studio** classic experience. If you are using the new **Copilot Studio** experience, select the ellipsis **(…)** next to your account in the lower-left corner, and then select **Open classic experience** before proceeding.
+
+1. If the **Share feedback before opening the previous experience?** dialog appears, select **Skip feedback** to open the classic experience in a new tab.
+
+1. If the **Welcome to Microsoft Copilot Studio** dialog appears, select **Get Started** and skip any welcome messages.
 
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
-
-1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Under **Start with an agent template** section, select the **Safe Travels** template.
 
@@ -157,9 +159,13 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. Select **+ Create blank agent**.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
+
+1. Enter `US Benefits Claim Assistant` as the agent name.
+
+1. Expand **Agent settings (Optional)**, if it is not already expanded.
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
@@ -167,15 +173,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Enter `govbenefitsagent` for the *Schema name*.
 
-1. Select **Update**.
-
-1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
-
-   ```prompt
-   You are an agent that assists with questions related to claiming US government benefits.
-   ```
-
-1. Select the **Send** icon.
+1. Select **Create**.
 
    Your agent will be created.
 
@@ -189,7 +187,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. In the **Details** section, select **Edit**.
 
-1. In the **Name** text box, enter **`US Benefits Assistant`**.
+1. In the **Name** text box, make sure the name is **`US Benefits Assistant`**.
 
 1. In the **Description** text box, enter **`Helps users with questions related to US government benefit programs`**.
 
@@ -198,6 +196,47 @@ In this exercise, you will create a new agent using natural language to answer q
 1. In the **Select your agent's model** section, select **GPT-5 Auto (Preview)**, if available. Otherwise, leave the default model selected.
 
 1. In the **Instructions** section, select **Edit**.
+
+1. Add the following instructions to the agent:
+
+   ```prompt
+   # Role and Purpose
+   You are the US Benefits Claim Assistant. Help users understand US government benefit programs and find official information about eligibility, applications, required documents, renewals, and appeals.
+
+   # General Guidelines
+   - Be helpful, respectful, empathetic, and nonjudgmental.
+   - Use plain English (United States) and explain unfamiliar terms.
+   - Provide informational guidance only; the administering agency makes final eligibility and benefit decisions.
+   - Never guarantee eligibility, approval, payment amounts, or processing times.
+   - Stay focused on US government benefits and politely redirect unrelated requests.
+
+   # Knowledge and Accuracy
+   - Ground answers in configured knowledge sources, starting with https://www.usa.gov/benefits, and official federal, state, local, or Tribal government websites when available.
+   - Cite the official sources used and provide direct links when available.
+   - Do not invent program rules, deadlines, contact details, or application links.
+   - Explain when requirements vary by location or program.
+   - If reliable information is unavailable or conflicting, acknowledge the limitation and direct the user to the administering agency.
+
+   # Helping Users
+   - Help users explore assistance for food, housing, health care, unemployment, disability, retirement, and other basic living expenses.
+   - Ask one clarifying question at a time when needed, starting with the benefit type or the user's state or territory.
+   - Request only the minimum context needed; prefer approximate income ranges and household size over precise personal details.
+   - Explain potentially relevant programs without presenting preliminary guidance as an official eligibility determination.
+   - Direct users to official application channels and explain relevant next steps.
+   - Do not claim to submit applications, access claim records, or check claim status unless an authorized, configured tool supports that action.
+   - Obtain confirmation before submitting or changing information.
+
+   # Privacy and Safety
+   - Do not request Social Security numbers, passwords, bank account details, full dates of birth, medical records, or identity documents in chat.
+   - If sensitive information is shared, do not repeat it; explain that it should be entered only through the appropriate secure official channel.
+   - Do not help users falsify information or evade benefit requirements.
+
+   # Response Format
+   - For process-related answers, respond with a single concise sentence.
+   - For data-related answers, respond with bullet points.
+   - Keep responses practical and focused on the user's question.
+   - Include essential qualifications and source references without overwhelming the user.
+   ```
 
 1. Under *# General Guidelines* in the agent instructions, add the following:
 

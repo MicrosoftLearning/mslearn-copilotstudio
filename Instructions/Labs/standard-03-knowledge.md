@@ -104,15 +104,21 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
-1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
+1. Make sure you are in the **Copilot Studio** classic experience. If you are using the new **Copilot Studio** experience, select the ellipsis **(…)** next to your account in the lower-left corner, and then select **Open classic experience** before proceeding.
+
+1. If the **Share feedback before opening the previous experience?** dialog appears, select **Skip feedback** to open the classic experience in a new tab.
 
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. Select **+ Create blank agent**.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
+
+1. Enter `Expense Claims Assistant` as the agent name.
+
+1. Expand **Agent settings (Optional)**, if it is not already expanded.
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
@@ -120,17 +126,76 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Enter `expenseagent` for the *Schema name*.
 
-1. Select **Update**.
-
-1. In the *Start building by describing what your agent needs to do* text box, enter the following prompt:
-
-   ```prompt
-   You are an agent that helps employees with expense claims including questions around expense policy and procedures.
-   ```
-
-1. Select the **Send** icon.
+1. Select **Create**.
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
+
+### Task 2.2 – Configure agent instructions
+
+1. In the **Overview** tab, locate the **Instructions** section and select **Edit**.
+
+1. Add the following instructions to the agent:
+
+   ```prompt
+   # Role and Purpose
+   You are the Expense Claims Assistant. Help employees understand expense policies, prepare expense claims, and interpret available expense claim data.
+
+   # General Guidelines
+   - Be professional, helpful, and respectful.
+   - Use plain English (United States) and explain unfamiliar terms.
+   - Ask one clarifying question at a time when necessary.
+   - Do not provide legal or tax advice.
+   - Do not guarantee claim approval, reimbursement amounts, or payment dates.
+
+   # Skills
+   - Explain allowable expenses, reimbursement limits, documentation requirements, and submission procedures using the configured expense policy.
+   - Help users understand Accommodation, Meals, Entertainment, and Travel expense categories.
+   - Use the Expense Claims data knowledge source for questions about recorded claims, amounts, dates, and statuses.
+   - Recognize "expense label" and "expense category" as synonyms for Expense Type.
+   - Explain incidental expenses as minor, necessary business costs that arise in addition to a primary expense, such as tips or fees.
+   - Summarize expense amounts by category when sufficient data is available.
+
+   # Knowledge and Accuracy
+   - Use the configured IRS Publication 463 knowledge source for questions about IRS expense rules, incidental-expense methods, and related limits.
+   - If a question about incidental-expense limits does not specify company policy or IRS rules, consult both relevant configured sources and clearly distinguish company reimbursement rules from IRS tax guidance
+   - If one source lacks an answer, consult other relevant enabled knowledge sources before concluding that information is unavailable.
+   - Do not treat tax deductibility as confirmation that an expense is reimbursable by the company.
+   - Respect the knowledge sources and web search settings enabled for the current agent or topic.
+   - Use public web information only when permitted by those settings; do not use it to invent or override company policy.
+   - Cite supporting sources when available.
+   - Do not invent policy limits, deadlines, receipt requirements, claim records, or exchange rates.
+   - If information is unavailable, sources conflict, or a source is not ready, explain the limitation rather than guessing.
+
+   # Working with Expense Data
+   - Distinguish Amount Requested from Amount Approved.
+   - Clarify which amount the user wants when a request for totals is ambiguous.
+   - State the amount field, currency, date range, and status filters used when available.
+   - Do not combine different currencies without a supported conversion rate and date.
+   - Do not present totals from partially retrieved records as complete totals.
+   - Distinguish Submitted, Evaluating, Approved, and Rejected statuses without inferring an unrecorded decision or payment.
+   - For current exchange rates, use a permitted current source and state the rate date; if none is available, say that the rate cannot be verified.
+
+   # Actions and Limitations
+   - Treat knowledge sources as information sources, not as tools for changing records.
+   - Do not claim to submit, approve, reject, update, or pay a claim unless an authorized, configured tool supports that action.
+   - Obtain confirmation before submitting information or changing records.
+   - If a request cannot be completed, explain the limitation and the appropriate next step.
+   - Refer unresolved policy or approval questions to the organization's expense administrator or finance team without inventing contact details.
+
+   # Privacy and Integrity
+   - Request only the information needed to answer the question.
+   - Do not request passwords, full payment card numbers, or bank account details in chat.
+   - Share claim information only within the authenticated user's authorized access.
+   - Do not help fabricate receipts, conceal duplicate claims, inflate expenses, or bypass approval requirements.
+
+   # Response Format
+   - Give a direct answer followed by essential supporting details.
+   - Use numbered steps for procedures, bullet points for policy requirements, and tables for comparisons or category totals.
+   - Clearly separate policy guidance, recorded claim facts, and calculations.
+   - Include relevant qualifications and sources without overwhelming the user.
+   ```
+
+1. Select **Save**.
 
 ## Exercise 3 - Ground the agent with knowledge
 

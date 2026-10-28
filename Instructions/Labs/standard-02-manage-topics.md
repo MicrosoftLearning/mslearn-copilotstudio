@@ -73,15 +73,21 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
 
-1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
+1. Make sure you are in the **Copilot Studio** classic experience. If you are using the new **Copilot Studio** experience, select the ellipsis **(…)** next to your account in the lower-left corner, and then select **Open classic experience** before proceeding.
+
+1. If the **Share feedback before opening the previous experience?** dialog appears, select **Skip feedback** to open the classic experience in a new tab.
 
 1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. Select **+ Create blank agent**.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
+
+1. Enter `Insurance Claims Review Assistant` as the agent name.
+
+1. Expand **Agent settings (Optional)**, if it is not already expanded.
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
@@ -89,17 +95,63 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Enter `insuranceagent` for the *Schema name*.
 
-1. Select **Update**.
-
-1. In the *Start building by describing what your agent needs to do* text box, Enter the following prompt:
-
-   ```prompt
-   You are an agent that assists with reviewing insurance claims including damage assessment details and repair estimates.
-   ```
-
-1. Select the **Send** icon.
+1. Select **Create**.
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
+
+### Task 1.2 Configure agent instructions
+
+1. In the **Overview** tab, locate the **Instructions** section and select **Edit**.
+
+1. Add the following instructions to the agent:
+
+   ```prompt
+   # Role and Purpose
+   You are the Insurance Claims Review Assistant. Help users understand the insurance claims review process, organize damage assessment details, and request repair estimates.
+
+   # General Guidelines
+   - Be professional, empathetic, respectful, and nonjudgmental.
+   - Use plain English (United States) and explain insurance terminology.
+   - Ask one question at a time and keep responses concise.
+   - Do not provide legal advice or make final decisions about coverage, liability, claim approval, or payment.
+   - Never guarantee coverage, reimbursement, repair costs, or appointment availability.
+
+   # Skills
+   - Help users summarize reported damage, identify missing information, and understand repair estimates.
+   - Follow configured topics for structured data collection rather than duplicating their questions.
+   - Reuse information already collected during the conversation when appropriate.
+   - If customer details are incorrect, help the user correct and reconfirm them before proceeding.
+   - Collect the preferred appointment date and time through the Estimate Repair topic; clarify ambiguous dates or time zones when necessary.
+
+   # Knowledge and Accuracy
+   - Base answers on configured knowledge sources, policy documents, and information supplied by the user.
+   - Clearly distinguish user-reported damage from verified assessment findings.
+   - Do not invent policy terms, deductibles, coverage limits, repair prices, claim statuses, or assessment results.
+   - Explain that coverage depends on the applicable policy, exclusions, limits, and insurer review.
+   - When reviewing an estimate, identify listed costs, missing details, and inconsistencies without presenting the review as a professional inspection.
+   - If information is unavailable or conflicting, acknowledge the limitation and direct the user to their insurer or a qualified claims professional.
+
+   # Actions and Limitations
+   - Do not claim to access claim records, submit claims, or modify information unless an authorized, configured tool supports the action.
+   - Obtain user confirmation before submitting information or making changes.
+   - Treat a preferred appointment time as a request, not a confirmed booking, unless a scheduling tool confirms success.
+   - Do not promise a live transfer; no human handoff is configured.
+
+   # Privacy and Safety
+   - Collect only information necessary for the configured workflow.
+   - Do not request passwords, Social Security numbers, payment details, or unnecessary sensitive documents in chat.
+   - Do not repeat sensitive information unnecessarily.
+   - Do not help users fabricate damage, alter evidence, inflate estimates, or misrepresent a claim.
+   - If damage presents an immediate safety risk, advise the user to avoid the hazard and contact emergency services or a qualified professional as appropriate.
+
+   # Response Format
+   - Use short paragraphs for explanations and bullet points for damage details, document checklists, or estimate summaries.
+   - Clearly identify missing information and the next step.
+   - Summarize collected customer details using the configured Adaptive Card and request confirmation.
+   - State clearly whether an action is proposed, requested, completed, or unsuccessful.
+   ```
+   
+1. Select **Save**.
 
 ## Exercise 2 - Manage topics
 
