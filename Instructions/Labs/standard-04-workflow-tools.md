@@ -157,7 +157,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For **Post in**, select **Channel**.
 
-1. For **Team**, select a team from the list, for example, **Leadership**.
+1. For **Team**, select a team from the list, for example, **Contoso**.
 
 1. For **Channel**, select a channel from the list, for example, **General**.
 
