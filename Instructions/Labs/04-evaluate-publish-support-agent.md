@@ -54,7 +54,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in with your work or school account.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in with your work or school account.
 
 1. Confirm that the correct environment is selected.
 
@@ -151,7 +151,7 @@ To complete this exercise, you need:
 
 1. Select **Save**. On the **Preview** tab, send `I need to escalate an unresolved laptop ticket.` Confirm that the agent provides extension 4357.
 
-1. On the **Build** page, select **Publish** > **Publish**. If publishing starts automatically, you don't need to select **Publish** a second time.. The specialist must be published before the policy agent can connect to it. Select **Done** when publishing is complete. When publishing is complete, select **Done**.
+1. On the **Build** page, select **Publish** > **Publish agent**. If publishing starts automatically, you don't need to select **Publish** a second time.. The specialist must be published before the policy agent can connect to it. When publishing is complete, select **Done**.
 
 ### Task 1.4 - Connect the escalation specialist
 
@@ -203,7 +203,7 @@ You create four evaluation conversations that cover the most important scenarios
 1. Optionally, add this expected agent response:
 
     ```text
-    Agent states that the IT Help Desk is available Monday through Friday, 8 AM to 6 PM in the user's local time zone.
+    The IT Help Desk is available Monday through Friday, 8 AM to 6 PM in your local time zone.
     ```
 
    > [!NOTE]
@@ -217,9 +217,9 @@ You create four evaluation conversations that cover the most important scenarios
 
 | Conversation | User question | Expected agent response |
 | --- | --- | --- |
-| Ambiguity and clarification | I need help with my benefits. | Agent asks a clarifying question to understand whether the user has a question about benefits enrollment, leave requests, or another HR topic. Agent does not assume a specific intent. |
-| Out-of-scope boundary | Can you recommend a good restaurant near the office for a team lunch? | Agent declines the request and explains that it can only help with Contoso IT and HR support topics. Agent does not attempt to answer the restaurant question. |
-| Connected-agent delegation | I submitted a ticket about my laptop three days ago, and nobody has responded. I need to speak with someone urgently. What should I do? | Main agent delegates the request to the connected escalation specialist, which provides the IT Help Desk extension. |
+| Ambiguity and clarification | I need help with my benefits. | What would you like help with: benefits enrollment, leave requests, or another HR topic? |
+| Out-of-scope boundary | Can you recommend a good restaurant near the office for a team lunch? | I can only help with Contoso IT and HR support topics, so I can't recommend a restaurant. |
+| Connected-agent delegation | I submitted a ticket about my laptop three days ago, and nobody has responded. I need to speak with someone urgently. What should I do? | For urgent help with your laptop ticket, call the IT Help Desk at extension 4357. The help desk is available Monday through Friday, 8 AM to 6 PM. |
 
 ## Exercise 3 - Run the baseline evaluation and observe the defect
 
@@ -253,7 +253,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Read the agent's actual response to the user message. Verify that the agent directs the user to the IT Help Desk, provides extension 4357, and explains that it can't connect the user to a person directly.
 
-1. Compare this response to the expected agent response. Although the actual response might include escalation contact information, it doesn't delegate the request to the connected escalation specialist as expected.
+1. Compare this response to the expected agent response, and check whether the main agent delegated to the connected escalation specialist. Although the actual response might include escalation contact information, it doesn't delegate the request as expected.
 
 ### Task 3.3 - Identify the defect
 
@@ -291,7 +291,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Confirm that your four conversations are still listed.
 
-1. Select **Run**.
+1. Select **Run** or **Run again**.
 
 1. If the **Manage connections** dialog opens, select the connection and confirm you are using the account provided for the lab. Then select **Continue**.
 
@@ -310,17 +310,17 @@ You create four evaluation conversations that cover the most important scenarios
 > [!NOTE]
 > Copilot Studio saves each evaluation run separately. Compare the latest run with the earlier baseline run after you save the corrected agent.
 
-## Exercise 6 - Add the Microsoft Teams trigger and publish the agent
+## Exercise 6 - Add the Teams + Microsoft 365 channel and publish the agent
 
-### Task 6.1 - Configure the Microsoft Teams trigger and publish the agent
+### Task 6.1 - Configure the Teams + Microsoft 365 channel and publish the agent
 
 1. On the **Build** page, select **Publish**.
 
-1. Select **+ Add a trigger**.
+1. Select **+ Add channel**.
 
-1. Select **Microsoft Teams**.
+1. Select **Teams + Microsoft 365**.
 
-1. Select **Chat with the agent**.
+1. Select **Microsoft Teams only**.
 
 1. On the **About info** tab, complete the following fields, where available:
 
@@ -329,7 +329,7 @@ You create four evaluation conversations that cover the most important scenarios
    | **Short description** | `Answers Contoso employee questions about IT and HR support policies.` |
    | **Long description** | `Use this agent to find answers about password resets, hardware issues, software requests, remote access, leave requests, benefits enrollment, and performance reviews.` |
 
-1. Select **Add trigger**.
+1. Select **Add channel**.
 
 1. Select **Publish agent**.
 
@@ -339,7 +339,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. When the publishing confirmation appears, select **View in Microsoft Teams**.
+1. When the publishing confirmation appears, select **View in Teams + Microsoft 365**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**. If prompted, sign in with your lab account.
 
@@ -347,7 +347,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization requires administrator approval:**
 
-1. In the components panel, under **Triggers**, select **Chat with the agent**.
+1. In the components panel, under **Channels**, select **Teams + Microsoft 365**.
 
 1. Select **Use and share**, and then select **Submit to org catalog** twice.
 
@@ -411,7 +411,7 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] A second evaluation run shows successful delegation and includes the IT Help Desk extension.
-- [ ] The agent is published and the Microsoft Teams trigger is added.
+- [ ] The agent is published and the Teams + Microsoft 365 channel is added.
 - [ ] You accessed the agent in Microsoft Teams, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
 
