@@ -159,7 +159,7 @@ To complete this exercise, you need:
    | --- | --- |
    | Type | **Text** |
    | Input name | `Due Date` |
-   | Description | `The due date of the task, stated as the user provided it, such as October 15, 2026.` |
+   | Description | `The due date of the task, stated as the user provided it.` |
 
 1. Select **Save** to save your progress.
 
@@ -274,7 +274,7 @@ To complete this exercise, you need:
    Send Task Notification Email <your initials>
    ```
 
-1. In the **Description for AI** field, enter:
+1. In the **Description for Intelligence** field, enter:
 
    ```text
    Sends a formatted task notification email to a specified recipient. Use when the user asks to send a notification about a task and all required details are available and confirmed: recipient email, task title, task details, and due date.
@@ -290,7 +290,7 @@ In the **Inputs** section, configure each input:
 
 1. For **Task Details**, confirm the description reads: `A brief description of what the task involves, including any relevant context.`
 
-1. For **Due Date**, confirm the description reads: `The due date of the task, stated as the user provided it, such as October 15, 2026.`
+1. For **Due Date**, confirm the description reads: `The due date of the task, stated as the user provided it.`
 
 ### Task 3.4 - Configure the workflow outputs
 
@@ -326,10 +326,10 @@ Open the **Preview** tab in Copilot Studio. Use the following tasks to run all f
 
 1. At the top of the **Preview** pane, start a new conversation session.
 
-1. Enter the following message exactly. Replace `<your email address>` with your own work or school email address.
+1. Enter the following message. Replace `<your email address>` with your own work or school email address and `<due date>` with a date you choose in the next calendar month.
 
    ```prompt
-   Send a task notification to <your email address> for the task "Server Patch Update." The task involves applying monthly security patches to production servers. It's due October 15, 2026.
+   Send a task notification to <your email address> for the task "Server Patch Update." The task involves applying monthly security patches to production servers. It's due <due date>.
    ```
 
    **Expected behavior**:
@@ -373,7 +373,7 @@ Open the **Preview** tab in Copilot Studio. Use the following tasks to run all f
    - **Task title**: `Backup Validation.`
    - **Recipient email**: Your own work or school email address.
    - **Task details**: `Verify that nightly backups completed successfully and review the backup logs.`
-   - **Due date**: `October 20, 2026`
+   - **Due date**: Choose a date in the next calendar month.
 
 1. When the agent presents the confirmation prompt, approve it.
 
@@ -388,10 +388,10 @@ Open the **Preview** tab in Copilot Studio. Use the following tasks to run all f
 
 1. Start a new conversation session in the **Preview** tab.
 
-1. Enter the following message. Replace `<your email address>` with your own work or school email address.
+1. Enter the following message. Replace `<your email address>` with your own work or school email address and `<due date>` with a date you choose in the next calendar month.
 
    ```text
-   Send a task notification to <your email address> for "Access Review." The task involves reviewing and removing inactive user accounts. It's due November 1, 2026.
+   Send a task notification to <your email address> for "Access Review." The task involves reviewing and removing inactive user accounts. It's due <due date>.
    ```
 
 1. When the agent presents the confirmation prompt, decline it by entering:
@@ -426,7 +426,7 @@ This test runs the workflow directly with a deliberately malformed email address
    | Recipient Email | `not-an-email` |
    | Task Title | `Incident Report` |
    | Task Details | `Document the root cause of a recent service outage.` |
-   | Due Date | `November 5, 2026` |
+   | Due Date | Choose a date in the next calendar month. |
 
 1. Select **Run**. The workflow encounters an error at the **Send an email (V2)** step because `not-an-email` isn't a valid address.
 
@@ -457,7 +457,7 @@ After completing all four test paths, review the configuration as a whole:
 
 1. Open the agent's **Build** tab and select the **Send Task Notification Email** tool.
 1. Confirm the tool description accurately reflects what the workflow does and when to use it.
-1. Confirm **Fill with AI** is selected for all four inputs.
+1. Confirm **Fill with Intelligence** is selected for all four inputs.
 1. Confirm the response returned by the workflow is clear and informative.
 
 ### Task 5.2 - Optional: Refine based on test results
