@@ -275,7 +275,7 @@ To complete this exercise, you need:
    Send Task Notification Email <your initials>
    ```
 
-1. In the **Description for AI** field, enter:
+1. In the **Description for Intelligence** field, enter:
 
    ```text
    Sends a formatted task notification email to a specified recipient. Use when the user asks to send a notification about a task and all required details are available and confirmed: recipient email, task title, task details, and due date.
