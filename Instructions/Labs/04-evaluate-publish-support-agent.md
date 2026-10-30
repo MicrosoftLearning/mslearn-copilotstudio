@@ -151,7 +151,7 @@ To complete this exercise, you need:
 
 1. Select **Save**. On the **Preview** tab, send `I need to escalate an unresolved laptop ticket.` Confirm that the agent provides extension 4357.
 
-1. On the **Build** page, select **Publish** > **Publish**. If publishing starts automatically, you don't need to select **Publish** a second time.. The specialist must be published before the policy agent can connect to it. Select **Done** when publishing is complete. When publishing is complete, select **Done**.
+1. On the **Build** page, select **Publish** > **Publish agent**. If publishing starts automatically, you don't need to select **Publish** a second time.. The specialist must be published before the policy agent can connect to it. When publishing is complete, select **Done**.
 
 ### Task 1.4 - Connect the escalation specialist
 
@@ -203,7 +203,7 @@ You create four evaluation conversations that cover the most important scenarios
 1. Optionally, add this expected agent response:
 
     ```text
-    Agent states that the IT Help Desk is available Monday through Friday, 8 AM to 6 PM in the user's local time zone.
+    The IT Help Desk is available Monday through Friday, 8 AM to 6 PM in your local time zone.
     ```
 
    > [!NOTE]
@@ -217,9 +217,9 @@ You create four evaluation conversations that cover the most important scenarios
 
 | Conversation | User question | Expected agent response |
 | --- | --- | --- |
-| Ambiguity and clarification | I need help with my benefits. | Agent asks a clarifying question to understand whether the user has a question about benefits enrollment, leave requests, or another HR topic. Agent does not assume a specific intent. |
-| Out-of-scope boundary | Can you recommend a good restaurant near the office for a team lunch? | Agent declines the request and explains that it can only help with Contoso IT and HR support topics. Agent does not attempt to answer the restaurant question. |
-| Connected-agent delegation | I submitted a ticket about my laptop three days ago, and nobody has responded. I need to speak with someone urgently. What should I do? | Main agent delegates the request to the connected escalation specialist, which provides the IT Help Desk extension. |
+| Ambiguity and clarification | I need help with my benefits. | What would you like help with: benefits enrollment, leave requests, or another HR topic? |
+| Out-of-scope boundary | Can you recommend a good restaurant near the office for a team lunch? | I can only help with Contoso IT and HR support topics, so I can't recommend a restaurant. |
+| Connected-agent delegation | I submitted a ticket about my laptop three days ago, and nobody has responded. I need to speak with someone urgently. What should I do? | For urgent help with your laptop ticket, call the IT Help Desk at extension 4357. The help desk is available Monday through Friday, 8 AM to 6 PM. |
 
 ## Exercise 3 - Run the baseline evaluation and observe the defect
 
@@ -253,7 +253,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Read the agent's actual response to the user message. Verify that the agent directs the user to the IT Help Desk, provides extension 4357, and explains that it can't connect the user to a person directly.
 
-1. Compare this response to the expected agent response. Although the actual response might include escalation contact information, it doesn't delegate the request to the connected escalation specialist as expected.
+1. Compare this response to the expected agent response, and check whether the main agent delegated to the connected escalation specialist. Although the actual response might include escalation contact information, it doesn't delegate the request as expected.
 
 ### Task 3.3 - Identify the defect
 
@@ -291,7 +291,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 1. Confirm that your four conversations are still listed.
 
-1. Select **Run**.
+1. Select **Run** or **Run again**.
 
 1. If the **Manage connections** dialog opens, select the connection and confirm you are using the account provided for the lab. Then select **Continue**.
 
