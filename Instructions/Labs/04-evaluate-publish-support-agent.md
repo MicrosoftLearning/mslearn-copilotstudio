@@ -310,17 +310,17 @@ You create four evaluation conversations that cover the most important scenarios
 > [!NOTE]
 > Copilot Studio saves each evaluation run separately. Compare the latest run with the earlier baseline run after you save the corrected agent.
 
-## Exercise 6 - Add the Microsoft Teams trigger and publish the agent
+## Exercise 6 - Add the Teams + Microsoft 365 channel and publish the agent
 
-### Task 6.1 - Configure the Microsoft Teams trigger and publish the agent
+### Task 6.1 - Configure the Teams + Microsoft 365 channel and publish the agent
 
 1. On the **Build** page, select **Publish**.
 
-1. Select **+ Add a trigger**.
+1. Select **+ Add channel**.
 
-1. Select **Microsoft Teams**.
+1. Select **Teams + Microsoft 365**.
 
-1. Select **Chat with the agent**.
+1. Select **Microsoft Teams only**.
 
 1. On the **About info** tab, complete the following fields, where available:
 
@@ -329,7 +329,7 @@ You create four evaluation conversations that cover the most important scenarios
    | **Short description** | `Answers Contoso employee questions about IT and HR support policies.` |
    | **Long description** | `Use this agent to find answers about password resets, hardware issues, software requests, remote access, leave requests, benefits enrollment, and performance reviews.` |
 
-1. Select **Add trigger**.
+1. Select **Add channel**.
 
 1. Select **Publish agent**.
 
@@ -339,7 +339,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. When the publishing confirmation appears, select **View in Microsoft Teams**.
+1. When the publishing confirmation appears, select **View in Teams + Microsoft 365**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**. If prompted, sign in with your lab account.
 
@@ -347,7 +347,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization requires administrator approval:**
 
-1. In the components panel, under **Triggers**, select **Chat with the agent**.
+1. In the components panel, under **Channels**, select **Teams + Microsoft 365**.
 
 1. Select **Use and share**, and then select **Submit to org catalog** twice.
 
@@ -411,7 +411,7 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] A second evaluation run shows successful delegation and includes the IT Help Desk extension.
-- [ ] The agent is published and the Microsoft Teams trigger is added.
+- [ ] The agent is published and the Teams + Microsoft 365 channel is added.
 - [ ] You accessed the agent in Microsoft Teams, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
 
