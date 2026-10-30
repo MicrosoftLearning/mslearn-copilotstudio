@@ -54,7 +54,7 @@ To complete this exercise, you need:
 
 ### Task 1.1 - Create the agent
 
-1. Go to [Microsoft Copilot Studio](https://copilotstudio.preview.microsoft.com/) at `https://copilotstudio.preview.microsoft.com/` and sign in with your work or school account.
+1. Go to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) at `https://copilotstudio.microsoft.com/` and sign in with your work or school account.
 
 1. Confirm that the correct environment is selected.
 
