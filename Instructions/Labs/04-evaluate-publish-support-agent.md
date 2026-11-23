@@ -383,6 +383,9 @@ A baseline run is the first evaluation run, before you correct the agent's instr
 
 1. Check that **Classification** and **Capability use** both show **Pass** in the same run. Classification checks the response; Capability use checks whether the specialist was called.
 
+   > [!NOTE]
+   > **Capability use** may show **Invalid** if the expected tool wasn't saved; this doesn't mean delegation failed. Verify **Classification** is **Pass** and the escalation agent appears under **Tools referenced**. Record automated delegation validation as incomplete.
+
 1. Select the conversation to inspect the supporting evidence. Under **Tools referenced**, confirm that the connected escalation agent appears, and confirm that the response provides IT Help Desk extension 4357 without the conflicting guidance. This inspection explains the automated results; it isn't the only way the evaluation detects missing delegation.
 
 1. Open the latest **Contoso support release evaluation** run. Confirm that Classification labels all four conversations **Pass**. Review General quality and the responses for regressions. The restaurant request should still be declined; a General quality **Fail** for that refusal doesn't override its expected Classification **Pass**.
