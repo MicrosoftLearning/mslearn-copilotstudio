@@ -43,7 +43,7 @@ To complete this exercise, you need:
 - A Microsoft Entra work or school account.
 - [Access to Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions).
 - Permission to create and publish two agents powered by the GitHub Copilot harness in the same Power Platform environment.
-- Access to the **Evaluate** feature. Evaluate is in production-ready preview. Confirm with your instructor or administrator that it's enabled in your environment before you begin Exercise 2.
+- Access to the **Evaluate** feature, including the **Classification** and **Capability use** test methods. Evaluate is in production-ready preview. Confirm with your instructor or administrator that these methods are enabled for your agent in your environment before you begin Exercise 2.
 - A Microsoft Teams account to validate the agent after publishing.
 - Permission to install the agent for yourself or access to an administrator who can approve the agent after you publish it.
 
@@ -92,7 +92,7 @@ To complete this exercise, you need:
 
    - Only answer questions related to the Contoso IT and HR support policies listed in your instructions.
    - If a question is outside your scope, let the user know you can only help with Contoso IT and HR support topics.
-   - If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
+   - If a user needs to speak with a person or escalate an unresolved IT or HR issue, do not delegate the request to a connected agent. Let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
 
    ## Contoso support policies
 
@@ -174,9 +174,9 @@ The specialist's distinct description helps the main agent decide when to delega
 ## Exercise 2 - Create evaluation conversations
 
 > [!IMPORTANT]
-> The **Evaluate** feature for agents powered by the GitHub Copilot harness is in production-ready preview. Confirm it's available in your environment before proceeding. If Evaluate is not enabled, skip to Exercise 4 and validate the agent using Preview and the published channel.
+> The **Evaluate** feature for agents powered by the GitHub Copilot harness is in production-ready preview. Confirm it's available in your environment before proceeding. If Evaluate or the required test methods aren't enabled, complete Exercise 4, skip Exercise 5, and continue with Exercise 6. Validate using Preview and the published channel, and leave the automated-evaluation completion criteria unchecked. Record that automated evaluation of delegation remains incomplete; manual review or a response-text check isn't a substitute for **Capability use**.
 
-You create four evaluation conversations that cover the most important scenarios for the support policy agent: a direct answer retained by the main agent, an ambiguous request requiring clarification, an out-of-scope boundary, and an escalation request that should delegate to the connected agent.
+You create four evaluation conversations that cover the most important scenarios for the support policy agent: a direct answer retained by the main agent, an ambiguous request requiring clarification, an out-of-scope boundary, and an escalation request that should delegate to the connected agent. You also create a separate evaluation containing the same escalation request to check the connected agent's actual invocation.
 
 ### Task 2.1 - Configure a new test set
 
@@ -223,39 +223,62 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 2.4 - Add a Classification test method
 
-General quality scores responses for qualities such as relevance and completeness, but it doesn't check whether the agent routes escalation requests correctly. Add a **Classification** test method so that the evaluation can identify the escalation defect.
+General quality scores responses for qualities such as relevance and completeness, but it doesn't check whether the agent follows the escalation response rules. Add a **Classification** test method to check contact information and conflicting guidance. Classification evaluates response text; it doesn't prove that the connected agent was invoked. You check invocation separately in Task 2.5.
 
 1. Under **Select test methods**, select **Add test method**.
 
 1. In the **Select a test method** dialog, select **Classification**, and then select **OK**.
 
-1. In the **Configure classification** dialog, enter `Escalation routing check` in the **Name** field.
+1. In the **Configure classification** dialog, enter `Escalation response check` in the **Name** field.
 
 1. In the **Evaluation instructions** field, enter:
 
    ```text
-   If the user asks to escalate an issue or speak with a person, label the response Pass only if it provides IT Help Desk extension 4357 or the HR Support contact and does not also say that the agent cannot connect the user to a person or tell the user to search the employee portal. Label it Fail if it includes either of those statements, even if it also provides a contact. For all other requests, label the response Pass if it answers or declines the request without escalating it.
+   Evaluate the response text, not whether a connected agent was invoked. If the user asks to escalate an issue or speak with a person about IT, label the response Pass only if it provides IT Help Desk extension 4357. For an HR escalation, require hr-support@contoso.com or extension 2840. Label an escalation response Fail if it omits the appropriate contact, says that the agent cannot connect the user to a person, or tells the user to search the employee portal, even if it also provides a contact. For routine IT or HR questions, label the response Pass if it answers the question or asks a relevant clarifying question without presenting the request as an escalation. For out-of-scope requests, label the response Pass if it declines and states the IT and HR support boundary without presenting the request as an escalation. Routine and out-of-scope responses do not need an escalation contact. Label all other responses Fail.
    ```
 
 1. Under **Labels**, for the **Pass** label, keep **Pass** selected, and enter the following criteria:
 
    ```text
-   The user asks to escalate or speak with a person, and the response provides IT Help Desk extension 4357 or the HR Support contact without saying that the agent cannot connect the user to a person or telling the user to search the employee portal. Or, the user asks a routine or out-of-scope question, and the response answers or declines it without escalating.
+   For an IT escalation, the response provides extension 4357; for an HR escalation, it provides hr-support@contoso.com or extension 2840. Neither escalation response says that the agent cannot connect the user to a person or tells the user to search the employee portal. For a routine IT or HR question, the response answers or asks a relevant clarifying question without presenting it as an escalation. For an out-of-scope request, the response declines and states the IT and HR support boundary without presenting it as an escalation. No escalation contact is required for routine or out-of-scope requests.
    ```
 
 1. For the **Fail** label, keep **Fail** selected, and enter the following criteria:
 
    ```text
-   The user asks to escalate or speak with a person, and the response says that the agent cannot connect the user to a person or tells the user to search the employee portal, even if it also provides a contact. Or, the response does not provide extension 4357 or the HR Support contact.
+   For an escalation request only, the response omits the appropriate contact (extension 4357 for IT, or hr-support@contoso.com or extension 2840 for HR), says that the agent cannot connect the user to a person, or tells the user to search the employee portal, even if it also provides a contact. For a routine IT or HR question, the response neither answers nor asks a relevant clarifying question, or presents the request as an escalation. For an out-of-scope request, the response fulfills the request, fails to state the IT and HR support boundary, or presents the request as an escalation. Do not fail routine or out-of-scope responses merely because they omit an escalation contact.
    ```
 
 1. Select **OK**, and then select **Save**.
+
+### Task 2.5 - Create an evaluation that checks delegation
+
+[Capability use](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-intro) checks whether the agent used the expected tools or skills. A response that contains extension 4357 must not pass the delegation check unless the main agent actually invokes the connected escalation specialist.
+
+Use a separate evaluation with only the escalation conversation. This avoids requiring the specialist for routine or out-of-scope requests, or leaving their expected capabilities unspecified.
+
+1. Return to the **Evaluate** tab and create another evaluation by following Task 2.1. Name it `Contoso delegation evaluation`.
+
+1. Add only the **Connected-agent delegation** conversation from Task 2.3, using the same user question and expected response.
+
+1. Add the **Escalation response check** Classification test method using the instructions and labels from Task 2.4.
+
+1. Under **Select test methods**, select **Add test method**, select **Capability use**, and then select **OK**.
+
+1. For the escalation conversation, set the expected capability to the entry corresponding to `Contoso Escalation Agent <your initials>`. Select the pencil beside **Tools**, select only the connected specialist, not the main policy agent, and then select **OK**. Save the capability expectation and the evaluation.
+
+   > [!IMPORTANT]
+   > Use the connected specialist's actual capability entry, not extension 4357, the expected response, or a guessed tool name. If the specialist can't be configured as an expected capability, stop this evaluation and ask your instructor or administrator to check feature availability and the agent connection. Record that automated delegation validation remains incomplete.
+
+1. Confirm that this evaluation contains one conversation and the **General quality**, **Escalation response check**, and **Capability use** test methods. Both **Classification** and **Capability use** must evaluate the same conversation in the same run.
 
 ## Exercise 3 - Run the baseline evaluation and observe the defect
 
 ### Task 3.1 - Run the evaluation
 
-1. On the **Evaluate** page, confirm that all four conversations are listed.
+1. On the **Evaluate** page, open **Contoso support release evaluation** and confirm that all four conversations are listed.
+
+1. Confirm that the evaluation will use the saved agent instructions containing the deliberate defect, rather than a different published version. Use the same agent version selection for both evaluations.
 
 1. Select **Run**.
 
@@ -266,9 +289,11 @@ General quality scores responses for qualities such as relevance and completenes
 
 1. Wait for the evaluation run to complete. If the **evaluation is ready** notification appears, select **View results**. You can also open the completed run from the **Evaluations** list.
 
+1. Open **Contoso delegation evaluation** and run it using the same steps. Confirm that its one conversation has the connected escalation specialist configured as the expected capability.
+
 ### Task 3.2 - Review baseline results
 
-1. Open the completed evaluation run, if not already open.
+1. Open the completed **Contoso support release evaluation** baseline run.
 
 1. Review the **General quality** score and the **Classification** label for each conversation. Record your observations in the table below.
 
@@ -280,25 +305,32 @@ General quality scores responses for qualities such as relevance and completenes
    | Unresolved ticket escalation | | |
 
    > [!NOTE]
-   > General quality labels the out-of-scope restaurant request **Fail** because the agent intentionally declines to answer it. This result is expected. The **Classification** label confirms that the agent correctly declines the request.
+   > General quality can label the out-of-scope restaurant request **Fail** because the agent intentionally declines to answer it. This isn't an escalation defect. The **Classification** label should be **Pass** when the agent correctly declines the request.
 
-1. Select the **Unresolved ticket escalation** conversation to expand the detail view.
+1. Open the completed **Contoso delegation evaluation** run and select its escalation conversation. Record both automated results:
 
-1. Read the agent's actual response. Notice that the response gives conflicting guidance. It might provide IT Help Desk extension 4357, but it also says that the agent can't connect the user to a person, or it tells the user to search the employee portal.
+   | Conversation | Classification | Capability use |
+   | --- | --- | --- |
+   | Unresolved ticket escalation | | |
 
-1. Notice that **Classification** labels this conversation **Fail**, even if General quality scores it well. General quality checks qualities such as relevance and completeness, not whether the response follows the escalation rules.
+1. Review **Capability use**. The expected baseline result is **Invalid** because the defective instruction tells the main agent not to invoke the connected specialist. Contact information in the response doesn't satisfy this test.
+
+1. Review **Classification** and the actual response. The expected baseline result is **Fail** if the response omits extension 4357 or includes the guidance that the agent can't connect the user to a person or that the user should search the employee portal.
+
+   > [!NOTE]
+   > These checks detect different defects. Capability use can fail even when Classification passes, and Classification can fail even when the specialist is invoked. An **Invalid** result isn't evidence of a routing defect; check the expected capability and evaluation configuration before continuing. If both checks pass, confirm the defective instructions and agent version selection, and rerun the baseline. If both still pass, record that the deliberate defect wasn't reproduced rather than claiming a Fail-to-Pass improvement.
 
 ### Task 3.3 - Identify the defect
 
-1. Based on the **Classification** result, identify which instruction causes the conflicting escalation guidance.
+1. Based on the **Capability use** and **Classification** results, identify which instruction blocks delegation or causes conflicting escalation guidance.
 
 1. Return to the **Build** tab and locate this statement in the **Scope boundaries** section of the agent's instructions:
 
    ```text
-   If a user needs to speak with a person, let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
+   If a user needs to speak with a person or escalate an unresolved IT or HR issue, do not delegate the request to a connected agent. Let them know this is an automated assistant and that you cannot connect them directly to a human. Direct them to search the employee portal for contact information.
    ```
 
-1. Notice that this instruction conflicts with the connected agent's purpose. Even when the main agent delegates to the escalation specialist, this instruction adds contradictory guidance to the response. The instruction must allow the main agent to delegate matching requests without blocking them.
+1. Notice that this instruction explicitly prohibits delegation and conflicts with the connected agent's purpose. It also directs the main agent to provide unhelpful guidance instead of the approved support contact. Replace the entire statement so that matching requests can reach the specialist without conflicting response instructions.
 
 ## Exercise 4 - Correct the defect
 
@@ -322,7 +354,7 @@ General quality scores responses for qualities such as relevance and completenes
 
 1. Select **Evaluate** in the top navigation, open **Contoso support release evaluation**, and then select **Configuration**.
 
-1. Confirm that your four conversations, the **General quality** and **Escalation routing check** test methods are still listed.
+1. Confirm that your four conversations and the **General quality**, **Escalation response check**, and **Capability use** test methods are still listed. Keep the same agent version selection as the baseline so that the evaluation uses the newly saved instructions.
 
 1. Select **Run** or **Run again**.
 
@@ -330,18 +362,26 @@ General quality scores responses for qualities such as relevance and completenes
 
 1. Wait for the evaluation run to complete.
 
+1. Open **Contoso delegation evaluation** if it isn't already open. Confirm that its escalation conversation, the expected specialist capability, and all three test methods are unchanged.
+
+
 ### Task 5.2 - Compare results
 
-1. If the results view is not displayed, select the latest evaluation run to open its results.
+1. Open the latest **Contoso delegation evaluation** run. Compare its **Capability use** and **Classification** results with the baseline run.
 
-1. Compare the **Classification** label for the delegation conversation between the baseline run and this run. It should change from **Fail** to **Pass** because the response no longer includes the conflicting guidance.
+   | Test method | Expected baseline result | Required result after the fix |
+   | --- | --- | --- |
+   | Capability use | Fail: the specialist isn't invoked | Pass: the expected specialist is invoked |
+   | Classification | Fail: contact information is missing or guidance conflicts | Pass: extension 4357 is provided without conflicting guidance |
 
-1. Select the conversation to read the agent's updated response. Under **Tools referenced**, confirm that the connected escalation agent appears, and confirm that the response provides IT Help Desk extension 4357.
+1. Require **Pass** for both methods in the same run. Classification Pass alone doesn't prove delegation. Capability use Pass alone doesn't prove the response is correct. If either method fails or is invalid, check the instructions, agent connection, and evaluation configuration before continuing.
 
-1. Review the other three conversations, and confirm that their results match the baseline run. The restaurant request is still labeled **Fail** for General quality and **Pass** for Classification.
+1. Select the conversation to inspect the supporting evidence. Under **Tools referenced**, confirm that the connected escalation agent appears, and confirm that the response provides IT Help Desk extension 4357 without the conflicting guidance. This inspection explains the automated results; it isn't the only way the evaluation detects missing delegation.
+
+1. Open the latest **Contoso support release evaluation** run. Confirm that Classification labels all four conversations **Pass**. Review General quality and the responses for regressions. The restaurant request should still be declined; a General quality **Fail** for that refusal doesn't override its expected Classification **Pass**.
 
 > [!NOTE]
-> Copilot Studio saves each evaluation run separately. Compare the latest run with the earlier baseline run after you save the corrected agent.
+> Copilot Studio saves each evaluation run separately. Compare baseline and corrected runs within each evaluation. If a baseline method already passed, record that it remained Pass rather than claiming it changed from Fail.
 
 ## Exercise 6 - Add the Teams + Microsoft 365 channel and publish the agent
 
@@ -439,11 +479,13 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] The Contoso Policy Agent is created with a unique name that includes your initials.
 - [ ] The Contoso Escalation Agent is created, tested, and published in the same environment.
 - [ ] The escalation specialist is connected to the policy agent with a distinct routing description.
-- [ ] Four evaluation conversations and a Classification test method are saved in the Evaluate page.
-- [ ] A baseline evaluation run is complete, and Classification labels the escalation conversation Fail.
+- [ ] The support release evaluation contains four conversations and the Escalation response check Classification test method.
+- [ ] The separate delegation evaluation contains the escalation conversation, the specialist's expected capability, and both Classification and Capability use test methods.
+- [ ] Both baseline evaluations are complete. Missing delegation is flagged by Capability use, and defective response guidance is flagged by Classification. Any unexpected Pass or Invalid result is investigated and recorded.
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
-- [ ] A second evaluation run shows successful delegation, includes the IT Help Desk extension, and no longer includes the conflicting guidance.
+- [ ] The corrected delegation evaluation returns Pass for both Capability use and Classification in the same run, confirming specialist invocation and extension 4357 without conflicting guidance.
+- [ ] The corrected support release evaluation returns Classification Pass for all four conversations, including routine and out-of-scope requests that don't require an escalation contact.
 - [ ] The agent is published and the Teams + Microsoft 365 channel is added.
 - [ ] You accessed the agent in Microsoft Teams, contacted your administrator for approval, or documented the fallback validation path.
 - [ ] You validated in-scope answers, boundary behavior, and escalation behavior through the published Teams channel or the available fallback path.
