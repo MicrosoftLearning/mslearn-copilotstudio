@@ -354,7 +354,7 @@ Use a separate evaluation with only the escalation conversation. This avoids req
 
 1. Select **Evaluate** in the top navigation, open **Contoso support release evaluation**, and then select **Configuration**.
 
-1. Confirm that your four conversations and the **General quality**, **Escalation response check**, and **Capability use** test methods are still listed. Keep the same agent version selection as the baseline so that the evaluation uses the newly saved instructions.
+1. Confirm that your four conversations and the **General quality** and **Escalation response check** test methods are still listed.
 
 1. Select **Run** or **Run again**.
 
@@ -364,6 +364,11 @@ Use a separate evaluation with only the escalation conversation. This avoids req
 
 1. Open **Contoso delegation evaluation** if it isn't already open. Confirm that its escalation conversation, the expected specialist capability, and all three test methods are unchanged.
 
+1. Select **Run** or **Run again**.
+
+1. If the **Manage connections** dialog opens, select the connection for your lab account, and then select **Continue**.
+
+1. Wait for the delegation evaluation run to complete before proceeding to Task 5.2.
 
 ### Task 5.2 - Compare results
 
