@@ -234,7 +234,7 @@ General quality checks qualities such as relevance and completeness. **Classific
 1. In the **Evaluation instructions** field, enter:
 
    ```text
-   Evaluate the response text, not whether a connected agent was invoked. If the user asks to escalate an issue or speak with a person about IT, label the response Pass only if it provides IT Help Desk extension 4357. For an HR escalation, require hr-support@contoso.com or extension 2840. Label an escalation response Fail if it omits the appropriate contact, says that the agent cannot connect the user to a person, or tells the user to search the employee portal, even if it also provides a contact. For routine IT or HR questions, label the response Pass if it answers the question or asks a relevant clarifying question without presenting the request as an escalation. For out-of-scope requests, label the response Pass if it declines and states the IT and HR support boundary without presenting the request as an escalation. Routine and out-of-scope responses do not need an escalation contact. Label all other responses Fail.
+   Evaluate the response text, not whether a connected agent was called. If the user asks to escalate an issue or speak with a person about IT, label the response Pass only if it provides IT Help Desk extension 4357. For an HR escalation, require hr-support@contoso.com or extension 2840. Label an escalation response Fail if it omits the appropriate contact, says that the agent cannot connect the user to a person, or tells the user to search the employee portal, even if it also provides a contact. For routine IT or HR questions, label the response Pass if it answers the question or asks a relevant clarifying question without presenting the request as an escalation. For out-of-scope requests, label the response Pass if it declines and states the IT and HR support boundary without presenting the request as an escalation. Routine and out-of-scope responses do not need an escalation contact. Label all other responses Fail.
    ```
 
 1. Under **Labels**, for the **Pass** label, keep **Pass** selected, and enter the following criteria:
@@ -378,7 +378,7 @@ A baseline run is the first evaluation run, before you correct the agent's instr
 
    | Test method | Expected baseline result | Required result after the fix |
    | --- | --- | --- |
-   | Capability use | Record observed status | Pass: the expected specialist is invoked |
+   | Capability use | Record observed status | Pass: the expected specialist is called |
    | Classification | Fail: contact information is missing or guidance conflicts | Pass: extension 4357 is provided without conflicting guidance |
 
 1. Check that **Classification** and **Capability use** both show **Pass** in the same run. Classification checks the response; Capability use checks whether the specialist was called.
@@ -494,7 +494,7 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] The results from both baseline evaluations are recorded.
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
-- [ ] The corrected delegation evaluation returns Pass for both Capability use and Classification in the same run, confirming specialist invocation and extension 4357 without conflicting guidance.
+- [ ] The corrected delegation evaluation returns Pass for both Capability use and Classification in the same run, confirming specialist invocation was successful and extension 4357 without conflicting guidance.
 - [ ] The corrected support release evaluation returns Classification Pass for all four conversations, including routine and out-of-scope requests that don't require an escalation contact.
 - [ ] The agent is published and the Teams + Microsoft 365 channel is added.
 - [ ] You accessed the agent in Microsoft Teams, contacted your administrator for approval, or documented the fallback validation path.
