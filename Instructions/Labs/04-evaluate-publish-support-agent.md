@@ -176,7 +176,7 @@ The specialist's distinct description helps the main agent decide when to delega
 > [!IMPORTANT]
 > The **Evaluate** feature for agents powered by the GitHub Copilot harness is in production-ready preview. Confirm it's available in your environment before proceeding. If Evaluate or the required test methods aren't enabled, complete Exercise 4, skip Exercise 5, and continue with Exercise 6. Validate using Preview and the published channel, and leave the automated-evaluation completion criteria unchecked. Record that automated evaluation of delegation remains incomplete; manual review or a response-text check isn't a substitute for **Capability use**.
 
-You create four evaluation conversations that cover the most important scenarios for the support policy agent: a direct answer retained by the main agent, an ambiguous request requiring clarification, an out-of-scope boundary, and an escalation request that should delegate to the connected agent. You also create a separate evaluation containing the same escalation request to check the connected agent's actual invocation.
+You create four evaluation conversations that cover the most important scenarios for the support policy agent: a direct answer retained by the main agent, an ambiguous request requiring clarification, an out-of-scope boundary, and an escalation request that should delegate to the connected agent. You then create a separate evaluation to check whether the main agent calls the connected escalation specialist.
 
 ### Task 2.1 - Configure a new test set
 
@@ -223,7 +223,7 @@ You create four evaluation conversations that cover the most important scenarios
 
 ### Task 2.4 - Add a Classification test method
 
-General quality scores responses for qualities such as relevance and completeness, but it doesn't check whether the agent follows the escalation response rules. Add a **Classification** test method to check contact information and conflicting guidance. Classification evaluates response text; it doesn't prove that the connected agent was invoked. You check invocation separately in Task 2.5.
+General quality checks qualities such as relevance and completeness. **Classification** checks whether the response follows the rules you provide, including giving the correct support contact and avoiding conflicting guidance. It checks the response text, not whether the specialist was called. You check that separately in Task 2.5.
 
 1. Under **Select test methods**, select **Add test method**.
 
@@ -253,9 +253,9 @@ General quality scores responses for qualities such as relevance and completenes
 
 ### Task 2.5 - Create an evaluation that checks delegation
 
-[Capability use](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-intro) checks whether the agent used the expected tools or skills. A response that contains extension 4357 must not pass the delegation check unless the main agent actually invokes the connected escalation specialist.
+**Capability use** checks whether the agent used the expected tools or skills. In this lab, you use it to check whether the main agent called the connected escalation specialist. Providing extension 4357 in the response isn't enough to confirm this.
 
-Use a separate evaluation with only the escalation conversation. This avoids requiring the specialist for routine or out-of-scope requests, or leaving their expected capabilities unspecified.
+Create a separate evaluation containing only the escalation conversation. Routine questions and requests outside IT and HR support shouldn't require the specialist.
 
 1. Return to the **Evaluate** tab and create another evaluation by following Task 2.1. Name it `Contoso delegation evaluation`.
 
@@ -273,6 +273,8 @@ Use a separate evaluation with only the escalation conversation. This avoids req
 1. Confirm that this evaluation contains one conversation and the **General quality**, **Escalation response check**, and **Capability use** test methods. Both **Classification** and **Capability use** must evaluate the same conversation in the same run.
 
 ## Exercise 3 - Run the baseline evaluation and observe the defect
+
+A baseline run is the first evaluation run, before you correct the agent's instructions. You use these results to compare the agent's behavior before and after the change.
 
 ### Task 3.1 - Run the evaluation
 
@@ -318,7 +320,7 @@ Use a separate evaluation with only the escalation conversation. This avoids req
 1. Review **Classification** and the actual response. The expected baseline result is **Fail** if the response omits extension 4357 or includes the guidance that the agent can't connect the user to a person or that the user should search the employee portal.
 
    > [!NOTE]
-   > These checks detect different defects. Capability use can fail even when Classification passes, and Classification can fail even when the specialist is invoked. An **Invalid** result isn't evidence of a routing defect; check the expected capability and evaluation configuration before continuing. If both checks pass, confirm the defective instructions and agent version selection, and rerun the baseline. If both still pass, record that the deliberate defect wasn't reproduced rather than claiming a Fail-to-Pass improvement.
+   > These tests check different things: whether the response is correct and whether the specialist was called. One test can pass while the other doesn't. If a result fails, review the result details and evaluation settings before drawing a conclusion. If both tests pass before you correct the instructions, check that the deliberately incorrect instructions are still saved and that you're testing the intended agent version. Run the baseline again. If both tests still pass, record that this run didn't show the expected problem.
 
 ### Task 3.3 - Identify the defect
 
@@ -379,7 +381,7 @@ Use a separate evaluation with only the escalation conversation. This avoids req
    | Capability use | Record observed status; investigate Invalid | Pass: the expected specialist is invoked |
    | Classification | Fail: contact information is missing or guidance conflicts | Pass: extension 4357 is provided without conflicting guidance |
 
-1. Require **Pass** for both methods in the same run. Classification Pass alone doesn't prove delegation. Capability use Pass alone doesn't prove the response is correct. If either method fails or is invalid, check the instructions, agent connection, and evaluation configuration before continuing.
+1. Check that **Classification** and **Capability use** both show **Pass** in the same run. Classification checks the response; Capability use checks whether the specialist was called. If either result is **Fail** or **Invalid**, review the instructions, agent connection, and evaluation settings before continuing.
 
 1. Select the conversation to inspect the supporting evidence. Under **Tools referenced**, confirm that the connected escalation agent appears, and confirm that the response provides IT Help Desk extension 4357 without the conflicting guidance. This inspection explains the automated results; it isn't the only way the evaluation detects missing delegation.
 
@@ -486,7 +488,7 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] The escalation specialist is connected to the policy agent with a distinct routing description.
 - [ ] The support release evaluation contains four conversations and the Escalation response check Classification test method.
 - [ ] The separate delegation evaluation contains the escalation conversation, the specialist's expected capability, and both Classification and Capability use test methods.
-- [ ] Both baseline evaluations are complete, and their Capability use and Classification results are recorded. Unexpected results are investigated, and unresolved Invalid results aren't counted as completed automated delegation validation.
+- [ ] The results from both baseline evaluations are recorded, and unexpected results have been investigated. If Capability use still shows Invalid, the delegation check is recorded as incomplete.
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] The corrected delegation evaluation returns Pass for both Capability use and Classification in the same run, confirming specialist invocation and extension 4357 without conflicting guidance.
