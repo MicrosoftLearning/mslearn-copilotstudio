@@ -378,7 +378,7 @@ A baseline run is the first evaluation run, before you correct the agent's instr
 
    | Test method | Expected baseline result | Required result after the fix |
    | --- | --- | --- |
-   | Capability use | Record observed status; Valid | Pass: the expected specialist is invoked |
+   | Capability use | Record observed status | Pass: the expected specialist is invoked |
    | Classification | Fail: contact information is missing or guidance conflicts | Pass: extension 4357 is provided without conflicting guidance |
 
 1. Check that **Classification** and **Capability use** both show **Pass** in the same run. Classification checks the response; Capability use checks whether the specialist was called.
