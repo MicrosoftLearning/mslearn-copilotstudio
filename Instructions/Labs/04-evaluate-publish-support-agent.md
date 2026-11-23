@@ -315,7 +315,7 @@ A baseline run is the first evaluation run, before you correct the agent's instr
    | --- | --- | --- |
    | Unresolved ticket escalation | | |
 
-1. Review **Capability use** and record the reported status. If it is **Invalid**, inspect the conversation details, expected capability, and **Tools referenced**. Record any explanation provided; don't assume Invalid means missing delegation.
+1. Review **Capability use** and record the reported status.
 
 1. Review **Classification** and the actual response. The expected baseline result is **Fail** if the response omits extension 4357 or includes the guidance that the agent can't connect the user to a person or that the user should search the employee portal.
 
@@ -378,10 +378,10 @@ A baseline run is the first evaluation run, before you correct the agent's instr
 
    | Test method | Expected baseline result | Required result after the fix |
    | --- | --- | --- |
-   | Capability use | Record observed status; investigate Invalid | Pass: the expected specialist is invoked |
+   | Capability use | Record observed status; Valid | Pass: the expected specialist is invoked |
    | Classification | Fail: contact information is missing or guidance conflicts | Pass: extension 4357 is provided without conflicting guidance |
 
-1. Check that **Classification** and **Capability use** both show **Pass** in the same run. Classification checks the response; Capability use checks whether the specialist was called. If either result is **Fail** or **Invalid**, review the instructions, agent connection, and evaluation settings before continuing.
+1. Check that **Classification** and **Capability use** both show **Pass** in the same run. Classification checks the response; Capability use checks whether the specialist was called.
 
 1. Select the conversation to inspect the supporting evidence. Under **Tools referenced**, confirm that the connected escalation agent appears, and confirm that the response provides IT Help Desk extension 4357 without the conflicting guidance. This inspection explains the automated results; it isn't the only way the evaluation detects missing delegation.
 
@@ -488,7 +488,7 @@ You have completed this exercise when you can confirm all of the following:
 - [ ] The escalation specialist is connected to the policy agent with a distinct routing description.
 - [ ] The support release evaluation contains four conversations and the Escalation response check Classification test method.
 - [ ] The separate delegation evaluation contains the escalation conversation, the specialist's expected capability, and both Classification and Capability use test methods.
-- [ ] The results from both baseline evaluations are recorded, and unexpected results have been investigated. If Capability use still shows Invalid, the delegation check is recorded as incomplete.
+- [ ] The results from both baseline evaluations are recorded.
 - [ ] You can identify the specific instruction text that caused the escalation defect.
 - [ ] The corrected instructions allow the main agent to delegate escalation requests to the connected specialist.
 - [ ] The corrected delegation evaluation returns Pass for both Capability use and Classification in the same run, confirming specialist invocation and extension 4357 without conflicting guidance.
