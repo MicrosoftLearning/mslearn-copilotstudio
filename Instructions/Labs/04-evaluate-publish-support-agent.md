@@ -268,7 +268,7 @@ Create a separate evaluation containing only the escalation conversation. Routin
 1. For the escalation conversation, set the expected capability to the entry corresponding to `Contoso Escalation Agent <your initials>`. Select the pencil beside **Tools**, select only the connected specialist, not the main policy agent, and then select **OK**. Save the capability expectation and the evaluation.
 
    > [!IMPORTANT]
-   > Use the connected specialist's actual capability entry, not extension 4357, the expected response, or a guessed tool name. If the specialist can't be configured as an expected capability, stop this evaluation and ask your instructor or administrator to check feature availability and the agent connection. Record that automated delegation validation remains incomplete.
+   > Use the connected specialist's actual capability entry rather than extension 4357, the expected response, or a guessed tool name. If the specialist cannot be configured as an expected capability, record that automated delegation validation remains incomplete.
 
 1. Confirm that this evaluation contains one conversation and the **General quality**, **Escalation response check**, and **Capability use** test methods. Both **Classification** and **Capability use** must evaluate the same conversation in the same run.
 
@@ -422,7 +422,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization permits self-installation:**
 
-1. When the publishing confirmation appears, select **View in Teams + Microsoft 365**.
+1. When the publishing confirmation appears, select **View in Teams + Microsoft 365** or **View in Microsoft Teams**.
 
 1. In the browser prompt to open Microsoft Teams, select **Cancel**, select **Use the web app instead**. If prompted, sign in with your lab account.
 
@@ -430,7 +430,7 @@ Choose the path that matches your organization's policy.
 
 **If your organization requires administrator approval:**
 
-1. In the components panel, under **Channels**, select **Teams + Microsoft 365**.
+1. In the components panel, under **Channels**, select **Teams + Microsoft 365** or **View in Microsoft Teams**.
 
 1. Select **Use and share**, and then select **Submit to org catalog** twice.
 

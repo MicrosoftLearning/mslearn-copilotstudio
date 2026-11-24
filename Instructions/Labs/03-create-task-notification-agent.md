@@ -274,7 +274,7 @@ To complete this exercise, you need:
    Send Task Notification Email <your initials>
    ```
 
-1. In the **Description for Intelligence** field, enter:
+1. In the **Description for AI** field, enter:
 
    ```text
    Sends a formatted task notification email to a specified recipient. Use when the user asks to send a notification about a task and all required details are available and confirmed: recipient email, task title, task details, and due date.
@@ -457,7 +457,7 @@ After completing all four test paths, review the configuration as a whole:
 
 1. Open the agent's **Build** tab and select the **Send Task Notification Email** tool.
 1. Confirm the tool description accurately reflects what the workflow does and when to use it.
-1. Confirm **Fill with Intelligence** is selected for all four inputs.
+1. Confirm **Fill with AI** is selected for all four inputs.
 1. Confirm the response returned by the workflow is clear and informative.
 
 ### Task 5.2 - Optional: Refine based on test results

@@ -35,8 +35,7 @@ Before you start the lab exercises, you must create a development environment fo
 ### Task 1.3 - Create a new environment
 
 1. In the **Environments** page, select **+ New** to create a new environment with the following settings:
-
-   - **Type**: Developer
+   - **Type**: Trial
    - **Macro Region Geography**: North America
    - **Name**: *Your name*
 
@@ -45,13 +44,13 @@ Before you start the lab exercises, you must create a development environment fo
 1. Expand **Change default settings** and configure the following:
    - **Environment group**: None
    - **Make this a Managed Environment**: No
-   - **Create on behalf**: No
+   - **Get new features early**: No
    - **Add a Dataverse data store?**: Yes
    
 1. Select **Next** and in the **Add Dataverse** section:
-
    - **Language**: English (United States)
    - **Currency**: USD ($)
+   - **Security group**: None
    - **Deploy sample apps and data?**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).

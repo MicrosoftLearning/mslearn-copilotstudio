@@ -261,6 +261,9 @@ Create a standalone data source for this exercise.
 
 1. Select **Upload a skill**, upload `equipment-recommendation.md`, and confirm that the skill appears under **Skills**.
 
+   > [!NOTE]
+   > If the skill upload fails, select **Skills** > **Create from blank**, enter `equipment-recommendation` as the skill name and `Use when a user asks for a laptop or monitor recommendation` as the description, copy the supplied skill content into the new skill, and then select **Create**.
+
 1. Select the **Preview** tab, start a new conversation, enter `Recommend a laptop for a data analyst in Seattle who runs local data models. I don't have any accessibility requirements` and submit it.
 
 1. Verify that the skill guides the agent to consult the policy, retrieve inventory, and recommend the available performance laptop with an explanation.
@@ -284,7 +287,7 @@ Create a standalone data source for this exercise.
 
 1. Save the file.
 
-1. Select the **Build** tab. In the agent's **Skills** section, open the uploaded skill, select **(...)** > **Replace**, and replace it with the updated file. If the replace option isn't available, delete the original skill and upload the updated file.
+1. Select the **Build** tab. In the agent's **Skills** section, open the uploaded skill, select **(...)** > **Replace**, and replace it with the updated file. If the replace option isn't available, delete the original skill, upload the updated file or create a new skill with the updated content.
 
 1. Return to the **Preview** tab, start a new conversation, and repeat the home-office setup prompt.
 
