@@ -46,11 +46,13 @@ Before you start the lab exercises, you must create a development environment fo
    - **Make this a Managed Environment**: No
    - **Get new features early**: No
    - **Add a Dataverse data store?**: Yes
+   - **Pay-as-you-go with Azure?**: No 
    
 1. Select **Next** and in the **Add Dataverse** section:
    - **Language**: English (United States)
    - **Currency**: USD ($)
    - **Security group**: None
+   - **Enable Dynamics 365 apps?**: No
    - **Deploy sample apps and data?**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
