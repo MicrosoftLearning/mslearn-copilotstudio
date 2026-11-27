@@ -52,6 +52,7 @@ Before you start the lab exercises, you must create a development environment fo
    - **Language**: English (United States)
    - **Currency**: USD ($)
    - **Security group**: None
+   - **Enable Dynamics 365 apps?**: No
    - **Deploy sample apps and data?**: No
 
 1. Select **Save** and wait until the state of your environment is **Ready** (you can use the **Refresh** button to update the display).
