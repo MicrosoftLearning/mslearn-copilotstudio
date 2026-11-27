@@ -46,6 +46,7 @@ Before you start the lab exercises, you must create a development environment fo
    - **Make this a Managed Environment**: No
    - **Get new features early**: No
    - **Add a Dataverse data store?**: Yes
+   - **Pay-as-you-go with Azure?**: No 
    
 1. Select **Next** and in the **Add Dataverse** section:
    - **Language**: English (United States)
